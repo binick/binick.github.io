@@ -1,0 +1,19 @@
+{{ if .IsNamedParams }}
+  <div class="{{ if .Get "class" }}{{ .Get "class" }}{{ else }}github-ref-container{{ end }}">
+      <h2>
+        <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--vJ70wriM--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://practicaldev-herokuapp-com.freetls.fastly.net/assets/github-logo-ba8488d21cd8ee1fee097b8410db9deaa41d0ca30b004c0c63de0a479114156f.svg" alt="GitHub logo" loading="lazy">
+        <a href="https://github.com/{{ .Get "account" }}" class="account">{{ .Get "account" }}</a>
+        /
+        <a href="https://github.com/{{ .Get "account" }}/{{ .Get "repo" }}" class="repo">{{ .Get "repo" }}</a>
+      </h2>
+  </div>
+{{ else }}
+  <div class="{{ if len .Params | eq 3 }}{{ .Get 2 }}{{ else }}github-ref-container{{ end }}">
+    <h2>
+      <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--vJ70wriM--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://practicaldev-herokuapp-com.freetls.fastly.net/assets/github-logo-ba8488d21cd8ee1fee097b8410db9deaa41d0ca30b004c0c63de0a479114156f.svg" alt="GitHub logo" loading="lazy">
+      <a href="https://github.com/{{ .Get 0 }}" class="account">{{ .Get 0 }}</a>
+      /
+      <a href="https://github.com/{{ .Get 0 }}/{{ .Get 1 }}" class="repo">{{ .Get 1 }}</a>
+    </h2>
+  </div>
+{{ end }}

@@ -1,0 +1,87 @@
+baseURL: 'https://binick.github.io'
+title: binick's Blog
+paginate: 5
+theme: hugo-PaperMod
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpored: false
+
+googleAnalytics: G-RSW0Z0VNNX
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  author: Nicola Biancolini
+
+  env: production
+  description: "binick's blog"
+
+  ShowReadingTime: true
+  ShowShareButtons: true
+  comments: false
+  defaultTheme: auto
+  disableThemeToggle: false
+  disableSpecial1stPost: false
+
+  assets:
+    favicon: /favicon.ico
+
+  label:
+    text: "binick's blog"
+    icon: /me.png
+    iconHeight: 35
+
+  # profile-mode
+  profileMode:
+    enabled: false # needs to be explicitly set
+
+  # home-info mode
+  homeInfoParams:
+    Title: "Hi there \U0001F44B"
+    Content: From the first basics in Pascal through Qt and QML, C# and SQL. Nicola is a full stack code cleanliness maniac driven by events and single responsibility principale.
+
+  socialIcons:
+    - name: github
+      url: 'https://github.com/binick'
+    - name: stackoverflow
+      url: 'https://stackoverflow.com/users/7684814/binick'
+    - name: twitter
+      url: 'https://twitter.com/nbiancolini'
+    - name: linkedin
+      url: 'https://www.linkedin.com/in/nicolabiancolini'
+
+#   analytics:
+#     google:
+#       SiteVerificationTag: "XYZabc"
+
+markup:
+  highlight:
+    anchorLineNos: true
+    codeFences: true
+    guessSyntax: false
+    hl_Lines: ""
+    lineAnchors: ""
+    lineNoStart: 1
+    lineNos: false
+    lineNumbersInTable: false
+    noClasses: false
+    style: default
+    tabWidth: 2
+
+menu:
+  main:
+    - name: Archives
+      url: /archives/
+      weight: 5
+    - name: Tags
+      url: /tags/
+      weight: 10
+      
+taxonomies:
+  category: categories
+  tag: tags
+  series: series
