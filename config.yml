@@ -9,6 +9,7 @@ buildFuture: false
 buildExpored: false
 
 googleAnalytics: G-RSW0Z0VNNX
+disqusShortname: binick-github-io
 
 minify:
   disableXML: true
@@ -22,7 +23,7 @@ params:
 
   ShowReadingTime: true
   ShowShareButtons: true
-  comments: false
+  comments: true
   defaultTheme: auto
   disableThemeToggle: false
   disableSpecial1stPost: false
