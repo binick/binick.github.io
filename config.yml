@@ -8,7 +8,7 @@ buildDrafts: false
 buildFuture: false
 buildExpored: false
 
-googleAnalytics: G-RSW0Z0VNNX
+googleAnalytics: UA-181166811-1
 disqusShortname: binick-github-io
 
 minify:
