@@ -1,5 +1,5 @@
 baseURL: 'https://binick.github.io'
-title: binick's Blog
+title: binick's Blog - an eclectic developer
 paginate: 5
 theme: hugo-PaperMod
 
@@ -19,7 +19,7 @@ params:
   author: Nicola Biancolini
 
   env: production
-  description: "binick's blog"
+  description: From the first basics in Pascal through Qt and QML, C# and SQL. Nicola is a full stack code cleanliness maniac driven by events and single responsibility principale.
 
   ShowReadingTime: true
   ShowShareButtons: true
