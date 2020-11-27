@@ -43,7 +43,7 @@ params:
   # home-info mode
   homeInfoParams:
     Title: "Hi there \U0001F44B"
-    Content: From the first basics in Pascal through Qt and QML, C# and SQL. Nicola is a full stack code cleanliness maniac driven by events and single responsibility principale.
+    Content: From the first basics in Pascal through Qt and QML, C# and SQL. Nicola is a full stack code cleanliness maniac driven by events and single responsibility principle.
 
   socialIcons:
     - name: github
