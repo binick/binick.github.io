@@ -4,7 +4,8 @@ date: 2020-10-22
 author: Nicola Biancolini
 tags: ['efcore', 'netcore', 'sqlserver', 'json']
 ---
-Sometimes we have been forced to work with json stored on table columns, it will have happened to you too!.
+
+Sometimes we have been forced to work with JSON stored on table columns, it will have happened to you too!.
 
 In this post I want to show you how work with that using **EntityFramework Core**
 
@@ -12,9 +13,9 @@ In this post I want to show you how work with that using **EntityFramework Core*
 
 Clearly this is one of many possible ways.
 
-We could talk for a long time about the choice to store JSON into RDBMS is a good or bad choice, but the intent of this post isn't make rant.
+We could talk for a long time about the choice to store JSON into RDBMS is a good or bad choice, but the intent of this post isn't make a rant.
 
-Ok, well. First of all take a look to JSON that we want to persist into table column
+Ok, well. First of all take a look to JSON that we want to persist into a table column
 
 {{< gist binick 7c40dc3dcb74dae0485ebc95bbc4b015 "metadata.json" >}}
 
