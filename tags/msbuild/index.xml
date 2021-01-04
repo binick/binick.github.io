@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on binick&#39;s Blog</title>
-    <link>https://binick.github.io/posts/</link>
-    <description>Recent content in Posts on binick&#39;s Blog</description>
+    <title>msbuild on binick&#39;s Blog</title>
+    <link>https://binick.github.io/tags/msbuild/</link>
+    <description>Recent content in msbuild on binick&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sat, 02 Jan 2021 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://binick.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://binick.github.io/tags/msbuild/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -19,18 +19,6 @@
       <description>By code coverage we mean the action of trying to measure how much of our code has been executed by our tests. This sound like
  TL;DR
 Untested code is a broken code. Definitely a strong statement but true in a way, we don&amp;rsquo;t always manage to get enough coverage. Often this happens because we don&amp;rsquo;t have time, other times because despite having written tests we are not able to read the metrics.</description>
-    </item>
-    
-    <item>
-      <title>SqlServer, EFCore, JSON 👀</title>
-      <link>https://binick.github.io/posts/2020-10-22_sqlserver-efcore-json/</link>
-      <pubDate>Thu, 22 Oct 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://binick.github.io/posts/2020-10-22_sqlserver-efcore-json/</guid>
-      <description>Sometimes we have been forced to work with JSON stored on table columns, it will have happened to you too!.
-In this post I want to show you how work with that using EntityFramework Core
- dotnet / efcore   Clearly this is one of many possible ways.
-We could talk for a long time about the choice to store JSON into RDBMS is a good or bad choice, but the intent of this post isn&amp;rsquo;t make a rant.</description>
     </item>
     
   </channel>

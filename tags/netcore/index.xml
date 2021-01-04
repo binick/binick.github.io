@@ -16,10 +16,10 @@
       <pubDate>Thu, 22 Oct 2020 00:00:00 +0000</pubDate>
       
       <guid>https://binick.github.io/posts/2020-10-22_sqlserver-efcore-json/</guid>
-      <description>Sometimes we have been forced to work with json stored on table columns, it will have happened to you too!.
+      <description>Sometimes we have been forced to work with JSON stored on table columns, it will have happened to you too!.
 In this post I want to show you how work with that using EntityFramework Core
  dotnet / efcore   Clearly this is one of many possible ways.
-We could talk for a long time about the choice to store JSON into RDBMS is a good or bad choice, but the intent of this post isn&amp;rsquo;t make rant.</description>
+We could talk for a long time about the choice to store JSON into RDBMS is a good or bad choice, but the intent of this post isn&amp;rsquo;t make a rant.</description>
     </item>
     
   </channel>
