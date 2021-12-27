@@ -2,3 +2,15 @@
     border: unset;
     justify-content: center;
 }
+
+img {
+    margin: auto;
+}
+
+.dark .highlight span.lnt a {
+    box-shadow: unset;
+}
+
+.dark .post-content table th, .post-content table:not(.highlighttable) td {
+    border-bottom: unset;
+}
