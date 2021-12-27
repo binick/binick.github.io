@@ -67,10 +67,10 @@ markup:
     hl_Lines: ""
     lineAnchors: ""
     lineNoStart: 1
-    lineNos: false
-    lineNumbersInTable: false
+    lineNos: true
+    lineNumbersInTable: true
     noClasses: false
-    style: default
+    style: github
     tabWidth: 2
 
 menu:
