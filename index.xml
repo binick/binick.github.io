@@ -5,10 +5,21 @@
     <link>https://binick.github.io/</link>
     <description>Recent content on binick&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 02 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 27 Dec 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://binick.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>How to enrich a JWT issued by Active Directory B2C with custom policies.</title>
+      <link>https://binick.github.io/posts/2021-12-25_enrich-a-jwt-token-with-ief/</link>
+      <pubDate>Mon, 27 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://binick.github.io/posts/2021-12-25_enrich-a-jwt-token-with-ief/</guid>
+      <description>Some time ago I was faced to need to enrich the JSON Web Token issued by Azure Active Directory B2C with information present on an external system.
+To create this scenario, I leveraged the customization options offered by custom criteria.
+Introduction to Identity Experience Framework. Identity Experience Framework represents the orchestration context of an interaction flow with Azure AD B2C. Custom criteria represent its expressiveness and allow us, developers, to define the internal flow through a series of one or moreὺ markup files.</description>
+    </item>
     
     <item>
       <title>How to include code coverage in Azure DevOps pipeline?</title>
