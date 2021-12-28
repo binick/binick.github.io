@@ -1,6 +1,7 @@
 {{- $fixgist := resources.Get "css/fix-gist.css" }}
 {{- $binick := resources.Get "css/binick.css" }}
+{{- $highlight := resources.Get "css/highlight.css" }}
 {{- $github := resources.Get "css/shortcodes/github.css" }}
 {{- $shortcode := slice $github | resources.Concat "shortcodes.css" }}
-{{- $custom := slice $shortcode $fixgist $binick | resources.Concat "assets/css/custom.css" | minify | fingerprint -}}
+{{- $custom := slice $shortcode $fixgist $binick $highlight | resources.Concat "assets/css/custom.css" | minify | fingerprint -}}
 <link href="{{ $custom.Permalink }}" integrity="{{ $custom.Data.Integrity }}" rel="preload stylesheet" as="style">

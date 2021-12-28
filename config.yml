@@ -1,38 +1,51 @@
 baseURL: 'https://binick.github.io'
-title: binick's Blog
+title: a developer's journey to the cloud
 paginate: 5
 theme: hugo-PaperMod
 
+enableInlineShortcodes: true
 enableRobotsTXT: true
 buildDrafts: false
 buildFuture: false
 buildExpored: false
+buildExpired: false
+enableEmoji: true
 
 googleAnalytics: UA-181166811-1
-disqusShortname: binick-github-io
+# disqusShortname: binick-github-io
 
 minify:
   disableXML: true
   minifyOutput: true
 
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
 params:
   author: Nicola Biancolini
 
   env: production
-  description: "binick's blog"
+  description: "a developer's journey to the cloud"
 
   ShowReadingTime: true
   ShowShareButtons: true
-  comments: true
+  comments: false
   defaultTheme: auto
+  displayFullLangName: true
+  ShowCodeCopyButtons: true
+  ShowBreadCrumbs: false
   disableThemeToggle: false
   disableSpecial1stPost: false
 
   assets:
     favicon: /favicon.ico
+    disableHLJS: true
 
   label:
-    text: "binick's blog"
+    text: "a developer's journey..."
     icon: /me.png
     iconHeight: 35
 
@@ -42,8 +55,8 @@ params:
 
   # home-info mode
   homeInfoParams:
-    Title: "Hi there \U0001F44B"
-    Content: From the first basics in Pascal through Qt and QML, C# and SQL. Nicola is a full stack code cleanliness maniac driven by events and single responsibility principle.
+    Title: "... to the cloud"
+    # Content: Photo by [sendi gibran](https://unsplash.com/@sendi_r_gibran?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText") on [Unsplash](https://unsplash.com/images/nature/cloud?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 
   socialIcons:
     - name: github
@@ -54,12 +67,22 @@ params:
       url: 'https://twitter.com/nbiancolini'
     - name: linkedin
       url: 'https://www.linkedin.com/in/nicolabiancolini'
+    - name: rss
+      url: '/index.xml'
+
+  editPost:
+    URL: "https://github.com/binick/binick.github.io/tree/main/content"
+    Text: "✏️"
+    appendFilePath: true
 
 #   analytics:
 #     google:
 #       SiteVerificationTag: "XYZabc"
 
 markup:
+  goldmark:
+    renderer:
+      unsafe: true
   highlight:
     anchorLineNos: true
     codeFences: true
@@ -68,15 +91,18 @@ markup:
     lineAnchors: ""
     lineNoStart: 1
     lineNos: true
-    lineNumbersInTable: true
+    lineNumbersInTable: false
     noClasses: false
-    style: github
+    pygmentsUseClasses: true
     tabWidth: 2
 
 menu:
   main:
     - name: Archives
       url: /archives/
+      weight: 10
+    - name: Search
+      url: /search/
       weight: 5
     - name: Tags
       url: /tags/
