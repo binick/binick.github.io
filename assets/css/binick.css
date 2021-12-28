@@ -3,14 +3,14 @@
     justify-content: center;
 }
 
-img {
+.post-content img {
     margin: auto;
 }
 
-.dark .highlight span.lnt a {
+.highlight span.lnt a {
     box-shadow: unset;
 }
 
-.dark .post-content table th, .post-content table:not(.highlighttable) td {
+.post-content table th, .post-content table:not(.highlighttable) td {
     border-bottom: unset;
 }
