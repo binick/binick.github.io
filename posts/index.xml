@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Posts on binick&#39;s Blog</title>
+    <title>Posts on a developer&#39;s journey to the cloud</title>
     <link>https://binick.github.io/posts/</link>
-    <description>Recent content in Posts on binick&#39;s Blog</description>
+    <description>Recent content in Posts on a developer&#39;s journey to the cloud</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 27 Dec 2021 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://binick.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 27 Dec 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://binick.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to enrich a JWT issued by Active Directory B2C with custom policies.</title>
       <link>https://binick.github.io/posts/2021-12-25_enrich-a-jwt-token-with-ief/</link>
@@ -27,7 +23,7 @@ Introduction to Identity Experience Framework. Identity Experience Framework rep
       <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>https://binick.github.io/posts/2021-01-02_azure-devops-code-coverage/</guid>
-      <description>By code coverage we mean the action of trying to measure how much of our code has been executed by our tests. This sound like
+      <description>By code coverage, we mean the action of trying to measure how much of our code has been executed by our tests. This sound like
  TL;DR
 Untested code is a broken code. Definitely a strong statement but true in a way, we don&amp;rsquo;t always manage to get enough coverage. Often this happens because we don&amp;rsquo;t have time, other times because despite having written tests we are not able to read the metrics.</description>
     </item>
