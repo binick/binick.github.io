@@ -3,6 +3,9 @@ title: How to enrich a JWT issued by Active Directory B2C with custom policies.
 date: 2021-12-27
 author: Nicola Biancolini
 tags: ['identity experience framework', 'active directory b2c', 'custom policy']
+aliases:
+  - /posts/2021-12-27_enrich-a-jwt-token-with-ief
+  - /posts/2021-12-25_enrich-a-jwt-token-with-ief
 ---
 
 Some time ago I was faced to need to enrich the JSON Web Token issued by _Azure Active Directory B2C_ with information present on an external system.
@@ -19,7 +22,7 @@ Here you can find the [About the basics](https://docs.microsoft.com/en-us/azure/
 
 In that case, the information was being exposed from a web server exposed behind _API Management_, for simplicity, I replicated the endpoint with a _Logic App_. This is its definition:
 
-![logic app steps](/contents/2021-12-25_enrich-a-jwt-token-with-ief/logic-app-steps.png)
+![logic app steps](logic-app-steps.png)
 
 As you can imagine its task is to return the information contained within a blob. In this case, the blob contains the information that will be exposed as JWT claims.
 
@@ -117,13 +120,13 @@ and
 
 to finally achieve
 
-![enriched jwt](/contents/2021-12-25_enrich-a-jwt-token-with-ief/enriched-jwt.png)
+![enriched jwt](enriched-jwt.png)
 
 ## Troubleshooting and development help.
 
 Unavoidably during development, there might be errors, errors that _Azure AD B2C_ reports as within the redirect URL and that https://jwt.ms transforms like this
 
-![error](/contents/2021-12-25_enrich-a-jwt-token-with-ief/error.png)
+![error](error.png)
 
 Fortunately, troubleshooting operations can come to our aid _Application Insights_, for configuration operations, you can refer to this guide [Collect Azure Active Directory log B2C with Application Insights](https://docs.microsoft.com/en-us/azure/active-directory-b2c/troubleshoot-with-application-insights?pivots=b2c-custom-policy#see-the-logs-in-vs-code-extension).
 

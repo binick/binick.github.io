@@ -88,7 +88,7 @@ Well that's possible by use [Publish Code Coverage Results task](https://docs.mi
 
 We notice the `summaryFileLocation` argument, this means that we will push only one file to _Azure DevOps_ why?
 
-One unwrite note of _Publish Code Coverage Results task_ or limitation, I don't know, is that the sum of covered lines, when we publish more reports, is take from the first file ![](/contents/2021-01-02_azure-devops-code-coverage/pipeline-run-summary.png)
+One unwrite note of _Publish Code Coverage Results task_ or limitation, I don't know, is that the sum of covered lines, when we publish more reports, is take from the first file ![](pipeline-run-summary.png)
 
 This results in an unreliable result.
 
