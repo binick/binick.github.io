@@ -4,6 +4,7 @@ name: github pages
 on:
   pull_request:
     types: [ closed ]
+  workflow_dispatch:    
 
 jobs:
   deploy:
@@ -16,7 +17,7 @@ jobs:
           fetch-depth: 0
         
       - name: Build
-        run: docker run -v "$(pwd):/src" klakegg/hugo:0.83.1-ext --minify
+        run: docker run -v "$(pwd):/src" klakegg/hugo:0.83.1-ext --minify -e Production
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3

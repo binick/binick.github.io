@@ -1,8 +1,17 @@
----
+﻿---
 title: How to enrich a JWT issued by Active Directory B2C with custom policies.
 date: 2021-12-27
 author: Nicola Biancolini
-tags: ['identity experience framework', 'active directory b2c', 'custom policy']
+series: 
+  - Identity Experience Framework
+keywords: 
+  - identity experience framework
+  - active directory b2c
+  - custom policy
+  - azure blob storage
+tags: 
+  - azure
+  - active directory b2c
 aliases:
   - /posts/2021-12-27_enrich-a-jwt-token-with-ief
   - /posts/2021-12-25_enrich-a-jwt-token-with-ief
@@ -14,7 +23,7 @@ To create this scenario, I leveraged the customization options offered by _custo
 
 ## Introduction to Identity Experience Framework. 
 
-_Identity Experience Framework_ represents the orchestration context of an interaction flow with _Azure AD B2C_. Custom criteria represent its expressiveness and allow us, developers, to define the internal flow through a series of one or moreὺ markup files.
+_Identity Experience Framework_ represents the orchestration context of an interaction flow with _Azure AD B2C_. Custom criteria represent its expressiveness and allow us, developers, to define the internal flow through a series of one or more markup files.
 
 Here you can find the [About the basics](https://docs.microsoft.com/en-us/azure/active-directory-b2c/custom-policy-overview#understanding-the-basics).
 
