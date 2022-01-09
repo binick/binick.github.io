@@ -2,7 +2,12 @@
 title: How to include code coverage in Azure DevOps pipeline?
 date: 2021-01-02
 author: Nicola Biancolini
-tags: ['coverlet', 'azure devops', 'msbuild']
+keywords: 
+  - coverlet
+  - azure devops
+  - msbuild
+tags:
+  - devops
 ---
 
 By code coverage, we mean the action of trying to measure how much of our code has been executed by our tests.

@@ -1,11 +1,16 @@
----
-title: SqlServer, EFCore, JSON 👀
+﻿---
+title: SQL Server, EF Core, JSON 👀
 date: 2020-10-22
 author: Nicola Biancolini
-tags: ['efcore', 'netcore', 'sqlserver', 'json']
+keywords:
+  - efcore
+  - sql server
+tags:
+  - tip
+  - azure
 ---
 
-Sometimes we have been forced to work with JSON stored on table columns, it will have happened to you too!.
+Sometimes we have been forced to work with JSON stored on table columns, it will have happened to you too!
 
 In this post I want to show you how work with that using **EntityFramework Core**
 
@@ -34,7 +39,7 @@ With this instruction **efcore** will inflate property with value returned by `J
 
 To make it work, we need to persist the JSON into table column `Metadata`.
 
-We can use the other usefull [Value conversions](https://docs.microsoft.com/en-us/ef/core/modeling/value-conversions) functionality of **efcore**.
+We can use the other useful [Value conversions](https://docs.microsoft.com/en-us/ef/core/modeling/value-conversions) functionality of **efcore**.
 
 {{< gist binick 7c40dc3dcb74dae0485ebc95bbc4b015 "Car.Metadata.cs" >}} 
 
@@ -44,4 +49,4 @@ Now, after that model configurations we are able to resolve this simple query `v
 
 If you want to learn more you can find the sample on my github repo [ef-core-json](https://github.com/binick/samples/blob/6b9a4676c4f7f243c73abd59fb6aec592fd9f543/src/ef-core-json)
 
-Happy coding!🐱‍👤
+Happy coding! 🐱‍👤

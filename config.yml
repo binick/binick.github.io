@@ -5,7 +5,7 @@ theme: hugo-PaperMod
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
-buildDrafts: false
+buildDrafts: true
 buildFuture: false
 buildExpored: false
 buildExpired: false
@@ -26,10 +26,7 @@ outputs:
 
 params:
   author: Nicola Biancolini
-
-  env: production
   description: "a developer's journey to the cloud"
-
   ShowReadingTime: true
   ShowShareButtons: true
   comments: false
@@ -75,14 +72,24 @@ params:
     Text: "✏️"
     appendFilePath: true
 
-#   analytics:
-#     google:
-#       SiteVerificationTag: "XYZabc"
+  analytics:
+
+    google:
+      SiteVerificationTag: "eYTteUmuhinj42RTTPlY1SrZXHkBP_ibiGhlM9GHAMk"
+
+    bing:
+      SiteVerificationTag: eYTteUmuhinj42RTTPlY1SrZXHkBP_ibiGhlM9GHAMk
+
+    yandex:
+      SiteVerificationTag: 4ba6db988d52b1b1
 
 markup:
+
   goldmark:
+
     renderer:
       unsafe: true
+
   highlight:
     anchorLineNos: true
     codeFences: true
@@ -97,6 +104,7 @@ markup:
     tabWidth: 2
 
 menu:
+
   main:
     - name: Archives
       url: /archives/
@@ -108,7 +116,10 @@ menu:
       url: /tags/
       weight: 10
       
-taxonomies:
-  category: categories
-  tag: tags
-  series: series
+languages:
+
+  en:
+    languageName: English
+  
+  it:
+    languageName: Italiano
