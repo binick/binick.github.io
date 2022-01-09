@@ -75,10 +75,10 @@ params:
   analytics:
 
     google:
-      SiteVerificationTag: "eYTteUmuhinj42RTTPlY1SrZXHkBP_ibiGhlM9GHAMk"
+      SiteVerificationTag: eYTteUmuhinj42RTTPlY1SrZXHkBP_ibiGhlM9GHAMk
 
     bing:
-      SiteVerificationTag: eYTteUmuhinj42RTTPlY1SrZXHkBP_ibiGhlM9GHAMk
+      SiteVerificationTag: BC3E4C5EA9030413F989C6C96EAEE97C
 
     yandex:
       SiteVerificationTag: 4ba6db988d52b1b1
