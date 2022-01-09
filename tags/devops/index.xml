@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>devops on a developer&#39;s journey to the cloud</title>
+    <link>https://binick.github.io/tags/devops/</link>
+    <description>Recent content in devops on a developer&#39;s journey to the cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 02 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://binick.github.io/tags/devops/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to include code coverage in Azure DevOps pipeline?</title>
+      <link>https://binick.github.io/posts/2021-01-02_azure-devops-code-coverage/</link>
+      <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://binick.github.io/posts/2021-01-02_azure-devops-code-coverage/</guid>
+      <description>By code coverage, we mean the action of trying to measure how much of our code has been executed by our tests. This sound like
+ TL;DR
+Untested code is a broken code. Definitely a strong statement but true in a way, we don&amp;rsquo;t always manage to get enough coverage. Often this happens because we don&amp;rsquo;t have time, other times because despite having written tests we are not able to read the metrics.</description>
+    </item>
+    
+  </channel>
+</rss>

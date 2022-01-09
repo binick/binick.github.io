@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>azure on a developer&#39;s journey to the cloud</title>
+    <link>https://binick.github.io/it/tags/azure/</link>
+    <description>Recent content in azure on a developer&#39;s journey to the cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 08 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://binick.github.io/it/tags/azure/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sviluppare soluzioni integrate con Active Directory B2C ed Azure Event Grid.</title>
+      <link>https://binick.github.io/it/posts/2022-01-10_aadb2c-subscribe-to-user-registration-event/</link>
+      <pubDate>Sat, 08 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://binick.github.io/it/posts/2022-01-10_aadb2c-subscribe-to-user-registration-event/</guid>
+      <description>In un articolo precedente abbiamo visto Come arricchire un JWT emesso da Active Directory B2C con i criteri personalizzati.
+In quell&amp;rsquo;articolo abbiamo parlato di come sia possibile aggiungere ad un JWT informazioni esterne a Microsoft Graph mediante l&amp;rsquo;uso di una Logic App ed un Blob Storage.
+In questo invece vedremo come sia possibile creare una soluzioni che integri Azure Active Directory B2C.
+Seguendo la traccia di quanto trattato nel precedente articolo vedremo come salvare su Blob Storage dati fittizi alla registrazione di un utente.</description>
+    </item>
+    
+    <item>
+      <title>Come arricchire un JWT emesso da Active Directory B2C con i criteri personalizzati.</title>
+      <link>https://binick.github.io/it/posts/2021-12-27_enrich-a-jwt-token-with-ief/</link>
+      <pubDate>Mon, 27 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://binick.github.io/it/posts/2021-12-27_enrich-a-jwt-token-with-ief/</guid>
+      <description>Tempo fa mi è capitato di dover valorizzare il JSON Web Token emesso da Azure Active Directory B2C con informazioni presenti su un sistema esterno.
+Per realizzare ciò sfruttai le possibilità di personalizzazione offerte dai criteri personalizzati.
+Introduzione ad Identity Expirience Framework. Identity Expirience Framework rappresenta il contesto orchestrazione di un flusso di interazione con Azure AD B2C. I criteri personalizzati ne rappresentano l&amp;rsquo;espressività e ci consentono a noi sviluppatori di definire l&amp;rsquo;interno flusso attraverso una serie di uno o piὺ file di markup.</description>
+    </item>
+    
+  </channel>
+</rss>
