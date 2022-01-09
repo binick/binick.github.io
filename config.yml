@@ -10,8 +10,11 @@ buildFuture: false
 buildExpored: false
 buildExpired: false
 enableEmoji: true
+enableGitInfo: true
 
-googleAnalytics: UA-181166811-1
+copyright: See this site's source code [here](https://github.com/binick/binick.github.io), licensed under GPLv3.
+
+googleAnalytics: G-H2SCJP0ZQD
 # disqusShortname: binick-github-io
 
 minify:
@@ -81,7 +84,7 @@ params:
       SiteVerificationTag: BC3E4C5EA9030413F989C6C96EAEE97C
 
     yandex:
-      SiteVerificationTag: 4ba6db988d52b1b1
+      SiteVerificationTag: 72e5d19a7266b9fa
 
 markup:
 
@@ -115,6 +118,9 @@ menu:
     - name: Tags
       url: /tags/
       weight: 10
+    - name: Series
+      url: /series/
+      weight: 10
       
 languages:
 
@@ -123,3 +129,33 @@ languages:
   
   it:
     languageName: Italiano
+    copyright: Il codice sorgente di questo sito è disponibile [qua](https://github.com/binick/binick.github.io), licenziato sotto GPLv3.
+
+    label:
+      text: "il viaggio di uno sviluppatore..."
+      icon: /me.png
+      iconHeight: 35
+
+    homeInfoParams:
+      Title: "... verso il cloud"
+
+    menu:
+
+      main:
+        - name: Archivio
+          url: /archives/
+          weight: 10
+        - name: Ricerca
+          url: /search/
+          weight: 5
+        - name: Tags
+          url: /tags/
+          weight: 10
+        - name: Serie
+          url: /series/
+          weight: 10
+
+taxonomies:
+  category: categories
+  tag: tags
+  series: series

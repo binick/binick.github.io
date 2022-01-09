@@ -2,6 +2,7 @@
 title: Develop integrated solutions with Active Directory B2C and Azure Event Grid.
 date: 2022-01-08
 author: Nicola Biancolini
+description: Azure Active Directory B2C is the Identity system offered by Microsoft and hosted on Azure. Its strength is the complete integration with all identities and resources managed in our tenant on Azure. It offers a set of cooked and eaten presonalizations for authentication and authorization flows, but sometimes there are cases where these flows are not enough and in this post we see how you can customize them.
 series: 
   - Identity Experience Framework
 keywords:
@@ -14,7 +15,6 @@ tags:
   - azure
   - active directory b2c
   - event grid
-draft: true
 ---
 
 In the previous post, we have seen [how to enrich a JWT issued by Active Directory B2C with custom policies](../2021-12-27_enrich-a-jwt-token-with-ief).

@@ -1,7 +1,7 @@
 ---
-title: About me
+title: Chi sono
 layout: about
-summary: About me
+summary: Chi sono
 ---
 
 From the first basics in Pascal through Qt and QML, C# and SQL.
