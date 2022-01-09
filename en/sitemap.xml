@@ -121,6 +121,16 @@
     <loc>https://binick.github.io/about-me/</loc>
   </url><url>
     <loc>https://binick.github.io/archives/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="https://binick.github.io/it/archives/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://binick.github.io/archives/"
+                />
   </url><url>
     <loc>https://binick.github.io/categories/</loc>
     <xhtml:link
@@ -135,5 +145,15 @@
                 />
   </url><url>
     <loc>https://binick.github.io/search/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="https://binick.github.io/it/search/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://binick.github.io/search/"
+                />
   </url>
 </urlset>

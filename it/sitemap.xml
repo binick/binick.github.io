@@ -106,6 +106,18 @@
                 href="https://binick.github.io/it/posts/2021-12-27_enrich-a-jwt-token-with-ief/"
                 />
   </url><url>
+    <loc>https://binick.github.io/it/archives/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://binick.github.io/archives/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="https://binick.github.io/it/archives/"
+                />
+  </url><url>
     <loc>https://binick.github.io/it/categories/</loc>
     <xhtml:link
                 rel="alternate"
@@ -116,6 +128,18 @@
                 rel="alternate"
                 hreflang="it"
                 href="https://binick.github.io/it/categories/"
+                />
+  </url><url>
+    <loc>https://binick.github.io/it/search/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://binick.github.io/search/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="https://binick.github.io/it/search/"
                 />
   </url>
 </urlset>
