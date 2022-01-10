@@ -12,9 +12,7 @@
       <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>https://binick.github.io/posts/2021-01-02_azure-devops-code-coverage/</guid>
-      <description>By code coverage, we mean the action of trying to measure how much of our code has been executed by our tests. This sound like
- TL;DR
-Untested code is a broken code. Definitely a strong statement but true in a way, we don&amp;rsquo;t always manage to get enough coverage. Often this happens because we don&amp;rsquo;t have time, other times because despite having written tests we are not able to read the metrics.</description>
+      <description>Azure Pipelines is a tool in the suite called Azure DevOps for software lifecycle management. One of the features offered is to make available dashboards that show the status of our artifacts at a glance. So we will see how you can generate an overview of the status of code coverage when there are multiple test projects.</description>
     </item>
     
   </channel>

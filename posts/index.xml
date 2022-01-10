@@ -12,9 +12,7 @@
       <pubDate>Sat, 08 Jan 2022 00:00:00 +0000</pubDate>
       
       <guid>https://binick.github.io/posts/2022-01-10_aadb2c-subscribe-to-user-registration-event/</guid>
-      <description>In the previous post, we have seen how to enrich a JWT issued by Active Directory B2C with custom policies.
-In that post, we talked about how it&amp;rsquo;s possible to add information external to Microsoft Graph to a JWT through the use of a Logic App and a Blob Storage.
-Instead, in this one, we will see how it is possible to create a solution that integrates Azure Active Directory B2C.</description>
+      <description>Azure Active Directory B2C is the Identity system offered by Microsoft and hosted on Azure. Its strength is the complete integration with all identities and resources managed in our tenant on Azure. It offers a set of cooked and eaten presonalizations for authentication and authorization flows, but sometimes there are cases where these flows are not enough and in this post we see how you can customize them.</description>
     </item>
     
     <item>
@@ -23,9 +21,7 @@ Instead, in this one, we will see how it is possible to create a solution that i
       <pubDate>Mon, 27 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://binick.github.io/posts/2021-12-27_enrich-a-jwt-token-with-ief/</guid>
-      <description>Some time ago I was faced to need to enrich the JSON Web Token issued by Azure Active Directory B2C with information present on an external system.
-To create this scenario, I leveraged the customization options offered by custom criteria.
-Introduction to Identity Experience Framework. Identity Experience Framework represents the orchestration context of an interaction flow with Azure AD B2C. Custom criteria represent its expressiveness and allow us, developers, to define the internal flow through a series of one or more markup files.</description>
+      <description>Azure Active Directory B2C is the Identity system offered by Microsoft and hosted on Azure. Its strength is the complete integration with all identities and resources managed in our tenant on Azure. It offers a set of cooked and eaten presonalizations for authentication and authorization flows, but sometimes there are cases where these flows are not enough and in this post we see how you can customize them.</description>
     </item>
     
     <item>
@@ -34,9 +30,7 @@ Introduction to Identity Experience Framework. Identity Experience Framework rep
       <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>https://binick.github.io/posts/2021-01-02_azure-devops-code-coverage/</guid>
-      <description>By code coverage, we mean the action of trying to measure how much of our code has been executed by our tests. This sound like
- TL;DR
-Untested code is a broken code. Definitely a strong statement but true in a way, we don&amp;rsquo;t always manage to get enough coverage. Often this happens because we don&amp;rsquo;t have time, other times because despite having written tests we are not able to read the metrics.</description>
+      <description>Azure Pipelines is a tool in the suite called Azure DevOps for software lifecycle management. One of the features offered is to make available dashboards that show the status of our artifacts at a glance. So we will see how you can generate an overview of the status of code coverage when there are multiple test projects.</description>
     </item>
     
     <item>
@@ -45,10 +39,7 @@ Untested code is a broken code. Definitely a strong statement but true in a way,
       <pubDate>Thu, 22 Oct 2020 00:00:00 +0000</pubDate>
       
       <guid>https://binick.github.io/posts/2020-10-22_sqlserver-efcore-json/</guid>
-      <description>Sometimes we have been forced to work with JSON stored on table columns, it will have happened to you too!
-In this post I want to show you how work with that using EntityFramework Core
- dotnet / efcore   Clearly this is one of many possible ways.
-We could talk for a long time about the choice to store JSON into RDBMS is a good or bad choice, but the intent of this post isn&amp;rsquo;t make a rant.</description>
+      <description>Sometimes we are forced to work with JSON stored on table columns, it will have happened to you too! In this post I want to show you how to work with that using EntityFramework Core.</description>
     </item>
     
   </channel>

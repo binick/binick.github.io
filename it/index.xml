@@ -24,9 +24,7 @@ Seguendo la traccia di quanto trattato nel precedente articolo vedremo come salv
       <pubDate>Mon, 27 Dec 2021 00:00:00 +0000</pubDate>
       
       <guid>https://binick.github.io/it/posts/2021-12-27_enrich-a-jwt-token-with-ief/</guid>
-      <description>Tempo fa mi è capitato di dover valorizzare il JSON Web Token emesso da Azure Active Directory B2C con informazioni presenti su un sistema esterno.
-Per realizzare ciò sfruttai le possibilità di personalizzazione offerte dai criteri personalizzati.
-Introduzione ad Identity Expirience Framework. Identity Expirience Framework rappresenta il contesto orchestrazione di un flusso di interazione con Azure AD B2C. I criteri personalizzati ne rappresentano l&amp;rsquo;espressività e ci consentono a noi sviluppatori di definire l&amp;rsquo;interno flusso attraverso una serie di uno o piὺ file di markup.</description>
+      <description>Azure Active Directory B2C è il sistema di Identità  offerto da Microsoft ed ospitato su Azure. Le sua forza è la completa integrazione con tutte le identità e risorse gestire nel nostro tenant su Azure. Offre una serie di presonalizzazioni cotte e mangiate per i flussi di autenticazione ed autorizzazione, ma a volte ci sono casi nei quali questi flussi non bastano ed in questo post vediamo come è possibile personalizzarli.</description>
     </item>
     
     

@@ -12,9 +12,7 @@
       <pubDate>Sat, 08 Jan 2022 00:00:00 +0000</pubDate>
       
       <guid>https://binick.github.io/posts/2022-01-10_aadb2c-subscribe-to-user-registration-event/</guid>
-      <description>In the previous post, we have seen how to enrich a JWT issued by Active Directory B2C with custom policies.
-In that post, we talked about how it&amp;rsquo;s possible to add information external to Microsoft Graph to a JWT through the use of a Logic App and a Blob Storage.
-Instead, in this one, we will see how it is possible to create a solution that integrates Azure Active Directory B2C.</description>
+      <description>Azure Active Directory B2C is the Identity system offered by Microsoft and hosted on Azure. Its strength is the complete integration with all identities and resources managed in our tenant on Azure. It offers a set of cooked and eaten presonalizations for authentication and authorization flows, but sometimes there are cases where these flows are not enough and in this post we see how you can customize them.</description>
     </item>
     
   </channel>
