@@ -2,6 +2,7 @@
 title: SQL Server, EF Core, JSON 👀
 date: 2020-10-22
 author: Nicola Biancolini
+description: Sometimes we are forced to work with JSON stored on table columns, it will have happened to you too! In this post I want to show you how to work with that using EntityFramework Core.
 keywords:
   - efcore
   - sql server
@@ -12,7 +13,7 @@ tags:
 
 Sometimes we have been forced to work with JSON stored on table columns, it will have happened to you too!
 
-In this post I want to show you how work with that using **EntityFramework Core**
+In this post, I want to show you how to work with that using **EntityFramework Core**
 
 {{< github dotnet efcore >}}
 
