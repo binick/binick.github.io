@@ -5,6 +5,7 @@
     <link>https://binick.github.io/tags/devops/</link>
     <description>Recent content in devops on a developer&#39;s journey to the cloud</description>
     <generator>Hugo -- gohugo.io</generator>
+    <copyright>See this site&#39;s source code [here](https://github.com/binick/binick.github.io), licensed under GPLv3.</copyright>
     <lastBuildDate>Sat, 02 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://binick.github.io/tags/devops/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to include code coverage in Azure DevOps pipeline?</title>

@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://binick.github.io/it/</loc>
-    <lastmod>2022-01-08T00:00:00+00:00</lastmod>
+    <lastmod>2022-01-12T15:00:15+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -16,7 +16,7 @@
                 />
   </url><url>
     <loc>https://binick.github.io/it/tags/active-directory-b2c/</loc>
-    <lastmod>2022-01-08T00:00:00+00:00</lastmod>
+    <lastmod>2022-01-12T15:00:15+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -29,7 +29,7 @@
                 />
   </url><url>
     <loc>https://binick.github.io/it/tags/azure/</loc>
-    <lastmod>2022-01-08T00:00:00+00:00</lastmod>
+    <lastmod>2022-01-12T15:00:15+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -42,7 +42,7 @@
                 />
   </url><url>
     <loc>https://binick.github.io/it/tags/event-grid/</loc>
-    <lastmod>2022-01-08T00:00:00+00:00</lastmod>
+    <lastmod>2022-01-12T15:00:15+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -55,7 +55,7 @@
                 />
   </url><url>
     <loc>https://binick.github.io/it/series/identity-experience-framework/</loc>
-    <lastmod>2022-01-08T00:00:00+00:00</lastmod>
+    <lastmod>2022-01-12T15:00:15+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -68,7 +68,7 @@
                 />
   </url><url>
     <loc>https://binick.github.io/it/posts/</loc>
-    <lastmod>2022-01-08T00:00:00+00:00</lastmod>
+    <lastmod>2022-01-12T15:00:15+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -81,7 +81,7 @@
                 />
   </url><url>
     <loc>https://binick.github.io/it/series/</loc>
-    <lastmod>2022-01-08T00:00:00+00:00</lastmod>
+    <lastmod>2022-01-12T15:00:15+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -94,7 +94,7 @@
                 />
   </url><url>
     <loc>https://binick.github.io/it/posts/2022-01-10_aadb2c-subscribe-to-user-registration-event/</loc>
-    <lastmod>2022-01-08T00:00:00+00:00</lastmod>
+    <lastmod>2022-01-12T15:00:15+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -107,7 +107,7 @@
                 />
   </url><url>
     <loc>https://binick.github.io/it/tags/</loc>
-    <lastmod>2022-01-08T00:00:00+00:00</lastmod>
+    <lastmod>2022-01-12T15:00:15+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -120,7 +120,7 @@
                 />
   </url><url>
     <loc>https://binick.github.io/it/posts/2021-12-27_enrich-a-jwt-token-with-ief/</loc>
-    <lastmod>2021-12-27T00:00:00+00:00</lastmod>
+    <lastmod>2022-01-12T15:00:15+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -133,6 +133,7 @@
                 />
   </url><url>
     <loc>https://binick.github.io/it/archives/</loc>
+    <lastmod>2022-01-12T15:00:15+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -156,7 +157,21 @@
                 href="https://binick.github.io/it/categories/"
                 />
   </url><url>
+    <loc>https://binick.github.io/it/about-me/</loc>
+    <lastmod>2022-01-12T15:00:15+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://binick.github.io/about-me/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="https://binick.github.io/it/about-me/"
+                />
+  </url><url>
     <loc>https://binick.github.io/it/search/</loc>
+    <lastmod>2022-01-12T15:00:15+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
