@@ -12,6 +12,7 @@ tags:
   - azure
   - cloud adoption
 draft: true
+
 ---
 
 L'Amministratore Delegato dell'azienda [Postal Bird](../../case-study/postalbird) ha espresso il bisogno di reingegnerizzare il portale web in quanto alcuni clienti lamentano della lentezza nell'utilizzo di alcune sue parti.

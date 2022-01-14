@@ -18,6 +18,9 @@ copyright: See this site's source code [here](https://github.com/binick/binick.g
 googleAnalytics: G-H2SCJP0ZQD
 # disqusShortname: binick-github-io
 
+permalinks:
+  posts: /:year/:month/:day/:filename/
+
 minify:
   disableXML: true
   minifyOutput: true
@@ -72,8 +75,13 @@ params:
       url: '/index.xml'
 
   editPost:
-    URL: "https://github.com/binick/binick.github.io/tree/main/content"
-    Text: "✏️"
+    URL: https://github.com/binick/binick.github.io/tree/main/content
+    Text: Suggest changes
+    appendFilePath: true
+
+  changelog:
+    URL: https://github.com/binick/binick.github.io/commits/main/content
+    Text: Changelog
     appendFilePath: true
 
   analytics:
@@ -136,6 +144,18 @@ languages:
       text: "il viaggio di uno sviluppatore..."
       icon: /me.png
       iconHeight: 35
+
+    params:
+
+      editPost:
+        URL: https://github.com/binick/binick.github.io/tree/main/content
+        Text: Suggerisci modifiche
+        appendFilePath: true
+
+      changelog:
+        URL: https://github.com/binick/binick.github.io/commits/main/content
+        Text: Modifiche
+        appendFilePath: true
 
     homeInfoParams:
       Title: "... verso il cloud"

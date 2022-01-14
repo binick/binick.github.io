@@ -9,6 +9,8 @@ keywords:
   - msbuild
 tags:
   - devops
+aliases:
+  - /posts/2021-01-02_azure-devops-code-coverage
 cover:
   image: cover.jpg
   alt: Post cover

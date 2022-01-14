@@ -16,6 +16,7 @@ tags:
 aliases:
   - /posts/2021-12-27_enrich-a-jwt-token-with-ief
   - /posts/2021-12-25_enrich-a-jwt-token-with-ief
+  - /posts/2021-12-27_enrich-a-jwt-token-with-ief
 cover:
   image: cover.jpg
   alt: Post cover

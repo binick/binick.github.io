@@ -15,6 +15,8 @@ tags:
   - azure
   - active directory b2c
   - event grid
+aliases:
+  - /it/posts/2022-01-10_aadb2c-subscribe-to-user-registration-event
 cover:
   image: cover.jpg
   alt: Foto di copertina

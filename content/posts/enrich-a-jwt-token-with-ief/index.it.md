@@ -14,8 +14,7 @@ tags:
   - azure
   - active directory b2c
 aliases:
-  - /posts/2021-12-27_enrich-a-jwt-token-with-ief
-  - /posts/2021-12-25_enrich-a-jwt-token-with-ief
+  - /it/posts/2021-12-27_enrich-a-jwt-token-with-ief
 cover:
   image: cover.jpg
   alt: Foto di copertina

@@ -8,6 +8,8 @@ keywords:
   - sql server
 tags:
   - tip
+aliases:
+  - /posts/2020-10-22_sqlserver-efcore-json
 cover:
   image: cover.jpg
   alt: Post cover
