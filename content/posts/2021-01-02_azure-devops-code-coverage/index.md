@@ -9,6 +9,10 @@ keywords:
   - msbuild
 tags:
   - devops
+cover:
+  image: cover.jpg
+  alt: Post cover
+  caption: Photo by <a href="https://unsplash.com/@matthewhenry?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Matthew Henry</a> on <a href="https://unsplash.com/s/photos/blanket?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 ---
 
 By code coverage, we mean the action of trying to measure how much of our code has been executed by our tests.

@@ -15,6 +15,10 @@ tags:
   - azure
   - active directory b2c
   - event grid
+cover:
+  image: cover.jpg
+  alt: Post cover
+  caption: Photo by [Elena Mozhvilo](https://unsplash.com/@miracleday?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 ---
 
 In the previous post, we have seen [how to enrich a JWT issued by Active Directory B2C with custom policies](../2021-12-27_enrich-a-jwt-token-with-ief).

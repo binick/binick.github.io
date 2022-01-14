@@ -16,6 +16,10 @@ tags:
 aliases:
   - /posts/2021-12-27_enrich-a-jwt-token-with-ief
   - /posts/2021-12-25_enrich-a-jwt-token-with-ief
+cover:
+  image: cover.jpg
+  alt: Foto di copertina
+  caption: Foto di <a href="https://unsplash.com/@yasinyusuf?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Yasin Yusuf</a> su <a href="https://unsplash.com/s/photos/identity?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 ---
 
 Tempo fa mi è capitato di dover valorizzare il JSON Web Token emesso da _Azure Active Directory B2C_ con informazioni presenti su un sistema esterno.

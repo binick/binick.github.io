@@ -1,0 +1,162 @@
+baseURL: 'https://binick.github.io'
+title: a developer's journey to the cloud
+paginate: 5
+theme: hugo-PaperMod
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: true
+buildFuture: true
+buildExpored: false
+buildExpired: false
+enableEmoji: true
+enableGitInfo: true
+relativeURLs: true
+
+copyright: See this site's source code [here](https://github.com/binick/binick.github.io), licensed under GPLv3.
+
+googleAnalytics: G-H2SCJP0ZQD
+# disqusShortname: binick-github-io
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+params:
+  author: Nicola Biancolini
+  description: "a developer's journey to the cloud"
+  ShowReadingTime: true
+  ShowShareButtons: true
+  comments: false
+  defaultTheme: auto
+  displayFullLangName: true
+  ShowCodeCopyButtons: true
+  ShowBreadCrumbs: false
+  disableThemeToggle: false
+  disableSpecial1stPost: false
+
+  assets:
+    favicon: /favicon.ico
+    disableHLJS: true
+
+  label:
+    text: "a developer's journey..."
+    icon: /me.png
+    iconHeight: 35
+
+  # profile-mode
+  profileMode:
+    enabled: false # needs to be explicitly set
+
+  # home-info mode
+  homeInfoParams:
+    Title: "... to the cloud"
+    # Content: Photo by [sendi gibran](https://unsplash.com/@sendi_r_gibran?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText") on [Unsplash](https://unsplash.com/images/nature/cloud?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+
+  socialIcons:
+    - name: github
+      url: 'https://github.com/binick'
+    - name: stackoverflow
+      url: 'https://stackoverflow.com/users/7684814/binick'
+    - name: twitter
+      url: 'https://twitter.com/nbiancolini'
+    - name: linkedin
+      url: 'https://www.linkedin.com/in/nicolabiancolini'
+    - name: rss
+      url: '/index.xml'
+
+  editPost:
+    URL: "https://github.com/binick/binick.github.io/tree/main/content"
+    Text: "✏️"
+    appendFilePath: true
+
+  analytics:
+
+    google:
+      SiteVerificationTag: eYTteUmuhinj42RTTPlY1SrZXHkBP_ibiGhlM9GHAMk
+
+    bing:
+      SiteVerificationTag: BC3E4C5EA9030413F989C6C96EAEE97C
+
+    yandex:
+      SiteVerificationTag: 72e5d19a7266b9fa
+
+markup:
+
+  goldmark:
+
+    renderer:
+      unsafe: true
+
+  highlight:
+    anchorLineNos: true
+    codeFences: true
+    guessSyntax: false
+    hl_Lines: ""
+    lineAnchors: ""
+    lineNoStart: 1
+    lineNos: true
+    lineNumbersInTable: false
+    noClasses: false
+    pygmentsUseClasses: true
+    tabWidth: 2
+
+menu:
+
+  main:
+    - name: Archives
+      url: /archives/
+      weight: 10
+    - name: Search
+      url: /search/
+      weight: 5
+    - name: Tags
+      url: /tags/
+      weight: 10
+    - name: Series
+      url: /series/
+      weight: 10
+      
+languages:
+
+  en:
+    languageName: English
+  
+  it:
+    languageName: Italiano
+    copyright: Il codice sorgente di questo sito è disponibile [qua](https://github.com/binick/binick.github.io), licenziato sotto GPLv3.
+
+    label:
+      text: "il viaggio di uno sviluppatore..."
+      icon: /me.png
+      iconHeight: 35
+
+    homeInfoParams:
+      Title: "... verso il cloud"
+
+    menu:
+
+      main:
+        - name: Archivio
+          url: /archives/
+          weight: 10
+        - name: Ricerca
+          url: /search/
+          weight: 5
+        - name: Tags
+          url: /tags/
+          weight: 10
+        - name: Serie
+          url: /series/
+          weight: 10
+
+taxonomies:
+  category: categories
+  tag: tags
+  series: series
