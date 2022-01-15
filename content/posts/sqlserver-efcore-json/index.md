@@ -2,13 +2,18 @@
 title: SQL Server, EF Core, JSON 👀
 date: 2020-10-22
 author: Nicola Biancolini
-description: Sometimes we are forced to work with JSON stored on table columns, it will have happened to you too! In this post I want to show you how to work with that using EntityFramework Core.
+description: Sometimes we are forced to work with JSON stored on table columns, it will have happened to you too! In this post, I want to show you how to work with that using EntityFramework Core.
 keywords:
   - efcore
   - sql server
 tags:
   - tip
-  - azure
+aliases:
+  - /posts/2020-10-22_sqlserver-efcore-json
+cover:
+  image: cover.jpg
+  alt: Post cover
+  caption: Photo by [Hsiao Aristides](https://unsplash.com/@hsiaoaristides?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on (Unsplash)[https://unsplash.com/s/photos/elephant?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText]
 ---
 
 Sometimes we have been forced to work with JSON stored on table columns, it will have happened to you too!
@@ -19,9 +24,9 @@ In this post, I want to show you how to work with that using **EntityFramework C
 
 Clearly this is one of many possible ways.
 
-We could talk for a long time about the choice to store JSON into RDBMS is a good or bad choice, but the intent of this post isn't make a rant.
+We could talk for a long time about the choice to store JSON into RDBMS is a good or bad choice, but the intent of this post isn't making a rant.
 
-Ok, well. First of all take a look to JSON that we want to persist into a table column
+Ok, well. First of all, take a look to JSON that we want to persist into a table column
 
 {{< gist binick 7c40dc3dcb74dae0485ebc95bbc4b015 "metadata.json" >}}
 

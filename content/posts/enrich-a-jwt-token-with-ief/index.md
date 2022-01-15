@@ -16,6 +16,11 @@ tags:
 aliases:
   - /posts/2021-12-27_enrich-a-jwt-token-with-ief
   - /posts/2021-12-25_enrich-a-jwt-token-with-ief
+  - /posts/2021-12-27_enrich-a-jwt-token-with-ief
+cover:
+  image: cover.jpg
+  alt: Post cover
+  caption: Photo by <a href="https://unsplash.com/@yasinyusuf?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Yasin Yusuf</a> on <a href="https://unsplash.com/s/photos/identity?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 ---
 
 Some time ago I was faced to need to enrich the JSON Web Token issued by _Azure Active Directory B2C_ with information present on an external system.
