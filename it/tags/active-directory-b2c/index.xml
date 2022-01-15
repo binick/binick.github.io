@@ -9,19 +9,19 @@
     <lastBuildDate>Sat, 08 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://binick.github.io/it/tags/active-directory-b2c/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sviluppare soluzioni integrate con Active Directory B2C ed Azure Event Grid.</title>
-      <link>https://binick.github.io/it/posts/2022-01-10_aadb2c-subscribe-to-user-registration-event/</link>
+      <link>https://binick.github.io/it/2022/01/08/aadb2c-subscribe-to-user-registration-event/</link>
       <pubDate>Sat, 08 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://binick.github.io/it/posts/2022-01-10_aadb2c-subscribe-to-user-registration-event/</guid>
+      <guid>https://binick.github.io/it/2022/01/08/aadb2c-subscribe-to-user-registration-event/</guid>
       <description>Azure Active Directory B2C è il sistema di Identità  offerto da Microsoft ed ospitato su Azure. Le sua forza è la completa integrazione con tutte le identità e risorse gestire nel nostro tenant su Azure. Offre una serie di presonalizzazioni cotte e mangiate per i flussi di autenticazione ed autorizzazione, ma a volte ci sono casi nei quali questi flussi non bastano ed in questo post vediamo come è possibile personalizzarli.</description>
     </item>
     
     <item>
       <title>Come arricchire un JWT emesso da Active Directory B2C con i criteri personalizzati.</title>
-      <link>https://binick.github.io/it/posts/2021-12-27_enrich-a-jwt-token-with-ief/</link>
+      <link>https://binick.github.io/it/2021/12/27/enrich-a-jwt-token-with-ief/</link>
       <pubDate>Mon, 27 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://binick.github.io/it/posts/2021-12-27_enrich-a-jwt-token-with-ief/</guid>
+      <guid>https://binick.github.io/it/2021/12/27/enrich-a-jwt-token-with-ief/</guid>
       <description>Azure Active Directory B2C è il sistema di Identità  offerto da Microsoft ed ospitato su Azure. Le sua forza è la completa integrazione con tutte le identità e risorse gestire nel nostro tenant su Azure. Offre una serie di presonalizzazioni cotte e mangiate per i flussi di autenticazione ed autorizzazione, ma a volte ci sono casi nei quali questi flussi non bastano ed in questo post vediamo come è possibile personalizzarli.</description>
     </item>
     

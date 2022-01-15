@@ -9,10 +9,10 @@
     <lastBuildDate>Sat, 02 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://binick.github.io/tags/devops/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to include code coverage in Azure DevOps pipeline?</title>
-      <link>https://binick.github.io/posts/2021-01-02_azure-devops-code-coverage/</link>
+      <link>https://binick.github.io/2021/01/02/azure-devops-code-coverage/</link>
       <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://binick.github.io/posts/2021-01-02_azure-devops-code-coverage/</guid>
+      <guid>https://binick.github.io/2021/01/02/azure-devops-code-coverage/</guid>
       <description>Azure Pipelines is a tool in the suite called Azure DevOps for software lifecycle management. One of the features offered is to make available dashboards that show the status of our artifacts at a glance. So we will see how you can generate an overview of the status of code coverage when there are multiple test projects.</description>
     </item>
     

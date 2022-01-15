@@ -9,19 +9,19 @@
     <lastBuildDate>Sat, 08 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://binick.github.io/tags/active-directory-b2c/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Develop integrated solutions with Active Directory B2C and Azure Event Grid.</title>
-      <link>https://binick.github.io/posts/2022-01-10_aadb2c-subscribe-to-user-registration-event/</link>
+      <link>https://binick.github.io/2022/01/08/aadb2c-subscribe-to-user-registration-event/</link>
       <pubDate>Sat, 08 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://binick.github.io/posts/2022-01-10_aadb2c-subscribe-to-user-registration-event/</guid>
-      <description>Azure Active Directory B2C is the Identity system offered by Microsoft and hosted on Azure. Its strength is the complete integration with all identities and resources managed in our tenant on Azure. It offers a set of cooked and eaten presonalizations for authentication and authorization flows, but sometimes there are cases where these flows are not enough and in this post we see how you can customize them.</description>
+      <guid>https://binick.github.io/2022/01/08/aadb2c-subscribe-to-user-registration-event/</guid>
+      <description>Azure Active Directory B2C is the Identity system offered by Microsoft and hosted on Azure. Its strength is the complete integration with all identities and resources managed in our tenant on Azure. It offers a set of cooked and eaten personalizations for authentication and authorization flows, but sometimes there are cases where these flows are not enough and in this post, we see how you can customize them.</description>
     </item>
     
     <item>
       <title>How to enrich a JWT issued by Active Directory B2C with custom policies.</title>
-      <link>https://binick.github.io/posts/2021-12-27_enrich-a-jwt-token-with-ief/</link>
+      <link>https://binick.github.io/2021/12/27/enrich-a-jwt-token-with-ief/</link>
       <pubDate>Mon, 27 Dec 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://binick.github.io/posts/2021-12-27_enrich-a-jwt-token-with-ief/</guid>
+      <guid>https://binick.github.io/2021/12/27/enrich-a-jwt-token-with-ief/</guid>
       <description>Azure Active Directory B2C is the Identity system offered by Microsoft and hosted on Azure. Its strength is the complete integration with all identities and resources managed in our tenant on Azure. It offers a set of cooked and eaten presonalizations for authentication and authorization flows, but sometimes there are cases where these flows are not enough and in this post we see how you can customize them.</description>
     </item>
     
