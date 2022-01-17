@@ -15,6 +15,7 @@ tags:
   - active directory b2c
 aliases:
   - /it/posts/2021-12-27_enrich-a-jwt-token-with-ief
+draft: true
 cover:
   image: cover.jpg
   alt: Foto di copertina

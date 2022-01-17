@@ -13,6 +13,7 @@ keywords:
 tags: 
   - azure
   - active directory b2c
+draft: true
 aliases:
   - /posts/2021-12-27_enrich-a-jwt-token-with-ief
   - /posts/2021-12-25_enrich-a-jwt-token-with-ief

@@ -16,6 +16,14 @@ cover:
 
 E' un problema di percezione!
 
+<<<<<<< HEAD
 Quando inizia un nuovo progetto tutti i nostri sforzi si concentrano sull'identificare i requisiti funzionali, disegnare un'architettura, definire linee guida per i componenti dell'interfaccia utente e cosi via per tutti i vari temi che ne contribuiscono alla realizzazione, tranne uno.  La sicurezza è il tema che 
+=======
+<<<<<<< HEAD
+Quando inizia un nuovo progetto tutti i nostri sforzi si concentrano sull'identificare i requisiti funzionali, disegnare un'architettura, definire linee guida per i componenti dell'interfaccia utente e cosi via per tutti i vari temi che ne contribuiscono alla realizzazione, tranne uno.  La sicurezza è il tema che 
+=======
+Quando inizia un nuovo progetto tutti i nostri sforzi si concentrano sull'identificare i requisiti funzionali, disegnare un'architettura, definire linee guida per i componenti dell'interfaccia utente e cosi via per tutti i vari temi che ne contribuiscono alla realizzazione, tranne uno
+>>>>>>> main
+>>>>>>> main
 
 Per risolvere questa sfida in _Azure_ è possibile utilizzare que
