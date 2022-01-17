@@ -13,7 +13,7 @@
       <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>https://binick.github.io/2021/01/02/azure-devops-code-coverage/</guid>
-      <description>Azure Pipelines is a tool in the suite called Azure DevOps for software lifecycle management. One of the features offered is to make available dashboards that show the status of our artifacts at a glance. So we will see how you can generate an overview of the status of code coverage when there are multiple test projects.</description>
+      <description>Managing multiple reports in Azure DevOps can get complicated, let&amp;#39;s see how MSBuild can help us.</description>
     </item>
     
   </channel>

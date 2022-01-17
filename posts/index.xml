@@ -13,16 +13,7 @@
       <pubDate>Sat, 08 Jan 2022 00:00:00 +0000</pubDate>
       
       <guid>https://binick.github.io/2022/01/08/aadb2c-subscribe-to-user-registration-event/</guid>
-      <description>Azure Active Directory B2C is the Identity system offered by Microsoft and hosted on Azure. Its strength is the complete integration with all identities and resources managed in our tenant on Azure. It offers a set of cooked and eaten personalizations for authentication and authorization flows, but sometimes there are cases where these flows are not enough and in this post, we see how you can customize them.</description>
-    </item>
-    
-    <item>
-      <title>How to enrich a JWT issued by Active Directory B2C with custom policies.</title>
-      <link>https://binick.github.io/2021/12/27/enrich-a-jwt-token-with-ief/</link>
-      <pubDate>Mon, 27 Dec 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://binick.github.io/2021/12/27/enrich-a-jwt-token-with-ief/</guid>
-      <description>Azure Active Directory B2C is the Identity system offered by Microsoft and hosted on Azure. Its strength is the complete integration with all identities and resources managed in our tenant on Azure. It offers a set of cooked and eaten presonalizations for authentication and authorization flows, but sometimes there are cases where these flows are not enough and in this post we see how you can customize them.</description>
+      <description>Let&amp;#39;s see how you can integrate a user&amp;#39;s registration.</description>
     </item>
     
     <item>
@@ -31,7 +22,7 @@
       <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>https://binick.github.io/2021/01/02/azure-devops-code-coverage/</guid>
-      <description>Azure Pipelines is a tool in the suite called Azure DevOps for software lifecycle management. One of the features offered is to make available dashboards that show the status of our artifacts at a glance. So we will see how you can generate an overview of the status of code coverage when there are multiple test projects.</description>
+      <description>Managing multiple reports in Azure DevOps can get complicated, let&amp;#39;s see how MSBuild can help us.</description>
     </item>
     
     <item>
@@ -40,7 +31,7 @@
       <pubDate>Thu, 22 Oct 2020 00:00:00 +0000</pubDate>
       
       <guid>https://binick.github.io/2020/10/22/sqlserver-efcore-json/</guid>
-      <description>Sometimes we are forced to work with JSON stored on table columns, it will have happened to you too! In this post, I want to show you how to work with that using EntityFramework Core.</description>
+      <description>Sometimes we are forced to work with JSON, it will have happened to you too! In this post, I want to show you how to work with that using EF Core.</description>
     </item>
     
   </channel>
