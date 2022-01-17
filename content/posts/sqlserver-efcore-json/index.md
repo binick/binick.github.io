@@ -2,7 +2,7 @@
 title: SQL Server, EF Core, JSON 👀
 date: 2020-10-22
 author: Nicola Biancolini
-description: Sometimes we are forced to work with JSON stored on table columns, it will have happened to you too! In this post, I want to show you how to work with that using EntityFramework Core.
+description: Sometimes we are forced to work with JSON, it will have happened to you too! In this post, I want to show you how to work with that using EF Core.
 keywords:
   - efcore
   - sql server
@@ -13,7 +13,11 @@ aliases:
 cover:
   image: cover.jpg
   alt: Post cover
+<<<<<<< HEAD
+  caption: Photo by [Hsiao Aristides](https://unsplash.com/@hsiaoaristides?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/elephant?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+=======
   caption: Photo by [Hsiao Aristides](https://unsplash.com/@hsiaoaristides?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on (Unsplash)[https://unsplash.com/s/photos/elephant?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText]
+>>>>>>> main
 ---
 
 Sometimes we have been forced to work with JSON stored on table columns, it will have happened to you too!

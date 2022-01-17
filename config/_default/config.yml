@@ -1,6 +1,6 @@
 baseURL: 'https://binick.github.io'
 title: a developer's journey to the cloud
-paginate: 5
+paginate: 10
 theme: hugo-PaperMod
 
 enableInlineShortcodes: true
@@ -126,9 +126,12 @@ menu:
       weight: 5
     - name: Tags
       url: /tags/
-      weight: 10
+      weight: 15
     - name: Series
       url: /series/
+      weight: 10
+    - name: Case studies
+      url: /case-studies/
       weight: 10
       
 languages:
@@ -171,9 +174,12 @@ languages:
           weight: 5
         - name: Tags
           url: /tags/
-          weight: 10
+          weight: 15
         - name: Serie
           url: /series/
+          weight: 10
+        - name: Casi di studio
+          url: /case-studies/
           weight: 10
 
 taxonomies:
