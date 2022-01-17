@@ -2,6 +2,10 @@
 title: Panoramica di Postal Bird
 image: company-logo.png
 layout: casestudy
+casestudy: Postal Bird
+cover: 
+  image: company-logo.png
+  alt: Logo aziendale
 ---
 
 ![Postal Bird logo](company-logo.png)

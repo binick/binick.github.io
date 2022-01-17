@@ -2,7 +2,7 @@
 title: How to include code coverage in Azure DevOps pipeline?
 date: 2021-01-02
 author: Nicola Biancolini
-description: Azure Pipelines is a tool in the suite called Azure DevOps for software lifecycle management. One of the features offered is to make available dashboards that show the status of our artifacts at a glance. So we will see how you can generate an overview of the status of code coverage when there are multiple test projects.
+description: Managing multiple reports in Azure DevOps can get complicated, let's see how MSBuild can help us.
 keywords: 
   - coverlet
   - azure devops

@@ -2,7 +2,7 @@
 title: Come arricchire un JWT emesso da Active Directory B2C con i criteri personalizzati.
 date: 2021-12-27
 author: Nicola Biancolini
-description: Azure Active Directory B2C è il sistema di Identità  offerto da Microsoft ed ospitato su Azure. Le sua forza è la completa integrazione con tutte le identità e risorse gestire nel nostro tenant su Azure. Offre una serie di presonalizzazioni cotte e mangiate per i flussi di autenticazione ed autorizzazione, ma a volte ci sono casi nei quali questi flussi non bastano ed in questo post vediamo come è possibile personalizzarli.
+description: Aggiungere attestazioni ad un JWT, una soluzione pratica e veloce.
 series: 
   - Identity Experience Framework
 keywords: 

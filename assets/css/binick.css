@@ -1,3 +1,15 @@
+.two-columns {
+    column-count: 2;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+}
+
+.post-entry {
+    page-break-inside: avoid;
+    break-inside: avoid;
+    -webkit-break-inside: avoid;
+}
+
 .share-buttons {
     border: unset;
     justify-content: center;
@@ -13,4 +25,17 @@
 
 .post-content table th, .post-content table:not(.highlighttable) td {
     border-bottom: unset;
+}
+
+.case-study .list-header {
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 10px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width: 768px) {
+    .case-study .list-header {
+        margin-bottom: 20px;
+    }   
 }

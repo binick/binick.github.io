@@ -2,7 +2,7 @@
 title: Sviluppare soluzioni integrate con Active Directory B2C ed Azure Event Grid.
 date: 2022-01-08
 author: Nicola Biancolini
-description: Azure Active Directory B2C è il sistema di Identità  offerto da Microsoft ed ospitato su Azure. Le sua forza è la completa integrazione con tutte le identità e risorse gestire nel nostro tenant su Azure. Offre una serie di presonalizzazioni cotte e mangiate per i flussi di autenticazione ed autorizzazione, ma a volte ci sono casi nei quali questi flussi non bastano ed in questo post vediamo come è possibile personalizzarli.
+description: Vediamo come è possibile integrare la registrazione di un utente.
 series: 
   - Identity Experience Framework
 keywords:

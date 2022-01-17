@@ -12,4 +12,8 @@ tags:
   - azure
   - cloud adoption
 draft: true
+cover:
+  image: cover.jpg
+  alt: Post cover
+  caption: Photo by [Quino Al](https://unsplash.com/@quinoal?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash]https://unsplash.com/s/photos/playing?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 ---
