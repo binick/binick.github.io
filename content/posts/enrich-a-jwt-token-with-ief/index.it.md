@@ -36,7 +36,7 @@ Qua trovate le [Informazioni sulle nozioni di base](https://docs.microsoft.com/a
 
 In quel caso le informazioni venivano esposte da un web server esposto dietro _API Management_, per semplicità ho replicato l'endpoint con una _Logic App_. Questa e' la sua definizione:
 
-![logic app steps](logic-app-steps.png)
+{{< figure align=center src=logic-app-steps.png caption="Passaggi della logic app" >}}
 
 Come si può immaginare il suo compito è quello di ritornare le informazioni contenute all'interno di un blob. In questo caso il blob contiene le informazioni che andreanno esposte come rivendicazioni del JWT.
 
@@ -56,8 +56,9 @@ In particolare dato l'`objectId`, che in questo caso rappresenta l'utente, verr�
 
 L'obbiettivo dell'esempio è semplice e consiste nell'aggiungere al flusso di registrazione ed autenticazione le due attestazioni rispettivamente con i nomi `loc` per la _location_ e `wt` per i _work teams_.
 
-> [NOTA]  
+{{< collapse summary="NOTA" openByDefault=true >}} 
 > Ogni volta che abbiamo la necessità di utilizzare _IEF_ è consigliabile partire da uno dei template che Microsoft ci mette a disposizione nello [starter pack](https://github.com/Azure-Samples/active-directory-b2c-custom-policy-starterpack), in questo esempio è stato usato [LocalAccounts](https://github.com/Azure-Samples/active-directory-b2c-custom-policy-starterpack/tree/63d382ae6cd78d2995a88653c7b7ed55876a8296/LocalAccounts).
+{{< /collapse >}} 
 
 La prima cosa da fare quindi è modificare il [`ClaimsSchema`](https://docs.microsoft.com/azure/active-directory-b2c/claimsschema) aggiungendo i `ClaimType`.
 
@@ -113,7 +114,7 @@ A questo punto potremmo valorizzarli attraverso una chiamata HTTP alla _Logic Ap
 
 Dove l'elemento `Protocol` serve ad identificare il tipo di `TechnicalProfile` il cui comportamento viene definito mediante l'elemento `Metadata`.
 
-Come abbiamo visto in precedenza nel paragrafo [Recuperare le informazioni](#Recuperare_le_informazioni) necessita `objectId`, per cui:
+Come abbiamo visto in precedenza nel paragrafo [Recuperare le informazioni]({{< ref "#recuperare-le-informazioni" >}} "Recuperare le informazioni") necessita `objectId`, per cui:
 
 - `ServiceUrl` identifica l'endpoint HTTP dove gli input possono essere passati mediante il placeholder `{claim}`
 - `SendClaimsIn` instruisce l'assembly `Web.TPEngine.Providers.RestfulProvider` sul luogo nel quale devono essere passati i claims
@@ -134,13 +135,13 @@ e
 
 per ottenere infine
 
-![enriched jwt](enriched-jwt.png)
+{{< figure align=center src=enriched-jwt.png caption="Esempio di JWT generato" >}}
 
 ## Risoluzione di problemi e aiuto nello sviluppo.
 
 Immancabilmente durante lo sviluppo ci potrebbero essere degli errori, errori che _Azure AD B2C_ riporta come all'interno del redirect url e che jwt.ms trasforma cosi
 
-![error](error.png)
+{{< figure align=center src=error.png caption="Esempio di messaggio di errore" >}}
 
 Fortunatamente nelle operazioni di troubleshooting può venirci incontro _Application Insights_, per le operazioni di configurazione potete fare riferimento a questa guida [Raccogliere Azure Active Directory log B2C con Application Insights](https://docs.microsoft.com/azure/active-directory-b2c/troubleshoot-with-application-insights?pivots=b2c-custom-policy#see-the-logs-in-vs-code-extension).
 

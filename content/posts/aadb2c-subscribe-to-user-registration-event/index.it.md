@@ -23,18 +23,32 @@ cover:
   caption: Foto di [Elena Mozhvilo](https://unsplash.com/@miracleday?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) su [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 ---
 
+<<<<<<< HEAD
 Vedremo come è possibile creare una soluzione che integra Azure Active Directory B2C per salvare su Blob Storage i dati fittizi alla registrazione dell'utente.
+=======
+In un articolo precedente abbiamo visto [Come arricchire un JWT emesso da Active Directory B2C con i criteri personalizzati]({{< ref "enrich-a-jwt-token-with-ief" >}} "Come arricchire un JWT emesso da Active Directory B2C con i criteri personalizzati.").
+
+In quell'articolo abbiamo parlato di come sia possibile aggiungere ad un JWT informazioni esterne a _Microsoft Graph_ mediante l'uso di una _Logic App_ ed un _Blob Storage_.
+
+In questo invece vedremo come sia possibile creare una soluzioni che integri _Azure Active Directory B2C_.
+
+Seguendo la traccia di quanto trattato nel precedente articolo vedremo come salvare su _Blob Storage_ dati fittizi alla registrazione di un utente.
+
+{{< collapse summary="Note" >}}
+Nel resto dell'articolo ci sono riferimenti a risorse e concetti trattati nel [precedente articolo({{< ref "enrich-a-jwt-token-with-ief" >}} "Come arricchire un JWT emesso da Active Directory B2C con i criteri personalizzati.") al quale si rimanda.
+{{< /collapse >}}
+>>>>>>> patch/seo
 
 ## Panoramica della soluzione.
 
 La soluzione è cosi composta:
 
-![component map](component-map.svg)
+{{< figure class="background-light" align=center src="component-map.svg" caption="Composizione della soluzione" >}}
 
 - `read-customer-details-identity-la`: rappresenta l'api il cui scopo è reperire il contenuto del _blob_ da `customersstgacc` (lo _storage account_)
 - `customer-register-tpc`: è il _topic_ nel quale sono collezionati gli eventi di creazione di un nuovo utente
 - `customer-identity-details-filler-la`: rappresenta l'api al quale spetta l'onere di generare dati fittizi che poi saranno salvati all'interno di un _blob_ sullo `customersstgacc`
-![steps](logic-app-steps.png)
+{{< figure align=center src="logic-app-steps.png" alt="Definizione della logic app" >}}
 - `contoso-b2c`: è il servizio di gestione degli accessi e delle identità offerto da _Azure_
 
 ## Introduzione ad _Azure Event Grid_.
@@ -61,11 +75,11 @@ Il messaggio usato in questo caso ha la seguente struttura
 [
     {
         "data": {
-            "objectId": "25100647-0dcc-4571-b7b4-b03e4ce72d02" // l'identificativo utile ad identificare l'utente
+            "objectId": "25100647-****-4571-****-b03e4ce72d02" // l'identificativo utile ad identificare l'utente
         },
-        "id": "25100647-0dcc-4571-b7b4-b03e4ce72d02", // l'identificativo univoco del messaggio, lo stesso di `data.objectId` in qesto caso
+        "id": "25100647-****-4571-****-b03e4ce72d02", // l'identificativo univoco del messaggio, lo stesso di `data.objectId` in qesto caso
         "eventType": "Microsoft.ActiveDirectory", 
-        "subject": "contosob2cqtofmpm.onmicrosoft.com",
+        "subject": "*.onmicrosoft.com",
         "dataVersion": "1.0",
         "metadataVersion": "1",
         "eventTime": "2021-12-03T21:04:03.8504745Z",

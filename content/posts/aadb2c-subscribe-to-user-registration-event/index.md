@@ -29,12 +29,12 @@ We will see how it is possible to create a solution that integrates Azure Active
 
 The solution is composed as follows:
 
-<img alt="component-map" style="background-color:whitesmoke;padding:0.5em" src="component-map.svg" />
+{{< figure class="background-light" align=center src="component-map.svg" caption="Solution composition" >}}
 
 - `read-customer-details-identity-la`: represents the API whose purpose is to retrieve the content of the _blob_ from `customersstgacc` (the _storage account_)
 - `customer-register-tpc`: is the _topic_ in which are collected the events of the creation of a new user
 - `customer-identity-details-filler-la`: it represents the API that is in charge of generating fictitious data that will be saved inside a _blob_ on the `customersstgacc`
-![steps](logic-app-steps.png)
+{{< figure align=center src="logic-app-steps.png" alt="Logic app definition" >}}
 - `contoso-b2c`: is the access and identity management service offered by _Azure_
 
 ## Introduction to _Azure Event Grid_.
@@ -61,11 +61,11 @@ The message used in this case has the following structure
 [
     {
         "data": {
-            "objectId": "25100647-0dcc-4571-b7b4-b03e4ce72d02" // unique user identifier
+            "objectId": "25100647-****-4571-****-b03e4ce72d02" // unique user identifier
         },
-        "id": "25100647-0dcc-4571-b7b4-b03e4ce72d02", // unique message identifier, the same of `data.objectId` in this case
+        "id": "25100647-****-4571-****-b03e4ce72d02", // unique message identifier, the same of `data.objectId` in this case
         "eventType": "Microsoft.ActiveDirectory", 
-        "subject": "contosob2cqtofmpm.onmicrosoft.com",
+        "subject": "*.onmicrosoft.com",
         "dataVersion": "1.0",
         "metadataVersion": "1",
         "eventTime": "2021-12-03T21:04:03.8504745Z",
