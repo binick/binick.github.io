@@ -23,17 +23,7 @@ cover:
   caption: Foto di [Elena Mozhvilo](https://unsplash.com/@miracleday?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) su [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 ---
 
-In un articolo precedente abbiamo visto [Come arricchire un JWT emesso da Active Directory B2C con i criteri personalizzati](../2021-12-27_enrich-a-jwt-token-with-ief).
-
-In quell'articolo abbiamo parlato di come sia possibile aggiungere ad un JWT informazioni esterne a _Microsoft Graph_ mediante l'uso di una _Logic App_ ed un _Blob Storage_.
-
-In questo invece vedremo come sia possibile creare una soluzioni che integri _Azure Active Directory B2C_.
-
-Seguendo la traccia di quanto trattato nel precedente articolo vedremo come salvare su _Blob Storage_ dati fittizi alla registrazione di un utente.
-
-{{< collapse summary="Note" >}}
-Nel resto dell'articolo ci sono riferimenti a risorse e concetti trattati nel [precedente articolo](../2021-12-27_enrich-a-jwt-token-with-ief) al quale si rimanda.
-{{< /collapse >}}
+Vedremo come è possibile creare una soluzione che integra Azure Active Directory B2C per salvare su Blob Storage i dati fittizi alla registrazione dell'utente.
 
 ## Panoramica della soluzione.
 

@@ -23,17 +23,7 @@ cover:
   caption: Photo by [Elena Mozhvilo](https://unsplash.com/@miracleday?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 ---
 
-In the previous post, we have seen [how to enrich a JWT issued by Active Directory B2C with custom policies](../2021-12-27_enrich-a-jwt-token-with-ief).
-
-In that post, we talked about how it's possible to add information external to _Microsoft Graph_ to a JWT through the use of a _Logic App_ and a _Blob Storage_.
-
-Instead, in this one, we will see how it is possible to create a solution that integrates _Azure Active Directory B2C_.
-
-Following the track of what we covered in the previous post, we will see how to save on _Blob Storage_ dummy data at user registration.
-
-{{< collapse summary="Note" >}}
-Throughout the rest of the article, there are references to resources and concepts covered in the [previous article](../2021-12-27_enrich-a-jwt-token-with-ief) to which we refer. 
-{{< /collapse >}}
+We will see how it is possible to create a solution that integrates Azure Active Directory B2C to save on Blob Storage dummy data at user registration.
 
 ## Solution overview.
 

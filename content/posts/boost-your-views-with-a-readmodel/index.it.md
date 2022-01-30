@@ -26,7 +26,11 @@ L'Amministratore Delegato dell'azienda [Postal Bird](../../case-study/postalbird
 <<<<<<< HEAD
 - _Main store_: il database centrale gestito dell'ecosistema aziendale, questo database _SQL Server_ è collegato a _Web portal store_
 =======
+<<<<<<< HEAD
+- _Main store_: il database centrale gestito dell'ecosistema aziendale, questo database _SQL Server_ è collegato a _Web portal store_
+=======
 - _Main store_: il database centrare gestito dell'ecosistema aziendale |  questo database _SQL Server_ è collegato a _Web portal store_
+>>>>>>> main
 >>>>>>> main
 - _Ecosystem workloads_: identifica l'insieme di tutti i processi aziendali rappresentati come una scatola nera
 
@@ -47,11 +51,19 @@ Le viste variano essenzialmente nella clausola `where` ed nella clausola `select
 
 Il management ed il team di ingeneri concordano sul fatto che l'attuale situazione infrastrutturale non soddisfa più i requisiti aziendali. Il Cloud rappresenta per loro un'opportunità di efficientamento dell'infrastruttura in termini di costi, affidabilità e sicurezza di cui beneficeranno anche i loro clienti.
 =======
+<<<<<<< HEAD
+Le viste variano essenzialmente nella clausola `where` ed nella clausola `select`, ad esempio `SELECT Lot, Recepient, EmailTo FROM Workings WHERE CustomerCore = 'PA263'` oppure `SELECT Lot, Sublot, Recepient, Address, PostalCode, City, CountryCode FROM Workings WHERE CustomerCore = 'OI708'`.
+
+## Obbiettivo della migrazione.
+
+Il management ed il team di ingeneri concordano sul fatto che l'attuale situazione infrastrutturale non soddisfa più i requisiti aziendali. Il Cloud rappresenta per loro un'opportunità di efficientamento dell'infrastruttura in termini di costi, affidabilità e sicurezza di cui beneficeranno anche i loro clienti.
+=======
 Si può notare come fra le varie viste presenti su _Web portal store_ ci siano essenzialmente due difference, il codice cliente presente nella clausola `where` ed i campi nella clausola `select`, ad esempio `SELECT Lot, Recepient, EmailTo FROM Workings WHERE CustomerCore = 'PA263'` oppure `SELECT Lot, Sublot, Recepient, Address, PostalCode, City, CountryCode FROM Workings WHERE CustomerCore = 'OI708'`.
 
 ## Obbiettivo della migrazione.
 
 Il management ed il team di ingeneri concordano sul fatto che l'attuale situazione infrastruttura non soddisfa più i requisiti aziendali. Il Cloud rappresenta per loro un'opportunità di efficientamento dell'infrastruttura in termini di costi |  affidabilità e sicureza di cui beneficeranno anche i loro clienti.
+>>>>>>> main
 >>>>>>> main
 
 Nella realizzazione della nuova soluzione sono stati espressi il vincoli stringente per la preservazione dell'ecosistema.
@@ -69,10 +81,22 @@ Le strade valutate al fine di trovare la miglior soluzione costi/benefici che ri
 | Trasformare le attuali viste in tabelle | ✔️ | Le viste non presentano aggregazioni per cui questa soluzione risulta non realizzabile |
 | Indicizzare le attuali viste con indici colonnari | ❌ | Non possibile in quanto la creazione di indici colonnari raggruppati è possibile solo contro delle tabelle, ed i non raggruppati solo contro viste che abbiano un indice univoco raggruppato |
 =======
+<<<<<<< HEAD
+Le strade valutate al fine di trovare la miglior soluzione costi/benefici che rispetti i vincoli imposti sono state.
+
+| Strada | Praticabilità | Note |
+| --- | :-: | --- |
+| Traformare le attuali viste in viste indicizzate | ❌ | Impossibile in quanto non è possibile impostare legami con tabelle presenti in datatabase collegati |
+| Indicizzare la tabella presente in _Main store_ | ❌ | Viola il vincolo di preservazione dell'ecosistema |
+| Utilizzo di viste materializzate mediante [Azure Synapse](https://docs.microsoft.com/azure/synapse-analytics) | ❌ | Le viste non presentano aggregazioni per cui questa soluzione risulta non realizzabile |
+| Trasformare le attuali viste in tabelle | ✔️ | Le viste non presentano aggregazioni per cui questa soluzione risulta non realizzabile |
+| Indicizzare le attuali viste con indici colonnari | ❌ | Non possibile in quanto la creazione di indici colonnari raggruppati è possibile solo contro delle tabelle, ed i non raggruppati solo contro viste che abbiano un indice univoco raggruppato |
+=======
 Al fine di trovare la miglior soluzione che rispetti i perimetri di azione imposti sono state valutare le sequenti soluzioni:
 
 | Strada | Compatibilità con i vincoli | Praticabilità | Note |
 | --- | :-: | --- | --- |
 | Traformare le attuali viste in viste indicizzate | ⬆️ | Impossibile in quanto non è possibile impostare legami con le tabele sottostanti |  |
 | Utilizzo di viste materializzate | ⬆️ | Le viste non presentano aggregazioni per cui questa soluzione risulta non realizzabile |  |
+>>>>>>> main
 >>>>>>> main
