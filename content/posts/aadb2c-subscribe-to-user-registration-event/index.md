@@ -23,7 +23,7 @@ cover:
   caption: Photo by [Elena Mozhvilo](https://unsplash.com/@miracleday?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 ---
 
-In the previous post, we have seen [how to enrich a JWT issued by Active Directory B2C with custom policies](../2021-12-27_enrich-a-jwt-token-with-ief).
+In the previous post, we have seen [how to enrich a JWT issued by Active Directory B2C with custom policies]({{< ref "enrich-a-jwt-token-with-ief" >}} "How to enrich a JWT issued by Active Directory B2C with custom policies.").
 
 In that post, we talked about how it's possible to add information external to _Microsoft Graph_ to a JWT through the use of a _Logic App_ and a _Blob Storage_.
 
@@ -32,19 +32,19 @@ Instead, in this one, we will see how it is possible to create a solution that i
 Following the track of what we covered in the previous post, we will see how to save on _Blob Storage_ dummy data at user registration.
 
 {{< collapse summary="Note" >}}
-Throughout the rest of the article, there are references to resources and concepts covered in the [previous article](../2021-12-27_enrich-a-jwt-token-with-ief) to which we refer. 
+Throughout the rest of the article, there are references to resources and concepts covered in the [previous article]({{< ref "enrich-a-jwt-token-with-ief" >}} "How to enrich a JWT issued by Active Directory B2C with custom policies.") to which we refer. 
 {{< /collapse >}}
 
 ## Solution overview.
 
 The solution is composed as follows:
 
-<img alt="component-map" style="background-color:whitesmoke;padding:0.5em" src="component-map.svg" />
+{{< figure class="background-light" align=center src="component-map.svg" caption="Solution composition" >}}
 
 - `read-customer-details-identity-la`: represents the API whose purpose is to retrieve the content of the _blob_ from `customersstgacc` (the _storage account_)
 - `customer-register-tpc`: is the _topic_ in which are collected the events of the creation of a new user
 - `customer-identity-details-filler-la`: it represents the API that is in charge of generating fictitious data that will be saved inside a _blob_ on the `customersstgacc`
-![steps](logic-app-steps.png)
+{{< figure align=center src="logic-app-steps.png" alt="Logic app definition" >}}
 - `contoso-b2c`: is the access and identity management service offered by _Azure_
 
 ## Introduction to _Azure Event Grid_.
@@ -71,11 +71,11 @@ The message used in this case has the following structure
 [
     {
         "data": {
-            "objectId": "25100647-0dcc-4571-b7b4-b03e4ce72d02" // unique user identifier
+            "objectId": "25100647-****-4571-****-b03e4ce72d02" // unique user identifier
         },
-        "id": "25100647-0dcc-4571-b7b4-b03e4ce72d02", // unique message identifier, the same of `data.objectId` in this case
+        "id": "25100647-****-4571-****-b03e4ce72d02", // unique message identifier, the same of `data.objectId` in this case
         "eventType": "Microsoft.ActiveDirectory", 
-        "subject": "contosob2cqtofmpm.onmicrosoft.com",
+        "subject": "*.onmicrosoft.com",
         "dataVersion": "1.0",
         "metadataVersion": "1",
         "eventTime": "2021-12-03T21:04:03.8504745Z",

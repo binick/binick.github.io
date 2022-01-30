@@ -39,3 +39,8 @@
         margin-bottom: 20px;
     }   
 }
+
+.dark figure.background-light img {
+    background-color: whitesmoke;
+    padding: 0.5rem;
+}

@@ -20,11 +20,11 @@ cover:
 By code coverage, we mean the action of trying to measure how much of our code has been executed by our tests.
 This sound like 
 
-> __TL;DR__ 
->
+{{< collapse summary="TL;DR" >}} 
 > Untested code is a broken code.
-> Definitely a strong statement but true in a way, we don't always manage to get enough coverage.
-> Often this happens because we don't have time, other times because despite having written tests we are not able to read the metrics. 
+Definitely a strong statement but true in a way, we don't always manage to get enough coverage.
+Often this happens because we don't have time, other times because despite having written tests we are not able to read the metrics. 
+{{< /collapse >}}
 
 So, how we can "humanize" code coverage metrics? And how we can generate its?
 
