@@ -6,6 +6,7 @@ casestudy: Postal Bird
 cover: 
   image: company-logo.png
   alt: Company logo
+draft: true
 ---
 
 ![Postal Bird logo](company-logo.png)

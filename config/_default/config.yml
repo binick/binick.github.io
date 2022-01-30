@@ -130,9 +130,9 @@ menu:
     - name: Series
       url: /series/
       weight: 10
-    - name: Case studies
-      url: /case-studies/
-      weight: 10
+    # - name: Case studies
+    #   url: /case-studies/
+    #   weight: 10
       
 languages:
 
@@ -178,9 +178,9 @@ languages:
         - name: Serie
           url: /series/
           weight: 10
-        - name: Casi di studio
-          url: /case-studies/
-          weight: 10
+        # - name: Casi di studio
+        #   url: /case-studies/
+        #   weight: 10
 
 taxonomies:
   category: categories
