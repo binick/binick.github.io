@@ -20,11 +20,11 @@ cover:
 By code coverage, we mean the action of trying to measure how much of our code has been executed by our tests.
 This sound like 
 
-> __TL;DR__ 
->
+{{< collapse summary="TL;DR" >}} 
 > Untested code is a broken code.
-> Definitely a strong statement but true in a way, we don't always manage to get enough coverage.
-> Often this happens because we don't have time, other times because despite having written tests we are not able to read the metrics. 
+Definitely a strong statement but true in a way, we don't always manage to get enough coverage.
+Often this happens because we don't have time, other times because despite having written tests we are not able to read the metrics. 
+{{< /collapse >}}
 
 So, how we can "humanize" code coverage metrics? And how we can generate its?
 
@@ -40,7 +40,7 @@ for generate human-readable reports.
 
 ## How can set-up __*coverlet*__?
 
-I usually include [coverlet.msbuild](https://www.nuget.org/packages/coverlet.msbuild/) by [MSBuild .targets Files - Visual Studio | Microsoft Docs](https://docs.microsoft.com/en-us/visualstudio/msbuild/msbuild-dot-targets-files).
+I usually include [coverlet.msbuild](https://www.nuget.org/packages/coverlet.msbuild/) by [MSBuild .targets Files - Visual Studio | Microsoft Docs](https://docs.microsoft.com/visualstudio/msbuild/msbuild-dot-targets-files).
 
 {{< gist binick 71ec60d143ee51523e2c7ac23b9ae543 "CollectCoverage.targets" >}}
 
@@ -48,7 +48,7 @@ For alternative ways to include _coverlet_ into yout test project see also [cove
 
 ## How can set-up __*ReportGenerator*__?
 
-In keeping with above to include [ReportGenerator](https://www.nuget.org/packages/ReportGenerator) by [MSBuild .targets Files - Visual Studio | Microsoft Docs](https://docs.microsoft.com/en-us/visualstudio/msbuild/msbuild-dot-targets-files).
+In keeping with above to include [ReportGenerator](https://www.nuget.org/packages/ReportGenerator) by [MSBuild .targets Files - Visual Studio | Microsoft Docs](https://docs.microsoft.com/visualstudio/msbuild/msbuild-dot-targets-files).
 
 {{< gist binick 71ec60d143ee51523e2c7ac23b9ae543 "ReportGenerator.targets" >}}
 
@@ -86,7 +86,7 @@ I think that is an amazing tool to understand at a glance which codes are covere
 
 It would be nice if this report came was published into the _Build pipeline_ report, don't you think? Maybe even include branch policies for it.
 
-Well that's possible by use [Publish Code Coverage Results task](https://docs.microsoft.com/en-us/azure/devops/pipelines/tasks/test/publish-code-coverage-results), something like this:
+Well that's possible by use [Publish Code Coverage Results task](https://docs.microsoft.com/azure/devops/pipelines/tasks/test/publish-code-coverage-results), something like this:
 
 ```yaml
 - task: PublishCodeCoverageResults@1
