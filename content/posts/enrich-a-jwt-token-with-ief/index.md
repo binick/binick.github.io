@@ -32,7 +32,7 @@ To create this scenario, I leveraged the customization options offered by _custo
 
 _Identity Experience Framework_ represents the orchestration context of an interaction flow with _Azure AD B2C_. Custom criteria represent its expressiveness and allow us, developers, to define the internal flow through a series of one or more markup files.
 
-Here you can find the [About the basics](https://docs.microsoft.com/en-us/azure/active-directory-b2c/custom-policy-overview#understanding-the-basics).
+Here you can find the [About the basics](https://docs.microsoft.com/azure/active-directory-b2c/custom-policy-overview#understanding-the-basics).
 
 ## Retrieve Information.
 
@@ -62,7 +62,7 @@ The objective of the example is simple and consists in adding to the flow of reg
 > Every time that we have the necessity to use _IEF_, it is advisable to start from one of the templates that Microsoft puts to disposition in the [starter pack](https://github.com/Azure-Samples/active-directory-b2c-custom-policy-starterpack), in this example [LocalAccounts](https://github.com/Azure-Samples/active-directory-b2c-custom-policy-starterpack/tree/63d382ae6cd78d2995a88653c7b7ed55876a8296/LocalAccounts) has been used.
 {{< /collapse >}} 
 
-The first thing to do then is to edit the [`ClaimsSchema`](https://docs.microsoft.com/en-us/azure/active-directory-b2c/claimsschema) by adding the `ClaimType`
+The first thing to do then is to edit the [`ClaimsSchema`](https://docs.microsoft.com/azure/active-directory-b2c/claimsschema) by adding the `ClaimType`
 
 ``` xml
 <ClaimType Id="location">
@@ -92,7 +92,7 @@ The first thing to do then is to edit the [`ClaimsSchema`](https://docs.microsof
 
 The `PartnerClaimType` attribute of the `Protocol` element represents the name that will be used to identify the claim based on the supported protocol.
 
-At this point we could value them through an HTTP call to the _Logic App_. To do this we would need to create a [`TechnicalProfile`](https://docs.microsoft.com/en-us/azure/active-directory-b2c/restful-technical-profile), which in this case will be defined as follows:
+At this point we could value them through an HTTP call to the _Logic App_. To do this we would need to create a [`TechnicalProfile`](https://docs.microsoft.com/azure/active-directory-b2c/restful-technical-profile), which in this case will be defined as follows:
 
 ``` xml
 <TechnicalProfile Id="AAD-UserDetailsReadUsingObjectId">
@@ -123,7 +123,7 @@ As we saw earlier in the [Retrieve Information]({{< ref "#retrieve-information" 
 
 `OutputClaims` instead has the task to execute the mapping between the properties contained in the answer and the `ClaimType` defined previously.
 
-The last thing to make is to modify the [`RelyingParty`](https://docs.microsoft.com/en-us/azure/active-directory-b2c/relyingparty) adding to the property `OutputClaims` the references to the objects
+The last thing to make is to modify the [`RelyingParty`](https://docs.microsoft.com/azure/active-directory-b2c/relyingparty) adding to the property `OutputClaims` the references to the objects
 
 ``` xml
 <OutputClaim ClaimTypeReferenceId="location" />
@@ -145,7 +145,7 @@ Unavoidably during development, there might be errors, errors that _Azure AD B2C
 
 {{< figure align=center src=error.png caption="Example of error message" >}}
 
-Fortunately, troubleshooting operations can come to our aid _Application Insights_, for configuration operations, you can refer to this guide [Collect Azure Active Directory log B2C with Application Insights](https://docs.microsoft.com/en-us/azure/active-directory-b2c/troubleshoot-with-application-insights?pivots=b2c-custom-policy#see-the-logs-in-vs-code-extension).
+Fortunately, troubleshooting operations can come to our aid _Application Insights_, for configuration operations, you can refer to this guide [Collect Azure Active Directory log B2C with Application Insights](https://docs.microsoft.com/azure/active-directory-b2c/troubleshoot-with-application-insights?pivots=b2c-custom-policy#see-the-logs-in-vs-code-extension).
 
 Another difficulty lies in the fact that the definition of custom criteria uses a markup language. Who can develop without autocompletion anymore?
 

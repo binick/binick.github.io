@@ -5,8 +5,8 @@ theme: hugo-PaperMod
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
-buildDrafts: true
-buildFuture: true
+buildDrafts: false
+buildFuture: false
 buildExpored: false
 buildExpired: false
 enableEmoji: true

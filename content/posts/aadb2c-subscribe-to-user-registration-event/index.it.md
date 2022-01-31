@@ -23,10 +23,7 @@ cover:
   caption: Foto di [Elena Mozhvilo](https://unsplash.com/@miracleday?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) su [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 ---
 
-<<<<<<< HEAD
-Vedremo come è possibile creare una soluzione che integra Azure Active Directory B2C per salvare su Blob Storage i dati fittizi alla registrazione dell'utente.
-=======
-In un articolo precedente abbiamo visto [Come arricchire un JWT emesso da Active Directory B2C con i criteri personalizzati]({{< ref "enrich-a-jwt-token-with-ief" >}} "Come arricchire un JWT emesso da Active Directory B2C con i criteri personalizzati.").
+In un articolo precedente abbiamo visto <a href="https://www.ugidotnet.org/tip/2873/Arricchire-JWT-emessi-da-Active-Directory-B2C-con-criteri-personalizzati" title="Arricchire token JWT emessi da Azure Active Directory B2C." target="_blank">Arricchire token JWT emessi da Azure Active Directory B2C</a>.
 
 In quell'articolo abbiamo parlato di come sia possibile aggiungere ad un JWT informazioni esterne a _Microsoft Graph_ mediante l'uso di una _Logic App_ ed un _Blob Storage_.
 
@@ -35,9 +32,8 @@ In questo invece vedremo come sia possibile creare una soluzioni che integri _Az
 Seguendo la traccia di quanto trattato nel precedente articolo vedremo come salvare su _Blob Storage_ dati fittizi alla registrazione di un utente.
 
 {{< collapse summary="Note" >}}
-Nel resto dell'articolo ci sono riferimenti a risorse e concetti trattati nel [precedente articolo({{< ref "enrich-a-jwt-token-with-ief" >}} "Come arricchire un JWT emesso da Active Directory B2C con i criteri personalizzati.") al quale si rimanda.
+Nel resto dell'articolo ci sono riferimenti a risorse e concetti trattati nel <a href="https://www.ugidotnet.org/tip/2873/Arricchire-JWT-emessi-da-Active-Directory-B2C-con-criteri-personalizzati" title="Arricchire token JWT emessi da Azure Active Directory B2C." target="_blank">precedente articolo</a> al quale si rimanda.
 {{< /collapse >}}
->>>>>>> patch/seo
 
 ## Panoramica della soluzione.
 
@@ -144,7 +140,7 @@ Infine il _profilo tecnico_ è stato aggiunto fra i _profili tecnici di validazi
 
 Durante la creazione di _criteri personalizzati_ potremmo avere la necessità di eseguire calcoli, come ad esempio il numero di tentativi di autenticazione, che seppur molto semplici risulterebbero impossibili senza l'esecuzioni di funzioni.
 
-Questo requisito trova espressività tramite le `ClaimsTransformation` il cui [riferimento delle trasformazioni delle attestazioni](https://docs.microsoft.com/en-us/azure/active-directory-b2c/claimstransformations#claims-transformations-reference) contiene la lista completa delle _trasformazioni_ utilizabili.
+Questo requisito trova espressività tramite le `ClaimsTransformation` il cui [riferimento delle trasformazioni delle attestazioni](https://docs.microsoft.com/azure/active-directory-b2c/claimstransformations#claims-transformations-reference) contiene la lista completa delle _trasformazioni_ utilizabili.
 
 Nell'esempio sono stati utilizzati i metodi [`GetCurrentDateTime`](https://docs.microsoft.com/azure/active-directory-b2c/date-transformations#getcurrentdatetime) e [`GenerateJson`](https://docs.microsoft.com/azure/active-directory-b2c/json-transformations#generatejson)
 

@@ -23,7 +23,7 @@ cover:
   caption: Photo by [Elena Mozhvilo](https://unsplash.com/@miracleday?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 ---
 
-We will see how it is possible to create a solution that integrates Azure Active Directory B2C to save on Blob Storage dummy data at user registration.
+We will see how it's possible to create a solution that integrates Azure Active Directory B2C to save on Blob Storage dummy data at user registration.
 
 ## Solution overview.
 
