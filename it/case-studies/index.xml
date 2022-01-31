@@ -6,16 +6,5 @@
     <description>Recent content in Casi di studio on a developer&#39;s journey to the cloud</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Il codice sorgente di questo sito è disponibile [qua](https://github.com/binick/binick.github.io), licenziato sotto GPLv3.</copyright><atom:link href="https://binick.github.io/it/case-studies/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Panoramica di Postal Bird</title>
-      <link>https://binick.github.io/it/case-studies/postalbird/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://binick.github.io/it/case-studies/postalbird/</guid>
-      <description>Postal Bird è un&amp;rsquo;azienda che offre servizi di stampa offset a fogli e a bobina oltre servizi a supporto dei propri clienti per la comunicazione integrata.
-L&amp;rsquo;esperienza decennale maturata dall&amp;rsquo;azienda è stata ingegnerizzata in una piattaforma software dal proprio reportato IT e da altri soggetti terzi che ne hanno imlementato parti satellite. Il tutto al fine di offrire i propri clienti l&amp;rsquo;esperienza di utilizzo migliore possibile.
-Uno degli strumenti offerti ai clienti per la gestione della comunicazione integrata è rappresentato da un portale web il quale ha riscontrato un notevole successo ma che ha iniziato a mostrare alcuni rallentamenti dovuti ai sempre maggiorni volumi di dati gestiti.</description>
-    </item>
-    
   </channel>
 </rss>

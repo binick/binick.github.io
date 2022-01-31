@@ -35,15 +35,6 @@
     </item>
     
     <item>
-      <title></title>
-      <link>https://binick.github.io/case-study/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://binick.github.io/case-study/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>About me</title>
       <link>https://binick.github.io/about-me/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -52,17 +43,6 @@
       <description>About me</description>
     </item>
     
-    
-    <item>
-      <title>Overview of Postal Bird</title>
-      <link>https://binick.github.io/case-studies/postalbird/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://binick.github.io/case-studies/postalbird/</guid>
-      <description>Postal Bird is a company that offers sheetfed and web offset printing services as well as services to support its customers for integrated communication.
-The company&amp;rsquo;s decades of experience have been engineered into a software platform by its IT department and other third parties who have implemented satellite parts. All to offer its customers the best possible user experience.
-One of the tools offered to customers for the management of integrated communication is represented by a web portal that has been very successful but has begun to show some slowdowns due to the increasing volumes of data managed.</description>
-    </item>
     
     
   </channel>
