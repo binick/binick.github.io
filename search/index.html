@@ -13,7 +13,7 @@
 <meta name=msvalidate.01 content="BC3E4C5EA9030413F989C6C96EAEE97C">
 <link crossorigin=anonymous href=../assets/css/stylesheet.min.4b54530d30efae64eba84ee206079ce1207bf622508462734d7ccd0adf8874ce.css integrity="sha256-S1RTDTDvrmTrqE7iBgec4SB79iJQhGJzTXzNCt+IdM4=" rel="preload stylesheet" as=style>
 <link rel=preload href=../me.png as=image><link crossorigin=anonymous rel=preload as=fetch href=../index.json>
-<script defer crossorigin=anonymous src=../assets/js/search.min.6a9a7eb2e837edc2f9236bb0c733bf12998c2a01b7c92054b7fbdda7370a68b9.js integrity="sha256-app+sug37cL5I2uwxzO/EpmMKgG3ySBUt/vdpzcKaLk="></script>
+<script defer crossorigin=anonymous src=../assets/js/search.min.18f7f970e9f59b15e27e383b016b88f958ca9e651378c316556daf09160f9757.js integrity="sha256-GPf5cOn1mxXifjg7AWuI+VjKnmUTeMMWVW2vCRYPl1c="></script>
 <link rel=icon href=https://binick.github.io/favicon.ico>
 <link rel=icon type=image/png sizes=16x16 href=https://binick.github.io/favicon-16x16.png>
 <link rel=icon type=image/png sizes=32x32 href=https://binick.github.io/favicon-32x32.png>
@@ -107,7 +107,8 @@ Powered by
 </span>
 </footer>
 <a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
-</a>
+</a><script src=https://cdn.jsdelivr.net/npm/mermaid@8.13.10/dist/mermaid.min.js integrity="sha256-CmZCFVnvol9YL23PfjDflGY5nJwE+Mf/JN+8v+tD/34=" crossorigin=anonymous></script>
+<script>mermaid.initialize({startOnLoad:!0,securityLevel:'loose',theme:'base'})</script>
 <script>let menu=document.getElementById('menu');menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener("click",function(b){b.preventDefault();var a=this.getAttribute("href").substr(1);window.matchMedia('(prefers-reduced-motion: reduce)').matches?document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView({behavior:"smooth"}),a==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${a}`)})})</script>
 <script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script>
 <script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove('dark'),localStorage.setItem("pref-theme",'light')):(document.body.classList.add('dark'),localStorage.setItem("pref-theme",'dark'))})</script>
