@@ -11,6 +11,7 @@ draft: true
 cover:
   image: cover.jpg
   alt: Foto di copertina
+  relative: true
   caption: Foto di [Quino Al](https://unsplash.com/@quinoal?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) su [Unsplash]https://unsplash.com/s/photos/playing?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 ---
 

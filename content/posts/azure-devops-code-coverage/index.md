@@ -14,6 +14,7 @@ aliases:
 cover:
   image: cover.jpg
   alt: Post cover
+  relative: true
   caption: Photo by <a href="https://unsplash.com/@matthewhenry?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Matthew Henry</a> on <a href="https://unsplash.com/s/photos/blanket?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 ---
 

@@ -21,6 +21,7 @@ aliases:
 cover:
   image: cover.jpg
   alt: Post cover
+  relative: true
   caption: Photo by [Yasin Yusuf](https://unsplash.com/@yasinyusuf?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/identity?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 ---
 
