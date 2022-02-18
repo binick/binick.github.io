@@ -1,4 +1,4 @@
-baseURL: 'https://binick.github.io'
+baseURL: 'https://binick.blog'
 title: a developer's journey to the cloud
 paginate: 10
 theme: hugo-PaperMod
