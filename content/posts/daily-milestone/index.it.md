@@ -12,7 +12,8 @@ tags:
   - self-organization
 cover:
   image: cover.jpg
-  alt: Post cover
+  alt: Foto di copertina
+  relative: true
   caption: Photo di [Austin Santaniello](https://unsplash.com/@austinsantaniello?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) su [Unsplash](https://unsplash.com/s/photos/eat-frog?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 ---
 

@@ -9,6 +9,7 @@ draft: true
 cover:
   image: cover.jpg
   alt: Post cover
+  relative: true
   caption: <!-- Copyright text here -->
 ---
 

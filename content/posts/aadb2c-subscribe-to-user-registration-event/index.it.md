@@ -20,6 +20,7 @@ aliases:
 cover:
   image: cover.jpg
   alt: Foto di copertina
+  relative: true
   caption: Foto di [Elena Mozhvilo](https://unsplash.com/@miracleday?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) su [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 ---
 

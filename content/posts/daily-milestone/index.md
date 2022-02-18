@@ -13,6 +13,7 @@ tags:
 cover:
   image: cover.jpg
   alt: Post cover
+  relative: true
   caption: Photo by [Austin Santaniello](https://unsplash.com/@austinsantaniello?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/eat-frog?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 ---
 

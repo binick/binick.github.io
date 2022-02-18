@@ -19,6 +19,7 @@ draft: true
 cover:
   image: cover.jpg
   alt: Foto di copertina
+  relative: true
   caption: Foto di [Yasin Yusuf](https://unsplash.com/@yasinyusuf?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) su [Unsplash](https://unsplash.com/s/photos/identity?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 ---
 
