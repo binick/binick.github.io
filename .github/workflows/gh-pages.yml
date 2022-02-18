@@ -15,9 +15,9 @@ jobs:
         with:
           submodules: true
           fetch-depth: 0
-        
+
       - name: Build
-        run: docker run -e "HUGO_ENV=production" -v "$(pwd):/src" klakegg/hugo:0.91.2-ext --minify
+        run: docker run -e "HUGO_ENV=production" -v "$(pwd):/src" klakegg/hugo:0.92.1-ext --minify
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3

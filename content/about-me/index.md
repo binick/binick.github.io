@@ -1,6 +1,6 @@
 ---
 title: About me
-layout: about
+layout: home
 summary: About me
 ---
 
