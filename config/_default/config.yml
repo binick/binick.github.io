@@ -3,6 +3,10 @@ title: a developer's journey to the cloud
 paginate: 10
 theme: hugo-PaperMod
 
+author:
+  name: Nicola Biancolini
+  email: nicola.biancolini@gmail.com
+
 enableInlineShortcodes: true
 enableRobotsTXT: true
 buildDrafts: true
@@ -41,6 +45,7 @@ params:
   displayFullLangName: true
   ShowCodeCopyButtons: true
   ShowBreadCrumbs: false
+  ShowFullTextinRSS: true
   disableThemeToggle: false
   disableSpecial1stPost: false
   DateFormat: :date_medium
@@ -187,3 +192,6 @@ taxonomies:
   category: categories
   tag: tags
   series: series
+
+ignoreFiles:
+  - content/about-me

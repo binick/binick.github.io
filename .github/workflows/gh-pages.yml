@@ -15,11 +15,6 @@ jobs:
         with:
           submodules: true
           fetch-depth: 0
-        
-      - name: Add CNAME to artifact
-        run: |
-          mkdir ./public/
-          cp CNAME ./public/
 
       - name: Build
         run: docker run -e "HUGO_ENV=production" -v "$(pwd):/src" klakegg/hugo:0.92.1-ext --minify
