@@ -5,15 +5,18 @@
     <link>https://binick.blog/it/series/</link>
     <description>Recent content in Series on a developer&#39;s journey to the cloud</description>
     <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>nicola.biancolini@gmail.com (Nicola Biancolini)</managingEditor>
+    <webMaster>nicola.biancolini@gmail.com (Nicola Biancolini)</webMaster>
     <copyright>Il codice sorgente di questo sito è disponibile [qua](https://github.com/binick/binick.github.io), licenziato sotto GPLv3.</copyright>
     <lastBuildDate>Sat, 08 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://binick.blog/it/series/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Identity Experience Framework</title>
       <link>https://binick.blog/it/series/identity-experience-framework/</link>
       <pubDate>Sat, 08 Jan 2022 00:00:00 +0000</pubDate>
-      
+      <author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
       <guid>https://binick.blog/it/series/identity-experience-framework/</guid>
       <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
     </item>
     
   </channel>

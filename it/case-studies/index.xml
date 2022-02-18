@@ -5,6 +5,8 @@
     <link>https://binick.blog/it/case-studies/</link>
     <description>Recent content in Casi di studio on a developer&#39;s journey to the cloud</description>
     <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>nicola.biancolini@gmail.com (Nicola Biancolini)</managingEditor>
+    <webMaster>nicola.biancolini@gmail.com (Nicola Biancolini)</webMaster>
     <copyright>Il codice sorgente di questo sito è disponibile [qua](https://github.com/binick/binick.github.io), licenziato sotto GPLv3.</copyright><atom:link href="https://binick.blog/it/case-studies/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

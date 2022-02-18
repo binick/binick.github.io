@@ -5,15 +5,63 @@
     <link>https://binick.blog/tags/self-organization/</link>
     <description>Recent content in self-organization on a developer&#39;s journey to the cloud</description>
     <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>nicola.biancolini@gmail.com (Nicola Biancolini)</managingEditor>
+    <webMaster>nicola.biancolini@gmail.com (Nicola Biancolini)</webMaster>
     <copyright>See this site&#39;s source code [here](https://github.com/binick/binick.github.io), licensed under GPLv3.</copyright>
     <lastBuildDate>Fri, 18 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://binick.blog/tags/self-organization/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>That time I tasted a frog</title>
       <link>https://binick.blog/2022/02/18/daily-milestone/</link>
       <pubDate>Fri, 18 Feb 2022 00:00:00 +0000</pubDate>
-      
+      <author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
       <guid>https://binick.blog/2022/02/18/daily-milestone/</guid>
       <description>Clearing my mind of needless thoughts such as a to-do list turned out to be a very good thing for me. Finding the right way to achieve it wasn&amp;#39;t so easy, however.</description>
+      <content:encoded><![CDATA[<p>I started working in remote mode in March 2020, the reason I guess we all know.</p>
+<blockquote>
+<p>However, if an extra-terrestrial were to read this post, he can find more information here <a href="https://wikipedia.org/wiki/COVID-19">https://wikipedia.org/wiki/COVID-19</a>.</p>
+</blockquote>
+<p>My experience has been the same as that of so many others, a maximum and indiscriminate use of communication platforms and smoking ears at the end of the day.<br>
+This working mode went on for about a year and a half, 16 months to be precise, until July 2021 when I joined <a href="https://www.manageddesigns.it/"><em>managed/designs</em></a>.</p>
+<!-- 
+  Todo.
+  Replate {working-in-md} with link to ../working-in-md post, when available.
+-->
+<!-- {working-in-md} -->
+<p>Here I found a different environment, which some would call <em>smart</em>. Devoted to personal growth and continuous improvement where autonomy and trust are two pillars on which the daily collaboration is based.</p>
+<!-- {working-in-md} --> 
+<h2 id="prologue">Prologue.</h2>
+<p>I&rsquo;ve never been a user of to-do lists, perhaps due to inexperience or perhaps due to some belief unknown to me. The fact is that the systematic failure to follow the shopping list is proof of it <em>&ldquo;Nicola is not able to manage the lists&rdquo;</em>.</p>
+<p>Once I became aware of this, I started looking for possible patterns and/or methodologies by identifying some that have accompanied me for a couple of months.</p>
+<h2 id="my-inbox-is-not-the-email">My inbox is not the email.</h2>
+<p>I realized that what I need is not a list of tasks <em>to do</em> but rather a list of things that I <em>would like to do</em> or that somehow pique my interest. I suspect that on a subconscious level, my brain takes optimistically to the presence of that <em>&ldquo;would like&rdquo;</em> that removes the pressure for things that shouldn&rsquo;t be there.</p>
+<p>I have three emails, the corporate one and two other historical ones that I&rsquo;ve been carrying around for at least a decade, all three of which follow the philosophy of <a href="https://www.43folders.com/izero" title="Index of articles related to the Inbox Zero technique">Inbox Zero</a> by <a href="http://www.merlinmann.com/" title="Merlin Mann's personal website">Merlin Mann</a>. I currently flip through them twice a day, roughly before lunch and before the end of the day, these slots are recurring appointments on the calendar until next June 29, so we&rsquo;ll see if they will be extended, but I think so.</p>
+<p>The rule is very easy:</p>
+<ul>
+<li>it is important and must be executed at a specific time: an appointment is created on the calendar and archived in the corresponding inbox</li>
+<li>it is important: it ends up in the <em>inbox</em> and archived</li>
+<li>it interests me: it ends up in the <em>inbox</em> and deleted</li>
+<li>it doesn&rsquo;t interest me: it ends up in the trash</li>
+</ul>
+<p>In this way, I always have free inboxes and can keep my attention on those ten or so emails.</p>
+<p>If an email comes in requesting an active response, I won&rsquo;t run it right away, but like the others, it will follow the rules above.</p>
+<h2 id="one-frog-a-day-is-enough">One frog a day is enough.</h2>
+<p>The other enlightening technique for me was the discovery of the 1-3-5 rule<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> based on the practice of eating a frog as soon as you wake up<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>. Obviously not physically, I never want to wake up, and I&rsquo;ve also been getting very little sleep lately!</p>
+<p>So the day before I make a list of what I&rsquo;d like to do the next day, applying some sort of empirical prioritization of activities of the moment while always making sure there&rsquo;s at least one frog and possibly other filler activities.</p>
+<h2 id="epilogue">Epilogue.</h2>
+<p>I have to be honest, at first I was skeptical about taking the time to plan my tomorrow. I have to reconsider. The benefits of freeing my brain from the burden of thinking about what to do so that I don&rsquo;t run the risk of losing it forever is something to be reckoned with.</p>
+<p>Right now, the rigidity of the calendar and the flexibility that the 1-3-5 list leaves me with are a good match. Only time will tell if it is a winning choice for me.</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p><a href="https://www.themuse.com/advice/why-you-never-finish-your-todo-lists-at-work-and-how-to-change-that">Why You Never Finish Your To-Do Lists at Work (And How to Change That)</a> by <a href="https://www.themuse.com/author/alex-cavoulacos">Alex Cavoulacos</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p><a href="https://www.briantracy.com/blog/time-management/the-truth-about-frogs">Eat That Frog: Brian Tracy Explains the Truth About Frogs</a> by Brian Tracy&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+]]></content:encoded>
     </item>
     
   </channel>
