@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://binick.github.io/it/</loc>
-    <lastmod>2022-01-31T09:03:56+01:00</lastmod>
+    <lastmod>2022-02-18T08:29:14+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -13,6 +13,58 @@
                 rel="alternate"
                 hreflang="it"
                 href="https://binick.github.io/it/"
+                />
+  </url><url>
+    <loc>https://binick.github.io/it/posts/</loc>
+    <lastmod>2022-02-18T08:29:14+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://binick.github.io/posts/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="https://binick.github.io/it/posts/"
+                />
+  </url><url>
+    <loc>https://binick.github.io/it/2022/02/18/daily-milestone/</loc>
+    <lastmod>2022-02-18T08:29:14+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://binick.github.io/2022/02/18/daily-milestone/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="https://binick.github.io/it/2022/02/18/daily-milestone/"
+                />
+  </url><url>
+    <loc>https://binick.github.io/it/tags/self-organization/</loc>
+    <lastmod>2022-02-18T08:29:14+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://binick.github.io/tags/self-organization/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="https://binick.github.io/it/tags/self-organization/"
+                />
+  </url><url>
+    <loc>https://binick.github.io/it/tags/</loc>
+    <lastmod>2022-02-18T08:29:14+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://binick.github.io/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="https://binick.github.io/it/tags/"
                 />
   </url><url>
     <loc>https://binick.github.io/it/tags/active-directory-b2c/</loc>
@@ -67,19 +119,6 @@
                 href="https://binick.github.io/it/series/identity-experience-framework/"
                 />
   </url><url>
-    <loc>https://binick.github.io/it/posts/</loc>
-    <lastmod>2022-01-31T09:03:56+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://binick.github.io/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="https://binick.github.io/it/posts/"
-                />
-  </url><url>
     <loc>https://binick.github.io/it/series/</loc>
     <lastmod>2022-01-31T09:03:56+01:00</lastmod>
     <xhtml:link
@@ -104,19 +143,6 @@
                 rel="alternate"
                 hreflang="it"
                 href="https://binick.github.io/it/2022/01/08/aadb2c-subscribe-to-user-registration-event/"
-                />
-  </url><url>
-    <loc>https://binick.github.io/it/tags/</loc>
-    <lastmod>2022-01-31T09:03:56+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://binick.github.io/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="https://binick.github.io/it/tags/"
                 />
   </url><url>
     <loc>https://binick.github.io/it/archives/</loc>
