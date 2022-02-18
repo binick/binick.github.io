@@ -5,10 +5,10 @@ theme: hugo-PaperMod
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
-buildDrafts: false
-buildFuture: false
-buildExpored: false
-buildExpired: false
+buildDrafts: true
+buildFuture: true
+buildExpored: true
+buildExpired: true
 enableEmoji: true
 enableGitInfo: true
 relativeURLs: true
@@ -33,7 +33,7 @@ outputs:
 
 params:
   author: Nicola Biancolini
-  description: "a developer's journey to the cloud"
+  description: "yet another developer's journey"
   ShowReadingTime: true
   ShowShareButtons: true
   comments: false
@@ -43,6 +43,7 @@ params:
   ShowBreadCrumbs: false
   disableThemeToggle: false
   disableSpecial1stPost: false
+  DateFormat: :date_medium
 
   assets:
     favicon: /favicon.ico
@@ -76,12 +77,12 @@ params:
 
   editPost:
     URL: https://github.com/binick/binick.github.io/tree/main/content
-    Text: Suggest changes
+    Text: ✍️ Suggest changes
     appendFilePath: true
 
   changelog:
     URL: https://github.com/binick/binick.github.io/commits/main/content
-    Text: Changelog
+    Text: 🗒️ Changelog
     appendFilePath: true
 
   analytics:
@@ -152,12 +153,12 @@ languages:
 
       editPost:
         URL: https://github.com/binick/binick.github.io/tree/main/content
-        Text: Suggerisci modifiche
+        Text: ✍️ Suggerisci modifiche
         appendFilePath: true
 
       changelog:
         URL: https://github.com/binick/binick.github.io/commits/main/content
-        Text: Modifiche
+        Text: 🗒️ Changelog
         appendFilePath: true
 
     homeInfoParams:
