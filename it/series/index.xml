@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Series on a developer&#39;s journey to the cloud</title>
-    <link>https://binick.github.io/it/series/</link>
+    <link>https://binick.blog/it/series/</link>
     <description>Recent content in Series on a developer&#39;s journey to the cloud</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Il codice sorgente di questo sito è disponibile [qua](https://github.com/binick/binick.github.io), licenziato sotto GPLv3.</copyright>
-    <lastBuildDate>Sat, 08 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://binick.github.io/it/series/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 08 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://binick.blog/it/series/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Identity Experience Framework</title>
-      <link>https://binick.github.io/it/series/identity-experience-framework/</link>
+      <link>https://binick.blog/it/series/identity-experience-framework/</link>
       <pubDate>Sat, 08 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://binick.github.io/it/series/identity-experience-framework/</guid>
+      <guid>https://binick.blog/it/series/identity-experience-framework/</guid>
       <description></description>
     </item>
     

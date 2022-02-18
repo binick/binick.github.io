@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Identity Experience Framework on a developer&#39;s journey to the cloud</title>
-    <link>https://binick.github.io/it/series/identity-experience-framework/</link>
+    <link>https://binick.blog/it/series/identity-experience-framework/</link>
     <description>Recent content in Identity Experience Framework on a developer&#39;s journey to the cloud</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Il codice sorgente di questo sito è disponibile [qua](https://github.com/binick/binick.github.io), licenziato sotto GPLv3.</copyright>
-    <lastBuildDate>Sat, 08 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://binick.github.io/it/series/identity-experience-framework/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 08 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://binick.blog/it/series/identity-experience-framework/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sviluppare soluzioni integrate con Active Directory B2C ed Azure Event Grid.</title>
-      <link>https://binick.github.io/it/2022/01/08/aadb2c-subscribe-to-user-registration-event/</link>
+      <link>https://binick.blog/it/2022/01/08/aadb2c-subscribe-to-user-registration-event/</link>
       <pubDate>Sat, 08 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://binick.github.io/it/2022/01/08/aadb2c-subscribe-to-user-registration-event/</guid>
+      <guid>https://binick.blog/it/2022/01/08/aadb2c-subscribe-to-user-registration-event/</guid>
       <description>Vediamo come è possibile integrare la registrazione di un utente.</description>
     </item>
     
