@@ -9,7 +9,7 @@ keywords:
   - time management
   - self-organization
 tags:
-  - self-organization
+  - selforganization
 cover:
   image: cover.jpg
   alt: Post cover
