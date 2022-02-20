@@ -3,16 +3,16 @@
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
 <meta name=robots content="index, follow">
-<title>Archivio | a developer's journey to the cloud</title>
-<meta name=keywords content>
-<meta name=description content="Archivio">
+<title>Arricchire token JWT emessi da Azure Active Directory B2C | a developer's journey to the cloud</title>
+<meta name=keywords content="identity experience framework,active directory b2c,custom policy,azure blob storage">
+<meta name=description content="Personalizzare un JSON Web Token emesso da Azure Active Directory B2C con informazioni presenti su un sistema esterno è possibile: è sufficiente, infatti, sfruttare le possibilità di personalizzazione offerte dai criteri personalizzati.">
 <meta name=author content="Nicola Biancolini">
-<link rel=canonical href=https://binick.blog/it/archives/>
+<link rel=canonical href=https://binick.blog/it/2021/12/27/enrich-a-jwt-token-with-ief/>
 <meta name=google-site-verification content="eYTteUmuhinj42RTTPlY1SrZXHkBP_ibiGhlM9GHAMk">
 <meta name=yandex-verification content="72e5d19a7266b9fa">
 <meta name=msvalidate.01 content="BC3E4C5EA9030413F989C6C96EAEE97C">
-<link crossorigin=anonymous href=../../assets/css/stylesheet.min.4b54530d30efae64eba84ee206079ce1207bf622508462734d7ccd0adf8874ce.css integrity="sha256-S1RTDTDvrmTrqE7iBgec4SB79iJQhGJzTXzNCt+IdM4=" rel="preload stylesheet" as=style>
-<link rel=preload href=../../me.png as=image>
+<link crossorigin=anonymous href=../../../../../assets/css/stylesheet.min.4b54530d30efae64eba84ee206079ce1207bf622508462734d7ccd0adf8874ce.css integrity="sha256-S1RTDTDvrmTrqE7iBgec4SB79iJQhGJzTXzNCt+IdM4=" rel="preload stylesheet" as=style>
+<link rel=preload href=../../../../../me.png as=image>
 <link rel=icon href=https://binick.blog/favicon.ico>
 <link rel=icon type=image/png sizes=16x16 href=https://binick.blog/favicon-16x16.png>
 <link rel=icon type=image/png sizes=32x32 href=https://binick.blog/favicon-32x32.png>
@@ -20,26 +20,32 @@
 <link rel=mask-icon href=https://binick.blog/safari-pinned-tab.svg>
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
-<link rel=alternate hreflang=en href=https://binick.blog/archives/>
-<link rel=alternate hreflang=it href=https://binick.blog/it/archives/>
+<link rel=alternate hreflang=it href=https://binick.blog/it/2021/12/27/enrich-a-jwt-token-with-ief/>
 <noscript>
 <style>#theme-toggle,.top-link{display:none}</style>
 <style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--hljs-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style>
-</noscript><link href=https://binick.blog/assets/css/custom.min.1e167d758b79244de6832bc34859b58704e241875598391158a4f52ee491caef.css integrity="sha256-HhZ9dYt5JE3mgyvDSFm1hwTiQYdVmDkRWKT1LuSRyu8=" rel="preload stylesheet" as=style>
+</noscript>
+<meta name=robots content="noindex">
+<meta charset=utf-8>
+<meta http-equiv=refresh content="0; url=https://www.ugidotnet.org/tip/2873/Arricchire-JWT-emessi-da-Active-Directory-B2C-con-criteri-personalizzati">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-H2SCJP0ZQD"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-H2SCJP0ZQD',{anonymize_ip:!1})}</script>
-<meta property="og:title" content="Archivio">
-<meta property="og:description" content="Archivio">
+<meta property="og:title" content="Arricchire token JWT emessi da Azure Active Directory B2C">
+<meta property="og:description" content="Personalizzare un JSON Web Token emesso da Azure Active Directory B2C con informazioni presenti su un sistema esterno è possibile: è sufficiente, infatti, sfruttare le possibilità di personalizzazione offerte dai criteri personalizzati.">
 <meta property="og:type" content="article">
-<meta property="og:url" content="https://binick.blog/it/archives/"><meta property="article:section" content>
-<meta property="article:modified_time" content="2022-01-12T15:00:15+01:00">
-<meta name=twitter:card content="summary">
-<meta name=twitter:title content="Archivio">
-<meta name=twitter:description content="Archivio">
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":3,"name":"Archivio","item":"https://binick.blog/it/archives/"}]}</script>
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Archivio","name":"Archivio","description":"Archivio","keywords":[],"articleBody":"","wordCount":"0","inLanguage":"it","datePublished":"0001-01-01T00:00:00Z","dateModified":"2022-01-12T15:00:15+01:00","author":{"@type":"Person","name":"Nicola Biancolini"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://binick.blog/it/archives/"},"publisher":{"@type":"Organization","name":"a developer's journey to the cloud","logo":{"@type":"ImageObject","url":"https://binick.blog/favicon.ico"}}}</script>
+<meta property="og:url" content="https://binick.blog/it/2021/12/27/enrich-a-jwt-token-with-ief/">
+<meta property="og:image" content="https://binick.blog/it/2021/12/27/enrich-a-jwt-token-with-ief/cover.jpg"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2021-12-27T00:00:00+00:00">
+<meta property="article:modified_time" content="2022-02-20T20:04:53+01:00">
+<meta property="og:see_also" content="https://binick.blog/it/2022/01/08/aadb2c-subscribe-to-user-registration-event/">
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:image content="https://binick.blog/it/2021/12/27/enrich-a-jwt-token-with-ief/cover.jpg">
+<meta name=twitter:title content="Arricchire token JWT emessi da Azure Active Directory B2C">
+<meta name=twitter:description content="Personalizzare un JSON Web Token emesso da Azure Active Directory B2C con informazioni presenti su un sistema esterno è possibile: è sufficiente, infatti, sfruttare le possibilità di personalizzazione offerte dai criteri personalizzati.">
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":4,"name":"Arricchire token JWT emessi da Azure Active Directory B2C","item":"https://binick.blog/it/2021/12/27/enrich-a-jwt-token-with-ief/"}]}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Arricchire token JWT emessi da Azure Active Directory B2C","name":"Arricchire token JWT emessi da Azure Active Directory B2C","description":"Personalizzare un JSON Web Token emesso da Azure Active Directory B2C con informazioni presenti su un sistema esterno è possibile: è sufficiente, infatti, sfruttare le possibilità di personalizzazione offerte dai criteri personalizzati.","keywords":["identity experience framework","active directory b2c","custom policy","azure blob storage"],"articleBody":"","wordCount":"0","inLanguage":"it","image":"https://binick.blog/it/2021/12/27/enrich-a-jwt-token-with-ief/cover.jpg","datePublished":"2021-12-27T00:00:00Z","dateModified":"2022-02-20T20:04:53+01:00","author":{"@type":"Person","name":"Nicola Biancolini"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://binick.blog/it/2021/12/27/enrich-a-jwt-token-with-ief/"},"publisher":{"@type":"Organization","name":"a developer's journey to the cloud","logo":{"@type":"ImageObject","url":"https://binick.blog/favicon.ico"}}}</script>
 </head>
-<body class=list id=top>
+<body id=top>
 <script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script>
 <header class=header>
 <nav class=nav>
@@ -64,7 +70,7 @@
 </li>
 <li>
 <a href=https://binick.blog/it/archives/ title=Archivio>
-<span class=active>Archivio</span>
+<span>Archivio</span>
 </a>
 </li>
 <li>
@@ -81,50 +87,6 @@
 </nav>
 </header>
 <main class=main>
-<header class=page-header>
-<h1>Archivio</h1>
-</header>
-<div class=archive-year>
-<h2 class=archive-year-header>2022<sup class=archive-count>&nbsp;&nbsp;2</sup>
-</h2>
-<div class=archive-month>
-<h3 class=archive-month-header>February<sup class=archive-count>&nbsp;&nbsp;1</sup></h3>
-<div class=archive-posts>
-<div class=archive-entry>
-<h3 class=archive-entry-title>Quella volta nella quale ho assaggiato una rana
-</h3>
-<div class=archive-meta><span title="2022-02-18 00:00:00 +0000 UTC">18 feb 2022</span>&nbsp;·&nbsp;<span title="Ultima modifica il 2022-02-20 16:05:18 +0100 +0100">Ultima modifica il 20 feb 2022</span>&nbsp;·&nbsp;3 minuti&nbsp;·&nbsp;Nicola Biancolini</div>
-<a class=entry-link aria-label="post link to Quella volta nella quale ho assaggiato una rana" href=https://binick.blog/it/2022/02/18/daily-milestone/></a>
-</div>
-</div>
-</div>
-<div class=archive-month>
-<h3 class=archive-month-header>January<sup class=archive-count>&nbsp;&nbsp;1</sup></h3>
-<div class=archive-posts>
-<div class=archive-entry>
-<h3 class=archive-entry-title>Sviluppare soluzioni integrate con Active Directory B2C ed Azure Event Grid.
-</h3>
-<div class=archive-meta><span title="2022-01-08 00:00:00 +0000 UTC">8 gen 2022</span>&nbsp;·&nbsp;<span title="Ultima modifica il 2022-02-18 20:50:18 +0100 +0100">Ultima modifica il 18 feb 2022</span>&nbsp;·&nbsp;5 minuti&nbsp;·&nbsp;Nicola Biancolini</div>
-<a class=entry-link aria-label="post link to Sviluppare soluzioni integrate con Active Directory B2C ed Azure Event Grid." href=https://binick.blog/it/2022/01/08/aadb2c-subscribe-to-user-registration-event/></a>
-</div>
-</div>
-</div>
-</div>
-<div class=archive-year>
-<h2 class=archive-year-header>2021<sup class=archive-count>&nbsp;&nbsp;1</sup>
-</h2>
-<div class=archive-month>
-<h3 class=archive-month-header>December<sup class=archive-count>&nbsp;&nbsp;1</sup></h3>
-<div class=archive-posts>
-<div class=archive-entry>
-<h3 class=archive-entry-title>Arricchire token JWT emessi da Azure Active Directory B2C
-</h3>
-<div class=archive-meta><span title="2021-12-27 00:00:00 +0000 UTC">27 dic 2021</span>&nbsp;·&nbsp;<span title="Ultima modifica il 2022-02-20 20:04:53 +0100 +0100">Ultima modifica il 20 feb 2022</span>&nbsp;·&nbsp;0 minuti&nbsp;·&nbsp;Nicola Biancolini</div>
-<a class=entry-link aria-label="post link to Arricchire token JWT emessi da Azure Active Directory B2C" href=https://binick.blog/it/2021/12/27/enrich-a-jwt-token-with-ief/></a>
-</div>
-</div>
-</div>
-</div>
 </main>
 <footer class=footer>
 <span>Il codice sorgente di questo sito è disponibile <a href=https://github.com/binick/binick.github.io>qui</a>, licenziato sotto GPLv3.</span>
@@ -140,5 +102,6 @@ Powered by
 <script>let menu=document.getElementById('menu');menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener("click",function(b){b.preventDefault();var a=this.getAttribute("href").substr(1);window.matchMedia('(prefers-reduced-motion: reduce)').matches?document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView({behavior:"smooth"}),a==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${a}`)})})</script>
 <script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script>
 <script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove('dark'),localStorage.setItem("pref-theme",'light')):(document.body.classList.add('dark'),localStorage.setItem("pref-theme",'dark'))})</script>
+<script>document.querySelectorAll('pre > code').forEach(b=>{const c=b.parentNode.parentNode,a=document.createElement('button');a.classList.add('copy-code'),a.innerText='copia';function d(){a.innerText='copiato!',setTimeout(()=>{a.innerText='copia'},2e3)}a.addEventListener('click',e=>{if('clipboard'in navigator){navigator.clipboard.writeText(b.textContent),d();return}const a=document.createRange();a.selectNodeContents(b);const c=window.getSelection();c.removeAllRanges(),c.addRange(a);try{document.execCommand('copy'),d()}catch(a){}c.removeRange(a)}),c.classList.contains("highlight")?c.appendChild(a):c.parentNode.firstChild==c||(b.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName=="TABLE"?b.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(a):b.parentNode.appendChild(a))})</script>
 </body>
 </html>
