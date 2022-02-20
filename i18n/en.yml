@@ -4,3 +4,5 @@
     other: "Posts"
 - id: last_modified
   translation: "Last modified on %s"
+- id: keep_in_contact
+  translation: "Keep in contacts"
