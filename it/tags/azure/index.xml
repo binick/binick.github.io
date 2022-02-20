@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>nicola.biancolini@gmail.com (Nicola Biancolini)</managingEditor>
     <webMaster>nicola.biancolini@gmail.com (Nicola Biancolini)</webMaster>
-    <copyright>Il codice sorgente di questo sito è disponibile [qua](https://github.com/binick/binick.github.io), licenziato sotto GPLv3.</copyright>
+    <copyright>Il codice sorgente di questo sito è disponibile [qui](https://github.com/binick/binick.github.io), licenziato sotto GPLv3.</copyright>
     <lastBuildDate>Sat, 08 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://binick.blog/it/tags/azure/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sviluppare soluzioni integrate con Active Directory B2C ed Azure Event Grid.</title>

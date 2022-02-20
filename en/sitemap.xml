@@ -157,6 +157,19 @@
     <loc>https://binick.blog/tags/tip/</loc>
     <lastmod>2022-02-18T20:50:18+01:00</lastmod>
   </url><url>
+    <loc>https://binick.blog/about-me/</loc>
+    <lastmod>2022-02-20T16:05:18+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="it"
+                href="https://binick.blog/it/about-me/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://binick.blog/about-me/"
+                />
+  </url><url>
     <loc>https://binick.blog/archives/</loc>
     <lastmod>2022-01-12T15:00:15+01:00</lastmod>
     <xhtml:link

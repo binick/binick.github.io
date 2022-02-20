@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <managingEditor>nicola.biancolini@gmail.com (Nicola Biancolini)</managingEditor>
     <webMaster>nicola.biancolini@gmail.com (Nicola Biancolini)</webMaster>
-    <copyright>Il codice sorgente di questo sito è disponibile [qua](https://github.com/binick/binick.github.io), licenziato sotto GPLv3.</copyright>
+    <copyright>Il codice sorgente di questo sito è disponibile [qui](https://github.com/binick/binick.github.io), licenziato sotto GPLv3.</copyright>
     <lastBuildDate>Fri, 18 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://binick.blog/it/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Quella volta nella quale ho assaggiato una rana</title>
@@ -23,7 +23,7 @@
 <p>L&rsquo;esperienza è stata quella di molti immagino, un uso massimo ed indiscriminato di piattaforme di comunicazione ed orecchi fumanti a fine giornata.<br>
 Quest&rsquo;esperienza è andata avanti all&rsquo;incirca per un anno e mezzo, 16 mesi per la precisione, fino a Luglio 2021 quando sono entrato in <a href="https://www.manageddesigns.it/"><em>managed/designs</em></a>.</p>
 <!-- 
-  Todo.
+  Todo {working-in-md}.
   Replate {working-in-md} with link to ../working-in-md post, when available.
 -->
 <!-- {working-in-md} -->
@@ -206,8 +206,6 @@ Per farlo abbiamo toccato <em>Azure Event Grid</em> e come creare un <em>Event G
 <p>Se foste interessati all’esempio completo lo potrete trovare al seguente indirizzo <a href="https://github.com/binick/samples/tree/master/src/enrich-a-jwt-token-with-ief">https://github.com/binick/samples/tree/master/src/enrich-a-jwt-token-with-ief</a>.</p>
 ]]></content:encoded>
     </item>
-    
-    
     
   </channel>
 </rss>
