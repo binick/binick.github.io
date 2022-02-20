@@ -25,7 +25,7 @@ L'esperienza è stata quella di molti immagino, un uso massimo ed indiscriminato
 Quest'esperienza è andata avanti all'incirca per un anno e mezzo, 16 mesi per la precisione, fino a Luglio 2021 quando sono entrato in [*managed/designs*](https://www.manageddesigns.it/).
 
 <!-- 
-  Todo.
+  Todo {working-in-md}.
   Replate {working-in-md} with link to ../working-in-md post, when available.
 -->
 <!-- {working-in-md} -->

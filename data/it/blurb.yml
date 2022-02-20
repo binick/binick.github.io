@@ -1,0 +1,15 @@
+actual: |
+  <!-- 
+    Todo {working-in-md}.
+    Replate {working-in-md} with link to ../working-in-md post, when available.
+  -->
+  Attivamente impegnato a veicolare i valori managed/designs aiutando le aziende e gli sviluppatori .NET al raggiungimento dell'eccellenza tecnica.
+bio: |
+  Dai primi rudimenti in Pascal passando per Qt e QML, C# e SQL.
+
+  Nicola è uno sviluppatore full stack maniaco della pulizia del codice guidato dai cinque principi SOLID.  
+  I sui banchi di lavoro sono gestiti da [Chocolatey](https://chocolatey.org/), [PowerShell](https://docs.microsoft.com/powershell/) e sincronizzati con [Syncthing](https://syncthing.net/).
+
+  Appassionato di containerizzazione, cloud e processi di CI/CD è anche un forte sostenitore di TDD, nel corso della sua carriera ha avuto modo di lavorare sia in ambiti web based che in ambiti desktop/mobile.
+
+  Credo fortemente nel OSS al quale cerca di contribuire regolarmente.
