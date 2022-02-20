@@ -1,4 +1,3 @@
-baseURL: 'https://binick.blog'
 title: a developer's journey to the cloud
 paginate: 10
 theme: hugo-PaperMod
@@ -30,6 +29,7 @@ minify:
   minifyOutput: true
 
 outputs:
+
   home:
     - HTML
     - RSS
@@ -147,7 +147,7 @@ languages:
   
   it:
     languageName: Italiano
-    copyright: Il codice sorgente di questo sito è disponibile [qua](https://github.com/binick/binick.github.io), licenziato sotto GPLv3.
+    copyright: Il codice sorgente di questo sito è disponibile [qui](https://github.com/binick/binick.github.io), licenziato sotto GPLv3.
 
     label:
       text: "il viaggio di uno sviluppatore..."
@@ -192,6 +192,3 @@ taxonomies:
   category: categories
   tag: tags
   series: series
-
-ignoreFiles:
-  - content/about-me
