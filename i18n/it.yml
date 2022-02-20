@@ -1,2 +1,6 @@
 - id: posts
-  translation: "Articoli"
+  translation:
+    one : "Articolo"
+    other: "Articoli"
+- id: last_modified
+  translation: "Ultima modifica il %s"
