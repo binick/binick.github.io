@@ -3,7 +3,10 @@ name: ship
 
 on:
   pull_request:
-    types: [ closed ]
+    branches:    
+      - main
+    types: 
+      - closed
   workflow_dispatch:    
 
 jobs:
@@ -11,16 +14,33 @@ jobs:
     runs-on: ubuntu-18.04
 
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v2
         with:
           submodules: true
           fetch-depth: 0
 
+      - name: Setup node.js
+        uses: actions/setup-node@v2
+
       - name: Build
-        run: docker run -e "HUGO_ENV=production" -v "$(pwd):/src" klakegg/hugo:0.92.1-ext --minify
+        run: docker run -e "HUGO_ENV=production" -v "$(pwd)/src:/src" klakegg/hugo:0.92.1-ext --minify
+
+      - name: NPM install
+        run: npm install
+
+      - name: E2E tests
+        run: npm run test
+
+      - name: Upload a11y analysis results
+        uses: github/codeql-action/upload-sarif@v1
+        with:
+          sarif_file: /artifacts/test-results/a11y
+          category: axe-core
 
       - name: Deploy
+        if: ${{ github.event.pull_request == 'closed' }}
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.AUTOBOT_TOKEN }}
-          publish_dir: ./public
+          publish_dir: ./src/public
