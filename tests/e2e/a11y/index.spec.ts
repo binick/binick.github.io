@@ -5,7 +5,6 @@ import AxeBuilder from '@axe-core/playwright';
 import * as fs from 'fs';
 import * as path from 'path';
 import { promisify } from 'util';
-import { Result } from 'axe-core';
 
 const repoRoot: string = path.join(__dirname, '..', '..', '..');
 const outputSiteBuildDir: string = path.join(repoRoot, 'src', 'public');
@@ -40,7 +39,7 @@ getAllFiles(outputSiteBuildDir).filter((file) => path.extname(file) === '.html')
 
     test.beforeEach(async ({ browser }) => {
       const page = await browser.newPage();
-      await page.goto(pageUnderTest);
+      await page.goto(`file://${pageUnderTest}`);
       await page.waitForLoadState();
     });
 
