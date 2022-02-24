@@ -24,7 +24,7 @@ jobs:
         uses: actions/setup-node@v2
 
       - name: Build
-        run: docker run -e "HUGO_ENV=production" -v "$(pwd)/src:/src" klakegg/hugo:0.92.1-ext --minify
+        run: docker run -e "HUGO_ENV=production" -v "$(pwd)/src:/src" -v "$(pwd)/.git:/src/.git" klakegg/hugo:0.92.2-ext --minify
 
       - name: NPM install
         run: npm install
