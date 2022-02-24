@@ -33,7 +33,7 @@ const getAllFiles = (dir: string): string[] =>
   }, []);
 
 getAllFiles(outputSiteBuildDir).filter((file) => path.extname(file) === '.html').forEach((pageUnderTest) => {
-  const pageName = path.relative(outputSiteBuildDir, pageUnderTest).split('\\').join('_');
+  const pageName = path.relative(outputSiteBuildDir, pageUnderTest).split(path.sep).join('_');
   test.describe('a11y', () => {  
     test.describe.configure({ mode: 'parallel' });
 
