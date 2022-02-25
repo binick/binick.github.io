@@ -1,43 +1,54 @@
-import { PlaywrightTestConfig, devices, ViewportSize } from '@playwright/test';
-
-const desktopViewPorts: ViewportSize[] = [
-  { width: 1280, height: 720 },
-  { width: 1920, height: 1080 }
-]
+import { PlaywrightTestConfig, devices } from '@playwright/test';
+import { baseURL } from './global.setup';
 
 const config: PlaywrightTestConfig = {
+  globalSetup: require.resolve('./global.setup'),
   timeout: 30000,
   use: {
+    baseURL: baseURL.href,
     ignoreHTTPSErrors: true,
   },
-
   projects: [
     {
-      name: 'Desktop Chromium',
+      name: 'Desktop Chromium (1080p)',
       use: {
         browserName: 'chromium',
-        viewport: { width: 1280, height: 720 },
+        viewport: { width: 1920, height: 1080 }
       },
     },
     {
-      name: 'Desktop Safari',
+      name: 'Desktop Safari (1080p)',
       use: {
         browserName: 'webkit',
-        viewport: { width: 1280, height: 720 },
+        viewport: { width: 1920, height: 1080 }
       }
     },
     {
-      name: 'Desktop Firefox',
+      name: 'Desktop Firefox (1080p)',
       use: {
         browserName: 'firefox',
-        viewport: { width: 1280, height: 720 },
+        viewport: { width: 1920, height: 1080 }
       }
     },
     {
-      name: 'Desktop Firefox',
+      name: 'Desktop Chromium (720p)',
+      use: {
+        browserName: 'chromium',
+        viewport: { width: 1280, height: 720 }
+      },
+    },
+    {
+      name: 'Desktop Safari (720p)',
+      use: {
+        browserName: 'webkit',
+        viewport: { width: 1280, height: 720 }
+      }
+    },
+    {
+      name: 'Desktop Firefox (720p)',
       use: {
         browserName: 'firefox',
-        viewport: { width: 1280, height: 720 },
+        viewport: { width: 1280, height: 720 }
       }
     },
     {
@@ -50,7 +61,4 @@ const config: PlaywrightTestConfig = {
     },
   ],
 };
-
-
-
 export default config;

@@ -35,6 +35,8 @@ outputs:
     - RSS
     - JSON
 
+publishDir: ../artifacts/public
+
 params:
   author: Nicola Biancolini
   description: "yet another developer's journey"

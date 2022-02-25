@@ -6,12 +6,17 @@
   "devDependencies": {
     "@axe-core/playwright": "^4.4.0",
     "@playwright/test": "^1.19.1",
+    "@types/koa": "^2.13.4",
+    "@types/koa-static": "^4.0.2",
     "@types/node": "^17.0.21",
     "axe-sarif-converter": "^2.8.0",
+    "koa": "^2.13.4",
+    "koa-static": "^5.0.0",
     "playwright": "^1.19.1",
+    "sitemapper": "^3.2.2",
     "typescript": "^4.5.5"
   },
   "scripts": {
-    "test": "playwright test"
+    "test": "playwright test --config=tests/e2e/playwright.config.ts"
   }
 }
