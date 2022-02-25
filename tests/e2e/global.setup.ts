@@ -6,7 +6,7 @@ import * as path from 'path';
 
 export const repoRoot: string = path.join(__dirname, '..', '..');
 
-export const outputSiteBuildDir: string = path.join(repoRoot, 'artifacts', 'public');
+export const outputSiteBuildDir: string = path.join(repoRoot, 'artifacts', 'tmp');
 
 export const app = new Koa();
 
@@ -22,6 +22,7 @@ export function pages(): URL[] {
   getAllFiles(outputSiteBuildDir)
     .filter((file) => path.extname(file) === '.html')
     .map(file => file.replace(outputSiteBuildDir, baseURL.href).split(path.sep).join('/'))
+    .map(file => file.split('//').join('/'))
     .forEach(value => pages.push(new URL(value)));
   return pages;
 };

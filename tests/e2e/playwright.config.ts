@@ -3,7 +3,6 @@ import { baseURL } from './global.setup';
 
 const config: PlaywrightTestConfig = {
   globalSetup: require.resolve('./global.setup'),
-  timeout: 30000,
   use: {
     baseURL: baseURL.href,
     ignoreHTTPSErrors: true,
@@ -58,7 +57,7 @@ const config: PlaywrightTestConfig = {
     {
       name: 'Mobile Safari',
       use: devices['iPhone 12'],
-    },
-  ],
+    }
+  ]
 };
 export default config;
