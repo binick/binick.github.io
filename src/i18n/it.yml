@@ -4,3 +4,5 @@
     other: "Articoli"
 - id: last_modified
   translation: "Ultima modifica il %s"
+- id: keep_in_contact
+  translation: "Restiamo in contatto"
