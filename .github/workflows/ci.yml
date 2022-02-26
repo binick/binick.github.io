@@ -1,0 +1,41 @@
+name: build
+
+on:
+  pull_request:
+    branches:    
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-18.04
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          submodules: true
+          fetch-depth: 0
+
+      - name: Setup node.js
+        uses: actions/setup-node@v2
+
+      - name: NPM install
+        run: npm install
+
+      - name: E2E tests
+        run: |
+          mkdir artifacts
+          docker run \
+            -e "HUGO_ENV=e2e-testing" \
+            -v "$(pwd)/src:/src" \
+            -v "$(pwd)/.git:/src/.git" \
+            -v "$(pwd)/artifacts:/artifacts" \
+            klakegg/hugo:0.92.2-ext --minify
+          npm run test
+        continue-on-error: true
+
+      - name: Upload a11y analysis results
+        uses: github/codeql-action/upload-sarif@v1
+        with:
+          sarif_file: artifacts/test-results/a11y
+          category: axe-core
