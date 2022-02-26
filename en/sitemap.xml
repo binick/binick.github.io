@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://binick.blog/</loc>
-    <lastmod>2022-02-19T11:23:25+01:00</lastmod>
+    <lastmod>2022-02-25T18:48:21+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
@@ -16,7 +16,7 @@
                 />
   </url><url>
     <loc>https://binick.blog/posts/</loc>
-    <lastmod>2022-02-19T11:23:25+01:00</lastmod>
+    <lastmod>2022-02-25T18:48:21+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
@@ -29,7 +29,7 @@
                 />
   </url><url>
     <loc>https://binick.blog/tags/selforganization/</loc>
-    <lastmod>2022-02-19T11:23:25+01:00</lastmod>
+    <lastmod>2022-02-25T18:48:21+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
@@ -42,7 +42,7 @@
                 />
   </url><url>
     <loc>https://binick.blog/tags/</loc>
-    <lastmod>2022-02-19T11:23:25+01:00</lastmod>
+    <lastmod>2022-02-25T18:48:21+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
@@ -55,7 +55,7 @@
                 />
   </url><url>
     <loc>https://binick.blog/2022/02/18/daily-milestone/</loc>
-    <lastmod>2022-02-19T11:23:25+01:00</lastmod>
+    <lastmod>2022-02-25T18:48:21+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
@@ -68,7 +68,7 @@
                 />
   </url><url>
     <loc>https://binick.blog/tags/active-directory-b2c/</loc>
-    <lastmod>2022-02-18T20:50:18+01:00</lastmod>
+    <lastmod>2022-02-25T18:48:21+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
@@ -81,7 +81,7 @@
                 />
   </url><url>
     <loc>https://binick.blog/tags/azure/</loc>
-    <lastmod>2022-02-18T20:50:18+01:00</lastmod>
+    <lastmod>2022-02-25T18:48:21+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
@@ -94,7 +94,7 @@
                 />
   </url><url>
     <loc>https://binick.blog/2022/01/08/aadb2c-subscribe-to-user-registration-event/</loc>
-    <lastmod>2022-02-18T20:50:18+01:00</lastmod>
+    <lastmod>2022-02-25T18:48:21+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
@@ -107,7 +107,7 @@
                 />
   </url><url>
     <loc>https://binick.blog/tags/event-grid/</loc>
-    <lastmod>2022-02-18T20:50:18+01:00</lastmod>
+    <lastmod>2022-02-25T18:48:21+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
@@ -120,7 +120,7 @@
                 />
   </url><url>
     <loc>https://binick.blog/series/identity-experience-framework/</loc>
-    <lastmod>2022-02-18T20:50:18+01:00</lastmod>
+    <lastmod>2022-02-25T18:48:21+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
@@ -133,7 +133,7 @@
                 />
   </url><url>
     <loc>https://binick.blog/series/</loc>
-    <lastmod>2022-02-18T20:50:18+01:00</lastmod>
+    <lastmod>2022-02-25T18:48:21+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
@@ -146,19 +146,19 @@
                 />
   </url><url>
     <loc>https://binick.blog/tags/devops/</loc>
-    <lastmod>2022-02-18T20:50:18+01:00</lastmod>
+    <lastmod>2022-02-25T18:48:21+01:00</lastmod>
   </url><url>
     <loc>https://binick.blog/2021/01/02/azure-devops-code-coverage/</loc>
-    <lastmod>2022-02-18T20:50:18+01:00</lastmod>
+    <lastmod>2022-02-25T18:48:21+01:00</lastmod>
   </url><url>
     <loc>https://binick.blog/2020/10/22/sqlserver-efcore-json/</loc>
-    <lastmod>2022-02-18T20:50:18+01:00</lastmod>
+    <lastmod>2022-02-25T18:48:21+01:00</lastmod>
   </url><url>
     <loc>https://binick.blog/tags/tip/</loc>
-    <lastmod>2022-02-18T20:50:18+01:00</lastmod>
+    <lastmod>2022-02-25T18:48:21+01:00</lastmod>
   </url><url>
     <loc>https://binick.blog/about-me/</loc>
-    <lastmod>2022-02-20T16:05:18+01:00</lastmod>
+    <lastmod>2022-02-25T18:48:21+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
@@ -171,7 +171,7 @@
                 />
   </url><url>
     <loc>https://binick.blog/archives/</loc>
-    <lastmod>2022-01-12T15:00:15+01:00</lastmod>
+    <lastmod>2022-02-25T18:48:21+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
@@ -184,7 +184,7 @@
                 />
   </url><url>
     <loc>https://binick.blog/case-studies/</loc>
-    <lastmod>2022-01-17T10:20:57+01:00</lastmod>
+    <lastmod>2022-02-25T18:48:21+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
@@ -209,7 +209,7 @@
                 />
   </url><url>
     <loc>https://binick.blog/search/</loc>
-    <lastmod>2022-01-12T15:00:15+01:00</lastmod>
+    <lastmod>2022-02-25T18:48:21+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="it"
