@@ -4,8 +4,13 @@ root = true
 indent_style = space
 insert_final_newline = true
 
-[{*.json, *.yml, *.js, *.css, *.scss}]
-indent_size = 2
-
 [{*.html}]
 indent_size = 4
+
+[*.{cs}]
+indent_size = 4
+tab_width = 4
+
+[*.{*proj,xml,props,targets,tasks,yml,yaml,json,js,ts,css,scss}]
+indent_size = 2
+tab_width = 2

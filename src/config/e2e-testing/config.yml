@@ -1,0 +1,6 @@
+buildDrafts: false
+buildFuture: false
+buildExpored: false
+buildExpired: false
+
+publishDir: ../artifacts/tmp

@@ -1,6 +1,6 @@
 title: a developer's journey to the cloud
 paginate: 10
-theme: hugo-PaperMod
+theme: PaperMod
 
 author:
   name: Nicola Biancolini
@@ -34,6 +34,8 @@ outputs:
     - HTML
     - RSS
     - JSON
+
+publishDir: ../artifacts/public
 
 params:
   author: Nicola Biancolini

@@ -1,13 +1,9 @@
-
-name: ship
+name: build
 
 on:
   pull_request:
     branches:    
       - main
-    types: 
-      - closed
-  workflow_dispatch:    
 
 jobs:
   deploy:
@@ -43,21 +39,3 @@ jobs:
         with:
           sarif_file: artifacts/test-results/a11y
           category: axe-core
-
-      - name: Build
-        if: ${{ github.event.pull_request == 'closed' }}
-        run: |
-          mkdir artifacts
-          docker run \
-            -e "HUGO_ENV=production" \
-            -v "$(pwd)/src:/src" \
-            -v "$(pwd)/.git:/src/.git" \
-            -v "$(pwd)/artifacts:/artifacts" \
-            klakegg/hugo:0.92.2-ext --minify
-
-      - name: Deploy
-        if: ${{ github.event.pull_request == 'closed' }}
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.AUTOBOT_TOKEN }}
-          publish_dir: ./artifacts/public
