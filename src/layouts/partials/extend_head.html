@@ -9,5 +9,5 @@
 {{- else }}
 <meta name="robots" content="noindex">
 <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-<meta http-equiv="refresh" content="0; url={{ .Params.Referral }}"/>
+<meta http-equiv="refresh" content="{{ .Params.Referral.Delay | default 5 }}; url={{ .Params.Referral.Url }}"/>
 {{- end }}

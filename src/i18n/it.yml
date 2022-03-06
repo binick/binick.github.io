@@ -6,3 +6,7 @@
   translation: "Ultima modifica il %s"
 - id: keep_in_contact
   translation: "Restiamo in contatto"
+- id: referral
+  translation: |
+    Questo contenuto è disponibile su **%s**, sarai reinderizzato fra qualche istante.  
+    Se non sei reninderizzato automaticamente, [clicca qui](%s).
