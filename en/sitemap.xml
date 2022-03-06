@@ -49,15 +49,6 @@
       />
     
     
-    <news:news>
-      <news:publication>
-        <news:name>Posts</news:name>
-        <news:language>en</news:language>
-      </news:publication>
-      
-      <news:title>Posts</news:title>
-    </news:news>
-    
   </url>
   
   <url>
