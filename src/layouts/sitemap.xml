@@ -29,7 +29,7 @@
       href="{{ .Permalink }}"
       />
     {{ end }}
-    {{ if eq .Section "posts" }}
+    {{ if (and (eq .Section "posts") (eq .Kind "page")) }}
     <news:news>
       <news:publication>
         <news:name>{{ .Title }}</news:name>
