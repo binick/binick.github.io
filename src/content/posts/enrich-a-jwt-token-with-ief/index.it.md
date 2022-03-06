@@ -17,7 +17,9 @@ tags:
   - active directory b2c
 aliases:
   - /it/posts/2021-12-27_enrich-a-jwt-token-with-ief
-referral: https://www.ugidotnet.org/tip/2873/Arricchire-JWT-emessi-da-Active-Directory-B2C-con-criteri-personalizzati
+referral:
+  name: UGIdotNET
+  url: https://www.ugidotnet.org/tip/2873/Arricchire-JWT-emessi-da-Active-Directory-B2C-con-criteri-personalizzati
 cover:
   image: cover.jpg
   alt: Foto di copertina

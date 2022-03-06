@@ -1,3 +1,19 @@
 {{- define "main" }}
-<!-- Content -->
+<style>
+    .post-single {
+        position: absolute;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+</style>
+
+<article class="post-single">
+    <div class="post-content">
+        {{ (printf (i18n "referral") .Params.Referral.Name .Params.Referral.Url )| markdownify }}
+    </div>
+</article>
 {{- end }}{{/* end main */}}
