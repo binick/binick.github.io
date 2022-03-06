@@ -1,215 +1,441 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  xmlns:xhtml="http://www.w3.org/1999/xhtml"
+  xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+  
   <url>
     <loc>https://binick.blog/it/</loc>
+    
     <lastmod>2022-02-25T18:48:21+01:00</lastmod>
+    
+    
+    
+    
+    
     <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://binick.blog/"
-                />
+      rel="alternate"
+      hreflang="en"
+      href="https://binick.blog/"
+      />
+    
     <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="https://binick.blog/it/"
-                />
-  </url><url>
-    <loc>https://binick.blog/it/posts/</loc>
-    <lastmod>2022-02-25T18:48:21+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://binick.blog/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="https://binick.blog/it/posts/"
-                />
-  </url><url>
-    <loc>https://binick.blog/it/2022/02/18/daily-milestone/</loc>
-    <lastmod>2022-02-25T18:48:21+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://binick.blog/2022/02/18/daily-milestone/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="https://binick.blog/it/2022/02/18/daily-milestone/"
-                />
-  </url><url>
-    <loc>https://binick.blog/it/tags/selforganization/</loc>
-    <lastmod>2022-02-25T18:48:21+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://binick.blog/tags/selforganization/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="https://binick.blog/it/tags/selforganization/"
-                />
-  </url><url>
-    <loc>https://binick.blog/it/tags/</loc>
-    <lastmod>2022-02-25T18:48:21+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://binick.blog/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="https://binick.blog/it/tags/"
-                />
-  </url><url>
-    <loc>https://binick.blog/it/tags/active-directory-b2c/</loc>
-    <lastmod>2022-02-25T18:48:21+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://binick.blog/tags/active-directory-b2c/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="https://binick.blog/it/tags/active-directory-b2c/"
-                />
-  </url><url>
-    <loc>https://binick.blog/it/tags/azure/</loc>
-    <lastmod>2022-02-25T18:48:21+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://binick.blog/tags/azure/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="https://binick.blog/it/tags/azure/"
-                />
-  </url><url>
-    <loc>https://binick.blog/it/tags/event-grid/</loc>
-    <lastmod>2022-02-25T18:48:21+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://binick.blog/tags/event-grid/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="https://binick.blog/it/tags/event-grid/"
-                />
-  </url><url>
-    <loc>https://binick.blog/it/series/identity-experience-framework/</loc>
-    <lastmod>2022-02-25T18:48:21+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://binick.blog/series/identity-experience-framework/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="https://binick.blog/it/series/identity-experience-framework/"
-                />
-  </url><url>
-    <loc>https://binick.blog/it/series/</loc>
-    <lastmod>2022-02-25T18:48:21+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://binick.blog/series/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="https://binick.blog/it/series/"
-                />
-  </url><url>
-    <loc>https://binick.blog/it/2022/01/08/aadb2c-subscribe-to-user-registration-event/</loc>
-    <lastmod>2022-02-25T18:48:21+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://binick.blog/2022/01/08/aadb2c-subscribe-to-user-registration-event/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="https://binick.blog/it/2022/01/08/aadb2c-subscribe-to-user-registration-event/"
-                />
-  </url><url>
-    <loc>https://binick.blog/it/2021/12/27/enrich-a-jwt-token-with-ief/</loc>
-    <lastmod>2022-02-25T18:48:21+01:00</lastmod>
-  </url><url>
-    <loc>https://binick.blog/it/archives/</loc>
-    <lastmod>2022-02-25T18:48:21+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://binick.blog/archives/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="https://binick.blog/it/archives/"
-                />
-  </url><url>
-    <loc>https://binick.blog/it/case-studies/</loc>
-    <lastmod>2022-02-25T18:48:21+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://binick.blog/case-studies/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="https://binick.blog/it/case-studies/"
-                />
-  </url><url>
-    <loc>https://binick.blog/it/categories/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://binick.blog/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="https://binick.blog/it/categories/"
-                />
-  </url><url>
-    <loc>https://binick.blog/it/about-me/</loc>
-    <lastmod>2022-02-25T18:48:21+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://binick.blog/about-me/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="https://binick.blog/it/about-me/"
-                />
-  </url><url>
-    <loc>https://binick.blog/it/search/</loc>
-    <lastmod>2022-02-25T18:48:21+01:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://binick.blog/search/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="it"
-                href="https://binick.blog/it/search/"
-                />
+      rel="alternate"
+      hreflang="it"
+      href="https://binick.blog/it/"
+      />
+    
+    
   </url>
+  
+  <url>
+    <loc>https://binick.blog/it/posts/</loc>
+    
+    <lastmod>2022-02-25T18:48:21+01:00</lastmod>
+    
+    
+    
+    
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://binick.blog/posts/"
+      />
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="it"
+      href="https://binick.blog/it/posts/"
+      />
+    
+    
+    <news:news>
+      <news:publication>
+        <news:name>Posts</news:name>
+        <news:language>it</news:language>
+      </news:publication>
+      
+      <news:title>Posts</news:title>
+    </news:news>
+    
+  </url>
+  
+  <url>
+    <loc>https://binick.blog/it/2022/02/18/daily-milestone/</loc>
+    
+    <lastmod>2022-02-25T18:48:21+01:00</lastmod>
+    
+    
+    
+    
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://binick.blog/2022/02/18/daily-milestone/"
+      />
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="it"
+      href="https://binick.blog/it/2022/02/18/daily-milestone/"
+      />
+    
+    
+    <news:news>
+      <news:publication>
+        <news:name>Quella volta nella quale ho assaggiato una rana</news:name>
+        <news:language>it</news:language>
+      </news:publication>
+      
+      <news:publication_date>2022-02-18T00:00:00&#43;00:00</news:publication_date>
+      
+      <news:title>Quella volta nella quale ho assaggiato una rana</news:title>
+    </news:news>
+    
+  </url>
+  
+  <url>
+    <loc>https://binick.blog/it/tags/selforganization/</loc>
+    
+    <lastmod>2022-02-25T18:48:21+01:00</lastmod>
+    
+    
+    
+    
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://binick.blog/tags/selforganization/"
+      />
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="it"
+      href="https://binick.blog/it/tags/selforganization/"
+      />
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://binick.blog/it/tags/</loc>
+    
+    <lastmod>2022-02-25T18:48:21+01:00</lastmod>
+    
+    
+    
+    
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://binick.blog/tags/"
+      />
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="it"
+      href="https://binick.blog/it/tags/"
+      />
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://binick.blog/it/tags/active-directory-b2c/</loc>
+    
+    <lastmod>2022-02-25T18:48:21+01:00</lastmod>
+    
+    
+    
+    
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://binick.blog/tags/active-directory-b2c/"
+      />
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="it"
+      href="https://binick.blog/it/tags/active-directory-b2c/"
+      />
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://binick.blog/it/tags/azure/</loc>
+    
+    <lastmod>2022-02-25T18:48:21+01:00</lastmod>
+    
+    
+    
+    
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://binick.blog/tags/azure/"
+      />
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="it"
+      href="https://binick.blog/it/tags/azure/"
+      />
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://binick.blog/it/tags/event-grid/</loc>
+    
+    <lastmod>2022-02-25T18:48:21+01:00</lastmod>
+    
+    
+    
+    
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://binick.blog/tags/event-grid/"
+      />
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="it"
+      href="https://binick.blog/it/tags/event-grid/"
+      />
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://binick.blog/it/series/identity-experience-framework/</loc>
+    
+    <lastmod>2022-02-25T18:48:21+01:00</lastmod>
+    
+    
+    
+    
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://binick.blog/series/identity-experience-framework/"
+      />
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="it"
+      href="https://binick.blog/it/series/identity-experience-framework/"
+      />
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://binick.blog/it/series/</loc>
+    
+    <lastmod>2022-02-25T18:48:21+01:00</lastmod>
+    
+    
+    
+    
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://binick.blog/series/"
+      />
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="it"
+      href="https://binick.blog/it/series/"
+      />
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://binick.blog/it/2022/01/08/aadb2c-subscribe-to-user-registration-event/</loc>
+    
+    <lastmod>2022-02-25T18:48:21+01:00</lastmod>
+    
+    
+    
+    
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://binick.blog/2022/01/08/aadb2c-subscribe-to-user-registration-event/"
+      />
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="it"
+      href="https://binick.blog/it/2022/01/08/aadb2c-subscribe-to-user-registration-event/"
+      />
+    
+    
+    <news:news>
+      <news:publication>
+        <news:name>Sviluppare soluzioni integrate con Active Directory B2C ed Azure Event Grid.</news:name>
+        <news:language>it</news:language>
+      </news:publication>
+      
+      <news:publication_date>2022-01-08T00:00:00&#43;00:00</news:publication_date>
+      
+      <news:title>Sviluppare soluzioni integrate con Active Directory B2C ed Azure Event Grid.</news:title>
+    </news:news>
+    
+  </url>
+  
+  <url>
+    <loc>https://binick.blog/it/2021/12/27/enrich-a-jwt-token-with-ief/</loc>
+    
+    <lastmod>2022-02-25T18:48:21+01:00</lastmod>
+    
+    
+    
+    
+    
+    <news:news>
+      <news:publication>
+        <news:name>Arricchire token JWT emessi da Azure Active Directory B2C</news:name>
+        <news:language>it</news:language>
+      </news:publication>
+      
+      <news:publication_date>2021-12-27T00:00:00&#43;00:00</news:publication_date>
+      
+      <news:title>Arricchire token JWT emessi da Azure Active Directory B2C</news:title>
+    </news:news>
+    
+  </url>
+  
+  <url>
+    <loc>https://binick.blog/it/archives/</loc>
+    
+    <lastmod>2022-02-25T18:48:21+01:00</lastmod>
+    
+    
+    
+    
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://binick.blog/archives/"
+      />
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="it"
+      href="https://binick.blog/it/archives/"
+      />
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://binick.blog/it/case-studies/</loc>
+    
+    <lastmod>2022-02-25T18:48:21+01:00</lastmod>
+    
+    
+    
+    
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://binick.blog/case-studies/"
+      />
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="it"
+      href="https://binick.blog/it/case-studies/"
+      />
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://binick.blog/it/categories/</loc>
+    
+    
+    
+    
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://binick.blog/categories/"
+      />
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="it"
+      href="https://binick.blog/it/categories/"
+      />
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://binick.blog/it/about-me/</loc>
+    
+    <lastmod>2022-02-25T18:48:21+01:00</lastmod>
+    
+    
+    
+    
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://binick.blog/about-me/"
+      />
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="it"
+      href="https://binick.blog/it/about-me/"
+      />
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://binick.blog/it/search/</loc>
+    
+    <lastmod>2022-02-25T18:48:21+01:00</lastmod>
+    
+    
+    
+    
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://binick.blog/search/"
+      />
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="it"
+      href="https://binick.blog/it/search/"
+      />
+    
+    
+  </url>
+  
 </urlset>
