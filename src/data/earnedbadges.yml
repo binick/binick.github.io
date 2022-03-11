@@ -1,0 +1,24 @@
+- id: 78a080bb-0da9-41e7-bed0-ae4f41a24c3d
+  badge:
+    icon: https://images.credly.com/size/150x150/images/6a254dad-77e5-4e71-8049-94e5c7a15981/azure-fundamentals-600x600.png
+  name: Azure Fundamentals
+  url: https://www.credly.com/badges/78a080bb-0da9-41e7-bed0-ae4f41a24c3d/public_url
+  issuer:
+    name: Microsoft
+    url: https://www.credly.com/org/microsoft-certification
+- id: 905b0909-4a09-41cd-b534-6890f7b09164
+  badge:
+    icon: https://images.credly.com/size/150x150/images/63316b60-f62d-4e51-aacc-c23cb850089c/azure-developer-associate-600x600.png
+  name: Azure Developer Associate
+  url: https://www.credly.com/badges/905b0909-4a09-41cd-b534-6890f7b09164/public_url
+  issuer:
+    name: Microsoft
+    url: https://www.credly.com/org/microsoft-certification
+- id: 7f3ec753-a30d-4b78-a213-e3197988946e
+  badge:
+    icon: https://images.credly.com/size/150x150/images/68468004-5a85-4f3b-bc58-590773979486/AWS-CloudPractitioner-2020.png
+  name: AWS Certified Cloud Practitioner
+  url: https://www.credly.com/badges/7f3ec753-a30d-4b78-a213-e3197988946e/public_url
+  issuer:
+    name: Amazon Web Services Training and Certification
+    url: https://www.credly.com/org/amazon-web-services
