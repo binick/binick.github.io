@@ -4,6 +4,20 @@
   .post-content section.keep-in-contact a {
     box-shadow: unset;
   }
+  .post-content section.certifications a {
+    box-shadow: unset;
+  }
+  .post-content section.certifications .badges {
+    display: flex;
+  }
+  .post-content section.certifications .badges div {
+    max-width: 30%;
+    margin: 0 auto;
+  }
+  .post-content section.certifications .badges div p {
+    padding-top: 15px;
+    text-align: center;
+  }
 </style>
 
 {{ $data := index .Site.Data site.Language.Lang }}
@@ -27,6 +41,21 @@
       <span>
         {{- partial "social_icons.html" (where .Site.Params.socialIcons "name" "in" .Params.SocialIcons) }}
       </span>    
+    </section>
+    <section class="certifications">
+      <h2 id="certifications">{{ i18n "certifications" }}<a hidden="" class="anchor" aria-hidden="true" href="#certifications">#</a></h2>
+      <span class="badges">
+      {{ range $.Site.Data.earnedbadges }}
+        <div>
+          <a target="_blank" href="{{ .url }}">
+            <img alt="" src="{{ .badge.icon }}">
+          </a>
+          <p>
+            {{ i18n "issued_by" }}<br /><a title="{{ .issuer.name }}" target="_blank" href="{{ .issuer.url }}"><b>{{ .issuer.name }}</b></a>
+          </p>
+        </div>
+      {{ end }}
+      </span>
     </section>
   </div>
 

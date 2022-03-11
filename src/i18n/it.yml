@@ -10,3 +10,7 @@
   translation: |
     Questo contenuto è disponibile su **%s**, sarai reinderizzato fra qualche istante.  
     Se non sei reninderizzato automaticamente, [clicca qui](%s).
+- id: certifications
+  translation: "Certificazioni"
+- id: issued_by
+  translation: "Rilasciato da"
