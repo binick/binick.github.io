@@ -8,6 +8,8 @@ keywords:
 tags:
 draft: true
 referral: 
+  name: 
+  url: 
 cover:
   image: cover.jpg
   alt: Post cover
