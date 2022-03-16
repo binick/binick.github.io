@@ -1,7 +1,0 @@
-.gist .highlight {
-    background: #fff !important;
-}
-
-.post-content table:not(.highlighttable) td {
-    min-width: unset !important;
-}
