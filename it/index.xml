@@ -8,7 +8,21 @@
     <managingEditor>nicola.biancolini@gmail.com (Nicola Biancolini)</managingEditor>
     <webMaster>nicola.biancolini@gmail.com (Nicola Biancolini)</webMaster>
     <copyright>Il codice sorgente di questo sito è disponibile [qui](https://github.com/binick/binick.github.io), licenziato sotto GPLv3.</copyright>
-    <lastBuildDate>Fri, 18 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://binick.blog/it/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 15 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://binick.blog/it/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Connettersi ad Azure SQL in modo sicuro con le identità gestite</title>
+      <link>https://binick.blog/it/2022/03/15/connect-to-azuresql-with-managed-identities/</link>
+      <pubDate>Tue, 15 Mar 2022 00:00:00 +0000</pubDate>
+      <author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
+      <guid>https://binick.blog/it/2022/03/15/connect-to-azuresql-with-managed-identities/</guid>
+      <description>In quanto sviluppatori, siamo abituati a maneggiare chiavi, stringhe di connessione, certificati, nomi utente e password quotidianamente. Forse, proprio per la frequenza con la quale maneggiamo queste informazioni a volte può capitare di abbassare la guardia e non dare loro il trattamento che meriterebbero, esponendoci inconsapevolmente a rischi non banali.</description>
+      <content:encoded><![CDATA[<!-- 
+  No writing is needed 🙂
+  Just add a summary and referral URL.
+-->
+]]></content:encoded>
+    </item>
+    
     <item>
       <title>Quella volta nella quale ho assaggiato una rana</title>
       <link>https://binick.blog/it/2022/02/18/daily-milestone/</link>
