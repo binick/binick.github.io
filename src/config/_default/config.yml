@@ -1,3 +1,4 @@
+baseURL: http://localhost
 title: a developer's journey to the cloud
 paginate: 10
 theme: PaperMod
@@ -189,6 +190,13 @@ languages:
         # - name: Casi di studio
         #   url: /case-studies/
         #   weight: 10
+
+frontmatter:
+  lastmod:
+  - lastmod
+  - :git
+  - date
+  - publishDate
 
 taxonomies:
   category: categories

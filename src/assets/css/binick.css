@@ -1,62 +1,93 @@
 .post-entry {
-    page-break-inside: avoid;
-    break-inside: avoid;
-    -webkit-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid;
+  -webkit-break-inside: avoid;
 }
 
 .share-buttons {
-    border: unset;
-    justify-content: center;
+  border: unset;
+  justify-content: center;
 }
 
 .post-content img {
-    margin: auto;
+  margin: auto;
 }
 
 .highlight span.lnt a {
-    box-shadow: unset;
+  box-shadow: unset;
 }
 
 .post-content table th, .post-content table:not(.highlighttable) td {
-    border-bottom: unset;
+  border-bottom: unset;
 }
 
 .two-columns {
-    column-count: 2;
-    -webkit-column-count: 2;
-    -moz-column-count: 2;
+  column-count: 2;
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
 }
 
 .case-study .list-header {
-    border-bottom: 2px solid var(--border);
-    padding-bottom: 10px;
-    margin-top: 40px;
-    margin-bottom: 40px;
+  border-bottom: 2px solid var(--border);
+  padding-bottom: 10px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .dark figure.background-light img {
-    background-color: whitesmoke;
-    padding: 0.5rem;
+  background-color: whitesmoke;
+  padding: 0.5rem;
 }
 
 .top-link {
-    bottom: 30px;
+  bottom: 30px;
+}
+
+.post-content section.keep-in-contact a {
+  box-shadow: unset;
+}
+
+.post-content section.certifications a {
+  box-shadow: unset;
+}
+
+.post-content section.certifications .badges {
+  display: flex;
+}
+
+.post-content section.certifications .badges div {
+  max-width: 30%;
+  margin: 0 auto;
+}
+
+.post-content section.certifications .badges div p {
+  padding-top: 15px;
+  text-align: center;
 }
 
 @media screen and (max-width: 768px) {
-    .case-study .list-header {
-        margin-bottom: 20px;
-    }
+  .case-study .list-header {
+    margin-bottom: 20px;
+  }
 
-    .two-columns {
-        column-count: 1;
-        -webkit-column-count: 1;
-        -moz-column-count: 1;
-    }
+  .two-columns {
+    column-count: 1;
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+  }
+
+  .post-content section.certifications .badges {
+    display: block;
+  }
+
+  .post-content section.certifications .badges div {
+    max-width: unset;
+    margin: unset;
+  }
 }
 
 @media screen and (max-width: 900px) {
-    .list .top-link {
-        transform: unset
-    }
+  .list .top-link {
+    transform: unset
+  }
 }
