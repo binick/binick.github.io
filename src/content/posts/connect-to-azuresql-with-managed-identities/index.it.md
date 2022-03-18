@@ -1,6 +1,7 @@
 ---
 title: Connettersi ad Azure SQL in modo sicuro con le identità gestite
 date: 2022-03-15
+lastMod: 2022-03-15
 author: Nicola Biancolini
 layout: external
 summary: |

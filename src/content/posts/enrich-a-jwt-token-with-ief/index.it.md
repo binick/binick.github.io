@@ -1,6 +1,7 @@
 ﻿---
 title: Arricchire token JWT emessi da Azure Active Directory B2C
 date: 2021-12-27
+lastMod: 2021-12-27
 author: Nicola Biancolini
 layout: external
 summary: |
@@ -27,3 +28,7 @@ cover:
   caption: Foto di [Yasin Yusuf](https://unsplash.com/@yasinyusuf?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) su [Unsplash](https://unsplash.com/s/photos/identity?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 ---
 
+<!-- 
+  No writing is needed 🙂
+  Just add a summary and referral URL.
+-->

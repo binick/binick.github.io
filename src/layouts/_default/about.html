@@ -1,25 +1,5 @@
 {{- define "main" }}
 
-<style>
-  .post-content section.keep-in-contact a {
-    box-shadow: unset;
-  }
-  .post-content section.certifications a {
-    box-shadow: unset;
-  }
-  .post-content section.certifications .badges {
-    display: flex;
-  }
-  .post-content section.certifications .badges div {
-    max-width: 30%;
-    margin: 0 auto;
-  }
-  .post-content section.certifications .badges div p {
-    padding-top: 15px;
-    text-align: center;
-  }
-</style>
-
 {{ $data := index .Site.Data site.Language.Lang }}
 <article class="post-single">
 
