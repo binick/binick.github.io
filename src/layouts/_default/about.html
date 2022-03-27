@@ -1,6 +1,6 @@
 {{- define "main" }}
 
-{{ $data := index .Site.Data site.Language.Lang }}
+{{ $data := index site.Data site.Language.Lang }}
 <article class="post-single">
 
   <header class="post-header">
@@ -19,13 +19,13 @@
     <section class="keep-in-contact">
       <h2 id="keep-in-contact">{{ i18n "keep_in_contact" }}<a hidden="" class="anchor" aria-hidden="true" href="#keep-in-contact">#</a></h2>
       <span>
-        {{- partial "social_icons.html" (where .Site.Params.socialIcons "name" "in" .Params.SocialIcons) }}
+        {{- partial "social_icons.html" (where site.Params.socialIcons "name" "in" .Params.SocialIcons) }}
       </span>    
     </section>
     <section class="certifications">
       <h2 id="certifications">{{ i18n "certifications" }}<a hidden="" class="anchor" aria-hidden="true" href="#certifications">#</a></h2>
       <span class="badges">
-      {{ range $.Site.Data.earnedbadges }}
+      {{ range site.Data.earnedbadges }}
         <div>
           <a target="_blank" href="{{ .url }}">
             <img alt="" src="{{ .badge.icon }}">
