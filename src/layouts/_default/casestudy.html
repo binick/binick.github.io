@@ -15,9 +15,9 @@
   </header>
 
   <div class="two-columns">
-    {{ range where (where .Site.RegularPages "Params.casestudy" .Params.casestudy) "File.UniqueID" "ne" .File.UniqueID }}
+    {{ range where (where site.RegularPages "Params.casestudy" .Params.casestudy) "File.UniqueID" "ne" .File.UniqueID }}
     <div class="post-entry">
-      {{- $isHidden := (.Site.Params.cover.hidden | default .Site.Params.cover.hiddenInList) }}
+      {{- $isHidden := (site.Params.cover.hidden | default site.Params.cover.hiddenInList) }}
       {{- partial "cover.html" (dict "cxt" . "IsHome" true "isHidden" $isHidden) }}
       <header class="entry-header">
         <h2>
