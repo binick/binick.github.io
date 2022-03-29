@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>cloud adoption on a developer&#39;s journey to the cloud</title>
+    <link>https://binick.blog/tags/cloud-adoption/</link>
+    <description>Recent content in cloud adoption on a developer&#39;s journey to the cloud</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <managingEditor>nicola.biancolini@gmail.com (Nicola Biancolini)</managingEditor>
+    <webMaster>nicola.biancolini@gmail.com (Nicola Biancolini)</webMaster>
+    <copyright>See this site&#39;s source code [here](https://github.com/binick/binick.github.io), licensed under GPLv3.</copyright>
+    <lastBuildDate>Tue, 29 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://binick.blog/tags/cloud-adoption/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A new side project</title>
+      <link>https://binick.blog/2022/03/29/cloud-governance/</link>
+      <pubDate>Tue, 29 Mar 2022 00:00:00 +0000</pubDate>
+      <author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
+      <guid>https://binick.blog/2022/03/29/cloud-governance/</guid>
+      <description>Usually when a large company approaches the cloud one of the main concerns is cost management.</description>
+      <content:encoded><![CDATA[<p>A few years ago, when I was commuting to work by car, there was a tree-lined stretch of country road along a stream. Within this area there was a very narrow chicane at the exit immediately following a slight descent that followed a long straight.
+Given the presence of the stream and the permanent shade caused by the trees, it was not uncommon that on some winter mornings there was the presence of ice.</p>
+<p>I never had any accidents there as I was aware of the potential danger and even though the straightaway led to pushing on the accelerator I held back.</p>
+<p>What do I want to tell you with this anecdote?<br>
+That prevention is better than cure?<br>
+Not really, the message is more subtle and is about <em>instinct</em> and <em>consciousness</em>.</p>
+<p>What if someone just happened to walk by on one of those mornings?<br>
+And maybe even late for his appointment?<br>
+In all likelihood they would be forced to call the tow truck as they would be unaware of the presence of ice and would step on the brake pedal to reduce their speed on the curve. With consequent loss of grip and a car in the ditch.</p>
+<p>What would be the potential consequences?<br>
+Let&rsquo;s assume that after this unfortunate &ldquo;adventure&rdquo; the driver gets out of the car unharmed, what would be the other consequences?<br>
+I would say two, a lightened wallet and a missed appointment.</p>
+<h2 id="a-typical-approach-to-opex">A typical approach to OpEx.</h2>
+<p>I guess you are wondering what is the purpose and the reason of this parable.<br>
+You must know that some time ago I attended some meetings about the migration of a business application for internal use in <em>Azure</em> in which many issues arose due to the permissions assigned to users.<br>
+Problems that have caused the postponement of the production release of a business application for internal use by more than two weeks.</p>
+<p>Let&rsquo;s try, with not exactly little effort, to transpose the parable of the unfortunate driver within this context; we can identify the road as the <em>cloud</em>, the person driving the car as the company. And I&rsquo;d say let&rsquo;s stop there for now.</p>
+<p>Typically when a company approaches the cloud one of the main concerns is cost management<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</p>
+<p>Imagine being a member of the security operations team, used to operating on a predetermined set of machines, who now finds himself with a potentially infinite fleet of machines and a warning from his area manager telling him he must contain his expenses.</p>
+<p>The only thing it knows of that is more like what it has used so far is the role-based access control of <a href="https://docs.microsoft.com/windows-server/identity/ad-ds/plan/security-best-practices/implementing-least-privilege-administrative-models#role-based-access-controls-rbac-for-active-directory">Active Directory</a> which finds its counterpart <a href="https://docs.microsoft.com/azure/role-based-access-control/overview">Azure RBAC</a> also configurable from <a href="https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis">Azure Active Directory</a>.</p>
+<p>What would you do? I think I would limit access to all users by giving only the minimum permissions necessary to members of the development team, but I think you would do the same.</p>
+<p>And that&rsquo;s what the team did, so they set up two resource groups, one to house all the resources related to networking issues and one for the development team giving them the role of <a href="https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor">Contributor</a> for the latter.</p>
+<p>Slipping into misuse of resource groups improperly in that some resources such as for example the <a href="https://docs.microsoft.com/azure/aks/intro-kubernetes">Azure Kubernetes service</a> relies on a third resource group to host agent pool nodes shared between us and the service itself.</p>
+<h2 id="educate-rather-than-impose">Educate rather than impose.</h2>
+<p>The <em>SecOps</em> team failed because they were unaware of the meaning of the term <em>Cloud Governance</em> and the tools that <em>Azure</em> offers to support it.</p>
+<figure>
+    <img loading="lazy" src="cloud-governance.svg"/> 
+</figure>
+
+<p>Obviously, the team acted in good faith by trying to limit each team&rsquo;s <em>scope</em><sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> of action.<br>
+Thinking to achieve two goals: <em>cost control</em><sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> and <em>security</em><sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>.</p>
+<p>Here we now have the necessary elements to resume the transposition begun earlier and identify
+the <em>ambit</em><sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> in the jacke, the release date in the date, and <a href="https://docs.microsoft.com/azure/cloud-adoption-framework/govern/governance-disciplines#disciplines-of-cloud-governance">the five disciplines of <em>Cloud Governance</em></a> in the awareness.</p>
+<p>Here that to try to increase this awareness I created this repository</p>
+
+  <div class="github-ref-container">
+    <h2>
+      <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--vJ70wriM--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://practicaldev-herokuapp-com.freetls.fastly.net/assets/github-logo-ba8488d21cd8ee1fee097b8410db9deaa41d0ca30b004c0c63de0a479114156f.svg" alt="GitHub logo" loading="lazy">
+      <a href="https://github.com/binick" class="account">binick</a>
+      /
+      <a href="https://github.com/binick/oh-my-azure-playground" class="repo">oh-my-azure-playground</a>
+    </h2>
+  </div>
+
+<p>whose intent is to define standards based on best practices that have emerged in areas such as resource naming, tag management and localization.<br>
+On which it will then be possible to define patterns for the definition of budget<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>.</p>
+<p>Over the years I&rsquo;ve started several side projects but never had a post like this one.<br>
+I see this as a first step towards a real commitment, if you would like to elaborate or feel the need to contribute please feel free to <a href="https://binick.blog/about-me/">contact me</a> 🙂 .</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p><a href="https://www.geeksforgeeks.org/capex-vs-opex-in-cloud-computing">CapEx vs OpEx in Cloud Computing</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p><a href="https://docs.microsoft.com/azure/role-based-access-control/scope-overview">Understand scope for Azure RBAC</a>&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p><a href="https://docs.microsoft.com/azure/cost-management-billing/cost-management-billing-overview">What is Cost Management + Billing?</a>&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4" role="doc-endnote">
+<p><a href="https://docs.microsoft.com/azure/security/fundamentals/overview">Introduction to Azure security</a>&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

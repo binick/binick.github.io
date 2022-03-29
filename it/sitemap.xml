@@ -6,7 +6,7 @@
   <url>
     <loc>https://binick.blog/it/</loc>
     
-    <lastmod>2022-03-15T00:00:00+00:00</lastmod>
+    <lastmod>2022-03-29T00:00:00+00:00</lastmod>
     
     
     
@@ -30,7 +30,7 @@
   <url>
     <loc>https://binick.blog/it/tags/azure/</loc>
     
-    <lastmod>2022-03-15T00:00:00+00:00</lastmod>
+    <lastmod>2022-03-29T00:00:00+00:00</lastmod>
     
     
     
@@ -54,40 +54,55 @@
   <url>
     <loc>https://binick.blog/it/tags/cloud-adoption/</loc>
     
-    <lastmod>2022-03-15T00:00:00+00:00</lastmod>
+    <lastmod>2022-03-29T00:00:00+00:00</lastmod>
     
     
     
+    
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://binick.blog/tags/cloud-adoption/"
+      />
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="it"
+      href="https://binick.blog/it/tags/cloud-adoption/"
+      />
     
     
   </url>
   
   <url>
-    <loc>https://binick.blog/it/2022/03/15/connect-to-azuresql-with-managed-identities/</loc>
+    <loc>https://binick.blog/it/tags/cloud-governance/</loc>
     
-    <lastmod>2022-03-15T00:00:00+00:00</lastmod>
-    
-    
+    <lastmod>2022-03-29T00:00:00+00:00</lastmod>
     
     
     
-    <news:news>
-      <news:publication>
-        <news:name>Connettersi ad Azure SQL in modo sicuro con le identità gestite</news:name>
-        <news:language>it</news:language>
-      </news:publication>
-      
-      <news:publication_date>2022-03-15T00:00:00&#43;00:00</news:publication_date>
-      
-      <news:title>Connettersi ad Azure SQL in modo sicuro con le identità gestite</news:title>
-    </news:news>
+    
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://binick.blog/tags/cloud-governance/"
+      />
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="it"
+      href="https://binick.blog/it/tags/cloud-governance/"
+      />
+    
     
   </url>
   
   <url>
     <loc>https://binick.blog/it/posts/</loc>
     
-    <lastmod>2022-03-15T00:00:00+00:00</lastmod>
+    <lastmod>2022-03-29T00:00:00+00:00</lastmod>
     
     
     
@@ -111,10 +126,23 @@
   <url>
     <loc>https://binick.blog/it/tags/security/</loc>
     
-    <lastmod>2022-03-15T00:00:00+00:00</lastmod>
+    <lastmod>2022-03-29T00:00:00+00:00</lastmod>
     
     
     
+    
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://binick.blog/tags/security/"
+      />
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="it"
+      href="https://binick.blog/it/tags/security/"
+      />
     
     
   </url>
@@ -122,7 +150,7 @@
   <url>
     <loc>https://binick.blog/it/tags/</loc>
     
-    <lastmod>2022-03-15T00:00:00+00:00</lastmod>
+    <lastmod>2022-03-29T00:00:00+00:00</lastmod>
     
     
     
@@ -140,6 +168,63 @@
       href="https://binick.blog/it/tags/"
       />
     
+    
+  </url>
+  
+  <url>
+    <loc>https://binick.blog/it/2022/03/29/cloud-governance/</loc>
+    
+    <lastmod>2022-03-29T00:00:00+00:00</lastmod>
+    
+    
+    
+    
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://binick.blog/2022/03/29/cloud-governance/"
+      />
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="it"
+      href="https://binick.blog/it/2022/03/29/cloud-governance/"
+      />
+    
+    
+    <news:news>
+      <news:publication>
+        <news:name>Un nuovo side project</news:name>
+        <news:language>it</news:language>
+      </news:publication>
+      
+      <news:publication_date>2022-03-29T00:00:00&#43;00:00</news:publication_date>
+      
+      <news:title>Un nuovo side project</news:title>
+    </news:news>
+    
+  </url>
+  
+  <url>
+    <loc>https://binick.blog/it/2022/03/15/connect-to-azuresql-with-managed-identities/</loc>
+    
+    <lastmod>2022-03-15T00:00:00+00:00</lastmod>
+    
+    
+    
+    
+    
+    <news:news>
+      <news:publication>
+        <news:name>Connettersi ad Azure SQL in modo sicuro con le identità gestite</news:name>
+        <news:language>it</news:language>
+      </news:publication>
+      
+      <news:publication_date>2022-03-15T00:00:00&#43;00:00</news:publication_date>
+      
+      <news:title>Connettersi ad Azure SQL in modo sicuro con le identità gestite</news:title>
+    </news:news>
     
   </url>
   

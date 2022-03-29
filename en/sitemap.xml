@@ -6,7 +6,7 @@
   <url>
     <loc>https://binick.blog/</loc>
     
-    <lastmod>2022-02-25T18:48:21+01:00</lastmod>
+    <lastmod>2022-03-29T00:00:00+00:00</lastmod>
     
     
     
@@ -28,9 +28,116 @@
   </url>
   
   <url>
+    <loc>https://binick.blog/2022/03/29/cloud-governance/</loc>
+    
+    <lastmod>2022-03-29T00:00:00+00:00</lastmod>
+    
+    
+    
+    
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="it"
+      href="https://binick.blog/it/2022/03/29/cloud-governance/"
+      />
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://binick.blog/2022/03/29/cloud-governance/"
+      />
+    
+    
+    <news:news>
+      <news:publication>
+        <news:name>A new side project</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      
+      <news:publication_date>2022-03-29T00:00:00&#43;00:00</news:publication_date>
+      
+      <news:title>A new side project</news:title>
+    </news:news>
+    
+  </url>
+  
+  <url>
+    <loc>https://binick.blog/tags/azure/</loc>
+    
+    <lastmod>2022-03-29T00:00:00+00:00</lastmod>
+    
+    
+    
+    
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="it"
+      href="https://binick.blog/it/tags/azure/"
+      />
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://binick.blog/tags/azure/"
+      />
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://binick.blog/tags/cloud-adoption/</loc>
+    
+    <lastmod>2022-03-29T00:00:00+00:00</lastmod>
+    
+    
+    
+    
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="it"
+      href="https://binick.blog/it/tags/cloud-adoption/"
+      />
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://binick.blog/tags/cloud-adoption/"
+      />
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://binick.blog/tags/cloud-governance/</loc>
+    
+    <lastmod>2022-03-29T00:00:00+00:00</lastmod>
+    
+    
+    
+    
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="it"
+      href="https://binick.blog/it/tags/cloud-governance/"
+      />
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://binick.blog/tags/cloud-governance/"
+      />
+    
+    
+  </url>
+  
+  <url>
     <loc>https://binick.blog/posts/</loc>
     
-    <lastmod>2022-02-25T18:48:21+01:00</lastmod>
+    <lastmod>2022-03-29T00:00:00+00:00</lastmod>
     
     
     
@@ -46,6 +153,54 @@
       rel="alternate"
       hreflang="en"
       href="https://binick.blog/posts/"
+      />
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://binick.blog/tags/security/</loc>
+    
+    <lastmod>2022-03-29T00:00:00+00:00</lastmod>
+    
+    
+    
+    
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="it"
+      href="https://binick.blog/it/tags/security/"
+      />
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://binick.blog/tags/security/"
+      />
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://binick.blog/tags/</loc>
+    
+    <lastmod>2022-03-29T00:00:00+00:00</lastmod>
+    
+    
+    
+    
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="it"
+      href="https://binick.blog/it/tags/"
+      />
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://binick.blog/tags/"
       />
     
     
@@ -70,30 +225,6 @@
       rel="alternate"
       hreflang="en"
       href="https://binick.blog/tags/selforganization/"
-      />
-    
-    
-  </url>
-  
-  <url>
-    <loc>https://binick.blog/tags/</loc>
-    
-    <lastmod>2022-02-25T18:48:21+01:00</lastmod>
-    
-    
-    
-    
-    
-    <xhtml:link
-      rel="alternate"
-      hreflang="it"
-      href="https://binick.blog/it/tags/"
-      />
-    
-    <xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://binick.blog/tags/"
       />
     
     
@@ -153,30 +284,6 @@
       rel="alternate"
       hreflang="en"
       href="https://binick.blog/tags/active-directory-b2c/"
-      />
-    
-    
-  </url>
-  
-  <url>
-    <loc>https://binick.blog/tags/azure/</loc>
-    
-    <lastmod>2022-02-25T18:48:21+01:00</lastmod>
-    
-    
-    
-    
-    
-    <xhtml:link
-      rel="alternate"
-      hreflang="it"
-      href="https://binick.blog/it/tags/azure/"
-      />
-    
-    <xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://binick.blog/tags/azure/"
       />
     
     

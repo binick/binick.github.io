@@ -8,7 +8,82 @@
     <managingEditor>nicola.biancolini@gmail.com (Nicola Biancolini)</managingEditor>
     <webMaster>nicola.biancolini@gmail.com (Nicola Biancolini)</webMaster>
     <copyright>Il codice sorgente di questo sito è disponibile [qui](https://github.com/binick/binick.github.io), licenziato sotto GPLv3.</copyright>
-    <lastBuildDate>Tue, 15 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://binick.blog/it/tags/security/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 29 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://binick.blog/it/tags/security/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Un nuovo side project</title>
+      <link>https://binick.blog/it/2022/03/29/cloud-governance/</link>
+      <pubDate>Tue, 29 Mar 2022 00:00:00 +0000</pubDate>
+      <author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
+      <guid>https://binick.blog/it/2022/03/29/cloud-governance/</guid>
+      <description>Di solito quando una grande azienda si avvicina al cloud uno dei principali motivi di preoccupazione è la gestione dei costi.</description>
+      <content:encoded><![CDATA[<p>Qualche anno fa, quando ero un pendolare andavo a lavoro in auto, lungo il tragitto c’era un tratto di strada di campagna alberato che costeggiava un torrente. All’interno di questa zona era presente una chicane molto stretta in uscita immediatamente successiva ad una lieve discesa che seguiva un lungo rettifilo.
+Data la presenza del torrente e l’ombra permanente causata degli alberi non era cosa rara che in alcune mattinate d&rsquo;inverno vi fosse la presenza di ghiaccio.</p>
+<p>Non ho mai avuto incidenti lì in quanto ero a conoscenza del potenziale pericolo e nonostante il rettifilo portasse a spingere sull’acceleratore mi trattenevo.</p>
+<p>Cosa voglio dirvi con questo aneddoto?<br>
+Che prevenire è meglio che curare?<br>
+Non proprio, il messaggio è più sottile e riguarda l’<em>istinto</em> e la <em>coscienza</em>.</p>
+<p>Cosa succederebbe se qualcuno passasse di lì per caso in una di quelle mattine?<br>
+E magari anche in ritardo per il suo appuntamento?<br>
+Con molta probabilità sarebbe costretto a chiamare il carroattrezzi in quanto non consapevole della presenza di ghiaccio avrebbe pestato a fondo il pedale del freno per ridurre la velocità ad affrontare la curva. Con conseguente perdita di aderenza e ad auto in fossa.</p>
+<p>Quali sarebbero le potenziali conseguente?<br>
+Supponiamo che dopo questa sfortunata “avventura&quot; l’autista esca incolume dall’auto, quali sarebbero le altre conseguenze?<br>
+Direi due, un portafogli alleggerito ed un appuntamento mancato.</p>
+<h2 id="un-tipico-approccio-allopex">Un tipico approccio all’OpEx.</h2>
+<p>Immagino vi starete domandando quale sia il fine ed il perché di questa parabola.<br>
+Dovete sapere che qualche tempo fa ho partecipato ad alcune riunioni inerenti alla migrazione di un applicativo aziendale ad uso interno in <em>Azure</em> nelle quali sono emerse molte problematiche dovute ai permessi assegnati agli utenti.<br>
+Problemi che hanno causato lo slittamento del rilascio in produzione di un applicativo aziendale ad uso interno di oltre due settimane.</p>
+<p>Proviamo, con non propriamente poco sforzo, a trasporre la parabola dello sfortunato autista all’interno di questo contesto; possiamo identificare la strada come il <em>cloud</em>, la persona alla guida dell’auto come l’azienda. E direi di fermarci qui per il momento.</p>
+<p>Tipicamente quando un’azienda si avvicina al cloud uno dei principali motivi di preoccupazione è la gestione dei costi<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</p>
+<p>Immaginiamo di essere un membro del team di security operation, abituato ad operare su di un set di macchine predeterminato che adesso si ritrova con un potenziale parco macchine infinito ed un monito da parte del suo manager di area che gli dice di dover contenere le spese.</p>
+<p>L’unica cosa che conosce di più simile a ciò che ha usato finora è il controllo dell’accesso basato sui ruoli di <a href="https://docs.microsoft.com/windows-server/identity/ad-ds/plan/security-best-practices/implementing-least-privilege-administrative-models#role-based-access-controls-rbac-for-active-directory">Active Directory</a> che trova il suo corrispettivo <a href="https://docs.microsoft.com/azure/role-based-access-control/overview">Azure RBAC</a> configurabile anche da <a href="https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis">Azure Active Directory</a>.</p>
+<p>Voi cosa fareste? Io credo che limiterei gli accessi a tutti gli utenti dando solo i permessi minimi necessari ai membri del team di sviluppo, ma penso che anche voi agireste così.</p>
+<p>E questo è quello che il team ha fatto, per questo ha predisposto due gruppi di risorse, uno per ospitare tutte le risorse legate a tematiche di networking ed uno per il team di sviluppo dando loro il ruolo di <a href="https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor">Contributor</a> per quest’ultimo.</p>
+<p>Scivolando in un uso improprio dei gruppi di risorse in modo improprio in quanto alcune risorse come per esempio il <a href="https://docs.microsoft.com/azure/aks/intro-kubernetes">servizio Azure Kubernetes</a> si appoggia ad un terzo gruppo di risorse per ospitare i nodi dei pool di agenti condiviso fra noi ed il servizio stesso.</p>
+<h2 id="educare-piuttosto-che-imporre">Educare piuttosto che imporre.</h2>
+<p>Il team di <em>SecOps</em> ha fallito in quanto non a conoscenza del significato del termine <em>Cloud Governance</em> e gli strumenti che <em>Azure</em> offre a supporto.</p>
+<figure>
+    <img loading="lazy" src="cloud-governance.svg"/> 
+</figure>
+
+<p>Ovviamente il team ha agito in buona fede cercando di limitare l’<em>ambito</em><sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> di azione di ogni team.<br>
+Pensando di raggiungere due obbiettivi: <em>controllo dei costi</em><sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> e <em>sicurezza</em><sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>.</p>
+<p>Ecco che adesso abbiamo gli elementi necessari per riprendere la trasposizione iniziata precedentemente e identificare
+l’<em>ambito</em><sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> nel giaccio, la data di rilascio nell’appuntamento e <a href="https://docs.microsoft.com/azure/cloud-adoption-framework/govern/governance-disciplines#disciplines-of-cloud-governance">le cinque discipline della governance del cloud</a> nella consapevolezza.</p>
+<p>Ecco che per cercare di aumentare questa consapevolezza ho creato questo repository</p>
+
+  <div class="github-ref-container">
+    <h2>
+      <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--vJ70wriM--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://practicaldev-herokuapp-com.freetls.fastly.net/assets/github-logo-ba8488d21cd8ee1fee097b8410db9deaa41d0ca30b004c0c63de0a479114156f.svg" alt="GitHub logo" loading="lazy">
+      <a href="https://github.com/binick" class="account">binick</a>
+      /
+      <a href="https://github.com/binick/oh-my-azure-playground" class="repo">oh-my-azure-playground</a>
+    </h2>
+  </div>
+
+<p>il cui intento è quello di definire degli standard basandosi sulle migliori pratiche emerse in tematiche come denominazione delle risorse, gestione dei tag e della localizzazione.<br>
+Sulle quali sarà poi possibile definire dei pattern per la definizione di budget<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>.</p>
+<p>Nel corso degli anni ho iniziato diversi side project ma mai nessuno ha avuto un post come questo.<br>
+Lo considero come un primo passo verso un impegno concreto, se volete approfondire o sentite la necessità di contribuire non esitate a <a href="https://binick.blog/it/about-me/">contattarmi</a> 🙂.</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p><a href="https://www.geeksforgeeks.org/capex-vs-opex-in-cloud-computing">CapEx vs OpEx in Cloud Computing</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p><a href="https://docs.microsoft.com/azure/role-based-access-control/scope-overview">Comprendere l&rsquo;ambito per il controllo degli accessi in base al ruolo di Azure</a>&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:3" role="doc-endnote">
+<p><a href="https://docs.microsoft.com/azure/cost-management-billing/cost-management-billing-overview">Che cos&rsquo;è Gestione dei costi e fatturazione?</a>&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:4" role="doc-endnote">
+<p><a href="https://docs.microsoft.com/azure/security/fundamentals/overview">Introduzione alla sicurezza di Azure</a>&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+]]></content:encoded>
+    </item>
+    
     <item>
       <title>Connettersi ad Azure SQL in modo sicuro con le identità gestite</title>
       <link>https://binick.blog/it/2022/03/15/connect-to-azuresql-with-managed-identities/</link>
