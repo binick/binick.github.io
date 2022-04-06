@@ -1,9 +1,10 @@
 {{- if ne .Layout "external" }}
 {{- $binick := resources.Get "css/binick.css" }}
+{{- $a11y := resources.Get "css/a11y.css" }}
 {{- $highlight := resources.Get "css/highlight.css" }}
 {{- $github := resources.Get "css/shortcodes/github.css" }}
 {{- $shortcode := slice $github | resources.Concat "shortcodes.css" }}
-{{- $custom := slice $shortcode $binick $highlight | resources.Concat "assets/css/custom.css" | minify | fingerprint -}}
+{{- $custom := slice $shortcode $binick $a11y $highlight | resources.Concat "assets/css/custom.css" | minify | fingerprint -}}
 <link href="{{ $custom.Permalink }}" integrity="{{ $custom.Data.Integrity }}" rel="preload stylesheet" as="style">
 {{- else }}
 <meta http-equiv="content-type" content="text/html; charset=utf-8"/>

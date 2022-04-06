@@ -1,0 +1,4 @@
+.post-tags a {
+  color: var(--content);
+  background: var(--code-bg);
+}
