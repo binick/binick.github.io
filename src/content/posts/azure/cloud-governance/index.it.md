@@ -66,7 +66,7 @@ Scivolando in un uso improprio dei gruppi di risorse in modo improprio in quanto
 
 Il team di *SecOps* ha fallito in quanto non a conoscenza del significato del termine *Cloud Governance* e gli strumenti che *Azure* offre a supporto.
 
-{{< figure src="cloud-governance.svg" alt="Immagine rappresentativa del sottoinsieme della gestione del cloud formato dall'insieme della sicurezza e della gestione dei costi" >}}
+{{< figure src="cloud-governance.svg" alt="Rappresentazione del sottoinsieme della gestione del cloud formato dall'insieme della sicurezza e della gestione dei costi" >}}
 
 Ovviamente il team ha agito in buona fede cercando di limitare l’*ambito*[^scope] di azione di ogni team.  
 Pensando di raggiungere due obbiettivi: *controllo dei costi*[^cost-management] e *sicurezza*[^security]. 
