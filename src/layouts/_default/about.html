@@ -28,7 +28,7 @@
       {{ range site.Data.earnedbadges }}
         <div>
           <a target="_blank" href="{{ .url }}">
-            <img alt="" src="{{ .badge.icon }}">
+            <img alt="" aria-label="{{ .name }} badge" src="{{ .badge.icon }}">
           </a>
           <p>
             {{ i18n "issued_by" }}<br /><a title="{{ .issuer.name }}" target="_blank" href="{{ .issuer.url }}"><b>{{ .issuer.name }}</b></a>

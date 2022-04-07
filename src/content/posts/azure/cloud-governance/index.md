@@ -66,7 +66,7 @@ Slipping into misuse of resource groups improperly in that some resources such a
 
 The *SecOps* team failed because they were unaware of the meaning of the term *Cloud Governance* and the tools that *Azure* offers to support it.
 
-{{< figure src="cloud-governance.svg" >}}
+{{< figure src="cloud-governance.svg" alt="Representation of the subset of cloud management formed by the set of security and cost management" >}}
 
 Obviously, the team acted in good faith by trying to limit each team's *scope*[^scope] of action.  
 Thinking to achieve two goals: *cost control*[^cost-management] and *security*[^security]. 
