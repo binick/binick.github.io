@@ -42,7 +42,8 @@ Problemi che hanno causato lo slittamento del rilascio in produzione di un appli
 <h2 id="educare-piuttosto-che-imporre">Educare piuttosto che imporre.</h2>
 <p>Il team di <em>SecOps</em> ha fallito in quanto non a conoscenza del significato del termine <em>Cloud Governance</em> e gli strumenti che <em>Azure</em> offre a supporto.</p>
 <figure>
-    <img loading="lazy" src="cloud-governance.svg"/> 
+    <img loading="lazy" src="cloud-governance.svg"
+         alt="Rappresentazione del sottoinsieme della gestione del cloud formato dall&#39;insieme della sicurezza e della gestione dei costi"/> 
 </figure>
 
 <p>Ovviamente il team ha agito in buona fede cercando di limitare l’<em>ambito</em><sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> di azione di ogni team.<br>

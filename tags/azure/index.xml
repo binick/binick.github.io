@@ -42,7 +42,8 @@ Problems that have caused the postponement of the production release of a busine
 <h2 id="educate-rather-than-impose">Educate rather than impose.</h2>
 <p>The <em>SecOps</em> team failed because they were unaware of the meaning of the term <em>Cloud Governance</em> and the tools that <em>Azure</em> offers to support it.</p>
 <figure>
-    <img loading="lazy" src="cloud-governance.svg"/> 
+    <img loading="lazy" src="cloud-governance.svg"
+         alt="Representation of the subset of cloud management formed by the set of security and cost management"/> 
 </figure>
 
 <p>Obviously, the team acted in good faith by trying to limit each team&rsquo;s <em>scope</em><sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> of action.<br>
