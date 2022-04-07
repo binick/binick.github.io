@@ -147,7 +147,7 @@ languages:
 
   en:
     languageName: English
-  
+
   it:
     languageName: Italiano
     copyright: Il codice sorgente di questo sito è disponibile [qui](https://github.com/binick/binick.github.io), licenziato sotto GPLv3.
