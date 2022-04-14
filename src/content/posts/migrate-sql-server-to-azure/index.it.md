@@ -1,5 +1,5 @@
 ---
-title: "Migrate Sql Server to Azure"
+title: Migrare un database SQL Server on-prem in Azure senza downtime
 date: 2022-04-14
 author: Nicola Biancolini
 layout: external
