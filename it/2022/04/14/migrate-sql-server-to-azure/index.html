@@ -3,7 +3,7 @@
 <meta http-equiv=x-ua-compatible content="IE=edge">
 <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
 <meta name=robots content="index, follow">
-<title>Migrate Sql Server to Azure | a developer's journey to the cloud</title>
+<title>Migrare un database SQL Server on-prem in Azure senza downtime | a developer's journey to the cloud</title>
 <meta name=keywords content="lift-and-shift,rehosting,migrate,cloud adoption,devops,sql server,azure sql server">
 <meta name=description content="Il lift-and-shift è la strategia che consente la migrazione su Cloud più rapida, meno laboriosa e (almeno inizialmente) meno costosa rispetto ad altri processi.
 In questo articolo vedremo come è possibile migrare un database SQL Server senza generare interruzioni sui servizi già in opera.">
@@ -26,7 +26,7 @@ In questo articolo vedremo come è possibile migrare un database SQL Server senz
 <meta http-equiv=refresh content="5; url=https://www.ugidotnet.org/articoli/2943/Migrare-un-database-SQL-Server-on-prem-in-Azure-senza-downtime">
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-H2SCJP0ZQD"></script>
 <script>var doNotTrack=!1;if(!doNotTrack){window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date),gtag('config','G-H2SCJP0ZQD',{anonymize_ip:!1})}</script>
-<meta property="og:title" content="Migrate Sql Server to Azure">
+<meta property="og:title" content="Migrare un database SQL Server on-prem in Azure senza downtime">
 <meta property="og:description" content="Il lift-and-shift è la strategia che consente la migrazione su Cloud più rapida, meno laboriosa e (almeno inizialmente) meno costosa rispetto ad altri processi.
 In questo articolo vedremo come è possibile migrare un database SQL Server senza generare interruzioni sui servizi già in opera.">
 <meta property="og:type" content="article">
@@ -36,11 +36,11 @@ In questo articolo vedremo come è possibile migrare un database SQL Server senz
 <meta property="article:modified_time" content="2022-04-14T00:00:00+00:00">
 <meta name=twitter:card content="summary_large_image">
 <meta name=twitter:image content="https://binick.blog/it/2022/04/14/migrate-sql-server-to-azure/cover.jpg">
-<meta name=twitter:title content="Migrate Sql Server to Azure">
+<meta name=twitter:title content="Migrare un database SQL Server on-prem in Azure senza downtime">
 <meta name=twitter:description content="Il lift-and-shift è la strategia che consente la migrazione su Cloud più rapida, meno laboriosa e (almeno inizialmente) meno costosa rispetto ad altri processi.
 In questo articolo vedremo come è possibile migrare un database SQL Server senza generare interruzioni sui servizi già in opera.">
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":4,"name":"Migrate Sql Server to Azure","item":"https://binick.blog/it/2022/04/14/migrate-sql-server-to-azure/"}]}</script>
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Migrate Sql Server to Azure","name":"Migrate Sql Server to Azure","description":"Il lift-and-shift è la strategia che consente la migrazione su Cloud più rapida, meno laboriosa e (almeno inizialmente) meno costosa rispetto ad altri processi.\nIn questo articolo vedremo come è possibile migrare un database SQL Server senza generare interruzioni sui servizi già in opera.","keywords":["lift-and-shift","rehosting","migrate","cloud adoption","devops","sql server","azure sql server"],"articleBody":"","wordCount":"0","inLanguage":"it","image":"https://binick.blog/it/2022/04/14/migrate-sql-server-to-azure/cover.jpg","datePublished":"2022-04-14T00:00:00Z","dateModified":"2022-04-14T00:00:00Z","author":{"@type":"Person","name":"Nicola Biancolini"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://binick.blog/it/2022/04/14/migrate-sql-server-to-azure/"},"publisher":{"@type":"Organization","name":"a developer's journey to the cloud","logo":{"@type":"ImageObject","url":"https://binick.blog/favicon.ico"}}}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":4,"name":"Migrare un database SQL Server on-prem in Azure senza downtime","item":"https://binick.blog/it/2022/04/14/migrate-sql-server-to-azure/"}]}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Migrare un database SQL Server on-prem in Azure senza downtime","name":"Migrare un database SQL Server on-prem in Azure senza downtime","description":"Il lift-and-shift è la strategia che consente la migrazione su Cloud più rapida, meno laboriosa e (almeno inizialmente) meno costosa rispetto ad altri processi.\nIn questo articolo vedremo come è possibile migrare un database SQL Server senza generare interruzioni sui servizi già in opera.","keywords":["lift-and-shift","rehosting","migrate","cloud adoption","devops","sql server","azure sql server"],"articleBody":"","wordCount":"0","inLanguage":"it","image":"https://binick.blog/it/2022/04/14/migrate-sql-server-to-azure/cover.jpg","datePublished":"2022-04-14T00:00:00Z","dateModified":"2022-04-14T00:00:00Z","author":{"@type":"Person","name":"Nicola Biancolini"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://binick.blog/it/2022/04/14/migrate-sql-server-to-azure/"},"publisher":{"@type":"Organization","name":"a developer's journey to the cloud","logo":{"@type":"ImageObject","url":"https://binick.blog/favicon.ico"}}}</script>
 </head>
 <body id=top>
 <script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script>
