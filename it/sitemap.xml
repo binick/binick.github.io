@@ -6,7 +6,7 @@
   <url>
     <loc>https://binick.blog/it/</loc>
     
-    <lastmod>2022-03-29T00:00:00+00:00</lastmod>
+    <lastmod>2022-04-14T00:00:00+00:00</lastmod>
     
     
     
@@ -30,7 +30,7 @@
   <url>
     <loc>https://binick.blog/it/tags/azure/</loc>
     
-    <lastmod>2022-03-29T00:00:00+00:00</lastmod>
+    <lastmod>2022-04-14T00:00:00+00:00</lastmod>
     
     
     
@@ -54,7 +54,7 @@
   <url>
     <loc>https://binick.blog/it/tags/cloud-adoption/</loc>
     
-    <lastmod>2022-03-29T00:00:00+00:00</lastmod>
+    <lastmod>2022-04-14T00:00:00+00:00</lastmod>
     
     
     
@@ -70,6 +70,100 @@
       rel="alternate"
       hreflang="it"
       href="https://binick.blog/it/tags/cloud-adoption/"
+      />
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://binick.blog/it/tags/devops/</loc>
+    
+    <lastmod>2022-04-14T00:00:00+00:00</lastmod>
+    
+    
+    
+    
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://binick.blog/tags/devops/"
+      />
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="it"
+      href="https://binick.blog/it/tags/devops/"
+      />
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://binick.blog/it/2022/04/14/migrate-sql-server-to-azure/</loc>
+    
+    <lastmod>2022-04-14T00:00:00+00:00</lastmod>
+    
+    
+    
+    
+    
+    <news:news>
+      <news:publication>
+        <news:name>Migrate Sql Server to Azure</news:name>
+        <news:language>it</news:language>
+      </news:publication>
+      
+      <news:publication_date>2022-04-14T00:00:00&#43;00:00</news:publication_date>
+      
+      <news:title>Migrate Sql Server to Azure</news:title>
+    </news:news>
+    
+  </url>
+  
+  <url>
+    <loc>https://binick.blog/it/posts/</loc>
+    
+    <lastmod>2022-04-14T00:00:00+00:00</lastmod>
+    
+    
+    
+    
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://binick.blog/posts/"
+      />
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="it"
+      href="https://binick.blog/it/posts/"
+      />
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://binick.blog/it/tags/</loc>
+    
+    <lastmod>2022-04-14T00:00:00+00:00</lastmod>
+    
+    
+    
+    
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://binick.blog/tags/"
+      />
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="it"
+      href="https://binick.blog/it/tags/"
       />
     
     
@@ -100,30 +194,6 @@
   </url>
   
   <url>
-    <loc>https://binick.blog/it/posts/</loc>
-    
-    <lastmod>2022-03-29T00:00:00+00:00</lastmod>
-    
-    
-    
-    
-    
-    <xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://binick.blog/posts/"
-      />
-    
-    <xhtml:link
-      rel="alternate"
-      hreflang="it"
-      href="https://binick.blog/it/posts/"
-      />
-    
-    
-  </url>
-  
-  <url>
     <loc>https://binick.blog/it/tags/security/</loc>
     
     <lastmod>2022-03-29T00:00:00+00:00</lastmod>
@@ -142,30 +212,6 @@
       rel="alternate"
       hreflang="it"
       href="https://binick.blog/it/tags/security/"
-      />
-    
-    
-  </url>
-  
-  <url>
-    <loc>https://binick.blog/it/tags/</loc>
-    
-    <lastmod>2022-03-29T00:00:00+00:00</lastmod>
-    
-    
-    
-    
-    
-    <xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://binick.blog/tags/"
-      />
-    
-    <xhtml:link
-      rel="alternate"
-      hreflang="it"
-      href="https://binick.blog/it/tags/"
       />
     
     

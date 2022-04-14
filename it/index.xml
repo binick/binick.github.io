@@ -8,7 +8,18 @@
     <managingEditor>nicola.biancolini@gmail.com (Nicola Biancolini)</managingEditor>
     <webMaster>nicola.biancolini@gmail.com (Nicola Biancolini)</webMaster>
     <copyright>Il codice sorgente di questo sito è disponibile [qui](https://github.com/binick/binick.github.io), licenziato sotto GPLv3.</copyright>
-    <lastBuildDate>Tue, 29 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://binick.blog/it/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 14 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://binick.blog/it/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Migrate Sql Server to Azure</title>
+      <link>https://binick.blog/it/2022/04/14/migrate-sql-server-to-azure/</link>
+      <pubDate>Thu, 14 Apr 2022 00:00:00 +0000</pubDate>
+      <author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
+      <guid>https://binick.blog/it/2022/04/14/migrate-sql-server-to-azure/</guid>
+      <description>Il lift-and-shift è la strategia che consente la migrazione su Cloud più rapida, meno laboriosa e (almeno inizialmente) meno costosa rispetto ad altri processi.&lt;br&gt;
+In questo articolo vedremo come è possibile migrare un database SQL Server senza generare interruzioni sui servizi già in opera.</description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
     <item>
       <title>Un nuovo side project</title>
       <link>https://binick.blog/it/2022/03/29/cloud-governance/</link>

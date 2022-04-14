@@ -405,6 +405,19 @@
     
     
     
+    <xhtml:link
+      rel="alternate"
+      hreflang="it"
+      href="https://binick.blog/it/tags/devops/"
+      />
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://binick.blog/tags/devops/"
+      />
+    
+    
   </url>
   
   <url>
