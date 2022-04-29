@@ -6,7 +6,7 @@
   <url>
     <loc>https://binick.blog/</loc>
     
-    <lastmod>2022-03-29T00:00:00+00:00</lastmod>
+    <lastmod>2022-04-29T00:00:00+00:00</lastmod>
     
     
     
@@ -22,6 +22,113 @@
       rel="alternate"
       hreflang="en"
       href="https://binick.blog/"
+      />
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://binick.blog/series/monthly-recap/</loc>
+    
+    <lastmod>2022-04-29T00:00:00+00:00</lastmod>
+    
+    
+    
+    
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="it"
+      href="https://binick.blog/it/series/monthly-recap/"
+      />
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://binick.blog/series/monthly-recap/"
+      />
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://binick.blog/2022/04/29/0/</loc>
+    
+    <lastmod>2022-04-29T00:00:00+00:00</lastmod>
+    
+    
+    
+    
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="it"
+      href="https://binick.blog/it/2022/04/29/0/"
+      />
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://binick.blog/2022/04/29/0/"
+      />
+    
+    
+    <news:news>
+      <news:publication>
+        <news:name>Monthly recap 0</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      
+      <news:publication_date>2022-04-29T00:00:00&#43;00:00</news:publication_date>
+      
+      <news:title>Monthly recap 0</news:title>
+    </news:news>
+    
+  </url>
+  
+  <url>
+    <loc>https://binick.blog/posts/</loc>
+    
+    <lastmod>2022-04-29T00:00:00+00:00</lastmod>
+    
+    
+    
+    
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="it"
+      href="https://binick.blog/it/posts/"
+      />
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://binick.blog/posts/"
+      />
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://binick.blog/series/</loc>
+    
+    <lastmod>2022-04-29T00:00:00+00:00</lastmod>
+    
+    
+    
+    
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="it"
+      href="https://binick.blog/it/series/"
+      />
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://binick.blog/series/"
       />
     
     
@@ -129,30 +236,6 @@
       rel="alternate"
       hreflang="en"
       href="https://binick.blog/tags/cloud-governance/"
-      />
-    
-    
-  </url>
-  
-  <url>
-    <loc>https://binick.blog/posts/</loc>
-    
-    <lastmod>2022-03-29T00:00:00+00:00</lastmod>
-    
-    
-    
-    
-    
-    <xhtml:link
-      rel="alternate"
-      hreflang="it"
-      href="https://binick.blog/it/posts/"
-      />
-    
-    <xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://binick.blog/posts/"
       />
     
     
@@ -367,30 +450,6 @@
       rel="alternate"
       hreflang="en"
       href="https://binick.blog/series/identity-experience-framework/"
-      />
-    
-    
-  </url>
-  
-  <url>
-    <loc>https://binick.blog/series/</loc>
-    
-    <lastmod>2022-02-25T18:48:21+01:00</lastmod>
-    
-    
-    
-    
-    
-    <xhtml:link
-      rel="alternate"
-      hreflang="it"
-      href="https://binick.blog/it/series/"
-      />
-    
-    <xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://binick.blog/series/"
       />
     
     
