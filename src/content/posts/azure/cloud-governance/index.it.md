@@ -50,7 +50,7 @@ Proviamo, con non propriamente poco sforzo, a trasporre la parabola dello sfortu
 
 Tipicamente quando un’azienda si avvicina al cloud uno dei principali motivi di preoccupazione è la gestione dei costi[^capex-vs-opex].
 
-[^capex-vs-opex]: [CapEx vs OpEx in Cloud Computing](https://www.geeksforgeeks.org/capex-vs-opex-in-cloud-computing")
+[^capex-vs-opex]: [CapEx vs OpEx in Cloud Computing](https://www.geeksforgeeks.org/capex-vs-opex-in-cloud-computing)
 
 Immaginiamo di essere un membro del team di security operation, abituato ad operare su di un set di macchine predeterminato che adesso si ritrova con un potenziale parco macchine infinito ed un monito da parte del suo manager di area che gli dice di dover contenere le spese. 
 
