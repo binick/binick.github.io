@@ -1,5 +1,5 @@
 baseURL: http://localhost
-title: a developer's journey to the cloud
+title: binick blog
 paginate: 10
 theme: PaperMod
 
@@ -58,8 +58,8 @@ params:
     disableHLJS: true
 
   label:
-    text: "a developer's journey..."
-    icon: /me.png
+    text: "binick"
+    # icon: /me.png
     iconHeight: 35
 
   # profile-mode
@@ -68,7 +68,7 @@ params:
 
   # home-info mode
   homeInfoParams:
-    Title: "... to the cloud"
+    Title: "yet another developer journey"
     # Content: Photo by [sendi gibran](https://unsplash.com/@sendi_r_gibran?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText") on [Unsplash](https://unsplash.com/images/nature/cloud?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 
   socialIcons:
@@ -155,8 +155,8 @@ languages:
     copyright: Il codice sorgente di questo sito è disponibile [qui](https://github.com/binick/binick.github.io), licenziato sotto GPLv3.
 
     label:
-      text: "il viaggio di uno sviluppatore..."
-      icon: /me.png
+      text: "binick"
+      # icon: /me.png
       iconHeight: 35
 
     params:
@@ -172,7 +172,7 @@ languages:
         appendFilePath: true
 
     homeInfoParams:
-      Title: "... verso il cloud"
+      Title: "l'ennesimo viaggio di uno sviluppatore"
 
     menu:
 
