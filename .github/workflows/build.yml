@@ -33,6 +33,7 @@ jobs:
             klakegg/hugo:0.92.2-ext --minify
           npm run test
         continue-on-error: true
+        if: false
 
       - name: Upload a11y analysis results
         uses: github/codeql-action/upload-sarif@v2
@@ -40,3 +41,4 @@ jobs:
           sarif_file: artifacts/test-results/a11y
           category: axe-core
           wait-for-processing: false
+        if: false
