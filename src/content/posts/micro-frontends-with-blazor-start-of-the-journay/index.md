@@ -4,6 +4,8 @@ date: 2022-05-22
 author: Nicola Biancolini
 description: |
   Not all donuts come out with a hole, but that doesn't mean there isn't good in them. I stumbled upon one of these in an attempt to implement a micro frontends architecture with Blazor Server.
+summary: |
+  Not all donuts come out with a hole, but that doesn't mean there isn't good in them. I stumbled upon one of these in an attempt to implement a micro frontends architecture with Blazor Server.
 keywords: 
  - blazor server
  - micro frontends

@@ -4,6 +4,8 @@ date: 2022-05-22
 author: Nicola Biancolini
 description: |
   Non sempre le ciambelle riescono col buco ma questo non vuol dire che non ci sia del buono in loro. Sono incappato in una di queste nel tentativo di realizzare un'architettura a micro frontends con Blazor Server.
+summary: |
+  Non sempre le ciambelle riescono col buco ma questo non vuol dire che non ci sia del buono in loro. Sono incappato in una di queste nel tentativo di realizzare un'architettura a micro frontends con Blazor Server.
 keywords: 
  - blazor server
  - micro frontends
