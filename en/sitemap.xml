@@ -6,7 +6,7 @@
   <url>
     <loc>https://binick.blog/</loc>
     
-    <lastmod>2022-04-29T00:00:00+00:00</lastmod>
+    <lastmod>2022-05-22T00:00:00+00:00</lastmod>
     
     
     
@@ -22,6 +22,137 @@
       rel="alternate"
       hreflang="en"
       href="https://binick.blog/"
+      />
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://binick.blog/tags/architecture/</loc>
+    
+    <lastmod>2022-05-22T00:00:00+00:00</lastmod>
+    
+    
+    
+    
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="it"
+      href="https://binick.blog/it/tags/architecture/"
+      />
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://binick.blog/tags/architecture/"
+      />
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://binick.blog/tags/blazor/</loc>
+    
+    <lastmod>2022-05-22T00:00:00+00:00</lastmod>
+    
+    
+    
+    
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="it"
+      href="https://binick.blog/it/tags/blazor/"
+      />
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://binick.blog/tags/blazor/"
+      />
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://binick.blog/2022/05/22/micro-frontends-with-blazor-start-of-the-journay/</loc>
+    
+    <lastmod>2022-05-22T00:00:00+00:00</lastmod>
+    
+    
+    
+    
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="it"
+      href="https://binick.blog/it/2022/05/22/micro-frontends-with-blazor-start-of-the-journay/"
+      />
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://binick.blog/2022/05/22/micro-frontends-with-blazor-start-of-the-journay/"
+      />
+    
+    
+    <news:news>
+      <news:publication>
+        <news:name>Micro frontends and Blazor Server, the beginning of the journey</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      
+      <news:publication_date>2022-05-22T00:00:00&#43;00:00</news:publication_date>
+      
+      <news:title>Micro frontends and Blazor Server, the beginning of the journey</news:title>
+    </news:news>
+    
+  </url>
+  
+  <url>
+    <loc>https://binick.blog/posts/</loc>
+    
+    <lastmod>2022-05-22T00:00:00+00:00</lastmod>
+    
+    
+    
+    
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="it"
+      href="https://binick.blog/it/posts/"
+      />
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://binick.blog/posts/"
+      />
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://binick.blog/tags/</loc>
+    
+    <lastmod>2022-05-22T00:00:00+00:00</lastmod>
+    
+    
+    
+    
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="it"
+      href="https://binick.blog/it/tags/"
+      />
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://binick.blog/tags/"
       />
     
     
@@ -83,30 +214,6 @@
       
       <news:title>Monthly recap 0</news:title>
     </news:news>
-    
-  </url>
-  
-  <url>
-    <loc>https://binick.blog/posts/</loc>
-    
-    <lastmod>2022-04-29T00:00:00+00:00</lastmod>
-    
-    
-    
-    
-    
-    <xhtml:link
-      rel="alternate"
-      hreflang="it"
-      href="https://binick.blog/it/posts/"
-      />
-    
-    <xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://binick.blog/posts/"
-      />
-    
     
   </url>
   
@@ -260,30 +367,6 @@
       rel="alternate"
       hreflang="en"
       href="https://binick.blog/tags/security/"
-      />
-    
-    
-  </url>
-  
-  <url>
-    <loc>https://binick.blog/tags/</loc>
-    
-    <lastmod>2022-03-29T00:00:00+00:00</lastmod>
-    
-    
-    
-    
-    
-    <xhtml:link
-      rel="alternate"
-      hreflang="it"
-      href="https://binick.blog/it/tags/"
-      />
-    
-    <xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://binick.blog/tags/"
       />
     
     
