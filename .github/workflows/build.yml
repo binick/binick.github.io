@@ -35,7 +35,8 @@ jobs:
         continue-on-error: true
 
       - name: Upload a11y analysis results
-        uses: github/codeql-action/upload-sarif@v1
+        uses: github/codeql-action/upload-sarif@v2
         with:
           sarif_file: artifacts/test-results/a11y
           category: axe-core
+          wait-for-processing: false
