@@ -162,12 +162,12 @@ languages:
     params:
 
       editPost:
-        URL: https://github.com/binick/binick.github.io/tree/main/content
+        URL: https://github.com/binick/binick.github.io/tree/main/src/content
         Text: ✍️ Suggerisci modifiche
         appendFilePath: true
 
       changelog:
-        URL: https://github.com/binick/binick.github.io/commits/main/content
+        URL: https://github.com/binick/binick.github.io/commits/main/src/content
         Text: 🗒️ Changelog
         appendFilePath: true
 
