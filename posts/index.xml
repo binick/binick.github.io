@@ -453,10 +453,16 @@ Often this happens because we don&rsquo;t have time, other times because despite
 <span class="ln" id="8"><a style="outline: none; text-decoration:none; color:inherit" href="#8">8</a></span>  
 <span class="ln" id="9"><a style="outline: none; text-decoration:none; color:inherit" href="#9">9</a></span><span class="nt">&lt;/Project&gt;</span>
 </code></pre></div><p>Now everything you are able to run <code>dotnet test</code> you will able to inspect and analyze something like this</p>
-<p><img loading="lazy" src="https://camo.githubusercontent.com/adbd81e4a37adb003d75ecc13d508acda0c7aebc/68747470733a2f2f64616e69656c70616c6d652e6769746875622e696f2f5265706f727447656e657261746f722f7265736f75726365732f73637265656e73686f74312e706e67" alt="coverage-report)"  />
-</p>
-<p><img loading="lazy" src="https://camo.githubusercontent.com/05adffdf7d564ad20b92b174c47353a26337ecdc58887d0c64a3b4e633e8770a/68747470733a2f2f64616e69656c70616c6d652e6769746875622e696f2f5265706f727447656e657261746f722f7265736f75726365732f73637265656e73686f74322e706e67" alt="coverage-report-detail"  />
-</p>
+<figure>
+    <img loading="lazy" src="https://camo.githubusercontent.com/adbd81e4a37adb003d75ecc13d508acda0c7aebc/68747470733a2f2f64616e69656c70616c6d652e6769746875622e696f2f5265706f727447656e657261746f722f7265736f75726365732f73637265656e73686f74312e706e67"
+         alt="Example of coverage report"/> 
+</figure>
+
+<figure>
+    <img loading="lazy" src="https://camo.githubusercontent.com/adbd81e4a37adb003d75ecc13d508acda0c7aebc/68747470733a2f2f64616e69656c70616c6d652e6769746875622e696f2f5265706f727447656e657261746f722f7265736f75726365732f73637265656e73686f74312e706e67"
+         alt="Example of coverage report for a single file"/> 
+</figure>
+
 <p>I think that is an amazing tool to understand at a glance which codes are covered and which not.</p>
 <h2 id="and-now-how-i-can-put-it-into-azure-devops-pipeline">And now, how I can put it into Azure DevOps pipeline?</h2>
 <p>It would be nice if this report came was published into the <em>Build pipeline</em> report, don&rsquo;t you think? Maybe even include branch policies for it.</p>
@@ -469,8 +475,12 @@ Often this happens because we don&rsquo;t have time, other times because despite
 </span><span class="ln" id="6"><a style="outline: none; text-decoration:none; color:inherit" href="#6">6</a></span><span class="w">    </span><span class="nt">continueOnError</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
 </span><span class="ln" id="7"><a style="outline: none; text-decoration:none; color:inherit" href="#7">7</a></span><span class="w">    </span><span class="nt">condition</span><span class="p">:</span><span class="w"> </span><span class="l">always()</span><span class="w">
 </span></code></pre></div><p>We notice the <code>summaryFileLocation</code> argument, this means that we will push only one file to <em>Azure DevOps</em> why?</p>
-<p>One unwrite note of <em>Publish Code Coverage Results task</em> or limitation, I don&rsquo;t know, is that the sum of covered lines, when we publish more reports, is take from the first file <img loading="lazy" src="pipeline-run-summary.png" alt=""  />
-</p>
+<p>One unwrite note of <em>Publish Code Coverage Results task</em> or limitation, I don&rsquo;t know, is that the sum of covered lines, when we publish more reports, is take from the first file</p>
+<figure>
+    <img loading="lazy" src="pipeline-run-summary.png"
+         alt="Glance to summary code coverage percentage reported by Azure DevOps"/> 
+</figure>
+
 <p>This results in an unreliable result.</p>
 <p>To fix that problem we can marge multiple reports into a summary reports so that can be publish it only one. One way to make it is the follow</p>
 <script type="application/javascript" src="https://gist.github.com/binick/71ec60d143ee51523e2c7ac23b9ae543.js?file=SummaryReportGenerator.proj"></script>
