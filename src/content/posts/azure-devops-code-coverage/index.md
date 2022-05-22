@@ -77,9 +77,9 @@ And include this into your test project, something like this
 
 Now everything you are able to run `dotnet test` you will able to inspect and analyze something like this
 
-![coverage-report)](https://camo.githubusercontent.com/adbd81e4a37adb003d75ecc13d508acda0c7aebc/68747470733a2f2f64616e69656c70616c6d652e6769746875622e696f2f5265706f727447656e657261746f722f7265736f75726365732f73637265656e73686f74312e706e67)
+{{< figure src=https://camo.githubusercontent.com/adbd81e4a37adb003d75ecc13d508acda0c7aebc/68747470733a2f2f64616e69656c70616c6d652e6769746875622e696f2f5265706f727447656e657261746f722f7265736f75726365732f73637265656e73686f74312e706e67 alt="Example of coverage report" >}}
 
-![coverage-report-detail](https://camo.githubusercontent.com/05adffdf7d564ad20b92b174c47353a26337ecdc58887d0c64a3b4e633e8770a/68747470733a2f2f64616e69656c70616c6d652e6769746875622e696f2f5265706f727447656e657261746f722f7265736f75726365732f73637265656e73686f74322e706e67)
+{{< figure src=https://camo.githubusercontent.com/adbd81e4a37adb003d75ecc13d508acda0c7aebc/68747470733a2f2f64616e69656c70616c6d652e6769746875622e696f2f5265706f727447656e657261746f722f7265736f75726365732f73637265656e73686f74312e706e67 alt="Example of coverage report for a single file" >}}
 
 I think that is an amazing tool to understand at a glance which codes are covered and which not.
 
@@ -101,7 +101,9 @@ Well that's possible by use [Publish Code Coverage Results task](https://docs.mi
 
 We notice the `summaryFileLocation` argument, this means that we will push only one file to _Azure DevOps_ why?
 
-One unwrite note of _Publish Code Coverage Results task_ or limitation, I don't know, is that the sum of covered lines, when we publish more reports, is take from the first file ![](pipeline-run-summary.png)
+One unwrite note of _Publish Code Coverage Results task_ or limitation, I don't know, is that the sum of covered lines, when we publish more reports, is take from the first file
+
+{{< figure src=pipeline-run-summary.png alt="Glance to summary code coverage percentage reported by Azure DevOps" >}}
 
 This results in an unreliable result.
 
