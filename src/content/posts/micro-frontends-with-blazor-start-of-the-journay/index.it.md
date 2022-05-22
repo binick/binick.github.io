@@ -13,7 +13,6 @@ keywords:
 tags:
  - blazor
  - architecture
-draft: true
 cover:
   image: cover.jpg
   alt: Foto di copertina

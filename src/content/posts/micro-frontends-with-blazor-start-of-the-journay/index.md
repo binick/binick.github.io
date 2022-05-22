@@ -1,5 +1,5 @@
 ﻿---
-title: Micro frontend and Blazor Server, the beginning of the journey
+title: Micro frontends and Blazor Server, the beginning of the journey
 date: 2022-05-22
 author: Nicola Biancolini
 description: |
@@ -13,7 +13,6 @@ keywords:
 tags:
  - blazor
  - architecture
-draft: true
 cover:
   image: cover.jpg
   alt: Post cover
@@ -41,13 +40,13 @@ I really like the definition he gives [Treccani](https://www.treccani.it/vocabol
 
 Which translated, hoping to do it correctly, would be "*Recognizing the futility of one's efforts, the impossibility and inability to achieve the set goals, definitely giving up the struggle, action.*"
 
-I find it particularly appropriate because it uses the term *fixed scopes*, and so what are those purposes?
+I find it particularly proper because it uses the term *fixed scopes*, and so what are those purposes?
 
 ## Context matters.
 
 Nothing is done by accident, and this is certainly no exception. The work done is part of a larger context involving the need to migrate a number of *ASP.NET MVC 5* applications to *ASP.NET Core* combined with a desire to make the current architecture more flexible by introducing the concept of **modular-programming**[^modular-programming].
 
-[^modular-programming]: Modular programming is a software design technique that emphasizes separating the functionality of a program into independent, interchangeable modules, such that each contains everything necessary to execute only one aspect of the desired functionality. Source [Wikipedia](https://en.wikipedia.org/wiki/Modular_programming).
+[^modular-programming]: Modular programming is a software design technique that emphasizes separating the functionality of a program into independent, interchangeable modules, such that each holds everything necessary to execute only one aspect of the desired functionality. Source [Wikipedia](https://en.wikipedia.org/wiki/Modular_programming).
 
 Without getting around too much, the ultimate goal was to measure the feasibility of "realizing" a *micro frontends* architecture rendered server-side thanks to *Blazor Server*.
 
@@ -71,7 +70,7 @@ Getting straight to the point, the main reason for the failure is related to the
 
 ### Homonymy in support for pages and views *Razor*.
 
-To compose the site each *frontends* is contained within a **Razor** class library which also contains the view that is responsible for doing [hosting](https://docs.microsoft.com/aspnet/core/blazor/fundamentals/routing#aspnet-core-endpoint-routing-integration) of the *Blazor* application.
+To compose the site each *frontends* is contained within a **Razor** class library which also holds the view that is responsible for doing [hosting](https://docs.microsoft.com/aspnet/core/blazor/fundamentals/routing#aspnet-core-endpoint-routing-integration) of the *Blazor* application.
 
 This is made possible by the functionality exposed by the *SDK* that allows a *web app* to use *Razor* views, pages, or layouts from class libraries and, as defined in the [official documentation](https://docs.microsoft.com/aspnet/core/razor-pages/ui-class#override-views-partial-views-and-pages-2), in case of homonymy, precedence is given to the view, page, layout present in the *web app*.
 
