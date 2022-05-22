@@ -4,30 +4,6 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   
   <url>
-    <loc>https://binick.blog/it/</loc>
-    
-    <lastmod>2022-05-22T00:00:00+00:00</lastmod>
-    
-    
-    
-    
-    
-    <xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://binick.blog/"
-      />
-    
-    <xhtml:link
-      rel="alternate"
-      hreflang="it"
-      href="https://binick.blog/it/"
-      />
-    
-    
-  </url>
-  
-  <url>
     <loc>https://binick.blog/it/tags/architecture/</loc>
     
     <lastmod>2022-05-22T00:00:00+00:00</lastmod>
@@ -46,6 +22,30 @@
       rel="alternate"
       hreflang="it"
       href="https://binick.blog/it/tags/architecture/"
+      />
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://binick.blog/it/</loc>
+    
+    <lastmod>2022-05-22T00:00:00+00:00</lastmod>
+    
+    
+    
+    
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://binick.blog/"
+      />
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="it"
+      href="https://binick.blog/it/"
       />
     
     
