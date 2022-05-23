@@ -67,20 +67,20 @@ E notiamo bene che entrambi i moduli eseguiti indipendentemente si comporterebbe
 <p>Diversamente utilizzando il middleware sarei stato costretto ad utilizzare il nome del modulo in testa a tutte le direttive <a href="https://docs.microsoft.com/aspnet/core/mvc/views/razor#page"><code>@page</code></a>.</p>
 <h2 id="conclusioni">Conclusioni.</h2>
 <p>Tirando le somme di quanto fatto e ragionando a mente fredda potrei dire che qualcosa di buono ce lo possiamo comunque portare a casa, infatti, non abilitando il supporto alle pagine e viste <em>Razor</em> in una <em>RCL</em><sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> ed evitando l&rsquo;utilizzo di <em>Anchor Tag Helper</em> nel markup HTML che contribuisce al rendering della vista non incorreremmo in questi problemi.</p>
-<section class="footnotes" role="doc-endnotes">
+<div class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
-<li id="fn:1" role="doc-endnote">
+<li id="fn:1">
 <p>Uno spike è un metodo di sviluppo del prodotto originato dalla programmazione estrema che utilizza il programma più semplice possibile per esplorare potenziali soluzioni. Fonte <a href="https://en.wikipedia.org/wiki/Spike_(software_development)">Wikipedia</a>.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:2" role="doc-endnote">
+<li id="fn:2">
 <p>La programmazione modulare è una tecnica di progettazione software che enfatizza la separazione della funzionalità di un programma in moduli indipendenti e intercambiabili, in modo tale che ognuno contenga tutto il necessario per eseguire solo un aspetto della funzionalità desiderata. Fonte <a href="https://en.wikipedia.org/wiki/Modular_programming">Wikipedia</a>.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:3" role="doc-endnote">
+<li id="fn:3">
 <p>Le <a href="https://docs.microsoft.com/aspnet/core/razor-pages/ui-class">librerie di classi Razor (RCL)</a> sono state introdotte in ASP.NET Core 2.1 come metodo per impacchettare e distribuire componenti dell&rsquo;interfaccia utente da referenziare e utilizzare all&rsquo;interno di un&rsquo;applicazione host.&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
-</section>
+</div>
 ]]></content:encoded>
     </item>
     

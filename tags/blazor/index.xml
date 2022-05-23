@@ -73,20 +73,20 @@ And we note well that both modules executed independently would behave as expect
 <p>Otherwise using middleware I would have been forced to use the module name at the top of all <a href="https://docs.microsoft.com/aspnet/core/mvc/views/razor#page"><code>@page</code></a> directives.</p>
 <h2 id="conclusions">Conclusions.</h2>
 <p>Summing up what has been done and reasoning with a cool mind I could say that something good we can still take home, in fact, by not enabling support for <em>Razor</em> pages and views in a <em>RCL</em><sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> and avoiding the use of <em>Anchor Tag Helper</em> in the HTML markup that contributes to view rendering we would not run into these problems.</p>
-<section class="footnotes" role="doc-endnotes">
+<div class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
-<li id="fn:1" role="doc-endnote">
+<li id="fn:1">
 <p>A spike is a product development method originating from extreme programming that uses the simplest possible program to explore potential solutions. Source <a href="https://en.wikipedia.org/wiki/Spike_(software_development)">Wikipedia</a>.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:2" role="doc-endnote">
+<li id="fn:2">
 <p>Modular programming is a software design technique that emphasizes separating the functionality of a program into independent, interchangeable modules, such that each holds everything necessary to execute only one aspect of the desired functionality. Source <a href="https://en.wikipedia.org/wiki/Modular_programming">Wikipedia</a>.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:3" role="doc-endnote">
+<li id="fn:3">
 <p><a href="https://docs.microsoft.com/aspnet/core/razor-pages/ui-class">Razor Class libraries (RCLs)</a> were introduced in ASP.NET Core 2.1 as a way to package and distribute UI components to be referenced and consumed within a host application.&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
-</section>
+</div>
 ]]></content:encoded>
     </item>
     

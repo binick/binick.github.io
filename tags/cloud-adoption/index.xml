@@ -49,7 +49,7 @@ Problems that have caused the postponement of the production release of a busine
 <p>Obviously, the team acted in good faith by trying to limit each team&rsquo;s <em>scope</em><sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> of action.<br>
 Thinking to achieve two goals: <em>cost control</em><sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> and <em>security</em><sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>.</p>
 <p>Here we now have the necessary elements to resume the transposition begun earlier and identify
-the <em>ambit</em><sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> in the jacke, the release date in the date, and <a href="https://docs.microsoft.com/azure/cloud-adoption-framework/govern/governance-disciplines#disciplines-of-cloud-governance">the five disciplines of <em>Cloud Governance</em></a> in the awareness.</p>
+the <em>ambit</em><sup id="fnref1:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> in the jacke, the release date in the date, and <a href="https://docs.microsoft.com/azure/cloud-adoption-framework/govern/governance-disciplines#disciplines-of-cloud-governance">the five disciplines of <em>Cloud Governance</em></a> in the awareness.</p>
 <p>Here that to try to increase this awareness I created this repository</p>
 
   <div class="github-ref-container">
@@ -62,26 +62,26 @@ the <em>ambit</em><sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="d
   </div>
 
 <p>whose intent is to define standards based on best practices that have emerged in areas such as resource naming, tag management and localization.<br>
-On which it will then be possible to define patterns for the definition of budget<sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>.</p>
+On which it will then be possible to define patterns for the definition of budget<sup id="fnref1:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>.</p>
 <p>Over the years I&rsquo;ve started several side projects but never had a post like this one.<br>
 I see this as a first step towards a real commitment, if you would like to elaborate or feel the need to contribute please feel free to <a href="https://binick.blog/about-me/">contact me</a> 🙂 .</p>
-<section class="footnotes" role="doc-endnotes">
+<div class="footnotes" role="doc-endnotes">
 <hr>
 <ol>
-<li id="fn:1" role="doc-endnote">
+<li id="fn:1">
 <p><a href="https://www.geeksforgeeks.org/capex-vs-opex-in-cloud-computing">CapEx vs OpEx in Cloud Computing</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:2" role="doc-endnote">
-<p><a href="https://docs.microsoft.com/azure/role-based-access-control/scope-overview">Understand scope for Azure RBAC</a>&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<li id="fn:2">
+<p><a href="https://docs.microsoft.com/azure/role-based-access-control/scope-overview">Understand scope for Azure RBAC</a>&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref1:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:3" role="doc-endnote">
-<p><a href="https://docs.microsoft.com/azure/cost-management-billing/cost-management-billing-overview">What is Cost Management + Billing?</a>&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<li id="fn:3">
+<p><a href="https://docs.microsoft.com/azure/cost-management-billing/cost-management-billing-overview">What is Cost Management + Billing?</a>&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref1:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
-<li id="fn:4" role="doc-endnote">
+<li id="fn:4">
 <p><a href="https://docs.microsoft.com/azure/security/fundamentals/overview">Introduction to Azure security</a>&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
-</section>
+</div>
 ]]></content:encoded>
     </item>
     
