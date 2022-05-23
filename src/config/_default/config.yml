@@ -194,11 +194,10 @@ languages:
         #   weight: 10
 
 frontmatter:
+
   lastmod:
-  - lastmod
-  - :git
-  - date
-  - publishDate
+    - lastmod
+    - :default
 
 taxonomies:
   category: categories

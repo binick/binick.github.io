@@ -17,15 +17,13 @@ jobs:
           submodules: true
           fetch-depth: 0
 
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+
       - name: Build
-        run: |
-          mkdir artifacts
-          docker run \
-            -e "HUGO_ENV=production" \
-            -v "$(pwd)/src:/src" \
-            -v "$(pwd)/.git:/src/.git" \
-            -v "$(pwd)/artifacts:/artifacts" \
-            klakegg/hugo:0.92.2-ext --minify
+        run: hugo -e production -s ./src --minify
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
