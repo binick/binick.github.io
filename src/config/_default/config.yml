@@ -43,7 +43,7 @@ params:
   description: "yet another developer's journey"
   ShowReadingTime: true
   ShowShareButtons: true
-  comments: false
+  comments: true
   defaultTheme: auto
   displayFullLangName: true
   ShowCodeCopyButtons: true
@@ -105,6 +105,18 @@ params:
       SiteVerificationTag: 72e5d19a7266b9fa
     
   microsoftClarity: bs3jpc0j8j
+
+  giscus:
+    disable: false
+    repo: binick/binick.github.io
+    repoId: MDEwOlJlcG9zaXRvcnkzMDY2OTEwNTM=
+    category: Q&A
+    categoryId: DIC_kwDOEke77c4CAnaL
+    mapping: og:title
+    reactionsEnabled: "1"
+    emitMetadata: "0"
+    inputPosition: top
+    themeRelativePath: /assets/css/giscus.css
 
 markup:
 

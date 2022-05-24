@@ -1,0 +1,21 @@
+{{- $c := site.Params.Giscus -}}
+{{- if not $c.Disable }}{{ with site.Params.Giscus -}}
+<script
+    id="discussion"
+    src="https://giscus.app/client.js"
+    data-repo="{{ .repo }}" 
+    data-repo-id="{{ .repoId }}"
+    data-category="{{ .category }}" 
+    data-category-id="{{ .categoryId }}" 
+    data-mapping="{{ .mapping }}"
+    data-theme="{{ site.BaseURL }}{{ .themeRelativePath }}"
+    data-reactions-enabled="{{ .reactionsEnabled }}"
+    data-emit-metadata="{{ .emitMetadata }}"
+    data-input-position="{{ .inputPosition }}" 
+    data-lang="en" 
+    data-loading="lazy" 
+    crossorigin="anonymous"
+    async>
+    </script>
+{{- end -}}
+{{- end -}}
