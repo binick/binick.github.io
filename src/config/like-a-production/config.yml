@@ -2,3 +2,15 @@ buildDrafts: false
 buildFuture: false
 buildExpored: false
 buildExpired: false
+
+params:
+  env: production
+
+privacy:
+  googleAnalytics:
+    disable: true
+
+params: 
+  privacy:
+    microsoftClarity:
+      disable: true
