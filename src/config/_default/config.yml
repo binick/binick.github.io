@@ -116,7 +116,7 @@ params:
     reactionsEnabled: "1"
     emitMetadata: "0"
     inputPosition: top
-    themeRelativePath: /giscus.css
+    # themeRelativePath: /giscus.css
 
 markup:
 
