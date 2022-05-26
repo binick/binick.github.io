@@ -1,2 +1,6 @@
 <script src="https://cdn.jsdelivr.net/npm/mermaid@9.1.1/dist/mermaid.min.js" integrity="sha256-8L3O8tirFUa8Va4NSTAyIbHJeLd6OnlcxgupV9F77e0=" crossorigin="anonymous"></script>
 <script>mermaid.initialize({ startOnLoad:true, securityLevel: 'loose', theme: 'base' });</script>
+{{- if (eq .Layout "search") -}}
+{{- $custom := resources.Get "js/quick.search.js" | minify | fingerprint -}}
+<script defer src="{{ $custom.Permalink }}" integrity="{{ $custom.Data.Integrity }}" crossorigin="anonymous"></script>
+{{- end -}}
