@@ -1,0 +1,1 @@
+const quickSearch=function(){const e=new URLSearchParams(window.location.search).get("q");if(e){const t=document.getElementById("searchInput");t.value=decodeURIComponent(e),t.dispatchEvent(new KeyboardEvent("keyup",{key:t.value.charAt(t.value.length-1)}))}};window.addEventListener("load",()=>{setTimeout(quickSearch,0)})
