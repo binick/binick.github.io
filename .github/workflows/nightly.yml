@@ -1,0 +1,10 @@
+name: nightly
+
+on:
+  schedule:
+    - cron: 0 2 * * *
+
+jobs:
+  ship:
+    uses: ./.github/workflows/ship.yml
+  
