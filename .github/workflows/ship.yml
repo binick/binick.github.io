@@ -6,6 +6,8 @@ on:
       - closed
   workflow_dispatch:
 
+  workflow_call:
+
 jobs:
   deploy:
     runs-on: ubuntu-18.04
