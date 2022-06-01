@@ -40,6 +40,9 @@ jobs:
     needs: deploy
 
     steps:
+      - name: Delay profile update
+        run: sleep 60s
+
       - name: Update profile page
         run: |
           curl -X POST \
