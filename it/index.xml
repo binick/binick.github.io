@@ -8,7 +8,56 @@
     <managingEditor>nicola.biancolini@gmail.com (Nicola Biancolini)</managingEditor>
     <webMaster>nicola.biancolini@gmail.com (Nicola Biancolini)</webMaster>
     <copyright>Il codice sorgente di questo sito è disponibile [qui](https://github.com/binick/binick.github.io), licenziato sotto GPLv3.</copyright>
-    <lastBuildDate>Sun, 22 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://binick.blog/it/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 01 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://binick.blog/it/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GitHub Pages ed il confusionario processo per applicare HTTPS</title>
+      <link>https://binick.blog/it/2022/06/01/github-pages-and-cloudflare-together/</link>
+      <pubDate>Wed, 01 Jun 2022 00:00:00 +0000</pubDate>
+      <author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
+      <guid>https://binick.blog/it/2022/06/01/github-pages-and-cloudflare-together/</guid>
+      <description>GitHub offre un’esperienza utente appagante come pochi altri servizi. Nonostante questo, però, il processo di configurazione di un dominio personalizzato con il servizio Pages può risultare ostico, qui vi racconto la mia esperienza nella speranza che possa aiutare qualcuno.
+</description>
+      <content:encoded><![CDATA[<p>Molti di voi sapranno che ormai da un po’ di tempo, 13 anni<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> ormai, GitHub offre un servizio chiamato <a href="https://pages.github.com/">Pages</a> che consente di ospitare siti statici, molto comodo per ospitare blog e documentazione.</p>
+<p>Per questo non è una novità che questo blog, come molti altri, sia ospitato proprio li. Ed il motivo non è perché&rsquo; &ldquo;fa figo&rdquo; ma molto più concreto e venale.<br>
+Uno degli obbiettivi che mi ero prefissato era quello di non farlo diventare una spesa viva, per questo scelsi l&rsquo;accoppiata <a href="https://gohugo.io/">HUGO</a> + GitHub Pages, una scelta che oggi rifarei! Per una volta mi posso dare una pacca sulla spalla 🙂.</p>
+<p>In seguito, ho pensato che per avere una SEO migliore ed una maggiore associazione fra questo blog e me sarebbe stata buona cosa avere qualche dominio personalizzato.</p>
+<h2 id="applicare-https">Applicare HTTPS.</h2>
+<p>I domini li ho presi su <a href="https://www.register.it/">()register.it</a> ed ho scelto di usare il servizio DNS di <a href="https://www.cloudflare.com/dns/">Cloudflare</a> per cui dopo aver provveduto a configurare i record DNS in modo da <a href="https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages#supported-custom-domains">supportare i domini personalizzati</a> facendo puntare l&rsquo;apex e <code>www</code> al sottodominio <code>github.io</code>.</p>
+<p>A questo punto nonostante la sezione <em>Pages</em> delle impostazioni del repo riportasse il flag sulla correttezza dei record DNS impostati il messaggio subito sotto mi informava che il dominio non era correttamente configurato</p>
+<figure>
+    <img loading="lazy" src="./gh-pages-without-tls.png"
+         alt="Raffigurazione della sezione Pages nelle impostazione di GitHub che riporta l’impossibilità di abilitare HTTPS."/> 
+</figure>
+
+<p>Anche la sezione <a href="https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/troubleshooting-custom-domains-and-github-pages#custom-domain-names-that-are-unsupported">Custom domain names that are unsupported</a> confermata la validità della configurazione e questa cosa mi ha causato un gran mal di testa fino a quando non ho trovato questo <a href="https://github.community/t/the-enforce-https-button-isnt-working/10429/9">post</a> dal quale cito testualmente.</p>
+<blockquote>
+<p>If you’re configuring an apex domain make sure there are no other <code>A</code>, <code>AAAA</code>, or <code>ALIAS</code> records listed on the apex.</p>
+<p>If you’re configuring a subdomain, <code>www</code> or otherwise, make sure there are no other <code>A</code>, <code>AAAA</code>, or <code>CNAME</code> records on that same subdomain.</p>
+</blockquote>
+<p>Un po&rsquo; nello sconforto ho rimosso il record <code>www</code> ed a dispetto di quanto riportato dalla documentazione e della comparsa di questo warning</p>
+<figure>
+    <img loading="lazy" src="https://user-images.githubusercontent.com/523825/114216669-d53baa00-992c-11eb-96c0-c0f9da7330fe.png"
+         alt="Warning che riporta la cattiva configurazione dei record DNS."/> 
+</figure>
+
+<p>(scusate ma mi sono dimenticato di catturare lo schermo 🙏 per cui l&rsquo;ho recuperato da una <a href="https://github.com/isaacs/github/issues/1675">issue</a> dove ho scoperto che altre persone hanno avuto il mio stesso mal di testa)</p>
+<p>GitHub ha avviato il processo di creazione del certificato su <a href="https://letsencrypt.org/">Let&rsquo;s Encrypt</a>, successivamente ho riconfigurato i record DNS come in precedenza e finalmente.</p>
+<figure>
+    <img loading="lazy" src="./gh-pages-with-tls.png"
+         alt="Raffigurazione della sezione Pages nelle impostazione di GitHub che riporta la corretta configurazione dei record DNS e HTTPS abilitato."/> 
+</figure>
+
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>Non ho cosi tanta memoria ma <a href="https://en.wikipedia.org/wiki/GitHub#GitHub_Pages">Wikipedia</a> attribuisce la prima release del servizio al 2008.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+]]></content:encoded>
+    </item>
+    
     <item>
       <title>Micro frontends e Blazor Server, l&#39;inizio del viaggio</title>
       <link>https://binick.blog/it/2022/05/22/micro-frontends-with-blazor-start-of-the-journay/</link>

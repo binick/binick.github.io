@@ -4,6 +4,89 @@
   xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
   
   <url>
+    <loc>https://binick.blog/</loc>
+    
+    <lastmod>2022-05-30T14:55:54+02:00</lastmod>
+    
+    
+    
+    
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="it"
+      href="https://binick.blog/it/"
+      />
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://binick.blog/"
+      />
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://binick.blog/2022/06/01/github-pages-and-cloudflare-together/</loc>
+    
+    <lastmod>2022-05-30T14:55:54+02:00</lastmod>
+    
+    
+    
+    
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="it"
+      href="https://binick.blog/it/2022/06/01/github-pages-and-cloudflare-together/"
+      />
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://binick.blog/2022/06/01/github-pages-and-cloudflare-together/"
+      />
+    
+    
+    <news:news>
+      <news:publication>
+        <news:name>Github pages and the confusing process for enforcing HTTPS</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      
+      <news:publication_date>2022-06-01T00:00:00&#43;00:00</news:publication_date>
+      
+      <news:title>Github pages and the confusing process for enforcing HTTPS</news:title>
+    </news:news>
+    
+  </url>
+  
+  <url>
+    <loc>https://binick.blog/posts/</loc>
+    
+    <lastmod>2022-05-30T14:55:54+02:00</lastmod>
+    
+    
+    
+    
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="it"
+      href="https://binick.blog/it/posts/"
+      />
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://binick.blog/posts/"
+      />
+    
+    
+  </url>
+  
+  <url>
     <loc>https://binick.blog/tags/architecture/</loc>
     
     <lastmod>2022-05-22T17:28:52+02:00</lastmod>
@@ -22,30 +105,6 @@
       rel="alternate"
       hreflang="en"
       href="https://binick.blog/tags/architecture/"
-      />
-    
-    
-  </url>
-  
-  <url>
-    <loc>https://binick.blog/</loc>
-    
-    <lastmod>2022-05-22T19:45:15+02:00</lastmod>
-    
-    
-    
-    
-    
-    <xhtml:link
-      rel="alternate"
-      hreflang="it"
-      href="https://binick.blog/it/"
-      />
-    
-    <xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://binick.blog/"
       />
     
     
@@ -107,30 +166,6 @@
       
       <news:title>Micro frontends and Blazor Server, the beginning of the journey</news:title>
     </news:news>
-    
-  </url>
-  
-  <url>
-    <loc>https://binick.blog/posts/</loc>
-    
-    <lastmod>2022-05-22T19:45:15+02:00</lastmod>
-    
-    
-    
-    
-    
-    <xhtml:link
-      rel="alternate"
-      hreflang="it"
-      href="https://binick.blog/it/posts/"
-      />
-    
-    <xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://binick.blog/posts/"
-      />
-    
     
   </url>
   
