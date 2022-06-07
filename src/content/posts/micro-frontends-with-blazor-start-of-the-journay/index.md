@@ -17,7 +17,7 @@ tags:
  - architecture
 cover:
   image: cover.jpg
-  alt: Post cover
+  alt: Pastry chef not quite satisfied with freshly made doughnuts
   relative: true
   caption: Photo by [Bernie Almanzar](https://unsplash.com/@bhurnal?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 ---

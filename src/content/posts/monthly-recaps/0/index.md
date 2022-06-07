@@ -9,6 +9,7 @@ series:
   - Monthly Recap
 cover:
   image: cover.jpg
+  alt: Eagle with his gaze turned back on a pole
   relative: true
   caption: Photo by [Jp Valery](https://unsplash.com/@jpvalery?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 ---

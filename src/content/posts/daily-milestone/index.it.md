@@ -1,5 +1,5 @@
 ---
-title: "Quella volta nella quale ho assaggiato una rana"
+title: Quella volta nella quale ho assaggiato una rana
 date: 2022-02-18
 author: Nicola Biancolini
 description: Liberare la mente da pensieri inutili come ad esempio la lista di cose da fare si è rivelata una per me un'ottima cosa. Trovare la giusta via per ottenerlo non e' stato tuttavia cosi semplice.
@@ -12,7 +12,7 @@ tags:
   - selforganization
 cover:
   image: cover.jpg
-  alt: Foto di copertina
+  alt: Frontale di un rana su un sasso
   relative: true
   caption: Photo di [Austin Santaniello](https://unsplash.com/@austinsantaniello?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) su [Unsplash](https://unsplash.com/s/photos/eat-frog?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 ---

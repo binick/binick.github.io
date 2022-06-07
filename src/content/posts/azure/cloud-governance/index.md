@@ -18,7 +18,7 @@ tags:
 draft: false
 cover:
   image: cover.jpg
-  alt: Post cover
+  alt: Vertical on plots of land crossed by an irrigation canal
   relative: true
   caption: Photo by [Tom Fisk](https://www.pexels.com/photo/bird-s-eye-view-of-river-in-middle-of-green-fields-1483880/)
 ---

@@ -18,7 +18,7 @@ tags:
 draft: false
 cover:
   image: cover.jpg
-  alt: Foto di copertina
+  alt: Verticale su appezzamenti di terra attraversati da un canale di irrigazione
   relative: true
   caption: Foto di [Tom Fisk](https://www.pexels.com/photo/bird-s-eye-view-of-river-in-middle-of-green-fields-1483880/)
 ---

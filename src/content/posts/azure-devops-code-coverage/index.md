@@ -13,7 +13,7 @@ aliases:
   - /posts/2021-01-02_azure-devops-code-coverage
 cover:
   image: cover.jpg
-  alt: Post cover
+  alt: A pug completely wrapped in a fluffy white blanket of which only the muzzle is visible
   relative: true
   caption: Photo by <a href="https://unsplash.com/@matthewhenry?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Matthew Henry</a> on <a href="https://unsplash.com/s/photos/blanket?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
 ---
