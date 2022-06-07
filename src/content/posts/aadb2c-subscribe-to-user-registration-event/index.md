@@ -19,7 +19,7 @@ aliases:
   - /posts/2022-01-10_aadb2c-subscribe-to-user-registration-event
 cover:
   image: cover.jpg
-  alt: Post cover
+  alt: Photo of a dew-covered spider web stretched over an olive or eucalyptus twig
   relative: true
   caption: Photo by [Elena Mozhvilo](https://unsplash.com/@miracleday?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 ---

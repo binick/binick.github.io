@@ -17,7 +17,7 @@ tags:
  - architecture
 cover:
   image: cover.jpg
-  alt: Foto di copertina
+  alt: Pasticcere non propriamente soddisfatto delle ciambelle appena preparate
   relative: true
   caption: Photo by [Bernie Almanzar](https://unsplash.com/@bhurnal?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 ---

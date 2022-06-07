@@ -19,7 +19,7 @@ aliases:
   - /it/posts/2022-01-10_aadb2c-subscribe-to-user-registration-event
 cover:
   image: cover.jpg
-  alt: Foto di copertina
+  alt: Foto di una ragnatela coperta di rugiada tesa ad un ramoscello di ulivo o eucalipto
   relative: true
   caption: Foto di [Elena Mozhvilo](https://unsplash.com/@miracleday?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) su [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 ---

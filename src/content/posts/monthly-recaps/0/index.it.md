@@ -9,6 +9,7 @@ series:
   - Monthly Recap
 cover:
   image: cover.jpg
+  alt: Aquila con lo sguardo volta all'indietro su di un palo
   relative: true
   caption: Foto di [Jp Valery](https://unsplash.com/@jpvalery?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) su [Unsplash](https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 ---

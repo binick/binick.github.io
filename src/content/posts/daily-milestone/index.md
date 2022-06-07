@@ -12,7 +12,7 @@ tags:
   - selforganization
 cover:
   image: cover.jpg
-  alt: Post cover
+  alt: Frontal of a frog on a rock
   relative: true
   caption: Photo by [Austin Santaniello](https://unsplash.com/@austinsantaniello?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/eat-frog?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 ---

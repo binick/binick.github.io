@@ -18,7 +18,7 @@ tags:
 draft: false
 cover:
   image: cover.jpg
-  alt: Fodo di copertina
+  alt: Indicazioni stradali confusionarie
   relative: true
   caption: Foto di [Daniele Levis Pelusi](https://unsplash.com/@yogidan2012?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) su [Unsplash](https://unsplash.com/s/photos/confusion?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 ---
