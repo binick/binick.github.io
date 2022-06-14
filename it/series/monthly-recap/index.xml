@@ -17,18 +17,6 @@
       <guid>https://binick.blog/it/2022/04/29/0/</guid>
       <description>Non sono uno scrittore, non lo sono mai stato e questa cosa la so sin dai temi a scuola. Ogni volta superare la colonna e mezzo era un&amp;rsquo;impresa.
 Pubblicare articoli con regolarità mi porta via molto tempo, e non solo strettamente legato alla scrittura. Per questo ho tratto inspirazione da Troy Hunt ed ho pensato che creare un riepilogo mensile per aggiornarvi sul mio attuale stato e sulle possibili direzioni future potesse essere un buon investimento di tempo.</description>
-      <content:encoded><![CDATA[<p>Non sono uno scrittore, non lo sono mai stato e questa cosa la so sin dai temi a scuola. Ogni volta superare la colonna e mezzo era un&rsquo;impresa.</p>
-<p>Pubblicare articoli con regolarità mi porta via molto tempo, e non solo strettamente legato alla scrittura. Per questo ho tratto inspirazione da <a href="https://www.troyhunt.com/tag/weekly-update/">Troy Hunt</a> ed ho pensato che creare un riepilogo mensile per aggiornarvi sul mio attuale stato e sulle possibili direzioni future potesse essere un buon investimento di tempo.</p>
-<p>Questa cosà, se riuscirò a perseguirla nel tempo, sarà utile anche a me un domani.</p>
-<h2 id="recap-0">Recap 0.</h2>
-<p>Esattamente un mese fa da oggi ho annunciavo <a href="https://binick.blog/it/2022/03/29/cloud-governance/" title="Un nuovo side project">un nuovo side project</a>. Bene, sono riuscito a creare la prima <a href="https://github.com/binick/oh-my-azure-playground/tree/main/standards/naming">strategia riguardante la nomenclatura delle risorse</a> in <em>Azure</em>.</p>
-<p>Il prossimo traguardo è quello di definire le altre due strategie, relative alla localizzazione ed al tagging.</p>
-<p>Ho inoltre in mente di creare un libreria in <em>Python</em> cosi da poter integrare il tutto nella <em>Azure CLI</em>.</p>
-<h3 id="riferimenti">Riferimenti.</h3>
-<ol>
-<li><a href="https://dev.to/azure/build-your-own-azure-cli-extensions-42fk">Build your own Azure CLI Extensions</a>: ottimo articolo su come creare una estensione della <em>Azure CLI</em>.</li>
-</ol>
-]]></content:encoded>
     </item>
     
   </channel>

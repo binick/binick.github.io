@@ -17,18 +17,6 @@
       <guid>https://binick.blog/2022/04/29/0/</guid>
       <description>I&amp;rsquo;m not a writer, I&amp;rsquo;ve never been one, and I&amp;rsquo;ve known this since my school essays. Every time I passed the column and a half it was a challenge.
 Publishing articles on a regular basis takes up a lot of my time, and not just strictly for writing. So I took inspiration from Troy Hunt and thought that creating a monthly summary to update you on my current status and possible future directions might be a good investment of time.</description>
-      <content:encoded><![CDATA[<p>I&rsquo;m not a writer, I&rsquo;ve never been one, and I&rsquo;ve known this since my school essays. Every time I passed the column and a half it was a challenge.</p>
-<p>Publishing articles on a regular basis takes up a lot of my time, and not just strictly for writing. So I took inspiration from <a href="https://www.troyhunt.com/tag/weekly-update/">Troy Hunt</a> and thought that creating a monthly summary to update you on my current status and possible future directions might be a good investment of time.</p>
-<p>This thing, if I can pursue it over time, will also be useful to me tomorrow.</p>
-<h2 id="recap-0">Recap 0.</h2>
-<p>Exactly one month ago today I announced <a href="https://binick.blog/2022/03/29/cloud-governance/" title="A new side project">a new side project</a>. Well, I managed to create the first <a href="https://github.com/binick/oh-my-azure-playground/tree/main/standards/naming">strategy regarding resource naming</a> in <em>Azure</em>.</p>
-<p>The next step is to define the other two strategies, concerning localisation and tagging.</p>
-<p>I also plan to create a library in <em>Python</em> so that I can integrate it into the <em>Azure CLI</em>.</p>
-<h3 id="references">References.</h3>
-<ol>
-<li><a href="https://dev.to/azure/build-your-own-azure-cli-extensions-42fk">Build your own Azure CLI Extensions</a>: great article on how to create an extension to the <em>Azure CLI</em>.</li>
-</ol>
-]]></content:encoded>
     </item>
     
   </channel>

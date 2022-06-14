@@ -17,44 +17,6 @@
       <guid>https://binick.blog/2022/06/01/github-pages-and-cloudflare-together/</guid>
       <description>GitHub offers a rewarding user experience like few other services. However, the process of creating a custom domain with the Pages service can be tricky; here I share my experience in the hope that it may help someone.
 </description>
-      <content:encoded><![CDATA[<p>Many of you may know that for some time, now 13 years<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>, GitHub has offered a service called <a href="https://pages.github.com/">Pages</a> that allows you to host static sites, which is very convenient for hosting blogs and documentation.</p>
-<p>That&rsquo;s why it&rsquo;s not news that this blog, like many others, is hosted right there. And the reason is not because it&rsquo;s &ldquo;cool&rdquo; but much more concrete and venal.<br>
-One of the goals I set for myself was to not make it a living expense, so I chose the <a href="https://gohugo.io/">HUGO</a> + GitHub Pages combo, a choice I would make again today! For once I can pat myself on the shoulder 🙂.</p>
-<p>I later thought that in order to have a better SEO and more association between this blog and me, it would be good to have some custom domains.</p>
-<h2 id="enforcing-https">Enforcing HTTPS.</h2>
-<p>I got the domains from <a href="https://www.register.it/">()register.it</a> and I chose to use the DNS service from <a href="https://www.cloudflare.com/dns/">Cloudflare</a> so after I configured the DNS records to <a href="https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages#supported-custom-domains">support custom domains</a> by having the apex and <code>www</code> point to the <code>github.io</code> subdomain.</p>
-<p>At this point although the <em>Pages</em> section of the repo settings reset the flag on the correctness of the DNS records set the message immediately below informed me that the domain was not properly configured</p>
-<figure>
-    <img loading="lazy" src="./gh-pages-without-tls.png"
-         alt="Depiction of Pages section in GitHub settings reporting inability to enable HTTPS."/> 
-</figure>
-
-<p>Also the section <a href="https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/troubleshooting-custom-domains-and-github-pages#custom-domain-names-that-are-unsupported">Custom domain names that are unsupported</a> confirmed the validity of the configuration and this caused me a big headache until I found this <a href="https://github.community/t/the-enforce-https-button-isnt-working/10429/9">post</a> from which I quote verbatim.</p>
-<blockquote>
-<p>If you’re configuring an apex domain make sure there are no other <code>A</code>, <code>AAAA</code>, or <code>ALIAS</code> records listed on the apex.</p>
-<p>If you’re configuring a subdomain, <code>www</code> or otherwise, make sure there are no other <code>A</code>, <code>AAAA</code>, or <code>CNAME</code> records on that same subdomain.</p>
-</blockquote>
-<p>Somewhat discouraged, I removed the <code>www</code> record and despite the documentation and the appearance of this warning</p>
-<figure>
-    <img loading="lazy" src="https://user-images.githubusercontent.com/523825/114216669-d53baa00-992c-11eb-96c0-c0f9da7330fe.png"
-         alt="Warning reporting misconfiguration of DNS records."/> 
-</figure>
-
-<p>(sorry but I forgot to capture the screen 🙏 so I retrieved it from an <a href="https://github.com/isaacs/github/issues/1675">issue</a> where I found out that other people had the same headache as me)</p>
-<figure>
-    <img loading="lazy" src="./gh-pages-with-tls.png"
-         alt="Depiction of the Pages section in the GitHub settings showing the correct configuration of DNS records and HTTPS enabled."/> 
-</figure>
-
-<div class="footnotes" role="doc-endnotes">
-<hr>
-<ol>
-<li id="fn:1">
-<p>I don&rsquo;t have that much memory but <a href="https://en.wikipedia.org/wiki/GitHub#GitHub_Pages">Wikipedia</a> attributes the first release of the service to 2008.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
-</li>
-</ol>
-</div>
-]]></content:encoded>
     </item>
     
     <item>
@@ -65,77 +27,6 @@ One of the goals I set for myself was to not make it a living expense, so I chos
       <guid>https://binick.blog/2022/05/22/micro-frontends-with-blazor-start-of-the-journay/</guid>
       <description>Not all donuts come out with a hole, but that doesn&amp;#39;t mean there isn&amp;#39;t good in them. I stumbled upon one of these in an attempt to implement a micro frontends architecture with Blazor Server.
 </description>
-      <content:encoded><![CDATA[<style>
-  body.dark .post-content img[src$="art-assemblies-graph.drawio.svg"] {
-    filter: invert(90%);
-  }
-</style>
-<p>I was recently asked to make a <strong>spike</strong><sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> to evaluate the feasibility of implementing a <strong>micro frontends</strong> architecture with <strong>Blazor Server</strong>.</p>
-<p>I&rsquo;ll tell you right now that it was a <strong>failure</strong>; but let&rsquo;s go in order, first analyzing the declension of the term <em>failure</em> and the reasons that led me to use it and then try to recapitulate what emerged from this exploration that led me to this conclusion.</p>
-<p>I really like the definition he gives <a href="https://www.treccani.it/vocabolario">Treccani</a>.</p>
-<blockquote>
-<p>Riconoscere l&rsquo;inutilità dei propri sforzi, l&rsquo;impossibilità e incapacità di raggiungere gli scopi fissati, rinunciando definitivamente alla lotta, all&rsquo;azione.</p>
-<p>&ndash; <cite><a href="https://www.treccani.it/vocabolario/fallimento">Treccani</a></cite></p>
-</blockquote>
-<p>Which translated, hoping to do it correctly, would be &ldquo;<em>Recognizing the futility of one&rsquo;s efforts, the impossibility and inability to achieve the set goals, definitely giving up the struggle, action.</em>&rdquo;</p>
-<p>I find it particularly proper because it uses the term <em>fixed scopes</em>, and so what are those purposes?</p>
-<h2 id="context-matters">Context matters.</h2>
-<p>Nothing is done by accident, and this is certainly no exception. The work done is part of a larger context involving the need to migrate a number of <em>ASP.NET MVC 5</em> applications to <em>ASP.NET Core</em> combined with a desire to make the current architecture more flexible by introducing the concept of <strong>modular-programming</strong><sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>.</p>
-<p>Without getting around too much, the ultimate goal was to measure the feasibility of &ldquo;realizing&rdquo; a <em>micro frontends</em> architecture rendered server-side thanks to <em>Blazor Server</em>.</p>
-<p>In this regard on <a href="https://martinfowler.com/">Martin Fowler&rsquo;s</a> blog there is a nice article by <a href="https://camjackson.net/">Cam Jackson</a> in which an <a href="https://martinfowler.com/articles/micro-frontends.html">overview of this architecture</a> is given and from which I have translated their definition of <em>micro frontends</em></p>
-<blockquote>
-<p>An architectural style where independently deliverable frontend applications are composed into a greater whole.</p>
-<p>&ndash; <cite><a href="https://martinfowler.com/articles/micro-frontends.html">Thoughtworks su martinfowler.com</a></cite></p>
-</blockquote>
-<p>I put realize in quotes since the deployment of the various sites would only ever be done in a unified manner.<br>
-Perhaps we would address this issue in a future post.</p>
-<h2 id="not-all-donuts-come-out-with-a-hole">Not all donuts come out with a hole.</h2>
-
-
-<p><details >
-  <summary markdown="span">Don&rsquo;t you know what it means?</summary>
-  A clear explanation of what this Italian saying means I found in <a href="https://www.clozemaster.com/blog/italian-sayings/">Clozemaster</a> at point 4.
-Anyway, in two words it means that despite failure there is still something left to eat!
-</details></p>
-
-<p>Getting straight to the point, the main reason for the failure is related to the inability to give <a href="https://martinfowler.com/articles/micro-frontends.html#AutonomousTeams">complete autonomy to the teams</a>, for two main distinct reasons.</p>
-<h3 id="homonymy-in-support-for-pages-and-views-razor">Homonymy in support for pages and views <em>Razor</em>.</h3>
-<p>To compose the site each <em>frontends</em> is contained within a <strong>Razor</strong> class library which also holds the view that is responsible for doing <a href="https://docs.microsoft.com/aspnet/core/blazor/fundamentals/routing#aspnet-core-endpoint-routing-integration">hosting</a> of the <em>Blazor</em> application.</p>
-<p>This is made possible by the functionality exposed by the <em>SDK</em> that allows a <em>web app</em> to use <em>Razor</em> views, pages, or layouts from class libraries and, as defined in the <a href="https://docs.microsoft.com/aspnet/core/razor-pages/ui-class#override-views-partial-views-and-pages-2">official documentation</a>, in case of homonymy, precedence is given to the view, page, layout present in the <em>web app</em>.</p>
-<p>In my case I am in a situation like this</p>
-<figure>
-    <img loading="lazy" src="./art-assemblies-graph.drawio.svg"
-         alt="Figure 1: an ASP.NET Core application referencing two Razor Class Library representing two modules."/> <figcaption>
-            <p>Figure 1: an ASP.NET Core application referencing two <em>Razor Class Library</em> representing two modules.</p>
-        </figcaption>
-</figure>
-
-<p>where both modules internally make use of layouts contained at the <code>/Pages/Shared/_Layout.cshtml</code> path.</p>
-<p>Here, what would happen in this case is that one of the two teams would be displeased since, if it went well it would see its application rendered inside another layout, in the worst case one part or all of the views would go wrong (e.g., a view tries to enhance a <a href="https://docs.microsoft.com/aspnet/core/mvc/views/razor#section">section</a> not declared in the layout). <br>
-And we note well that both modules executed independently would behave as expected.</p>
-<h3 id="routes-the-basic-route-that-does-not-want-to-work">Routes, the basic route that does not want to work.</h3>
-<p>I have that at least I could not get it to work.</p>
-<p>Again, following the principle of autonomy, the desired was to separate the module routes from the container routes, for example within <em>Module A</em> we would find <code>/</code> or <code>/index</code> while from the container perspective the routes would be <code>/module-a/</code> or <code>/module-a/index</code>.</p>
-<p>What I found was a &ldquo;short blanket,&rdquo; when internal navigation within the module worked, route generation using <a href="https://docs.microsoft.com/aspnet/core/mvc/views/tag-helpers/built-in/anchor-tag-helper"><em>Anchor Tag Helper</em></a> did not work (remember that this <em>spike</em> is the result of a <a href="#the-context-counts">migration process</a>), as I used the middleware <a href="https://github.com/dotnet/aspnetcore/blob/main/src/Http/Http.Abstractions/src/Extensions/UsePathBaseMiddleware.cs"><code>UsePathBaseMiddleware</code></a> for the implementation of the requirement.</p>
-<p>This resulted in the generation of links within the module to the outside always adding the <code>/module-a</code> at the top of the address even as the link should have simply pointed to the container.</p>
-<p>Otherwise using middleware I would have been forced to use the module name at the top of all <a href="https://docs.microsoft.com/aspnet/core/mvc/views/razor#page"><code>@page</code></a> directives.</p>
-<h2 id="conclusions">Conclusions.</h2>
-<p>Summing up what has been done and reasoning with a cool mind I could say that something good we can still take home, in fact, by not enabling support for <em>Razor</em> pages and views in a <em>RCL</em><sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> and avoiding the use of <em>Anchor Tag Helper</em> in the HTML markup that contributes to view rendering we would not run into these problems.</p>
-<div class="footnotes" role="doc-endnotes">
-<hr>
-<ol>
-<li id="fn:1">
-<p>A spike is a product development method originating from extreme programming that uses the simplest possible program to explore potential solutions. Source <a href="https://en.wikipedia.org/wiki/Spike_(software_development)">Wikipedia</a>.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
-</li>
-<li id="fn:2">
-<p>Modular programming is a software design technique that emphasizes separating the functionality of a program into independent, interchangeable modules, such that each holds everything necessary to execute only one aspect of the desired functionality. Source <a href="https://en.wikipedia.org/wiki/Modular_programming">Wikipedia</a>.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
-</li>
-<li id="fn:3">
-<p><a href="https://docs.microsoft.com/aspnet/core/razor-pages/ui-class">Razor Class libraries (RCLs)</a> were introduced in ASP.NET Core 2.1 as a way to package and distribute UI components to be referenced and consumed within a host application.&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
-</li>
-</ol>
-</div>
-]]></content:encoded>
     </item>
     
     <item>
@@ -146,18 +37,6 @@ And we note well that both modules executed independently would behave as expect
       <guid>https://binick.blog/2022/04/29/0/</guid>
       <description>I&amp;rsquo;m not a writer, I&amp;rsquo;ve never been one, and I&amp;rsquo;ve known this since my school essays. Every time I passed the column and a half it was a challenge.
 Publishing articles on a regular basis takes up a lot of my time, and not just strictly for writing. So I took inspiration from Troy Hunt and thought that creating a monthly summary to update you on my current status and possible future directions might be a good investment of time.</description>
-      <content:encoded><![CDATA[<p>I&rsquo;m not a writer, I&rsquo;ve never been one, and I&rsquo;ve known this since my school essays. Every time I passed the column and a half it was a challenge.</p>
-<p>Publishing articles on a regular basis takes up a lot of my time, and not just strictly for writing. So I took inspiration from <a href="https://www.troyhunt.com/tag/weekly-update/">Troy Hunt</a> and thought that creating a monthly summary to update you on my current status and possible future directions might be a good investment of time.</p>
-<p>This thing, if I can pursue it over time, will also be useful to me tomorrow.</p>
-<h2 id="recap-0">Recap 0.</h2>
-<p>Exactly one month ago today I announced <a href="https://binick.blog/2022/03/29/cloud-governance/" title="A new side project">a new side project</a>. Well, I managed to create the first <a href="https://github.com/binick/oh-my-azure-playground/tree/main/standards/naming">strategy regarding resource naming</a> in <em>Azure</em>.</p>
-<p>The next step is to define the other two strategies, concerning localisation and tagging.</p>
-<p>I also plan to create a library in <em>Python</em> so that I can integrate it into the <em>Azure CLI</em>.</p>
-<h3 id="references">References.</h3>
-<ol>
-<li><a href="https://dev.to/azure/build-your-own-azure-cli-extensions-42fk">Build your own Azure CLI Extensions</a>: great article on how to create an extension to the <em>Azure CLI</em>.</li>
-</ol>
-]]></content:encoded>
     </item>
     
     <item>
@@ -167,73 +46,6 @@ Publishing articles on a regular basis takes up a lot of my time, and not just s
       <author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
       <guid>https://binick.blog/2022/03/29/cloud-governance/</guid>
       <description>Usually when a large company approaches the cloud one of the main concerns is cost management.</description>
-      <content:encoded><![CDATA[<p>A few years ago, when I was commuting to work by car, there was a tree-lined stretch of country road along a stream. Within this area there was a very narrow chicane at the exit immediately following a slight descent that followed a long straight.
-Given the presence of the stream and the permanent shade caused by the trees, it was not uncommon that on some winter mornings there was the presence of ice.</p>
-<p>I never had any accidents there as I was aware of the potential danger and even though the straightaway led to pushing on the accelerator I held back.</p>
-<p>What do I want to tell you with this anecdote?<br>
-That prevention is better than cure?<br>
-Not really, the message is more subtle and is about <em>instinct</em> and <em>consciousness</em>.</p>
-<p>What if someone just happened to walk by on one of those mornings?<br>
-And maybe even late for his appointment?<br>
-In all likelihood they would be forced to call the tow truck as they would be unaware of the presence of ice and would step on the brake pedal to reduce their speed on the curve. With consequent loss of grip and a car in the ditch.</p>
-<p>What would be the potential consequences?<br>
-Let&rsquo;s assume that after this unfortunate &ldquo;adventure&rdquo; the driver gets out of the car unharmed, what would be the other consequences?<br>
-I would say two, a lightened wallet and a missed appointment.</p>
-<h2 id="a-typical-approach-to-opex">A typical approach to OpEx.</h2>
-<p>I guess you are wondering what is the purpose and the reason of this parable.<br>
-You must know that some time ago I attended some meetings about the migration of a business application for internal use in <em>Azure</em> in which many issues arose due to the permissions assigned to users.<br>
-Problems that have caused the postponement of the production release of a business application for internal use by more than two weeks.</p>
-<p>Let&rsquo;s try, with not exactly little effort, to transpose the parable of the unfortunate driver within this context; we can identify the road as the <em>cloud</em>, the person driving the car as the company. And I&rsquo;d say let&rsquo;s stop there for now.</p>
-<p>Typically when a company approaches the cloud one of the main concerns is cost management<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</p>
-<p>Imagine being a member of the security operations team, used to operating on a predetermined set of machines, who now finds himself with a potentially infinite fleet of machines and a warning from his area manager telling him he must contain his expenses.</p>
-<p>The only thing it knows of that is more like what it has used so far is the role-based access control of <a href="https://docs.microsoft.com/windows-server/identity/ad-ds/plan/security-best-practices/implementing-least-privilege-administrative-models#role-based-access-controls-rbac-for-active-directory">Active Directory</a> which finds its counterpart <a href="https://docs.microsoft.com/azure/role-based-access-control/overview">Azure RBAC</a> also configurable from <a href="https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis">Azure Active Directory</a>.</p>
-<p>What would you do? I think I would limit access to all users by giving only the minimum permissions necessary to members of the development team, but I think you would do the same.</p>
-<p>And that&rsquo;s what the team did, so they set up two resource groups, one to house all the resources related to networking issues and one for the development team giving them the role of <a href="https://docs.microsoft.com/azure/role-based-access-control/built-in-roles#contributor">Contributor</a> for the latter.</p>
-<p>Slipping into misuse of resource groups improperly in that some resources such as for example the <a href="https://docs.microsoft.com/azure/aks/intro-kubernetes">Azure Kubernetes service</a> relies on a third resource group to host agent pool nodes shared between us and the service itself.</p>
-<h2 id="educate-rather-than-impose">Educate rather than impose.</h2>
-<p>The <em>SecOps</em> team failed because they were unaware of the meaning of the term <em>Cloud Governance</em> and the tools that <em>Azure</em> offers to support it.</p>
-<figure>
-    <img loading="lazy" src="cloud-governance.svg"
-         alt="Representation of the subset of cloud management formed by the set of security and cost management"/> 
-</figure>
-
-<p>Obviously, the team acted in good faith by trying to limit each team&rsquo;s <em>scope</em><sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> of action.<br>
-Thinking to achieve two goals: <em>cost control</em><sup id="fnref:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup> and <em>security</em><sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup>.</p>
-<p>Here we now have the necessary elements to resume the transposition begun earlier and identify
-the <em>ambit</em><sup id="fnref1:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup> in the jacke, the release date in the date, and <a href="https://docs.microsoft.com/azure/cloud-adoption-framework/govern/governance-disciplines#disciplines-of-cloud-governance">the five disciplines of <em>Cloud Governance</em></a> in the awareness.</p>
-<p>Here that to try to increase this awareness I created this repository</p>
-
-  <div class="github-ref-container">
-    <h2>
-      <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--vJ70wriM--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://practicaldev-herokuapp-com.freetls.fastly.net/assets/github-logo-ba8488d21cd8ee1fee097b8410db9deaa41d0ca30b004c0c63de0a479114156f.svg" alt="GitHub logo" loading="lazy">
-      <a href="https://github.com/binick" class="account">binick</a>
-      /
-      <a href="https://github.com/binick/oh-my-azure-playground" class="repo">oh-my-azure-playground</a>
-    </h2>
-  </div>
-
-<p>whose intent is to define standards based on best practices that have emerged in areas such as resource naming, tag management and localization.<br>
-On which it will then be possible to define patterns for the definition of budget<sup id="fnref1:3"><a href="#fn:3" class="footnote-ref" role="doc-noteref">3</a></sup>.</p>
-<p>Over the years I&rsquo;ve started several side projects but never had a post like this one.<br>
-I see this as a first step towards a real commitment, if you would like to elaborate or feel the need to contribute please feel free to <a href="https://binick.blog/about-me/">contact me</a> 🙂 .</p>
-<div class="footnotes" role="doc-endnotes">
-<hr>
-<ol>
-<li id="fn:1">
-<p><a href="https://www.geeksforgeeks.org/capex-vs-opex-in-cloud-computing">CapEx vs OpEx in Cloud Computing</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
-</li>
-<li id="fn:2">
-<p><a href="https://docs.microsoft.com/azure/role-based-access-control/scope-overview">Understand scope for Azure RBAC</a>&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref1:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
-</li>
-<li id="fn:3">
-<p><a href="https://docs.microsoft.com/azure/cost-management-billing/cost-management-billing-overview">What is Cost Management + Billing?</a>&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref1:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
-</li>
-<li id="fn:4">
-<p><a href="https://docs.microsoft.com/azure/security/fundamentals/overview">Introduction to Azure security</a>&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
-</li>
-</ol>
-</div>
-]]></content:encoded>
     </item>
     
     <item>
@@ -243,52 +55,6 @@ I see this as a first step towards a real commitment, if you would like to elabo
       <author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
       <guid>https://binick.blog/2022/02/18/daily-milestone/</guid>
       <description>Clearing my mind of needless thoughts such as a to-do list turned out to be a very good thing for me. Finding the right way to achieve it wasn&amp;#39;t so easy, however.</description>
-      <content:encoded><![CDATA[<p>I started working in remote mode in March 2020, the reason I guess we all know.</p>
-<blockquote>
-<p>However, if an extra-terrestrial were to read this post, he can find more information here <a href="https://wikipedia.org/wiki/COVID-19">https://wikipedia.org/wiki/COVID-19</a>.</p>
-</blockquote>
-<p>My experience has been the same as that of so many others, a maximum and indiscriminate use of communication platforms and smoking ears at the end of the day.<br>
-This working mode went on for about a year and a half, 16 months to be precise, until July 2021 when I joined <a href="https://www.manageddesigns.it/"><em>managed/designs</em></a>.</p>
-<!-- 
-  Todo.
-  Replate {working-in-md} with link to ../working-in-md post, when available.
--->
-<!-- {working-in-md} -->
-<p>Here I found a different environment, which some would call <em>smart</em>. Devoted to personal growth and continuous improvement where autonomy and trust are two pillars on which the daily collaboration is based.</p>
-<!-- {working-in-md} --> 
-<h2 id="prologue">Prologue.</h2>
-<p>I&rsquo;ve never been a user of to-do lists, perhaps due to inexperience or perhaps due to some belief unknown to me. The fact is that the systematic failure to follow the shopping list is proof of it <em>&ldquo;Nicola is not able to manage the lists&rdquo;</em>.</p>
-<p>Once I became aware of this, I started looking for possible patterns and/or methodologies by identifying some that have accompanied me for a couple of months.</p>
-<h2 id="my-inbox-is-not-the-email">My inbox is not the email.</h2>
-<p>I realized that what I need is not a list of tasks <em>to do</em> but rather a list of things that I <em>would like to do</em> or that somehow pique my interest. I suspect that on a subconscious level, my brain takes optimistically to the presence of that <em>&ldquo;would like&rdquo;</em> that removes the pressure for things that shouldn&rsquo;t be there.</p>
-<p>I have three emails, the corporate one and two other historical ones that I&rsquo;ve been carrying around for at least a decade, all three of which follow the philosophy of <a href="https://www.43folders.com/izero" title="Index of articles related to the Inbox Zero technique">Inbox Zero</a> by <a href="http://www.merlinmann.com/" title="Merlin Mann's personal website">Merlin Mann</a>. I currently flip through them twice a day, roughly before lunch and before the end of the day, these slots are recurring appointments on the calendar until next June 29, so we&rsquo;ll see if they will be extended, but I think so.</p>
-<p>The rule is very easy:</p>
-<ul>
-<li>it is important and must be executed at a specific time: an appointment is created on the calendar and archived in the corresponding inbox</li>
-<li>it is important: it ends up in the <em>inbox</em> and archived</li>
-<li>it interests me: it ends up in the <em>inbox</em> and deleted</li>
-<li>it doesn&rsquo;t interest me: it ends up in the trash</li>
-</ul>
-<p>In this way, I always have free inboxes and can keep my attention on those ten or so emails.</p>
-<p>If an email comes in requesting an active response, I won&rsquo;t run it right away, but like the others, it will follow the rules above.</p>
-<h2 id="one-frog-a-day-is-enough">One frog a day is enough.</h2>
-<p>The other enlightening technique for me was the discovery of the 1-3-5 rule<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> based on the practice of eating a frog as soon as you wake up<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>. Obviously not physically, I never want to wake up, and I&rsquo;ve also been getting very little sleep lately!</p>
-<p>So the day before I make a list of what I&rsquo;d like to do the next day, applying some sort of empirical prioritization of activities of the moment while always making sure there&rsquo;s at least one frog and possibly other filler activities.</p>
-<h2 id="epilogue">Epilogue.</h2>
-<p>I have to be honest, at first I was skeptical about taking the time to plan my tomorrow. I have to reconsider. The benefits of freeing my brain from the burden of thinking about what to do so that I don&rsquo;t run the risk of losing it forever is something to be reckoned with.</p>
-<p>Right now, the rigidity of the calendar and the flexibility that the 1-3-5 list leaves me with are a good match. Only time will tell if it is a winning choice for me.</p>
-<div class="footnotes" role="doc-endnotes">
-<hr>
-<ol>
-<li id="fn:1">
-<p><a href="https://www.themuse.com/advice/why-you-never-finish-your-todo-lists-at-work-and-how-to-change-that">Why You Never Finish Your To-Do Lists at Work (And How to Change That)</a> by <a href="https://www.themuse.com/author/alex-cavoulacos">Alex Cavoulacos</a>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
-</li>
-<li id="fn:2">
-<p><a href="https://www.briantracy.com/blog/time-management/the-truth-about-frogs">Eat That Frog: Brian Tracy Explains the Truth About Frogs</a> by Brian Tracy&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
-</li>
-</ol>
-</div>
-]]></content:encoded>
     </item>
     
     <item>
@@ -298,137 +64,6 @@ This working mode went on for about a year and a half, 16 months to be precise, 
       <author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
       <guid>https://binick.blog/2022/01/08/aadb2c-subscribe-to-user-registration-event/</guid>
       <description>Let&amp;#39;s see how you can integrate a user&amp;#39;s registration.</description>
-      <content:encoded><![CDATA[<p>We will see how it&rsquo;s possible to create a solution that integrates Azure Active Directory B2C to save on Blob Storage dummy data at user registration.</p>
-<h2 id="solution-overview">Solution overview.</h2>
-<p>The solution is composed as follows:</p>
-<figure class="align-center background-light">
-    <img loading="lazy" src="component-map.svg#center"
-         alt="Solution composition"/> <figcaption>
-            <p>Solution composition</p>
-        </figcaption>
-</figure>
-
-<ul>
-<li><code>read-customer-details-identity-la</code>: represents the API whose purpose is to retrieve the content of the <em>blob</em> from <code>customersstgacc</code> (the <em>storage account</em>)</li>
-<li><code>customer-register-tpc</code>: is the <em>topic</em> in which are collected the events of the creation of a new user</li>
-<li><code>customer-identity-details-filler-la</code>: it represents the API that is in charge of generating fictitious data that will be saved inside a <em>blob</em> on the <code>customersstgacc</code>
-<figure class="align-center ">
-    <img loading="lazy" src="logic-app-steps.png#center"
-         alt="Logic app definition"/> 
-</figure>
-</li>
-<li><code>contoso-b2c</code>: is the access and identity management service offered by <em>Azure</em></li>
-</ul>
-<h2 id="introduction-to-_azure-event-grid_">Introduction to <em>Azure Event Grid</em>.</h2>
-<p>In <em>Azure</em> there is an implementation of the <a href="https://en.wikipedia.org/wiki/Publish%E2%80%93subscribe_pattern">publish/subscribe</a> pattern designed to facilitate integration and resource management via an event-driven development paradigm.</p>
-<p>Through the <em>Event Grid</em> will be possible to subscribe to <a href="https://docs.microsoft.com/azure/event-grid/overview#event-sources">built-in message sources</a> via a <a href="https://docs.microsoft.com/azure/event-grid/overview#event-handlers">set of handlers</a>.</p>
-<p>If this is not enough, it is possible to create custom _topics to which you can subscribe to receive events.</p>
-<h2 id="creating-a-custom-_topic_">Creating a custom <em>topic</em>.</h2>
-<p>You can refer to <a href="https://docs.microsoft.com/azure/event-grid/custom-event-quickstart-portal#create-a-custom-topic">this guide</a> to create a <em>topic</em>.</p>
-<p>One choice to make when creating the <em>topic</em> concerns the scheme of the <em>HTTP</em> request content used. Currently, supported schemas are:</p>
-<ul>
-<li><a href="https://docs.microsoft.com/azure/event-grid/event-schema"><code>Event Grid Schema</code></a></li>
-<li><a href="https://docs.microsoft.com/azure/event-grid/cloud-event-schema"><code>Cloud Event Schema</code></a></li>
-<li><code>Custom Input Schema</code> this schema will require the creation of an <a href="https://docs.microsoft.com/azure/event-grid/input-mappings">association</a> between the properties of the input object and those required by the <code>Event Grid Schema</code></li>
-</ul>
-<p>The message used in this case has the following structure</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-json" data-lang="json"><span class="line"><span class="ln" id="hl-0-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-1"> 1</a></span><span class="cl"><span class="p">[</span>
-</span></span><span class="line"><span class="ln" id="hl-0-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-2"> 2</a></span><span class="cl">    <span class="p">{</span>
-</span></span><span class="line"><span class="ln" id="hl-0-3"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-3"> 3</a></span><span class="cl">        <span class="nt">&#34;data&#34;</span><span class="p">:</span> <span class="p">{</span>
-</span></span><span class="line"><span class="ln" id="hl-0-4"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-4"> 4</a></span><span class="cl">            <span class="nt">&#34;objectId&#34;</span><span class="p">:</span> <span class="s2">&#34;25100647-****-4571-****-b03e4ce72d02&#34;</span> <span class="c1">// unique user identifier
-</span></span></span><span class="line"><span class="ln" id="hl-0-5"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-5"> 5</a></span><span class="cl"><span class="c1"></span>        <span class="p">},</span>
-</span></span><span class="line"><span class="ln" id="hl-0-6"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-6"> 6</a></span><span class="cl">        <span class="nt">&#34;id&#34;</span><span class="p">:</span> <span class="s2">&#34;25100647-****-4571-****-b03e4ce72d02&#34;</span><span class="p">,</span> <span class="c1">// unique message identifier, the same of `data.objectId` in this case
-</span></span></span><span class="line"><span class="ln" id="hl-0-7"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-7"> 7</a></span><span class="cl"><span class="c1"></span>        <span class="nt">&#34;eventType&#34;</span><span class="p">:</span> <span class="s2">&#34;Microsoft.ActiveDirectory&#34;</span><span class="p">,</span> 
-</span></span><span class="line"><span class="ln" id="hl-0-8"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-8"> 8</a></span><span class="cl">        <span class="nt">&#34;subject&#34;</span><span class="p">:</span> <span class="s2">&#34;*.onmicrosoft.com&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="ln" id="hl-0-9"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-9"> 9</a></span><span class="cl">        <span class="nt">&#34;dataVersion&#34;</span><span class="p">:</span> <span class="s2">&#34;1.0&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="ln" id="hl-0-10"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-10">10</a></span><span class="cl">        <span class="nt">&#34;metadataVersion&#34;</span><span class="p">:</span> <span class="s2">&#34;1&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="ln" id="hl-0-11"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-11">11</a></span><span class="cl">        <span class="nt">&#34;eventTime&#34;</span><span class="p">:</span> <span class="s2">&#34;2021-12-03T21:04:03.8504745Z&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="ln" id="hl-0-12"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-12">12</a></span><span class="cl">        <span class="nt">&#34;topic&#34;</span><span class="p">:</span> <span class="s2">&#34;/subscriptions/{your-subscription-id}/resourceGroups/{your-resource-group}/providers/Microsoft.EventGrid/topics/{your-event-grid-topic}&#34;</span>
-</span></span><span class="line"><span class="ln" id="hl-0-13"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-13">13</a></span><span class="cl">    <span class="p">}</span>
-</span></span><span class="line"><span class="ln" id="hl-0-14"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-14">14</a></span><span class="cl"><span class="p">]</span>
-</span></span></code></pre></div><h2 id="issuing-the-registration-event">Issuing the registration event.</h2>
-<p>Sending events to the <em>topic</em> is done using a <a href="https://docs.microsoft.com/azure/active-directory-b2c/restful-technical-profile"><code>RESTful technical profile</code></a>.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="ln" id="hl-1-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-1"> 1</a></span><span class="cl"><span class="nt">&lt;TechnicalProfile</span> <span class="na">Id=</span><span class="s">&#34;AAD-UserEmitRegistrationEvent&#34;</span><span class="nt">&gt;</span>
-</span></span><span class="line"><span class="ln" id="hl-1-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-2"> 2</a></span><span class="cl">    <span class="nt">&lt;DisplayName&gt;</span>Emit user registration event to Event Grid.<span class="nt">&lt;/DisplayName&gt;</span>
-</span></span><span class="line"><span class="ln" id="hl-1-3"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-3"> 3</a></span><span class="cl">    <span class="nt">&lt;Protocol</span> <span class="na">Name=</span><span class="s">&#34;Proprietary&#34;</span> <span class="na">Handler=</span><span class="s">&#34;Web.TPEngine.Providers.RestfulProvider, Web.TPEngine, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null&#34;</span> <span class="nt">/&gt;</span>
-</span></span><span class="line"><span class="ln" id="hl-1-4"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-4"> 4</a></span><span class="cl">    <span class="nt">&lt;Metadata&gt;</span>
-</span></span><span class="line"><span class="ln" id="hl-1-5"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-5"> 5</a></span><span class="cl">        <span class="nt">&lt;Item</span> <span class="na">Key=</span><span class="s">&#34;ServiceUrl&#34;</span><span class="nt">&gt;</span>{Settings:CustomerRegisteredTopicUrl}<span class="nt">&lt;/Item&gt;</span>
-</span></span><span class="line"><span class="ln" id="hl-1-6"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-6"> 6</a></span><span class="cl">        <span class="nt">&lt;Item</span> <span class="na">Key=</span><span class="s">&#34;AuthenticationType&#34;</span><span class="nt">&gt;</span>ApiKeyHeader<span class="nt">&lt;/Item&gt;</span>
-</span></span><span class="line"><span class="ln" id="hl-1-7"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-7"> 7</a></span><span class="cl">        <span class="nt">&lt;Item</span> <span class="na">Key=</span><span class="s">&#34;SendClaimsIn&#34;</span><span class="nt">&gt;</span>Body<span class="nt">&lt;/Item&gt;</span>
-</span></span><span class="line"><span class="ln" id="hl-1-8"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-8"> 8</a></span><span class="cl">        <span class="nt">&lt;Item</span> <span class="na">Key=</span><span class="s">&#34;ClaimUsedForRequestPayload&#34;</span><span class="nt">&gt;</span>userRegisterEvent<span class="nt">&lt;/Item&gt;</span>
-</span></span><span class="line"><span class="ln" id="hl-1-9"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-9"> 9</a></span><span class="cl">        <span class="nt">&lt;Item</span> <span class="na">Key=</span><span class="s">&#34;DefaultUserMessageIfRequestFailed&#34;</span><span class="nt">&gt;</span>Cannot process your request right now, please try again later.<span class="nt">&lt;/Item&gt;</span>
-</span></span><span class="line"><span class="ln" id="hl-1-10"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-10">10</a></span><span class="cl">    <span class="nt">&lt;/Metadata&gt;</span>
-</span></span><span class="line"><span class="ln" id="hl-1-11"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-11">11</a></span><span class="cl">    <span class="nt">&lt;CryptographicKeys&gt;</span>
-</span></span><span class="line"><span class="ln" id="hl-1-12"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-12">12</a></span><span class="cl">        <span class="nt">&lt;Key</span> <span class="na">Id=</span><span class="s">&#34;aeg-sas-key&#34;</span> <span class="na">StorageReferenceId=</span><span class="s">&#34;B2C_1A_CustomerRegisteredTopicSas&#34;</span> <span class="nt">/&gt;</span>
-</span></span><span class="line"><span class="ln" id="hl-1-13"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-13">13</a></span><span class="cl">    <span class="nt">&lt;/CryptographicKeys&gt;</span>
-</span></span><span class="line"><span class="ln" id="hl-1-14"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-14">14</a></span><span class="cl">    <span class="nt">&lt;InputClaimsTransformations&gt;</span>
-</span></span><span class="line"><span class="ln" id="hl-1-15"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-15">15</a></span><span class="cl">        <span class="nt">&lt;InputClaimsTransformation</span> <span class="na">ReferenceId=</span><span class="s">&#34;GetSystemDateTime&#34;</span> <span class="nt">/&gt;</span>
-</span></span><span class="line"><span class="ln" id="hl-1-16"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-16">16</a></span><span class="cl">        <span class="nt">&lt;InputClaimsTransformation</span> <span class="na">ReferenceId=</span><span class="s">&#34;GenerateRegistrationEventRequest&#34;</span> <span class="nt">/&gt;</span>
-</span></span><span class="line"><span class="ln" id="hl-1-17"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-17">17</a></span><span class="cl">    <span class="nt">&lt;/InputClaimsTransformations&gt;</span>
-</span></span><span class="line"><span class="ln" id="hl-1-18"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-18">18</a></span><span class="cl">    <span class="nt">&lt;InputClaims&gt;</span>
-</span></span><span class="line"><span class="ln" id="hl-1-19"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-19">19</a></span><span class="cl">        <span class="nt">&lt;InputClaim</span> <span class="na">ClaimTypeReferenceId=</span><span class="s">&#34;userRegisterEvent&#34;</span> <span class="nt">/&gt;</span>
-</span></span><span class="line"><span class="ln" id="hl-1-20"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-20">20</a></span><span class="cl">    <span class="nt">&lt;/InputClaims&gt;</span>
-</span></span><span class="line"><span class="ln" id="hl-1-21"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-21">21</a></span><span class="cl">    <span class="nt">&lt;PersistedClaims&gt;</span>
-</span></span><span class="line"><span class="ln" id="hl-1-22"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-22">22</a></span><span class="cl">        <span class="nt">&lt;PersistedClaim</span> <span class="na">ClaimTypeReferenceId=</span><span class="s">&#34;systemDateTime&#34;</span> <span class="nt">/&gt;</span>
-</span></span><span class="line"><span class="ln" id="hl-1-23"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-23">23</a></span><span class="cl">    <span class="nt">&lt;/PersistedClaims&gt;</span>
-</span></span><span class="line"><span class="ln" id="hl-1-24"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-24">24</a></span><span class="cl">    <span class="nt">&lt;UseTechnicalProfileForSessionManagement</span> <span class="na">ReferenceId=</span><span class="s">&#34;SM-AAD&#34;</span> <span class="nt">/&gt;</span>
-</span></span><span class="line"><span class="ln" id="hl-1-25"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-25">25</a></span><span class="cl"><span class="nt">&lt;/TechnicalProfile&gt;</span>
-</span></span></code></pre></div><p>This fragment of markup translated into <code>curl</code> command, for more explicability, would look like this:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="ln" id="hl-2-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-1">1</a></span><span class="cl">curl -X POST -H <span class="s2">&#34;aeg-sas-key: </span><span class="nv">$key</span><span class="s2">&#34;</span> -d <span class="s2">&#34;</span><span class="nv">$event</span><span class="s2">&#34;</span> <span class="nv">$endpoint</span>
-</span></span></code></pre></div><p>where the authentication requirements are met by the <code>AuthenticationType</code> metadata to which is associated the cryptographic key <code>aeg-sas-key</code> whose value is retrieved from the key <code>B2C_1A_CustomerRegisteredTopicSas</code> present in the collection of <a href="https://docs.microsoft.com/azure/active-directory-b2c/policy-keys-overview?pivots=b2c-custom-policy">policy keys</a>.</p>
-
-
-<p><details >
-  <summary markdown="span">TL;DR</summary>
-  <blockquote>
-<p>The choice of the <em>topic</em> template in this example was guided by the limitations currently imposed by the <a href="https://docs.microsoft.com/azure/active-directory-b2c/restful-technical-profile"><em>RESTful</em> technical profile</a> regarding the possibilities of building the <em>HTTP</em> request, in fact for a combination of criteria it is not possible to pass information in the headers and the body of the request at the same time.<br>
-This makes it impossible to send towards a <em>topic</em> schemes of type <code>Cloud Event</code> since the protocol, in version <em>1.0</em> requires the presence of a <a href="https://docs.microsoft.com/azure/event-grid/cloud-event-schema#sample-event-using-cloudevents-schema">mandatory header</a>.</p>
-</blockquote>
-
-</details></p>
-
-<p>Much more complex is the creation of the body of the request for which it is necessary:</p>
-<ul>
-<li>use the <a href="https://docs.microsoft.com/azure/active-directory-b2c/technicalprofiles#input-claims-transformations"><code>InputClaimsTransformation</code></a></li>
-<li>add two statements inside the baggage <code>userRegisterEvent</code> and <code>systemDateTime</code> both of type <em>string</em>.</li>
-</ul>
-<p>Finally, the <em>technical profile</em> has been added among the <em>technical validation profiles</em> of <a href="https://github.com/binick/samples/blob/7782bd6bfcfcb8c2b18dc911d501b29ec05f8212/src/enrich-a-jwt-token-with-ief/ief/TrustFrameworkBase.xml#L764"><code>LocalAccountSignUpWithLogonEmail</code></a> so that the event is issued only when a user is registered.</p>
-<h3 id="using-claim-transformations">Using claim transformations.</h3>
-<p>During the creation of <em>custom criteria</em> we could have the necessity to execute calculations, as the number of attempts of authentication, that even if very simple would result impossible without the execution of functions.</p>
-<p>This requirement finds expressivity through the <code>ClaimsTransformation</code> whose <a href="https://docs.microsoft.com/azure/active-directory-b2c/claimstransformations#claims-transformations-reference">reference of the transformations of the claims</a> contains the complete list of the <em>transformations</em> usable.</p>
-<p>In the example the methods <a href="https://docs.microsoft.com/azure/active-directory-b2c/date-transformations#getcurrentdatetime"><code>GetCurrentDateTime</code></a> and <a href="https://docs.microsoft.com/azure/active-directory-b2c/json-transformations#generatejson"><code>GenerateJson</code></a> were used</p>
-<p>`` xml
-<ClaimsTransformation Id="GetSystemDateTime" TransformationMethod="GetCurrentDateTime">
-<OutputClaims>
-<OutputClaim ClaimTypeReferenceId="systemDateTime" TransformationClaimType="currentDateTime" />
-</OutputClaims>
-</ClaimsTransformation></p>
-<pre tabindex="0"><code>
-The purpose of `GetSystemDateTime` is to enhance the `systemDateTime` claim.
-
-`` xml
-&lt;ClaimsTransformation Id=&#34;GenerateRegistrationEventRequest&#34; TransformationMethod=&#34;GenerateJson&#34;&gt;
-    &lt;InputClaims&gt;
-        &lt;InputClaim ClaimTypeReferenceId=&#34;objectId&#34; TransformationClaimType=&#34;0.data.objectId&#34; /&gt;
-        &lt;InputClaim ClaimTypeReferenceId=&#34;objectId&#34; TransformationClaimType=&#34;0.id&#34; /&gt;
-        &lt;InputClaim ClaimTypeReferenceId=&#34;systemDateTime&#34; TransformationClaimType=&#34;0.eventTime&#34; /&gt;
-    &lt;/InputClaims&gt;
-    &lt;InputParameters&gt;
-        &lt;InputParameter Id=&#34;0.dataVersion&#34; DataType=&#34;string&#34; Value=&#34;1.0&#34; /&gt;
-        &lt;InputParameter Id=&#34;0.eventType&#34; DataType=&#34;string&#34; Value=&#34;Microsoft.ActiveDirectory&#34; /&gt;
-        &lt;InputParameter Id=&#34;0.subject&#34; DataType=&#34;string&#34; Value=&#34;{Settings:Tenant}&#34; /&gt;
-    &lt;/InputParameters&gt;
-    &lt;OutputClaims&gt;
-        &lt;OutputClaim ClaimTypeReferenceId=&#34;userRegisterEvent&#34; TransformationClaimType=&#34;outputClaim&#34; /&gt;
-    &lt;/OutputClaims&gt;
-&lt;/ClaimsTransformation&gt;
-</code></pre><p><code>GenerateRegistrationEventRequest</code> has instead the burden of constructing the JSON and enhancing the <code>userRegisterEvent</code> claim.</p>
-<h2 id="conclusions">Conclusions.</h2>
-<p>In this article, we have seen how through <em>Identity Experience Framework</em> it is possible to integrate a B2C tenant with our infrastructure and open possible interesting development scenarios.<br>
-To do this we touched on <em>Azure Event Grid</em> and how to create an <em>Event Grid Topic</em>.</p>
-<p>Finally how you can <a href="https://docs.microsoft.com/azure/active-directory-b2c/claimstransformations#claims-transformations-reference">manipulate attestations</a> and use them within <a href="https://docs.microsoft.com/azure/active-directory-b2c/technicalprofiles"><em>technical profiles</em></a>.</p>
-<p>If you are interested in the complete example you can find it at <a href="https://github.com/binick/samples/tree/master/src/enrich-a-jwt-token-with-ief">https://github.com/binick/samples/tree/master/src/enrich-a-jwt-token-with-ief</a>.</p>
-]]></content:encoded>
     </item>
     
     <item>
@@ -438,107 +73,6 @@ To do this we touched on <em>Azure Event Grid</em> and how to create an <em>Even
       <author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
       <guid>https://binick.blog/2021/01/02/azure-devops-code-coverage/</guid>
       <description>Managing multiple reports in Azure DevOps can get complicated, let&amp;#39;s see how MSBuild can help us.</description>
-      <content:encoded><![CDATA[<p>By code coverage, we mean the action of trying to measure how much of our code has been executed by our tests.
-This sound like</p>
-
-
-<p><details >
-  <summary markdown="span">TL;DR</summary>
-  <blockquote>
-<p>Untested code is a broken code.
-Definitely a strong statement but true in a way, we don&rsquo;t always manage to get enough coverage.
-Often this happens because we don&rsquo;t have time, other times because despite having written tests we are not able to read the metrics.</p>
-</blockquote>
-
-</details></p>
-
-<p>So, how we can &ldquo;humanize&rdquo; code coverage metrics? And how we can generate its?</p>
-<p>To answer at these questions I usually use two libraries.</p>
-
-  <div class="github-ref-container">
-    <h2>
-      <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--vJ70wriM--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://practicaldev-herokuapp-com.freetls.fastly.net/assets/github-logo-ba8488d21cd8ee1fee097b8410db9deaa41d0ca30b004c0c63de0a479114156f.svg" alt="GitHub logo" loading="lazy">
-      <a href="https://github.com/coverlet-coverage" class="account">coverlet-coverage</a>
-      /
-      <a href="https://github.com/coverlet-coverage/coverlet" class="repo">coverlet</a>
-    </h2>
-  </div>
-
-<p>to gather metrics, and</p>
-
-  <div class="github-ref-container">
-    <h2>
-      <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--vJ70wriM--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://practicaldev-herokuapp-com.freetls.fastly.net/assets/github-logo-ba8488d21cd8ee1fee097b8410db9deaa41d0ca30b004c0c63de0a479114156f.svg" alt="GitHub logo" loading="lazy">
-      <a href="https://github.com/danielpalme" class="account">danielpalme</a>
-      /
-      <a href="https://github.com/danielpalme/ReportGenerator" class="repo">ReportGenerator</a>
-    </h2>
-  </div>
-
-<p>for generate human-readable reports.</p>
-<h2 id="how-can-set-up-__coverlet__">How can set-up <strong><em>coverlet</em></strong>?</h2>
-<p>I usually include <a href="https://www.nuget.org/packages/coverlet.msbuild/">coverlet.msbuild</a> by <a href="https://docs.microsoft.com/visualstudio/msbuild/msbuild-dot-targets-files">MSBuild .targets Files - Visual Studio | Microsoft Docs</a>.</p>
-<script type="application/javascript" src="https://gist.github.com/binick/71ec60d143ee51523e2c7ac23b9ae543.js?file=CollectCoverage.targets"></script>
-
-<p>For alternative ways to include <em>coverlet</em> into yout test project see also <a href="https://github.com/coverlet-coverage/coverlet#Quick-Start">coverlet-coverage/coverlet: Cross platform code coverage for .NET (github.com)</a>.</p>
-<h2 id="how-can-set-up-__reportgenerator__">How can set-up <strong><em>ReportGenerator</em></strong>?</h2>
-<p>In keeping with above to include <a href="https://www.nuget.org/packages/ReportGenerator">ReportGenerator</a> by <a href="https://docs.microsoft.com/visualstudio/msbuild/msbuild-dot-targets-files">MSBuild .targets Files - Visual Studio | Microsoft Docs</a>.</p>
-<script type="application/javascript" src="https://gist.github.com/binick/71ec60d143ee51523e2c7ac23b9ae543.js?file=ReportGenerator.targets"></script>
-
-<p>Also this tool offer a various way to use it, you can find all ways onto official documentation <a href="https://danielpalme.github.io/ReportGenerator/">ReportGenerator - converts coverage reports generated by coverlet</a>.</p>
-<h2 id="how-to-wire-up-all-that">How to wire-up all that?</h2>
-<p>To make everything work we need to add another <em>MSBuild</em> file.</p>
-<script type="application/javascript" src="https://gist.github.com/binick/71ec60d143ee51523e2c7ac23b9ae543.js?file=Test.targets"></script>
-
-<p>And include this into your test project, something like this</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="ln" id="hl-0-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-1">1</a></span><span class="cl"><span class="nt">&lt;Project</span> <span class="na">Sdk=</span><span class="s">&#34;Microsoft.NET.Sdk&#34;</span><span class="nt">&gt;</span>
-</span></span><span class="line"><span class="ln" id="hl-0-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-2">2</a></span><span class="cl">
-</span></span><span class="line"><span class="ln" id="hl-0-3"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-3">3</a></span><span class="cl">  <span class="nt">&lt;PropertyGroup&gt;</span>
-</span></span><span class="line"><span class="ln" id="hl-0-4"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-4">4</a></span><span class="cl">    <span class="nt">&lt;TargetFramework&gt;</span>net5.0<span class="nt">&lt;/TargetFramework&gt;</span>
-</span></span><span class="line"><span class="ln" id="hl-0-5"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-5">5</a></span><span class="cl">  <span class="nt">&lt;/PropertyGroup&gt;</span>
-</span></span><span class="line"><span class="ln" id="hl-0-6"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-6">6</a></span><span class="cl">
-</span></span><span class="line"><span class="ln" id="hl-0-7"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-7">7</a></span><span class="cl">  <span class="nt">&lt;Import</span> <span class="na">Project=</span><span class="s">&#34;Tests.targets&#34;</span> <span class="nt">/&gt;</span>
-</span></span><span class="line"><span class="ln" id="hl-0-8"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-8">8</a></span><span class="cl">  
-</span></span><span class="line"><span class="ln" id="hl-0-9"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-0-9">9</a></span><span class="cl"><span class="nt">&lt;/Project&gt;</span>
-</span></span></code></pre></div><p>Now everything you are able to run <code>dotnet test</code> you will able to inspect and analyze something like this</p>
-<figure>
-    <img loading="lazy" src="https://camo.githubusercontent.com/adbd81e4a37adb003d75ecc13d508acda0c7aebc/68747470733a2f2f64616e69656c70616c6d652e6769746875622e696f2f5265706f727447656e657261746f722f7265736f75726365732f73637265656e73686f74312e706e67"
-         alt="Example of coverage report"/> 
-</figure>
-
-<figure>
-    <img loading="lazy" src="https://camo.githubusercontent.com/adbd81e4a37adb003d75ecc13d508acda0c7aebc/68747470733a2f2f64616e69656c70616c6d652e6769746875622e696f2f5265706f727447656e657261746f722f7265736f75726365732f73637265656e73686f74312e706e67"
-         alt="Example of coverage report for a single file"/> 
-</figure>
-
-<p>I think that is an amazing tool to understand at a glance which codes are covered and which not.</p>
-<h2 id="and-now-how-i-can-put-it-into-azure-devops-pipeline">And now, how I can put it into Azure DevOps pipeline?</h2>
-<p>It would be nice if this report came was published into the <em>Build pipeline</em> report, don&rsquo;t you think? Maybe even include branch policies for it.</p>
-<p>Well that&rsquo;s possible by use <a href="https://docs.microsoft.com/azure/devops/pipelines/tasks/test/publish-code-coverage-results">Publish Code Coverage Results task</a>, something like this:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="ln" id="hl-1-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-1">1</a></span><span class="cl">- <span class="nt">task</span><span class="p">:</span><span class="w"> </span><span class="l">PublishCodeCoverageResults@1</span><span class="w">
-</span></span></span><span class="line"><span class="ln" id="hl-1-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-2">2</a></span><span class="cl"><span class="w">  </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="l">Publish Code Coverage Results</span><span class="w">
-</span></span></span><span class="line"><span class="ln" id="hl-1-3"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-3">3</a></span><span class="cl"><span class="w">  </span><span class="nt">inputs</span><span class="p">:</span><span class="w">
-</span></span></span><span class="line"><span class="ln" id="hl-1-4"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-4">4</a></span><span class="cl"><span class="w">    </span><span class="nt">codeCoverageTool</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;cobertura&#39;</span><span class="w">
-</span></span></span><span class="line"><span class="ln" id="hl-1-5"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-5">5</a></span><span class="cl"><span class="w">    </span><span class="nt">summaryFileLocation</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;$(Build.SourcesDirectory)/artifacts/TestResults/$(_BuildConfig)/Reports/Summary/Cobertura.xml&#39;</span><span class="w">
-</span></span></span><span class="line"><span class="ln" id="hl-1-6"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-6">6</a></span><span class="cl"><span class="w">    </span><span class="nt">continueOnError</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="w">
-</span></span></span><span class="line"><span class="ln" id="hl-1-7"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-1-7">7</a></span><span class="cl"><span class="w">    </span><span class="nt">condition</span><span class="p">:</span><span class="w"> </span><span class="l">always()</span><span class="w">
-</span></span></span></code></pre></div><p>We notice the <code>summaryFileLocation</code> argument, this means that we will push only one file to <em>Azure DevOps</em> why?</p>
-<p>One unwrite note of <em>Publish Code Coverage Results task</em> or limitation, I don&rsquo;t know, is that the sum of covered lines, when we publish more reports, is take from the first file</p>
-<figure>
-    <img loading="lazy" src="pipeline-run-summary.png"
-         alt="Glance to summary code coverage percentage reported by Azure DevOps"/> 
-</figure>
-
-<p>This results in an unreliable result.</p>
-<p>To fix that problem we can marge multiple reports into a summary reports so that can be publish it only one. One way to make it is the follow</p>
-<script type="application/javascript" src="https://gist.github.com/binick/71ec60d143ee51523e2c7ac23b9ae543.js?file=SummaryReportGenerator.proj"></script>
-
-<p>and run <em>MSBuild</em> project into the pipeline with</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="ln" id="hl-2-1"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-1">1</a></span><span class="cl">- <span class="nt">script</span><span class="p">:</span><span class="w"> </span><span class="l">dotnet msbuild SummaryReportGenerator.proj /p:Configuration=$(Configuration)</span><span class="w">
-</span></span></span><span class="line"><span class="ln" id="hl-2-2"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-2">2</a></span><span class="cl"><span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l">GenerateCodeCoverageSummary</span><span class="w">
-</span></span></span><span class="line"><span class="ln" id="hl-2-3"><a style="outline: none; text-decoration:none; color:inherit" href="#hl-2-3">3</a></span><span class="cl"><span class="w">  </span><span class="nt">displayName</span><span class="p">:</span><span class="w"> </span><span class="l">Generate code coverage summary</span><span class="w">
-</span></span></span></code></pre></div><p>Once you&rsquo;ve done this the sum of covered lines on <em>Build pipeline</em> will true.</p>
-]]></content:encoded>
     </item>
     
     <item>
@@ -548,42 +82,6 @@ Often this happens because we don&rsquo;t have time, other times because despite
       <author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
       <guid>https://binick.blog/2020/10/22/sqlserver-efcore-json/</guid>
       <description>Sometimes we are forced to work with JSON, it will have happened to you too! In this post, I want to show you how to work with that using EF Core.</description>
-      <content:encoded><![CDATA[<p>Sometimes we have been forced to work with JSON stored on table columns, it will have happened to you too!</p>
-<p>In this post, I want to show you how to work with that using <strong>EntityFramework Core</strong></p>
-
-  <div class="github-ref-container">
-    <h2>
-      <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--vJ70wriM--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://practicaldev-herokuapp-com.freetls.fastly.net/assets/github-logo-ba8488d21cd8ee1fee097b8410db9deaa41d0ca30b004c0c63de0a479114156f.svg" alt="GitHub logo" loading="lazy">
-      <a href="https://github.com/dotnet" class="account">dotnet</a>
-      /
-      <a href="https://github.com/dotnet/efcore" class="repo">efcore</a>
-    </h2>
-  </div>
-
-<p>Clearly this is one of many possible ways.</p>
-<p>We could talk for a long time about the choice to store JSON into RDBMS is a good or bad choice, but the intent of this post isn&rsquo;t making a rant.</p>
-<p>Ok, well. First of all, take a look to JSON that we want to persist into a table column</p>
-<script type="application/javascript" src="https://gist.github.com/binick/7c40dc3dcb74dae0485ebc95bbc4b015.js?file=metadata.json"></script>
-
-<p>Our application has a requirement that makes it necessary to query the database with the name of the retailer that has stored in the JSON.</p>
-<p>The retailer is the one who has the car we want to rent.
-The car is represented by the class</p>
-<script type="application/javascript" src="https://gist.github.com/binick/7c40dc3dcb74dae0485ebc95bbc4b015.js?file=Car.cs"></script>
-
-<p>The Car entity has a property <code>public string NameOfRetailer { get; }</code> that is computed by the <a href="https://docs.microsoft.com/ef/core/modeling/generated-properties?tabs=data-annotations#computed-columns">Computed columns</a> functionality.</p>
-<script type="application/javascript" src="https://gist.github.com/binick/7c40dc3dcb74dae0485ebc95bbc4b015.js?file=Car.NameOfRetailer.cs"></script>
-
-<p>With this instruction <strong>efcore</strong> will inflate property with value returned by <code>JSON_VALUE(Metadata, '$.Retailer.Name')</code> expression, for more information about <code>JSON_VALUE</code> see at <a href="https://docs.microsoft.com/sql/t-sql/functions/json-value-transact-sql?view=sql-server-ver15">JSON_VALUE</a></p>
-<p>To make it work, we need to persist the JSON into table column <code>Metadata</code>.</p>
-<p>We can use the other useful <a href="https://docs.microsoft.com/ef/core/modeling/value-conversions">Value conversions</a> functionality of <strong>efcore</strong>.</p>
-<script type="application/javascript" src="https://gist.github.com/binick/7c40dc3dcb74dae0485ebc95bbc4b015.js?file=Car.Metadata.cs"></script>
-
-<script type="application/javascript" src="https://gist.github.com/binick/7c40dc3dcb74dae0485ebc95bbc4b015.js?file=JsonValueConverter.cs"></script>
-
-<p>Now, after that model configurations we are able to resolve this simple query <code>var car = await context.Cars.MaterializeAsync(car =&gt; car.NameOfRetailer == &quot;Car Auto Orvieto&quot;).ConfigureAwait(false);</code> without materialize the entire dataset on the client. 🚀</p>
-<p>If you want to learn more you can find the sample on my github repo <a href="https://github.com/binick/samples/blob/6b9a4676c4f7f243c73abd59fb6aec592fd9f543/src/ef-core-json">ef-core-json</a></p>
-<p>Happy coding! 🐱‍👤</p>
-]]></content:encoded>
     </item>
     
   </channel>

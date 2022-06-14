@@ -16,42 +16,6 @@
       <author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
       <guid>https://binick.blog/2020/10/22/sqlserver-efcore-json/</guid>
       <description>Sometimes we are forced to work with JSON, it will have happened to you too! In this post, I want to show you how to work with that using EF Core.</description>
-      <content:encoded><![CDATA[<p>Sometimes we have been forced to work with JSON stored on table columns, it will have happened to you too!</p>
-<p>In this post, I want to show you how to work with that using <strong>EntityFramework Core</strong></p>
-
-  <div class="github-ref-container">
-    <h2>
-      <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--vJ70wriM--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://practicaldev-herokuapp-com.freetls.fastly.net/assets/github-logo-ba8488d21cd8ee1fee097b8410db9deaa41d0ca30b004c0c63de0a479114156f.svg" alt="GitHub logo" loading="lazy">
-      <a href="https://github.com/dotnet" class="account">dotnet</a>
-      /
-      <a href="https://github.com/dotnet/efcore" class="repo">efcore</a>
-    </h2>
-  </div>
-
-<p>Clearly this is one of many possible ways.</p>
-<p>We could talk for a long time about the choice to store JSON into RDBMS is a good or bad choice, but the intent of this post isn&rsquo;t making a rant.</p>
-<p>Ok, well. First of all, take a look to JSON that we want to persist into a table column</p>
-<script type="application/javascript" src="https://gist.github.com/binick/7c40dc3dcb74dae0485ebc95bbc4b015.js?file=metadata.json"></script>
-
-<p>Our application has a requirement that makes it necessary to query the database with the name of the retailer that has stored in the JSON.</p>
-<p>The retailer is the one who has the car we want to rent.
-The car is represented by the class</p>
-<script type="application/javascript" src="https://gist.github.com/binick/7c40dc3dcb74dae0485ebc95bbc4b015.js?file=Car.cs"></script>
-
-<p>The Car entity has a property <code>public string NameOfRetailer { get; }</code> that is computed by the <a href="https://docs.microsoft.com/ef/core/modeling/generated-properties?tabs=data-annotations#computed-columns">Computed columns</a> functionality.</p>
-<script type="application/javascript" src="https://gist.github.com/binick/7c40dc3dcb74dae0485ebc95bbc4b015.js?file=Car.NameOfRetailer.cs"></script>
-
-<p>With this instruction <strong>efcore</strong> will inflate property with value returned by <code>JSON_VALUE(Metadata, '$.Retailer.Name')</code> expression, for more information about <code>JSON_VALUE</code> see at <a href="https://docs.microsoft.com/sql/t-sql/functions/json-value-transact-sql?view=sql-server-ver15">JSON_VALUE</a></p>
-<p>To make it work, we need to persist the JSON into table column <code>Metadata</code>.</p>
-<p>We can use the other useful <a href="https://docs.microsoft.com/ef/core/modeling/value-conversions">Value conversions</a> functionality of <strong>efcore</strong>.</p>
-<script type="application/javascript" src="https://gist.github.com/binick/7c40dc3dcb74dae0485ebc95bbc4b015.js?file=Car.Metadata.cs"></script>
-
-<script type="application/javascript" src="https://gist.github.com/binick/7c40dc3dcb74dae0485ebc95bbc4b015.js?file=JsonValueConverter.cs"></script>
-
-<p>Now, after that model configurations we are able to resolve this simple query <code>var car = await context.Cars.MaterializeAsync(car =&gt; car.NameOfRetailer == &quot;Car Auto Orvieto&quot;).ConfigureAwait(false);</code> without materialize the entire dataset on the client. 🚀</p>
-<p>If you want to learn more you can find the sample on my github repo <a href="https://github.com/binick/samples/blob/6b9a4676c4f7f243c73abd59fb6aec592fd9f543/src/ef-core-json">ef-core-json</a></p>
-<p>Happy coding! 🐱‍👤</p>
-]]></content:encoded>
     </item>
     
   </channel>
