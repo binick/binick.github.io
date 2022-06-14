@@ -48,7 +48,7 @@ params:
   displayFullLangName: true
   ShowCodeCopyButtons: true
   ShowBreadCrumbs: false
-  ShowFullTextinRSS: true
+  ShowFullTextinRSS: false
   disableThemeToggle: false
   disableSpecial1stPost: false
   DateFormat: :date_medium
