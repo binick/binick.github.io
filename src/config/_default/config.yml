@@ -153,6 +153,9 @@ menu:
     - name: Series
       url: /series/
       weight: 10
+    - name: Projects
+      url: /projects/
+      weight: 10
     # - name: Case studies
     #   url: /case-studies/
     #   weight: 10
@@ -200,6 +203,9 @@ languages:
           weight: 15
         - name: Serie
           url: /series/
+          weight: 10
+        - name: Progetti
+          url: /projects/
           weight: 10
         # - name: Casi di studio
         #   url: /case-studies/
