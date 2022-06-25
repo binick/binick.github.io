@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Content moved</title>
+    <meta name="author" content="{{ (partial "author.html" . ) }}">
+    {{- template "_internal/meta_redirect.html" . }}
+    <meta name="robots" content="noindex, nofollow">
+    {{- /* Misc */}}
+    {{- if hugo.IsProduction | or (eq site.Params.env "production") }}
+    {{- template "_internal/google_analytics.html" . }}
+    {{- end -}}
+    <script language="javascript">
+        window.location.href = "{{ .Params.Referral.Url }}"
+    </script>
+</head>
+
+<body>
+    {{ (printf (i18n "content_moved") .Params.Referral.Url .Params.Referral.Url )| markdownify }}
+</body>
+
+</html>

@@ -23,12 +23,12 @@ cover:
   caption: Foto di [Daniele Levis Pelusi](https://unsplash.com/@yogidan2012?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) su [Unsplash](https://unsplash.com/s/photos/confusion?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 ---
 
-Molti di voi sapranno che ormai da un po’ di tempo, 13 anni[^gh-pages-release-date] ormai, GitHub offre un servizio chiamato [Pages](https://pages.github.com/) che consente di ospitare siti statici, molto comodo per ospitare blog e documentazione.
+Molti di voi sapranno che ormai da un po’ di tempo, 13 anni[^gh-pages-release-date] ormai, GitHub offre un servizio chiamato [Pages](/refs/gh-pages) che consente di ospitare siti statici, molto comodo per ospitare blog e documentazione.
 
 [^gh-pages-release-date]: Non ho cosi tanta memoria ma [Wikipedia](https://en.wikipedia.org/wiki/GitHub#GitHub_Pages) attribuisce la prima release del servizio al 2008.
 
 Per questo non è una novità che questo blog, come molti altri, sia ospitato proprio li. Ed il motivo non è perché' "fa figo" ma molto più concreto e venale.  
-Uno degli obbiettivi che mi ero prefissato era quello di non farlo diventare una spesa viva, per questo scelsi l'accoppiata [HUGO](https://gohugo.io/) + GitHub Pages, una scelta che oggi rifarei! Per una volta mi posso dare una pacca sulla spalla 🙂.
+Uno degli obbiettivi che mi ero prefissato era quello di non farlo diventare una spesa viva, per questo scelsi l'accoppiata [HUGO](/refs/hugo) + GitHub Pages, una scelta che oggi rifarei! Per una volta mi posso dare una pacca sulla spalla 🙂.
 
 In seguito, ho pensato che per avere una SEO migliore ed una maggiore associazione fra questo blog e me sarebbe stata buona cosa avere qualche dominio personalizzato.
 

@@ -23,12 +23,12 @@ cover:
   caption: Photo by [Daniele Levis Pelusi](https://unsplash.com/@yogidan2012?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/confusion?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 ---
 
-Many of you may know that for some time, now 13 years[^gh-pages-release-date], GitHub has offered a service called [Pages](https://pages.github.com/) that allows you to host static sites, which is very convenient for hosting blogs and documentation.
+Many of you may know that for some time, now 13 years[^gh-pages-release-date], GitHub has offered a service called [Pages](/refs/gh-pages) that allows you to host static sites, which is very convenient for hosting blogs and documentation.
 
 [^gh-pages-release-date]: I don't have that much memory but [Wikipedia](https://en.wikipedia.org/wiki/GitHub#GitHub_Pages) attributes the first release of the service to 2008.
 
 That's why it's not news that this blog, like many others, is hosted right there. And the reason is not because it's "cool" but much more concrete and venal.  
-One of the goals I set for myself was to not make it a living expense, so I chose the [HUGO](https://gohugo.io/) + GitHub Pages combo, a choice I would make again today! For once I can pat myself on the shoulder 🙂.
+One of the goals I set for myself was to not make it a living expense, so I chose the [HUGO](/refs/hugo) + GitHub Pages combo, a choice I would make again today! For once I can pat myself on the shoulder 🙂.
 
 I later thought that in order to have a better SEO and more association between this blog and me, it would be good to have some custom domains.
 
