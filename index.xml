@@ -8,7 +8,17 @@
     <managingEditor>nicola.biancolini@gmail.com (Nicola Biancolini)</managingEditor>
     <webMaster>nicola.biancolini@gmail.com (Nicola Biancolini)</webMaster>
     <copyright>See this site&#39;s source code [here](https://github.com/binick/binick.github.io), licensed under GPLv3.</copyright>
-    <lastBuildDate>Wed, 01 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://binick.blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 02 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://binick.blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to use a raw SQL script with Entity Framework migrations?</title>
+      <link>https://binick.blog/2022/07/02/use-raw-sql-script-with-ef-migrations/</link>
+      <pubDate>Sat, 02 Jul 2022 00:00:00 +0000</pubDate>
+      <author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
+      <guid>https://binick.blog/2022/07/02/use-raw-sql-script-with-ef-migrations/</guid>
+      <description>We often use Entity Framework migrations as a mere development tool to update our database. In reality it is a very powerful tool that can even bring two company silos into communication.
+</description>
+    </item>
+    
     <item>
       <title>Github pages and the confusing process for enforcing HTTPS</title>
       <link>https://binick.blog/2022/06/01/github-pages-and-cloudflare-together/</link>

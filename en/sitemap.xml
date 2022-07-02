@@ -6,7 +6,7 @@
   <url>
     <loc>https://binick.blog/</loc>
     
-    <lastmod>2022-06-23T20:19:31+02:00</lastmod>
+    <lastmod>2022-07-02T17:32:06+02:00</lastmod>
     
     
     
@@ -22,6 +22,113 @@
       rel="alternate"
       hreflang="en"
       href="https://binick.blog/"
+      />
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://binick.blog/tags/devops/</loc>
+    
+    <lastmod>2022-07-02T17:32:06+02:00</lastmod>
+    
+    
+    
+    
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="it"
+      href="https://binick.blog/it/tags/devops/"
+      />
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://binick.blog/tags/devops/"
+      />
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://binick.blog/2022/07/02/use-raw-sql-script-with-ef-migrations/</loc>
+    
+    <lastmod>2022-07-02T17:32:06+02:00</lastmod>
+    
+    
+    
+    
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="it"
+      href="https://binick.blog/it/2022/07/02/use-raw-sql-script-with-ef-migrations/"
+      />
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://binick.blog/2022/07/02/use-raw-sql-script-with-ef-migrations/"
+      />
+    
+    
+    <news:news>
+      <news:publication>
+        <news:name>How to use a raw SQL script with Entity Framework migrations?</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      
+      <news:publication_date>2022-07-02T00:00:00&#43;00:00</news:publication_date>
+      
+      <news:title>How to use a raw SQL script with Entity Framework migrations?</news:title>
+    </news:news>
+    
+  </url>
+  
+  <url>
+    <loc>https://binick.blog/posts/</loc>
+    
+    <lastmod>2022-07-02T17:32:06+02:00</lastmod>
+    
+    
+    
+    
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="it"
+      href="https://binick.blog/it/posts/"
+      />
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://binick.blog/posts/"
+      />
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://binick.blog/tags/</loc>
+    
+    <lastmod>2022-07-02T17:32:06+02:00</lastmod>
+    
+    
+    
+    
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="it"
+      href="https://binick.blog/it/tags/"
+      />
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://binick.blog/tags/"
       />
     
     
@@ -59,30 +166,6 @@
       
       <news:title>Github pages and the confusing process for enforcing HTTPS</news:title>
     </news:news>
-    
-  </url>
-  
-  <url>
-    <loc>https://binick.blog/posts/</loc>
-    
-    <lastmod>2022-06-23T20:19:31+02:00</lastmod>
-    
-    
-    
-    
-    
-    <xhtml:link
-      rel="alternate"
-      hreflang="it"
-      href="https://binick.blog/it/posts/"
-      />
-    
-    <xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://binick.blog/posts/"
-      />
-    
     
   </url>
   
@@ -166,30 +249,6 @@
       
       <news:title>Micro frontends and Blazor Server, the beginning of the journey</news:title>
     </news:news>
-    
-  </url>
-  
-  <url>
-    <loc>https://binick.blog/tags/</loc>
-    
-    <lastmod>2022-06-23T20:19:31+02:00</lastmod>
-    
-    
-    
-    
-    
-    <xhtml:link
-      rel="alternate"
-      hreflang="it"
-      href="https://binick.blog/it/tags/"
-      />
-    
-    <xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://binick.blog/tags/"
-      />
-    
     
   </url>
   
@@ -568,30 +627,6 @@
       rel="alternate"
       hreflang="en"
       href="https://binick.blog/series/identity-experience-framework/"
-      />
-    
-    
-  </url>
-  
-  <url>
-    <loc>https://binick.blog/tags/devops/</loc>
-    
-    <lastmod>2022-06-23T20:19:31+02:00</lastmod>
-    
-    
-    
-    
-    
-    <xhtml:link
-      rel="alternate"
-      hreflang="it"
-      href="https://binick.blog/it/tags/devops/"
-      />
-    
-    <xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://binick.blog/tags/devops/"
       />
     
     

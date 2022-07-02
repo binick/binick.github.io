@@ -6,7 +6,7 @@
   <url>
     <loc>https://binick.blog/it/</loc>
     
-    <lastmod>2022-06-14T16:33:14+02:00</lastmod>
+    <lastmod>2022-07-02T17:32:06+02:00</lastmod>
     
     
     
@@ -22,6 +22,113 @@
       rel="alternate"
       hreflang="it"
       href="https://binick.blog/it/"
+      />
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://binick.blog/it/2022/07/02/use-raw-sql-script-with-ef-migrations/</loc>
+    
+    <lastmod>2022-07-02T17:32:06+02:00</lastmod>
+    
+    
+    
+    
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://binick.blog/2022/07/02/use-raw-sql-script-with-ef-migrations/"
+      />
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="it"
+      href="https://binick.blog/it/2022/07/02/use-raw-sql-script-with-ef-migrations/"
+      />
+    
+    
+    <news:news>
+      <news:publication>
+        <news:name>Come utilizzare uno script SQL con le migrazioni di Entity Framework?</news:name>
+        <news:language>it</news:language>
+      </news:publication>
+      
+      <news:publication_date>2022-07-02T00:00:00&#43;00:00</news:publication_date>
+      
+      <news:title>Come utilizzare uno script SQL con le migrazioni di Entity Framework?</news:title>
+    </news:news>
+    
+  </url>
+  
+  <url>
+    <loc>https://binick.blog/it/tags/devops/</loc>
+    
+    <lastmod>2022-07-02T17:32:06+02:00</lastmod>
+    
+    
+    
+    
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://binick.blog/tags/devops/"
+      />
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="it"
+      href="https://binick.blog/it/tags/devops/"
+      />
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://binick.blog/it/posts/</loc>
+    
+    <lastmod>2022-07-02T17:32:06+02:00</lastmod>
+    
+    
+    
+    
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://binick.blog/posts/"
+      />
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="it"
+      href="https://binick.blog/it/posts/"
+      />
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://binick.blog/it/tags/</loc>
+    
+    <lastmod>2022-07-02T17:32:06+02:00</lastmod>
+    
+    
+    
+    
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://binick.blog/tags/"
+      />
+    
+    <xhtml:link
+      rel="alternate"
+      hreflang="it"
+      href="https://binick.blog/it/tags/"
       />
     
     
@@ -59,30 +166,6 @@
       
       <news:title>GitHub Pages ed il confusionario processo per applicare HTTPS</news:title>
     </news:news>
-    
-  </url>
-  
-  <url>
-    <loc>https://binick.blog/it/posts/</loc>
-    
-    <lastmod>2022-06-07T22:15:03+02:00</lastmod>
-    
-    
-    
-    
-    
-    <xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://binick.blog/posts/"
-      />
-    
-    <xhtml:link
-      rel="alternate"
-      hreflang="it"
-      href="https://binick.blog/it/posts/"
-      />
-    
     
   </url>
   
@@ -166,30 +249,6 @@
       
       <news:title>Micro frontends e Blazor Server, l&#39;inizio del viaggio</news:title>
     </news:news>
-    
-  </url>
-  
-  <url>
-    <loc>https://binick.blog/it/tags/</loc>
-    
-    <lastmod>2022-06-07T22:15:03+02:00</lastmod>
-    
-    
-    
-    
-    
-    <xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://binick.blog/tags/"
-      />
-    
-    <xhtml:link
-      rel="alternate"
-      hreflang="it"
-      href="https://binick.blog/it/tags/"
-      />
-    
     
   </url>
   
@@ -319,30 +378,6 @@
       rel="alternate"
       hreflang="it"
       href="https://binick.blog/it/tags/cloud-adoption/"
-      />
-    
-    
-  </url>
-  
-  <url>
-    <loc>https://binick.blog/it/tags/devops/</loc>
-    
-    <lastmod>2022-06-07T22:15:03+02:00</lastmod>
-    
-    
-    
-    
-    
-    <xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="https://binick.blog/tags/devops/"
-      />
-    
-    <xhtml:link
-      rel="alternate"
-      hreflang="it"
-      href="https://binick.blog/it/tags/devops/"
       />
     
     

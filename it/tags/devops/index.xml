@@ -8,7 +8,17 @@
     <managingEditor>nicola.biancolini@gmail.com (Nicola Biancolini)</managingEditor>
     <webMaster>nicola.biancolini@gmail.com (Nicola Biancolini)</webMaster>
     <copyright>Il codice sorgente di questo sito è disponibile [qui](https://github.com/binick/binick.github.io), licenziato sotto GPLv3.</copyright>
-    <lastBuildDate>Thu, 14 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://binick.blog/it/tags/devops/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 02 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://binick.blog/it/tags/devops/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Come utilizzare uno script SQL con le migrazioni di Entity Framework?</title>
+      <link>https://binick.blog/it/2022/07/02/use-raw-sql-script-with-ef-migrations/</link>
+      <pubDate>Sat, 02 Jul 2022 00:00:00 +0000</pubDate>
+      <author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
+      <guid>https://binick.blog/it/2022/07/02/use-raw-sql-script-with-ef-migrations/</guid>
+      <description>Spesso utilizziamo le migrazioni di Entity Framework come mero tool di sviluppo per aggiornare il nostro database. Nella realtà è uno strumento molto potente che può addirittura mettere in comunicazioni due silos aziendali.
+</description>
+    </item>
+    
     <item>
       <title>Migrare un database SQL Server on-prem in Azure senza downtime</title>
       <link>https://binick.blog/it/2022/04/14/migrate-sql-server-to-azure/</link>
