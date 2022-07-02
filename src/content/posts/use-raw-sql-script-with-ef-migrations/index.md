@@ -1,6 +1,6 @@
 ﻿---
 title: How to use a raw SQL script with Entity Framework migrations?
-date: 2022-07-03
+date: 2022-07-02
 author: Nicola Biancolini
 description: |
   We often use Entity Framework migrations as a mere development tool to update our database. In reality it is a very powerful tool that can even bring two company silos into communication.
@@ -12,7 +12,7 @@ keywords:
 tags:
   - devops
 aliases:
-  - /2022/07/03/how-to-use-raw-sql-script-with-ef-migrations/
+  - /2022/07/02/how-to-use-raw-sql-script-with-ef-migrations/
 draft: false
 cover:
   image: cover.jpg
@@ -120,3 +120,7 @@ Let us also remember to add the instruction
 ```
 
 within the `.csproj` to instruct *MSBuild* to publish the files to the target folder.
+
+As always you can view the full sample design at
+
+{{< github account="binick" repo="samples" repoUrl="https://github.com/binick/samples/tree/master/src/raw-ef-migrations" >}}

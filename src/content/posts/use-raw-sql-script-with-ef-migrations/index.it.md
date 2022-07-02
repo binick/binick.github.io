@@ -1,6 +1,6 @@
 ﻿---
 title: Come utilizzare uno script SQL con le migrazioni di Entity Framework?
-date: 2022-07-03
+date: 2022-07-02
 author: Nicola Biancolini
 description: |
   Spesso utilizziamo le migrazioni di Entity Framework come mero tool di sviluppo per aggiornare il nostro database. Nella realtà è uno strumento molto potente che può addirittura mettere in comunicazioni due silos aziendali.
@@ -12,7 +12,7 @@ keywords:
 tags:
   - devops
 aliases:
-  - /it/2022/07/03/how-to-use-raw-sql-script-with-ef-migrations/
+  - /it/2022/07/02/how-to-use-raw-sql-script-with-ef-migrations/
 draft: false
 cover:
   image: cover.jpg
@@ -120,3 +120,7 @@ Ricordiamoci inoltre di aggiungere l'istruzione
 ```
 
 all'interno del `.csproj` per istruire *MSBuild* a pubblicare i file nella cartella di destinazione.
+
+Come sempre potete consultare il progetto dell'intero esempio su
+
+{{< github account="binick" repo="samples" repoUrl="https://github.com/binick/samples/tree/master/src/raw-ef-migrations" >}}
