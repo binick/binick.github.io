@@ -1,7 +1,8 @@
 .post-entry {
   page-break-inside: avoid;
-  break-inside: avoid;
   -webkit-break-inside: avoid;
+  break-inside: avoid;
+  margin-bottom: unset;
 }
 
 .share-buttons {
@@ -22,9 +23,9 @@
 }
 
 .two-columns {
-  column-count: 2;
-  -webkit-column-count: 2;
-  -moz-column-count: 2;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: var(--gap);
 }
 
 .case-study .list-header {
@@ -70,10 +71,12 @@
     margin-bottom: 20px;
   }
 
+  .post-entry {
+    margin-bottom: var(--gap);
+  }
+
   .two-columns {
-    column-count: 1;
-    -webkit-column-count: 1;
-    -moz-column-count: 1;
+    display: block;
   }
 
   .post-content section.certifications .badges {
