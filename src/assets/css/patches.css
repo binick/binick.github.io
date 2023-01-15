@@ -1,0 +1,3 @@
+.post-content a, .toc a:hover {
+    box-shadow: 0 1px, -0.1em 0 0.1em transparent;
+}

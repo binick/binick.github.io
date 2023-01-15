@@ -2,6 +2,7 @@
 author: Nicola Biancolini
 layout: referral
 draft: false
+slug: 
 referral: 
   name: 
   url: 

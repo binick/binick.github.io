@@ -2,9 +2,10 @@
 {{- $binick := resources.Get "css/binick.css" }}
 {{- $a11y := resources.Get "css/a11y.css" }}
 {{- $highlight := resources.Get "css/highlight.css" }}
+{{- $patches := resources.Get "css/patches.css" }}
 {{- $github := resources.Get "css/shortcodes/github.css" }}
 {{- $shortcode := slice $github | resources.Concat "shortcodes.css" }}
-{{- $custom := slice $shortcode $binick $a11y $highlight | resources.Concat "assets/css/custom.css" | minify | fingerprint -}}
+{{- $custom := slice $shortcode $binick $a11y $highlight $patches | resources.Concat "assets/css/custom.css" | minify | fingerprint -}}
 <link href="{{ $custom.Permalink }}" integrity="{{ $custom.Data.Integrity }}" rel="preload stylesheet" as="style">
 {{- else }}
 {{- template "_internal/meta_redirect.html" . }}
