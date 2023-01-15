@@ -23,7 +23,7 @@ cover:
 
 Uno delle cose più complesse da gestire nello sviluppo di qualsiasi applicazione, dalle semplici applicazioni client alle più complesse soluzioni enterprise, riguarda la gestione della persistenza.
 
-In ambiente .NET parte di questa complessità può essere gestita attraverso l’utilizzo delle [migrazioni](https://docs.microsoft.com/ef/core/managing-schemas/) implementate internamente in Entity Framework.
+In ambiente .NET parte di questa complessità può essere gestita attraverso l’utilizzo delle [migrazioni](https://learn.microsoft.com/ef/core/managing-schemas/migrations/) implementate internamente in Entity Framework.
 
 Spesso questa funzionalità è vista come una utilità prettamente ad uso e consumo degli sviluppatori per aggiornare lo schema del database.
 
@@ -33,7 +33,7 @@ Questa è una frase che ho sentito davvero troppo spesso da molti colleghi, util
 
 Altre volte più consapevole e guidata dalla volontà di non mantenere versioni precedenti a quella che supponiamo conterrà dati "reali", spesso questo coincide con il primo rilascio in produzione.
 
-In realtà quello che il tool ci offre è un sistema di versionamento incrementale cosa che va ben oltre l'ambito di competenza dello sviluppatore coinvolgendo anche *DBA* o più propriamente *DBRE*, consiglio l'ascolto dell'episodio [*Da DBA a DBRE, il nuovo approccio DevOps nel mondo database, con Alessandro Alpi*](https://www.spreaker.com/user/dotnetpodcast/alpi-dba-to-dbre) di *dotNETpodcast* se volete approfondire le sottili differenze fra i due ruoli.
+In realtà quello che il tool ci offre è un sistema di versionamento incrementale cosa che va ben oltre l'ambito di competenza dello sviluppatore coinvolgendo anche *DBA* o più propriamente *DBRE*, consiglio l'ascolto dell'episodio [*Da DBA a DBRE, il nuovo approccio DevOps nel mondo database, con Alessandro Alpi*](https://www.spreaker.com/user/dotnetpodcast/alpi-dba-to-dbre) di [*dotNET{podcast}*](http://www.dotnetpodcast.com/) se volete approfondire le sottili differenze fra i due ruoli.
 
 ## Come posso effettuare operazioni sui dati?
 

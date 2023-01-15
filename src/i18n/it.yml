@@ -14,3 +14,6 @@
   translation: "Certificazioni"
 - id: issued_by
   translation: "Rilasciato da"
+- id: content_moved
+  translation: |
+    Questa pagina è stata spostata all'indirizzo [%s](%s).
