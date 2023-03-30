@@ -18,7 +18,8 @@
   box-shadow: unset;
 }
 
-.post-content table th, .post-content table:not(.highlighttable) td {
+.post-content table th,
+.post-content table:not(.highlighttable) td {
   border-bottom: unset;
 }
 

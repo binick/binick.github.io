@@ -133,7 +133,7 @@ markup:
     lineAnchors: ""
     lineNoStart: 1
     lineNos: true
-    lineNumbersInTable: false
+    lineNumbersInTable: true
     noClasses: false
     pygmentsUseClasses: true
     tabWidth: 2
