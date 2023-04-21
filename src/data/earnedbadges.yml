@@ -1,8 +1,8 @@
-- id: 78a080bb-0da9-41e7-bed0-ae4f41a24c3d
+- id: b2eceb48-b3f3-4bc3-a826-83ef72ee559c
   badge:
-    icon: https://images.credly.com/size/150x150/images/be8fcaeb-c769-4858-b567-ffaaa73ce8cf/image.png
-  name: Azure Fundamentals
-  url: https://www.credly.com/badges/78a080bb-0da9-41e7-bed0-ae4f41a24c3d/public_url
+    icon: https://images.credly.com/size/150x150/images/c3ab66f8-5d59-4afa-a6c2-0ba30a1989ca/CERT-Expert-DevOps-Engineer-600x600.png
+  name: DevOps Engineer Expert
+  url: https://www.credly.com/badges/b2eceb48-b3f3-4bc3-a826-83ef72ee559c/public_url
   issuer:
     name: Microsoft
     url: https://www.credly.com/org/microsoft-certification
@@ -11,6 +11,14 @@
     icon: https://images.credly.com/size/150x150/images/63316b60-f62d-4e51-aacc-c23cb850089c/azure-developer-associate-600x600.png
   name: Azure Developer Associate
   url: https://www.credly.com/badges/905b0909-4a09-41cd-b534-6890f7b09164/public_url
+  issuer:
+    name: Microsoft
+    url: https://www.credly.com/org/microsoft-certification
+- id: 78a080bb-0da9-41e7-bed0-ae4f41a24c3d
+  badge:
+    icon: https://images.credly.com/size/150x150/images/be8fcaeb-c769-4858-b567-ffaaa73ce8cf/image.png
+  name: Azure Fundamentals
+  url: https://www.credly.com/badges/78a080bb-0da9-41e7-bed0-ae4f41a24c3d/public_url
   issuer:
     name: Microsoft
     url: https://www.credly.com/org/microsoft-certification
