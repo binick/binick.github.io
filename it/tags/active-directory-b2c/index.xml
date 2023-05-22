@@ -11,19 +11,19 @@
     <lastBuildDate>Sat, 08 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://binick.blog/it/tags/active-directory-b2c/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sviluppare soluzioni integrate con Active Directory B2C ed Azure Event Grid.</title>
-      <link>https://binick.blog/it/2022/01/08/aadb2c-subscribe-to-user-registration-event/</link>
+      <link>https://binick.blog/it/2022/01/08/sviluppare-soluzioni-integrate-con-active-directory-b2c-ed-azure-event-grid./</link>
       <pubDate>Sat, 08 Jan 2022 00:00:00 +0000</pubDate>
       <author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
-      <guid>https://binick.blog/it/2022/01/08/aadb2c-subscribe-to-user-registration-event/</guid>
+      <guid>https://binick.blog/it/2022/01/08/sviluppare-soluzioni-integrate-con-active-directory-b2c-ed-azure-event-grid./</guid>
       <description>Vediamo come è possibile integrare la registrazione di un utente.</description>
     </item>
     
     <item>
       <title>Arricchire token JWT emessi da Azure Active Directory B2C</title>
-      <link>https://binick.blog/it/2021/12/27/enrich-a-jwt-token-with-ief/</link>
+      <link>https://binick.blog/it/2021/12/27/arricchire-token-jwt-emessi-da-azure-active-directory-b2c/</link>
       <pubDate>Mon, 27 Dec 2021 00:00:00 +0000</pubDate>
       <author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
-      <guid>https://binick.blog/it/2021/12/27/enrich-a-jwt-token-with-ief/</guid>
+      <guid>https://binick.blog/it/2021/12/27/arricchire-token-jwt-emessi-da-azure-active-directory-b2c/</guid>
       <description>Personalizzare un JSON Web Token emesso da Azure Active Directory B2C con informazioni presenti su un sistema esterno è possibile: è sufficiente, infatti, sfruttare le possibilità di personalizzazione offerte dai criteri personalizzati.</description>
     </item>
     

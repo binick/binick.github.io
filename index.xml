@@ -11,86 +11,86 @@
     <lastBuildDate>Sat, 02 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://binick.blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to use a raw SQL script with Entity Framework migrations?</title>
-      <link>https://binick.blog/2022/07/02/use-raw-sql-script-with-ef-migrations/</link>
+      <link>https://binick.blog/2022/07/02/how-to-use-a-raw-sql-script-with-entity-framework-migrations/</link>
       <pubDate>Sat, 02 Jul 2022 00:00:00 +0000</pubDate>
       <author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
-      <guid>https://binick.blog/2022/07/02/use-raw-sql-script-with-ef-migrations/</guid>
+      <guid>https://binick.blog/2022/07/02/how-to-use-a-raw-sql-script-with-entity-framework-migrations/</guid>
       <description>We often use Entity Framework migrations as a mere development tool to update our database. In reality it is a very powerful tool that can even bring two company silos into communication.
 </description>
     </item>
     
     <item>
       <title>Github pages and the confusing process for enforcing HTTPS</title>
-      <link>https://binick.blog/2022/06/01/github-pages-and-cloudflare-together/</link>
+      <link>https://binick.blog/2022/06/01/github-pages-and-the-confusing-process-for-enforcing-https/</link>
       <pubDate>Wed, 01 Jun 2022 00:00:00 +0000</pubDate>
       <author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
-      <guid>https://binick.blog/2022/06/01/github-pages-and-cloudflare-together/</guid>
+      <guid>https://binick.blog/2022/06/01/github-pages-and-the-confusing-process-for-enforcing-https/</guid>
       <description>GitHub offers a rewarding user experience like few other services. However, the process of creating a custom domain with the Pages service can be tricky; here I share my experience in the hope that it may help someone.
 </description>
     </item>
     
     <item>
       <title>Micro frontends and Blazor Server, the beginning of the journey</title>
-      <link>https://binick.blog/2022/05/22/micro-frontends-with-blazor-start-of-the-journay/</link>
+      <link>https://binick.blog/2022/05/22/micro-frontends-and-blazor-server-the-beginning-of-the-journey/</link>
       <pubDate>Sun, 22 May 2022 00:00:00 +0000</pubDate>
       <author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
-      <guid>https://binick.blog/2022/05/22/micro-frontends-with-blazor-start-of-the-journay/</guid>
+      <guid>https://binick.blog/2022/05/22/micro-frontends-and-blazor-server-the-beginning-of-the-journey/</guid>
       <description>Not all donuts come out with a hole, but that doesn&amp;#39;t mean there isn&amp;#39;t good in them. I stumbled upon one of these in an attempt to implement a micro frontends architecture with Blazor Server.
 </description>
     </item>
     
     <item>
       <title>Monthly recap 0</title>
-      <link>https://binick.blog/2022/04/29/0/</link>
+      <link>https://binick.blog/2022/04/29/monthly-recap-0/</link>
       <pubDate>Fri, 29 Apr 2022 00:00:00 +0000</pubDate>
       <author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
-      <guid>https://binick.blog/2022/04/29/0/</guid>
+      <guid>https://binick.blog/2022/04/29/monthly-recap-0/</guid>
       <description>I&amp;rsquo;m not a writer, I&amp;rsquo;ve never been one, and I&amp;rsquo;ve known this since my school essays. Every time I passed the column and a half it was a challenge.
 Publishing articles on a regular basis takes up a lot of my time, and not just strictly for writing. So I took inspiration from Troy Hunt and thought that creating a monthly summary to update you on my current status and possible future directions might be a good investment of time.</description>
     </item>
     
     <item>
       <title>A new side project</title>
-      <link>https://binick.blog/2022/03/29/cloud-governance/</link>
+      <link>https://binick.blog/2022/03/29/a-new-side-project/</link>
       <pubDate>Tue, 29 Mar 2022 00:00:00 +0000</pubDate>
       <author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
-      <guid>https://binick.blog/2022/03/29/cloud-governance/</guid>
+      <guid>https://binick.blog/2022/03/29/a-new-side-project/</guid>
       <description>Usually when a large company approaches the cloud one of the main concerns is cost management.</description>
     </item>
     
     <item>
       <title>That time I tasted a frog</title>
-      <link>https://binick.blog/2022/02/18/daily-milestone/</link>
+      <link>https://binick.blog/2022/02/18/that-time-i-tasted-a-frog/</link>
       <pubDate>Fri, 18 Feb 2022 00:00:00 +0000</pubDate>
       <author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
-      <guid>https://binick.blog/2022/02/18/daily-milestone/</guid>
+      <guid>https://binick.blog/2022/02/18/that-time-i-tasted-a-frog/</guid>
       <description>Clearing my mind of needless thoughts such as a to-do list turned out to be a very good thing for me. Finding the right way to achieve it wasn&amp;#39;t so easy, however.</description>
     </item>
     
     <item>
       <title>Develop integrated solutions with Active Directory B2C and Azure Event Grid.</title>
-      <link>https://binick.blog/2022/01/08/aadb2c-subscribe-to-user-registration-event/</link>
+      <link>https://binick.blog/2022/01/08/develop-integrated-solutions-with-active-directory-b2c-and-azure-event-grid./</link>
       <pubDate>Sat, 08 Jan 2022 00:00:00 +0000</pubDate>
       <author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
-      <guid>https://binick.blog/2022/01/08/aadb2c-subscribe-to-user-registration-event/</guid>
+      <guid>https://binick.blog/2022/01/08/develop-integrated-solutions-with-active-directory-b2c-and-azure-event-grid./</guid>
       <description>Let&amp;#39;s see how you can integrate a user&amp;#39;s registration.</description>
     </item>
     
     <item>
       <title>How to include code coverage in Azure DevOps pipeline?</title>
-      <link>https://binick.blog/2021/01/02/azure-devops-code-coverage/</link>
+      <link>https://binick.blog/2021/01/02/how-to-include-code-coverage-in-azure-devops-pipeline/</link>
       <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate>
       <author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
-      <guid>https://binick.blog/2021/01/02/azure-devops-code-coverage/</guid>
+      <guid>https://binick.blog/2021/01/02/how-to-include-code-coverage-in-azure-devops-pipeline/</guid>
       <description>Managing multiple reports in Azure DevOps can get complicated, let&amp;#39;s see how MSBuild can help us.</description>
     </item>
     
     <item>
       <title>SQL Server, EF Core, JSON</title>
-      <link>https://binick.blog/2020/10/22/sqlserver-efcore-json/</link>
+      <link>https://binick.blog/2020/10/22/sql-server-ef-core-json/</link>
       <pubDate>Thu, 22 Oct 2020 00:00:00 +0000</pubDate>
       <author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
-      <guid>https://binick.blog/2020/10/22/sqlserver-efcore-json/</guid>
+      <guid>https://binick.blog/2020/10/22/sql-server-ef-core-json/</guid>
       <description>Sometimes we are forced to work with JSON, it will have happened to you too! In this post, I want to show you how to work with that using EF Core.</description>
     </item>
     

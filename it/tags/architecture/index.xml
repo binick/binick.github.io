@@ -11,10 +11,10 @@
     <lastBuildDate>Sun, 22 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://binick.blog/it/tags/architecture/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Micro frontends e Blazor Server, l&#39;inizio del viaggio</title>
-      <link>https://binick.blog/it/2022/05/22/micro-frontends-with-blazor-start-of-the-journay/</link>
+      <link>https://binick.blog/it/2022/05/22/micro-frontends-e-blazor-server-linizio-del-viaggio/</link>
       <pubDate>Sun, 22 May 2022 00:00:00 +0000</pubDate>
       <author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
-      <guid>https://binick.blog/it/2022/05/22/micro-frontends-with-blazor-start-of-the-journay/</guid>
+      <guid>https://binick.blog/it/2022/05/22/micro-frontends-e-blazor-server-linizio-del-viaggio/</guid>
       <description>Non sempre le ciambelle riescono col buco ma questo non vuol dire che non ci sia del buono in loro. Sono incappato in una di queste nel tentativo di realizzare un&amp;#39;architettura a micro frontends con Blazor Server.
 </description>
     </item>

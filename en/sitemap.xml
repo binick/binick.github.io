@@ -52,7 +52,7 @@
   </url>
   
   <url>
-    <loc>https://binick.blog/2022/07/02/use-raw-sql-script-with-ef-migrations/</loc>
+    <loc>https://binick.blog/2022/07/02/how-to-use-a-raw-sql-script-with-entity-framework-migrations/</loc>
     
     <lastmod>2022-07-02T17:32:06+02:00</lastmod>
     
@@ -63,13 +63,13 @@
     <xhtml:link
       rel="alternate"
       hreflang="it"
-      href="https://binick.blog/it/2022/07/02/use-raw-sql-script-with-ef-migrations/"
+      href="https://binick.blog/it/2022/07/02/come-utilizzare-uno-script-sql-con-le-migrazioni-di-entity-framework/"
       />
     
     <xhtml:link
       rel="alternate"
       hreflang="en"
-      href="https://binick.blog/2022/07/02/use-raw-sql-script-with-ef-migrations/"
+      href="https://binick.blog/2022/07/02/how-to-use-a-raw-sql-script-with-entity-framework-migrations/"
       />
     
     
@@ -135,7 +135,7 @@
   </url>
   
   <url>
-    <loc>https://binick.blog/2022/06/01/github-pages-and-cloudflare-together/</loc>
+    <loc>https://binick.blog/2022/06/01/github-pages-and-the-confusing-process-for-enforcing-https/</loc>
     
     <lastmod>2022-06-07T22:15:03+02:00</lastmod>
     
@@ -146,13 +146,13 @@
     <xhtml:link
       rel="alternate"
       hreflang="it"
-      href="https://binick.blog/it/2022/06/01/github-pages-and-cloudflare-together/"
+      href="https://binick.blog/it/2022/06/01/github-pages-ed-il-confusionario-processo-per-applicare-https/"
       />
     
     <xhtml:link
       rel="alternate"
       hreflang="en"
-      href="https://binick.blog/2022/06/01/github-pages-and-cloudflare-together/"
+      href="https://binick.blog/2022/06/01/github-pages-and-the-confusing-process-for-enforcing-https/"
       />
     
     
@@ -218,7 +218,7 @@
   </url>
   
   <url>
-    <loc>https://binick.blog/2022/05/22/micro-frontends-with-blazor-start-of-the-journay/</loc>
+    <loc>https://binick.blog/2022/05/22/micro-frontends-and-blazor-server-the-beginning-of-the-journey/</loc>
     
     <lastmod>2022-06-07T22:15:03+02:00</lastmod>
     
@@ -229,13 +229,13 @@
     <xhtml:link
       rel="alternate"
       hreflang="it"
-      href="https://binick.blog/it/2022/05/22/micro-frontends-with-blazor-start-of-the-journay/"
+      href="https://binick.blog/it/2022/05/22/micro-frontends-e-blazor-server-linizio-del-viaggio/"
       />
     
     <xhtml:link
       rel="alternate"
       hreflang="en"
-      href="https://binick.blog/2022/05/22/micro-frontends-with-blazor-start-of-the-journay/"
+      href="https://binick.blog/2022/05/22/micro-frontends-and-blazor-server-the-beginning-of-the-journey/"
       />
     
     
@@ -277,7 +277,7 @@
   </url>
   
   <url>
-    <loc>https://binick.blog/2022/04/29/0/</loc>
+    <loc>https://binick.blog/2022/04/29/monthly-recap-0/</loc>
     
     <lastmod>2022-06-07T22:15:03+02:00</lastmod>
     
@@ -288,13 +288,13 @@
     <xhtml:link
       rel="alternate"
       hreflang="it"
-      href="https://binick.blog/it/2022/04/29/0/"
+      href="https://binick.blog/it/2022/04/29/monthly-recap-0/"
       />
     
     <xhtml:link
       rel="alternate"
       hreflang="en"
-      href="https://binick.blog/2022/04/29/0/"
+      href="https://binick.blog/2022/04/29/monthly-recap-0/"
       />
     
     
@@ -336,7 +336,7 @@
   </url>
   
   <url>
-    <loc>https://binick.blog/2022/03/29/cloud-governance/</loc>
+    <loc>https://binick.blog/2022/03/29/a-new-side-project/</loc>
     
     <lastmod>2022-06-07T22:15:03+02:00</lastmod>
     
@@ -347,13 +347,13 @@
     <xhtml:link
       rel="alternate"
       hreflang="it"
-      href="https://binick.blog/it/2022/03/29/cloud-governance/"
+      href="https://binick.blog/it/2022/03/29/un-nuovo-side-project/"
       />
     
     <xhtml:link
       rel="alternate"
       hreflang="en"
-      href="https://binick.blog/2022/03/29/cloud-governance/"
+      href="https://binick.blog/2022/03/29/a-new-side-project/"
       />
     
     
@@ -491,7 +491,7 @@
   </url>
   
   <url>
-    <loc>https://binick.blog/2022/02/18/daily-milestone/</loc>
+    <loc>https://binick.blog/2022/02/18/that-time-i-tasted-a-frog/</loc>
     
     <lastmod>2022-06-07T22:15:03+02:00</lastmod>
     
@@ -502,13 +502,13 @@
     <xhtml:link
       rel="alternate"
       hreflang="it"
-      href="https://binick.blog/it/2022/02/18/daily-milestone/"
+      href="https://binick.blog/it/2022/02/18/quella-volta-nella-quale-ho-assaggiato-una-rana/"
       />
     
     <xhtml:link
       rel="alternate"
       hreflang="en"
-      href="https://binick.blog/2022/02/18/daily-milestone/"
+      href="https://binick.blog/2022/02/18/that-time-i-tasted-a-frog/"
       />
     
     
@@ -550,7 +550,7 @@
   </url>
   
   <url>
-    <loc>https://binick.blog/2022/01/08/aadb2c-subscribe-to-user-registration-event/</loc>
+    <loc>https://binick.blog/2022/01/08/develop-integrated-solutions-with-active-directory-b2c-and-azure-event-grid./</loc>
     
     <lastmod>2022-06-07T22:15:03+02:00</lastmod>
     
@@ -561,13 +561,13 @@
     <xhtml:link
       rel="alternate"
       hreflang="it"
-      href="https://binick.blog/it/2022/01/08/aadb2c-subscribe-to-user-registration-event/"
+      href="https://binick.blog/it/2022/01/08/sviluppare-soluzioni-integrate-con-active-directory-b2c-ed-azure-event-grid./"
       />
     
     <xhtml:link
       rel="alternate"
       hreflang="en"
-      href="https://binick.blog/2022/01/08/aadb2c-subscribe-to-user-registration-event/"
+      href="https://binick.blog/2022/01/08/develop-integrated-solutions-with-active-directory-b2c-and-azure-event-grid./"
       />
     
     
@@ -633,7 +633,7 @@
   </url>
   
   <url>
-    <loc>https://binick.blog/2021/01/02/azure-devops-code-coverage/</loc>
+    <loc>https://binick.blog/2021/01/02/how-to-include-code-coverage-in-azure-devops-pipeline/</loc>
     
     <lastmod>2022-06-23T20:19:31+02:00</lastmod>
     
@@ -655,7 +655,7 @@
   </url>
   
   <url>
-    <loc>https://binick.blog/2020/10/22/sqlserver-efcore-json/</loc>
+    <loc>https://binick.blog/2020/10/22/sql-server-ef-core-json/</loc>
     
     <lastmod>2022-06-07T22:15:03+02:00</lastmod>
     

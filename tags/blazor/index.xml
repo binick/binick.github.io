@@ -11,10 +11,10 @@
     <lastBuildDate>Sun, 22 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://binick.blog/tags/blazor/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Micro frontends and Blazor Server, the beginning of the journey</title>
-      <link>https://binick.blog/2022/05/22/micro-frontends-with-blazor-start-of-the-journay/</link>
+      <link>https://binick.blog/2022/05/22/micro-frontends-and-blazor-server-the-beginning-of-the-journey/</link>
       <pubDate>Sun, 22 May 2022 00:00:00 +0000</pubDate>
       <author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
-      <guid>https://binick.blog/2022/05/22/micro-frontends-with-blazor-start-of-the-journay/</guid>
+      <guid>https://binick.blog/2022/05/22/micro-frontends-and-blazor-server-the-beginning-of-the-journey/</guid>
       <description>Not all donuts come out with a hole, but that doesn&amp;#39;t mean there isn&amp;#39;t good in them. I stumbled upon one of these in an attempt to implement a micro frontends architecture with Blazor Server.
 </description>
     </item>

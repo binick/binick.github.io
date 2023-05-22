@@ -11,96 +11,105 @@
     <lastBuildDate>Sat, 02 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://binick.blog/it/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Come utilizzare uno script SQL con le migrazioni di Entity Framework?</title>
-      <link>https://binick.blog/it/2022/07/02/use-raw-sql-script-with-ef-migrations/</link>
+      <link>https://binick.blog/it/2022/07/02/come-utilizzare-uno-script-sql-con-le-migrazioni-di-entity-framework/</link>
       <pubDate>Sat, 02 Jul 2022 00:00:00 +0000</pubDate>
       <author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
-      <guid>https://binick.blog/it/2022/07/02/use-raw-sql-script-with-ef-migrations/</guid>
+      <guid>https://binick.blog/it/2022/07/02/come-utilizzare-uno-script-sql-con-le-migrazioni-di-entity-framework/</guid>
       <description>Spesso utilizziamo le migrazioni di Entity Framework come mero tool di sviluppo per aggiornare il nostro database. Nella realtà è uno strumento molto potente che può addirittura mettere in comunicazioni due silos aziendali.
 </description>
     </item>
     
     <item>
       <title>GitHub Pages ed il confusionario processo per applicare HTTPS</title>
-      <link>https://binick.blog/it/2022/06/01/github-pages-and-cloudflare-together/</link>
+      <link>https://binick.blog/it/2022/06/01/github-pages-ed-il-confusionario-processo-per-applicare-https/</link>
       <pubDate>Wed, 01 Jun 2022 00:00:00 +0000</pubDate>
       <author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
-      <guid>https://binick.blog/it/2022/06/01/github-pages-and-cloudflare-together/</guid>
+      <guid>https://binick.blog/it/2022/06/01/github-pages-ed-il-confusionario-processo-per-applicare-https/</guid>
       <description>GitHub offre un’esperienza utente appagante come pochi altri servizi. Nonostante questo, però, il processo di configurazione di un dominio personalizzato con il servizio Pages può risultare ostico, qui vi racconto la mia esperienza nella speranza che possa aiutare qualcuno.
 </description>
     </item>
     
     <item>
       <title>Micro frontends e Blazor Server, l&#39;inizio del viaggio</title>
-      <link>https://binick.blog/it/2022/05/22/micro-frontends-with-blazor-start-of-the-journay/</link>
+      <link>https://binick.blog/it/2022/05/22/micro-frontends-e-blazor-server-linizio-del-viaggio/</link>
       <pubDate>Sun, 22 May 2022 00:00:00 +0000</pubDate>
       <author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
-      <guid>https://binick.blog/it/2022/05/22/micro-frontends-with-blazor-start-of-the-journay/</guid>
+      <guid>https://binick.blog/it/2022/05/22/micro-frontends-e-blazor-server-linizio-del-viaggio/</guid>
       <description>Non sempre le ciambelle riescono col buco ma questo non vuol dire che non ci sia del buono in loro. Sono incappato in una di queste nel tentativo di realizzare un&amp;#39;architettura a micro frontends con Blazor Server.
 </description>
     </item>
     
     <item>
+      <title>Utilizzare i modelli ARM con Azure SDK per .NET</title>
+      <link>https://binick.blog/it/2022/05/09/utilizzare-i-modelli-arm-con-azure-sdk-per-.net/</link>
+      <pubDate>Mon, 09 May 2022 00:00:00 +0000</pubDate>
+      <author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
+      <guid>https://binick.blog/it/2022/05/09/utilizzare-i-modelli-arm-con-azure-sdk-per-.net/</guid>
+      <description>Vediamo come è possibile provisionare risorce Azure utilizzando Azure SDK per .NET</description>
+    </item>
+    
+    <item>
       <title>Monthly recap 0</title>
-      <link>https://binick.blog/it/2022/04/29/0/</link>
+      <link>https://binick.blog/it/2022/04/29/monthly-recap-0/</link>
       <pubDate>Fri, 29 Apr 2022 00:00:00 +0000</pubDate>
       <author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
-      <guid>https://binick.blog/it/2022/04/29/0/</guid>
+      <guid>https://binick.blog/it/2022/04/29/monthly-recap-0/</guid>
       <description>Non sono uno scrittore, non lo sono mai stato e questa cosa la so sin dai temi a scuola. Ogni volta superare la colonna e mezzo era un&amp;rsquo;impresa.
 Pubblicare articoli con regolarità mi porta via molto tempo, e non solo strettamente legato alla scrittura. Per questo ho tratto inspirazione da Troy Hunt ed ho pensato che creare un riepilogo mensile per aggiornarvi sul mio attuale stato e sulle possibili direzioni future potesse essere un buon investimento di tempo.</description>
     </item>
     
     <item>
       <title>Migrare un database SQL Server on-prem in Azure senza downtime</title>
-      <link>https://binick.blog/it/2022/04/14/migrate-sql-server-to-azure/</link>
+      <link>https://binick.blog/it/2022/04/14/migrare-un-database-sql-server-on-prem-in-azure-senza-downtime/</link>
       <pubDate>Thu, 14 Apr 2022 00:00:00 +0000</pubDate>
       <author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
-      <guid>https://binick.blog/it/2022/04/14/migrate-sql-server-to-azure/</guid>
+      <guid>https://binick.blog/it/2022/04/14/migrare-un-database-sql-server-on-prem-in-azure-senza-downtime/</guid>
       <description>Il lift-and-shift è la strategia che consente la migrazione su Cloud più rapida, meno laboriosa e (almeno inizialmente) meno costosa rispetto ad altri processi.&lt;br&gt;
 In questo articolo vedremo come è possibile migrare un database SQL Server senza generare interruzioni sui servizi già in opera.</description>
     </item>
     
     <item>
       <title>Un nuovo side project</title>
-      <link>https://binick.blog/it/2022/03/29/cloud-governance/</link>
+      <link>https://binick.blog/it/2022/03/29/un-nuovo-side-project/</link>
       <pubDate>Tue, 29 Mar 2022 00:00:00 +0000</pubDate>
       <author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
-      <guid>https://binick.blog/it/2022/03/29/cloud-governance/</guid>
+      <guid>https://binick.blog/it/2022/03/29/un-nuovo-side-project/</guid>
       <description>Di solito quando una grande azienda si avvicina al cloud uno dei principali motivi di preoccupazione è la gestione dei costi.</description>
     </item>
     
     <item>
       <title>Connettersi ad Azure SQL in modo sicuro con le identità gestite</title>
-      <link>https://binick.blog/it/2022/03/15/connect-to-azuresql-with-managed-identities/</link>
+      <link>https://binick.blog/it/2022/03/15/connettersi-ad-azure-sql-in-modo-sicuro-con-le-identit%C3%A0-gestite/</link>
       <pubDate>Tue, 15 Mar 2022 00:00:00 +0000</pubDate>
       <author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
-      <guid>https://binick.blog/it/2022/03/15/connect-to-azuresql-with-managed-identities/</guid>
+      <guid>https://binick.blog/it/2022/03/15/connettersi-ad-azure-sql-in-modo-sicuro-con-le-identit%C3%A0-gestite/</guid>
       <description>In quanto sviluppatori, siamo abituati a maneggiare chiavi, stringhe di connessione, certificati, nomi utente e password quotidianamente. Forse, proprio per la frequenza con la quale maneggiamo queste informazioni a volte può capitare di abbassare la guardia e non dare loro il trattamento che meriterebbero, esponendoci inconsapevolmente a rischi non banali.</description>
     </item>
     
     <item>
       <title>Quella volta nella quale ho assaggiato una rana</title>
-      <link>https://binick.blog/it/2022/02/18/daily-milestone/</link>
+      <link>https://binick.blog/it/2022/02/18/quella-volta-nella-quale-ho-assaggiato-una-rana/</link>
       <pubDate>Fri, 18 Feb 2022 00:00:00 +0000</pubDate>
       <author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
-      <guid>https://binick.blog/it/2022/02/18/daily-milestone/</guid>
+      <guid>https://binick.blog/it/2022/02/18/quella-volta-nella-quale-ho-assaggiato-una-rana/</guid>
       <description>Liberare la mente da pensieri inutili come ad esempio la lista di cose da fare si è rivelata una per me un&amp;#39;ottima cosa. Trovare la giusta via per ottenerlo non e&amp;#39; stato tuttavia cosi semplice.</description>
     </item>
     
     <item>
       <title>Sviluppare soluzioni integrate con Active Directory B2C ed Azure Event Grid.</title>
-      <link>https://binick.blog/it/2022/01/08/aadb2c-subscribe-to-user-registration-event/</link>
+      <link>https://binick.blog/it/2022/01/08/sviluppare-soluzioni-integrate-con-active-directory-b2c-ed-azure-event-grid./</link>
       <pubDate>Sat, 08 Jan 2022 00:00:00 +0000</pubDate>
       <author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
-      <guid>https://binick.blog/it/2022/01/08/aadb2c-subscribe-to-user-registration-event/</guid>
+      <guid>https://binick.blog/it/2022/01/08/sviluppare-soluzioni-integrate-con-active-directory-b2c-ed-azure-event-grid./</guid>
       <description>Vediamo come è possibile integrare la registrazione di un utente.</description>
     </item>
     
     <item>
       <title>Arricchire token JWT emessi da Azure Active Directory B2C</title>
-      <link>https://binick.blog/it/2021/12/27/enrich-a-jwt-token-with-ief/</link>
+      <link>https://binick.blog/it/2021/12/27/arricchire-token-jwt-emessi-da-azure-active-directory-b2c/</link>
       <pubDate>Mon, 27 Dec 2021 00:00:00 +0000</pubDate>
       <author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
-      <guid>https://binick.blog/it/2021/12/27/enrich-a-jwt-token-with-ief/</guid>
+      <guid>https://binick.blog/it/2021/12/27/arricchire-token-jwt-emessi-da-azure-active-directory-b2c/</guid>
       <description>Personalizzare un JSON Web Token emesso da Azure Active Directory B2C con informazioni presenti su un sistema esterno è possibile: è sufficiente, infatti, sfruttare le possibilità di personalizzazione offerte dai criteri personalizzati.</description>
     </item>
     

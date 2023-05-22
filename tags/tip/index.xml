@@ -11,10 +11,10 @@
     <lastBuildDate>Thu, 22 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://binick.blog/tags/tip/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>SQL Server, EF Core, JSON</title>
-      <link>https://binick.blog/2020/10/22/sqlserver-efcore-json/</link>
+      <link>https://binick.blog/2020/10/22/sql-server-ef-core-json/</link>
       <pubDate>Thu, 22 Oct 2020 00:00:00 +0000</pubDate>
       <author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
-      <guid>https://binick.blog/2020/10/22/sqlserver-efcore-json/</guid>
+      <guid>https://binick.blog/2020/10/22/sql-server-ef-core-json/</guid>
       <description>Sometimes we are forced to work with JSON, it will have happened to you too! In this post, I want to show you how to work with that using EF Core.</description>
     </item>
     

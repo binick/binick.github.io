@@ -6,7 +6,7 @@
   <url>
     <loc>https://binick.blog/it/</loc>
     
-    <lastmod>2023-01-15T16:15:06+01:00</lastmod>
+    <lastmod>2023-05-22T18:03:38+02:00</lastmod>
     
     
     
@@ -28,7 +28,7 @@
   </url>
   
   <url>
-    <loc>https://binick.blog/it/2022/07/02/use-raw-sql-script-with-ef-migrations/</loc>
+    <loc>https://binick.blog/it/2022/07/02/come-utilizzare-uno-script-sql-con-le-migrazioni-di-entity-framework/</loc>
     
     <lastmod>2023-01-15T16:15:06+01:00</lastmod>
     
@@ -39,13 +39,13 @@
     <xhtml:link
       rel="alternate"
       hreflang="en"
-      href="https://binick.blog/2022/07/02/use-raw-sql-script-with-ef-migrations/"
+      href="https://binick.blog/2022/07/02/how-to-use-a-raw-sql-script-with-entity-framework-migrations/"
       />
     
     <xhtml:link
       rel="alternate"
       hreflang="it"
-      href="https://binick.blog/it/2022/07/02/use-raw-sql-script-with-ef-migrations/"
+      href="https://binick.blog/it/2022/07/02/come-utilizzare-uno-script-sql-con-le-migrazioni-di-entity-framework/"
       />
     
     
@@ -89,7 +89,7 @@
   <url>
     <loc>https://binick.blog/it/posts/</loc>
     
-    <lastmod>2023-01-15T16:15:06+01:00</lastmod>
+    <lastmod>2023-05-22T18:03:38+02:00</lastmod>
     
     
     
@@ -113,7 +113,7 @@
   <url>
     <loc>https://binick.blog/it/tags/</loc>
     
-    <lastmod>2023-01-15T16:15:06+01:00</lastmod>
+    <lastmod>2023-05-22T18:03:38+02:00</lastmod>
     
     
     
@@ -135,7 +135,7 @@
   </url>
   
   <url>
-    <loc>https://binick.blog/it/2022/06/01/github-pages-and-cloudflare-together/</loc>
+    <loc>https://binick.blog/it/2022/06/01/github-pages-ed-il-confusionario-processo-per-applicare-https/</loc>
     
     <lastmod>2022-06-07T22:15:03+02:00</lastmod>
     
@@ -146,13 +146,13 @@
     <xhtml:link
       rel="alternate"
       hreflang="en"
-      href="https://binick.blog/2022/06/01/github-pages-and-cloudflare-together/"
+      href="https://binick.blog/2022/06/01/github-pages-and-the-confusing-process-for-enforcing-https/"
       />
     
     <xhtml:link
       rel="alternate"
       hreflang="it"
-      href="https://binick.blog/it/2022/06/01/github-pages-and-cloudflare-together/"
+      href="https://binick.blog/it/2022/06/01/github-pages-ed-il-confusionario-processo-per-applicare-https/"
       />
     
     
@@ -218,7 +218,7 @@
   </url>
   
   <url>
-    <loc>https://binick.blog/it/2022/05/22/micro-frontends-with-blazor-start-of-the-journay/</loc>
+    <loc>https://binick.blog/it/2022/05/22/micro-frontends-e-blazor-server-linizio-del-viaggio/</loc>
     
     <lastmod>2022-06-07T22:15:03+02:00</lastmod>
     
@@ -229,13 +229,13 @@
     <xhtml:link
       rel="alternate"
       hreflang="en"
-      href="https://binick.blog/2022/05/22/micro-frontends-with-blazor-start-of-the-journay/"
+      href="https://binick.blog/2022/05/22/micro-frontends-and-blazor-server-the-beginning-of-the-journey/"
       />
     
     <xhtml:link
       rel="alternate"
       hreflang="it"
-      href="https://binick.blog/it/2022/05/22/micro-frontends-with-blazor-start-of-the-journay/"
+      href="https://binick.blog/it/2022/05/22/micro-frontends-e-blazor-server-linizio-del-viaggio/"
       />
     
     
@@ -248,6 +248,61 @@
       <news:publication_date>2022-05-22T00:00:00&#43;00:00</news:publication_date>
       
       <news:title>Micro frontends e Blazor Server, l&#39;inizio del viaggio</news:title>
+    </news:news>
+    
+  </url>
+  
+  <url>
+    <loc>https://binick.blog/it/tags/arm/</loc>
+    
+    <lastmod>2023-05-22T18:03:38+02:00</lastmod>
+    
+    
+    
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://binick.blog/it/tags/azure-sdk/</loc>
+    
+    <lastmod>2023-05-22T18:03:38+02:00</lastmod>
+    
+    
+    
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://binick.blog/it/tags/deployment/</loc>
+    
+    <lastmod>2023-05-22T18:03:38+02:00</lastmod>
+    
+    
+    
+    
+    
+  </url>
+  
+  <url>
+    <loc>https://binick.blog/it/2022/05/09/utilizzare-i-modelli-arm-con-azure-sdk-per-.net/</loc>
+    
+    <lastmod>2023-05-22T18:03:38+02:00</lastmod>
+    
+    
+    
+    
+    
+    <news:news>
+      <news:publication>
+        <news:name>Utilizzare i modelli ARM con Azure SDK per .NET</news:name>
+        <news:language>it</news:language>
+      </news:publication>
+      
+      <news:publication_date>2022-05-09T00:00:00&#43;00:00</news:publication_date>
+      
+      <news:title>Utilizzare i modelli ARM con Azure SDK per .NET</news:title>
     </news:news>
     
   </url>
@@ -277,7 +332,7 @@
   </url>
   
   <url>
-    <loc>https://binick.blog/it/2022/04/29/0/</loc>
+    <loc>https://binick.blog/it/2022/04/29/monthly-recap-0/</loc>
     
     <lastmod>2022-06-07T22:15:03+02:00</lastmod>
     
@@ -288,13 +343,13 @@
     <xhtml:link
       rel="alternate"
       hreflang="en"
-      href="https://binick.blog/2022/04/29/0/"
+      href="https://binick.blog/2022/04/29/monthly-recap-0/"
       />
     
     <xhtml:link
       rel="alternate"
       hreflang="it"
-      href="https://binick.blog/it/2022/04/29/0/"
+      href="https://binick.blog/it/2022/04/29/monthly-recap-0/"
       />
     
     
@@ -384,7 +439,7 @@
   </url>
   
   <url>
-    <loc>https://binick.blog/it/2022/04/14/migrate-sql-server-to-azure/</loc>
+    <loc>https://binick.blog/it/2022/04/14/migrare-un-database-sql-server-on-prem-in-azure-senza-downtime/</loc>
     
     <lastmod>2022-06-07T22:15:03+02:00</lastmod>
     
@@ -454,7 +509,7 @@
   </url>
   
   <url>
-    <loc>https://binick.blog/it/2022/03/29/cloud-governance/</loc>
+    <loc>https://binick.blog/it/2022/03/29/un-nuovo-side-project/</loc>
     
     <lastmod>2022-06-07T22:15:03+02:00</lastmod>
     
@@ -465,13 +520,13 @@
     <xhtml:link
       rel="alternate"
       hreflang="en"
-      href="https://binick.blog/2022/03/29/cloud-governance/"
+      href="https://binick.blog/2022/03/29/a-new-side-project/"
       />
     
     <xhtml:link
       rel="alternate"
       hreflang="it"
-      href="https://binick.blog/it/2022/03/29/cloud-governance/"
+      href="https://binick.blog/it/2022/03/29/un-nuovo-side-project/"
       />
     
     
@@ -489,7 +544,7 @@
   </url>
   
   <url>
-    <loc>https://binick.blog/it/2022/03/15/connect-to-azuresql-with-managed-identities/</loc>
+    <loc>https://binick.blog/it/2022/03/15/connettersi-ad-azure-sql-in-modo-sicuro-con-le-identit%C3%A0-gestite/</loc>
     
     <lastmod>2022-03-15T00:00:00+00:00</lastmod>
     
@@ -511,7 +566,7 @@
   </url>
   
   <url>
-    <loc>https://binick.blog/it/2022/02/18/daily-milestone/</loc>
+    <loc>https://binick.blog/it/2022/02/18/quella-volta-nella-quale-ho-assaggiato-una-rana/</loc>
     
     <lastmod>2022-06-07T22:15:03+02:00</lastmod>
     
@@ -522,13 +577,13 @@
     <xhtml:link
       rel="alternate"
       hreflang="en"
-      href="https://binick.blog/2022/02/18/daily-milestone/"
+      href="https://binick.blog/2022/02/18/that-time-i-tasted-a-frog/"
       />
     
     <xhtml:link
       rel="alternate"
       hreflang="it"
-      href="https://binick.blog/it/2022/02/18/daily-milestone/"
+      href="https://binick.blog/it/2022/02/18/quella-volta-nella-quale-ho-assaggiato-una-rana/"
       />
     
     
@@ -642,7 +697,7 @@
   </url>
   
   <url>
-    <loc>https://binick.blog/it/2022/01/08/aadb2c-subscribe-to-user-registration-event/</loc>
+    <loc>https://binick.blog/it/2022/01/08/sviluppare-soluzioni-integrate-con-active-directory-b2c-ed-azure-event-grid./</loc>
     
     <lastmod>2022-06-07T22:15:03+02:00</lastmod>
     
@@ -653,13 +708,13 @@
     <xhtml:link
       rel="alternate"
       hreflang="en"
-      href="https://binick.blog/2022/01/08/aadb2c-subscribe-to-user-registration-event/"
+      href="https://binick.blog/2022/01/08/develop-integrated-solutions-with-active-directory-b2c-and-azure-event-grid./"
       />
     
     <xhtml:link
       rel="alternate"
       hreflang="it"
-      href="https://binick.blog/it/2022/01/08/aadb2c-subscribe-to-user-registration-event/"
+      href="https://binick.blog/it/2022/01/08/sviluppare-soluzioni-integrate-con-active-directory-b2c-ed-azure-event-grid./"
       />
     
     
@@ -677,7 +732,7 @@
   </url>
   
   <url>
-    <loc>https://binick.blog/it/2021/12/27/enrich-a-jwt-token-with-ief/</loc>
+    <loc>https://binick.blog/it/2021/12/27/arricchire-token-jwt-emessi-da-azure-active-directory-b2c/</loc>
     
     <lastmod>2021-12-27T00:00:00+00:00</lastmod>
     
