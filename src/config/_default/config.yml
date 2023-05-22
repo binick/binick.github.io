@@ -23,7 +23,7 @@ googleAnalytics: G-H2SCJP0ZQD
 # disqusShortname: binick-github-io
 
 permalinks:
-  posts: /:year/:month/:day/:filename/
+  posts: /:year/:month/:day/:slug/
 
 minify:
   disableXML: true
