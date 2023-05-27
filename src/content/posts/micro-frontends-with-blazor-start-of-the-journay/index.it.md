@@ -15,6 +15,8 @@ keywords:
 tags:
  - blazor
  - architecture
+aliases:
+  - /it/2022/05/22/micro-frontends-with-blazor-start-of-the-journay
 cover:
   image: cover.jpg
   alt: Pasticcere non propriamente soddisfatto delle ciambelle appena preparate
