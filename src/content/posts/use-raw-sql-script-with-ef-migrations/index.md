@@ -3,7 +3,7 @@ title: How to use a raw SQL script with Entity Framework migrations?
 date: 2022-07-02
 author: Nicola Biancolini
 description: |
-  We often use Entity Framework migrations as a mere development tool to update our database. In reality it is a very powerful tool that can even bring two company silos into communication.
+  Entity Framework migrations are considered a simple development tool to update our database. In reality, it is a very powerful tool that can even connect two corporate silos.
 keywords: 
   - entity framework
   - database versioning
@@ -12,7 +12,9 @@ keywords:
 tags:
   - devops
 aliases:
-  - /2022/07/02/how-to-use-raw-sql-script-with-ef-migrations/
+  - /2022/07/02/how-to-use-raw-sql-script-with-ef-migrations
+  - /2022/07/02/use-raw-sql-script-with-ef-migrations
+  - /2022/07/02/how-to-use-a-raw-sql-script-with-entity-framework-migrations
 draft: false
 cover:
   image: cover.jpg

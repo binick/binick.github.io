@@ -10,6 +10,7 @@ tags:
   - tip
 aliases:
   - /posts/2020-10-22_sqlserver-efcore-json
+  - /2020/10/22/sqlserver-efcore-json
 cover:
   image: cover.jpg
   alt: Elephant drinking from a receptacle placed behind a building fence

@@ -15,6 +15,8 @@ keywords:
 tags:
  - blazor
  - architecture
+aliases:
+  - /2022/05/22/micro-frontends-with-blazor-start-of-the-journay
 cover:
   image: cover.jpg
   alt: Pastry chef not quite satisfied with freshly made doughnuts

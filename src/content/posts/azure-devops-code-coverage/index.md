@@ -11,6 +11,7 @@ tags:
   - devops
 aliases:
   - /posts/2021-01-02_azure-devops-code-coverage
+  - /2021/01/02/azure-devops-code-coverage
 cover:
   image: cover.jpg
   alt: A pug completely wrapped in a fluffy white blanket of which only the muzzle is visible

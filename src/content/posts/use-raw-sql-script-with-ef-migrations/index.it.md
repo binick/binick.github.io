@@ -13,6 +13,7 @@ tags:
   - devops
 aliases:
   - /it/2022/07/02/how-to-use-raw-sql-script-with-ef-migrations/
+  - /it/2022/07/02/use-raw-sql-script-with-ef-migrations/
 draft: false
 cover:
   image: cover.jpg

@@ -169,12 +169,12 @@ languages:
     languageName: Italiano
     copyright: Il codice sorgente di questo sito è disponibile [qui](https://github.com/binick/binick.github.io), licenziato sotto GPLv3.
 
-    label:
-      text: "binick"
-      # icon: /me.png
-      iconHeight: 35
-
     params:
+
+      label:
+        text: "binick"
+        # icon: /me.png
+        iconHeight: 35
 
       editPost:
         URL: https://github.com/binick/binick.github.io/tree/main/src/content
@@ -186,8 +186,8 @@ languages:
         Text: 🗒️ Changelog
         appendFilePath: true
 
-    homeInfoParams:
-      Title: "l'ennesimo viaggio di uno sviluppatore"
+      homeInfoParams:
+        Title: "l'ennesimo viaggio di uno sviluppatore"
 
     menu:
 
