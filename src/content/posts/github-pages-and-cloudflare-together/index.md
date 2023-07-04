@@ -16,6 +16,8 @@ keywords:
   - domain
 tags:
 draft: false
+aliases: |
+  - /2022/06/01/github-pages-and-cloudflare-together
 cover:
   image: cover.jpg
   alt: Confusing road directions
