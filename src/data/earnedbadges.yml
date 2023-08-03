@@ -1,27 +1,27 @@
-- id: b2eceb48-b3f3-4bc3-a826-83ef72ee559c
+- id: 2473DE5340948700
   badge:
-    icon: https://images.credly.com/size/150x150/images/c3ab66f8-5d59-4afa-a6c2-0ba30a1989ca/CERT-Expert-DevOps-Engineer-600x600.png
+    icon: https://learn.microsoft.com/media/learn/certification/badges/microsoft-certified-expert-badge.svg
   name: DevOps Engineer Expert
-  url: https://www.credly.com/badges/b2eceb48-b3f3-4bc3-a826-83ef72ee559c/public_url
+  url: https://learn.microsoft.com/api/credentials/share/it-it/binick/2473DE5340948700?sharingId=E75D87A1911BFA6B
   issuer:
     name: Microsoft
-    url: https://www.credly.com/org/microsoft-certification
-- id: 905b0909-4a09-41cd-b534-6890f7b09164
+    url: https://www.microsoft.com/
+- id: 9276C25DFE590264
   badge:
-    icon: https://images.credly.com/size/150x150/images/63316b60-f62d-4e51-aacc-c23cb850089c/azure-developer-associate-600x600.png
+    icon: https://learn.microsoft.com/it-it/media/learn/certification/badges/microsoft-certified-associate-badge.svg
   name: Azure Developer Associate
-  url: https://www.credly.com/badges/905b0909-4a09-41cd-b534-6890f7b09164/public_url
+  url: https://learn.microsoft.com/api/credentials/share/it-it/binick/9276C25DFE590264?sharingId=E75D87A1911BFA6B
   issuer:
     name: Microsoft
-    url: https://www.credly.com/org/microsoft-certification
-- id: 78a080bb-0da9-41e7-bed0-ae4f41a24c3d
+    url: https://www.microsoft.com/
+- id: 556D6E195888A2C1
   badge:
-    icon: https://images.credly.com/size/150x150/images/be8fcaeb-c769-4858-b567-ffaaa73ce8cf/image.png
+    icon: https://learn.microsoft.com/media/learn/certification/badges/microsoft-certified-fundamentals-badge.svg
   name: Azure Fundamentals
-  url: https://www.credly.com/badges/78a080bb-0da9-41e7-bed0-ae4f41a24c3d/public_url
+  url: https://learn.microsoft.com/api/credentials/share/it-it/binick/556D6E195888A2C1?sharingId=E75D87A1911BFA6B
   issuer:
     name: Microsoft
-    url: https://www.credly.com/org/microsoft-certification
+    url: https://www.microsoft.com/
 - id: 7f3ec753-a30d-4b78-a213-e3197988946e
   badge:
     icon: https://images.credly.com/size/150x150/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png
