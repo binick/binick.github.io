@@ -1,11 +1,8 @@
 baseURL: http://localhost
 title: binick blog
-paginate: 10
+pagination:
+  pagerSize: 10
 theme: PaperMod
-
-author:
-  name: Nicola Biancolini
-  email: nicola.biancolini@gmail.com
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
@@ -39,7 +36,9 @@ outputs:
 publishDir: ../artifacts/public
 
 params:
-  author: Nicola Biancolini
+  author:
+    name: Nicola Biancolini
+    email: nicola.biancolini@gmail.com
   description: "yet another developer's journey"
   ShowReadingTime: true
   ShowShareButtons: true
@@ -76,8 +75,8 @@ params:
       url: 'https://github.com/binick'
     - name: stackoverflow
       url: 'https://stackoverflow.com/users/7684814/binick'
-    - name: twitter
-      url: 'https://twitter.com/nbiancolini'
+    - name: x
+      url: 'https://x.com/nbiancolini'
     - name: linkedin
       url: 'https://www.linkedin.com/in/nicolabiancolini'
     - name: rss

@@ -20,14 +20,14 @@ cover:
 
 Da poco meno di un paio d'anni porto avanti lo sviluppo di un SDK per *MSBuild* chiamato [**MsBullet**]({{< ref path="/projects/msbullet" lang="it" >}}) il cui scopo e' quello di agevolare l'adozione di convenzioni tra team, lo sviluppo di un software qualitativamente migliore attraverso una serie di strumenti built-in e fornire una integrazione con i principali sistemi di build.
 
-Piu o meno nello stesso periodo nel quale *MsBullet* e' stato reso open, ho pubblicato un articolo dove spiegavo [come integrare la copertura del nostro codice]({{< relref path="../../azure-devops-code-coverage/" lang="en" >}}) all'interno dei risultati delle pipeline di *Azure DevOps* illustando quali fossero le insidie a cui prestare attenzione e come aggirarle.
+Piu o meno nello stesso periodo nel quale *MsBullet* e' stato reso open, ho pubblicato un articolo dove spiegavo [come integrare la copertura del nostro codice]({{< relref path="/posts/azure-devops-code-coverage/" lang="en" >}}) all'interno dei risultati delle pipeline di *Azure DevOps* illustando quali fossero le insidie a cui prestare attenzione e come aggirarle.
 
 Bene e' il post piu' visualizzato del blog
 
 | Pagina | Visualizzazioni % |
 | --- | :-: |
-| [How to include code coverage in Azure DevOps pipeline?]({{< relref path="../../azure-devops-code-coverage/" lang="en" >}}) | 41 % |
-| [SQL Server, EF Core, JSON]({{< relref path="../../sqlserver-efcore-json/" lang="en" >}}) | 24 % |
+| [How to include code coverage in Azure DevOps pipeline?]({{< relref path="/posts/azure-devops-code-coverage/" lang="en" >}}) | 41 % |
+| [SQL Server, EF Core, JSON]({{< relref path="/posts/sqlserver-efcore-json/" lang="en" >}}) | 24 % |
 | [Home page]({{< relref path="../../../" lang="en" >}}) | 20 % |
 
 queste sono le percentuali delle visualizzazioni su un campione degli ultimi trenta giorni ma questo e' un trend che va avanti da oltre un anno.  

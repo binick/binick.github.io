@@ -4,7 +4,7 @@ layout: about
 summary: Chi sono
 socialIcons:
   - linkedin
-  - twitter
+  - x
 cover:
   image: me.jpg
 #   alt:
