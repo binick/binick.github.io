@@ -22,7 +22,7 @@ This thing, if I can pursue it over time, will also be useful to me tomorrow.
 
 ## Recap 0.
 
-Exactly one month ago today I announced [a new side project]({{< ref "../../azure/cloud-governance" >}} "A new side project"). Well, I managed to create the first [strategy regarding resource naming](https://github.com/binick/oh-my-azure-playground/tree/main/standards/naming) in *Azure*.
+Exactly one month ago today I announced [a new side project]({{< ref "/posts/azure/cloud-governance" >}} "A new side project"). Well, I managed to create the first [strategy regarding resource naming](https://github.com/binick/oh-my-azure-playground/tree/main/standards/naming) in *Azure*.
 
 The next step is to define the other two strategies, concerning localisation and tagging.
 

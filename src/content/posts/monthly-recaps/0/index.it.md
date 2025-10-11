@@ -22,7 +22,7 @@ Questa cosà, se riuscirò a perseguirla nel tempo, sarà utile anche a me un do
 
 ## Recap 0.
 
-Esattamente un mese fa da oggi ho annunciavo [un nuovo side project]({{< ref "../../azure/cloud-governance" >}} "Un nuovo side project"). Bene, sono riuscito a creare la prima [strategia riguardante la nomenclatura delle risorse](https://github.com/binick/oh-my-azure-playground/tree/main/standards/naming) in *Azure*.
+Esattamente un mese fa da oggi ho annunciavo [un nuovo side project]({{< ref "/posts/azure/cloud-governance" >}} "Un nuovo side project"). Bene, sono riuscito a creare la prima [strategia riguardante la nomenclatura delle risorse](https://github.com/binick/oh-my-azure-playground/tree/main/standards/naming) in *Azure*.
 
 Il prossimo traguardo è quello di definire le altre due strategie, relative alla localizzazione ed al tagging.
 
