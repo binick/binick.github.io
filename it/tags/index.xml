@@ -4,128 +4,103 @@
     <title>Tags on binick blog</title>
     <link>https://binick.blog/it/tags/</link>
     <description>Recent content in Tags on binick blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.151.0</generator>
     <language>it</language>
     <managingEditor>nicola.biancolini@gmail.com (Nicola Biancolini)</managingEditor>
     <webMaster>nicola.biancolini@gmail.com (Nicola Biancolini)</webMaster>
-    <copyright>Il codice sorgente di questo sito è disponibile [qui](https://github.com/binick/binick.github.io), licenziato sotto GPLv3.</copyright>
-    <lastBuildDate>Sat, 02 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://binick.blog/it/tags/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Il codice sorgente di questo sito è disponibile qui, licenziato sotto GPLv3.</copyright>
+    <lastBuildDate>Sat, 27 May 2023 11:54:17 +0200</lastBuildDate>
+    <atom:link href="https://binick.blog/it/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>devops</title>
+      <title>Devops</title>
       <link>https://binick.blog/it/tags/devops/</link>
-      <pubDate>Sat, 02 Jul 2022 00:00:00 +0000</pubDate>
-      <author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
+      <pubDate>Sat, 02 Jul 2022 00:00:00 +0000</pubDate><author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
       <guid>https://binick.blog/it/tags/devops/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>architecture</title>
+      <title>Architecture</title>
       <link>https://binick.blog/it/tags/architecture/</link>
-      <pubDate>Sun, 22 May 2022 00:00:00 +0000</pubDate>
-      <author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
+      <pubDate>Sun, 22 May 2022 00:00:00 +0000</pubDate><author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
       <guid>https://binick.blog/it/tags/architecture/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>blazor</title>
+      <title>Blazor</title>
       <link>https://binick.blog/it/tags/blazor/</link>
-      <pubDate>Sun, 22 May 2022 00:00:00 +0000</pubDate>
-      <author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
+      <pubDate>Sun, 22 May 2022 00:00:00 +0000</pubDate><author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
       <guid>https://binick.blog/it/tags/blazor/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>arm</title>
+      <title>Arm</title>
       <link>https://binick.blog/it/tags/arm/</link>
-      <pubDate>Mon, 09 May 2022 00:00:00 +0000</pubDate>
-      <author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
+      <pubDate>Mon, 09 May 2022 00:00:00 +0000</pubDate><author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
       <guid>https://binick.blog/it/tags/arm/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>azure sdk</title>
+      <title>Azure Sdk</title>
       <link>https://binick.blog/it/tags/azure-sdk/</link>
-      <pubDate>Mon, 09 May 2022 00:00:00 +0000</pubDate>
-      <author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
+      <pubDate>Mon, 09 May 2022 00:00:00 +0000</pubDate><author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
       <guid>https://binick.blog/it/tags/azure-sdk/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>deployment</title>
+      <title>Deployment</title>
       <link>https://binick.blog/it/tags/deployment/</link>
-      <pubDate>Mon, 09 May 2022 00:00:00 +0000</pubDate>
-      <author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
+      <pubDate>Mon, 09 May 2022 00:00:00 +0000</pubDate><author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
       <guid>https://binick.blog/it/tags/deployment/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>azure</title>
+      <title>Azure</title>
       <link>https://binick.blog/it/tags/azure/</link>
-      <pubDate>Thu, 14 Apr 2022 00:00:00 +0000</pubDate>
-      <author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
+      <pubDate>Thu, 14 Apr 2022 00:00:00 +0000</pubDate><author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
       <guid>https://binick.blog/it/tags/azure/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>cloud adoption</title>
+      <title>Cloud Adoption</title>
       <link>https://binick.blog/it/tags/cloud-adoption/</link>
-      <pubDate>Thu, 14 Apr 2022 00:00:00 +0000</pubDate>
-      <author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
+      <pubDate>Thu, 14 Apr 2022 00:00:00 +0000</pubDate><author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
       <guid>https://binick.blog/it/tags/cloud-adoption/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>cloud governance</title>
+      <title>Cloud Governance</title>
       <link>https://binick.blog/it/tags/cloud-governance/</link>
-      <pubDate>Tue, 29 Mar 2022 00:00:00 +0000</pubDate>
-      <author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
+      <pubDate>Tue, 29 Mar 2022 00:00:00 +0000</pubDate><author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
       <guid>https://binick.blog/it/tags/cloud-governance/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>security</title>
+      <title>Security</title>
       <link>https://binick.blog/it/tags/security/</link>
-      <pubDate>Tue, 29 Mar 2022 00:00:00 +0000</pubDate>
-      <author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
+      <pubDate>Tue, 29 Mar 2022 00:00:00 +0000</pubDate><author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
       <guid>https://binick.blog/it/tags/security/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>selforganization</title>
+      <title>Selforganization</title>
       <link>https://binick.blog/it/tags/selforganization/</link>
-      <pubDate>Fri, 18 Feb 2022 00:00:00 +0000</pubDate>
-      <author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
+      <pubDate>Fri, 18 Feb 2022 00:00:00 +0000</pubDate><author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
       <guid>https://binick.blog/it/tags/selforganization/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>active directory b2c</title>
+      <title>Active Directory B2c</title>
       <link>https://binick.blog/it/tags/active-directory-b2c/</link>
-      <pubDate>Sat, 08 Jan 2022 00:00:00 +0000</pubDate>
-      <author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
+      <pubDate>Sat, 08 Jan 2022 00:00:00 +0000</pubDate><author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
       <guid>https://binick.blog/it/tags/active-directory-b2c/</guid>
       <description></description>
     </item>
-    
     <item>
-      <title>event grid</title>
+      <title>Event Grid</title>
       <link>https://binick.blog/it/tags/event-grid/</link>
-      <pubDate>Sat, 08 Jan 2022 00:00:00 +0000</pubDate>
-      <author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
+      <pubDate>Sat, 08 Jan 2022 00:00:00 +0000</pubDate><author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
       <guid>https://binick.blog/it/tags/event-grid/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

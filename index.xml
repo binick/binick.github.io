@@ -4,96 +4,105 @@
     <title>binick blog</title>
     <link>https://binick.blog/</link>
     <description>Recent content on binick blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.151.0</generator>
     <language>en</language>
     <managingEditor>nicola.biancolini@gmail.com (Nicola Biancolini)</managingEditor>
     <webMaster>nicola.biancolini@gmail.com (Nicola Biancolini)</webMaster>
-    <copyright>See this site&#39;s source code [here](https://github.com/binick/binick.github.io), licensed under GPLv3.</copyright>
-    <lastBuildDate>Sat, 02 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://binick.blog/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3.</copyright>
+    <lastBuildDate>Sat, 11 Oct 2025 14:49:47 +0000</lastBuildDate>
+    <atom:link href="https://binick.blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to use a raw SQL script with Entity Framework migrations?</title>
       <link>https://binick.blog/2022/07/02/how-to-use-a-raw-sql-script-with-entity-framework-migrations/</link>
-      <pubDate>Sat, 02 Jul 2022 00:00:00 +0000</pubDate>
-      <author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
+      <pubDate>Sat, 02 Jul 2022 00:00:00 +0000</pubDate><author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
       <guid>https://binick.blog/2022/07/02/how-to-use-a-raw-sql-script-with-entity-framework-migrations/</guid>
       <description>Entity Framework migrations are considered a simple development tool to update our database. In reality, it is a very powerful tool that can even connect two corporate silos.
 </description>
     </item>
-    
     <item>
       <title>Github pages and the confusing process for enforcing HTTPS</title>
       <link>https://binick.blog/2022/06/01/github-pages-and-the-confusing-process-for-enforcing-https/</link>
-      <pubDate>Wed, 01 Jun 2022 00:00:00 +0000</pubDate>
-      <author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
+      <pubDate>Wed, 01 Jun 2022 00:00:00 +0000</pubDate><author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
       <guid>https://binick.blog/2022/06/01/github-pages-and-the-confusing-process-for-enforcing-https/</guid>
       <description>GitHub offers a rewarding user experience like few other services. However, the process of creating a custom domain with the Pages service can be tricky; here I share my experience in the hope that it may help someone.
 </description>
     </item>
-    
     <item>
       <title>Micro frontends and Blazor Server, the beginning of the journey</title>
       <link>https://binick.blog/2022/05/22/micro-frontends-and-blazor-server-the-beginning-of-the-journey/</link>
-      <pubDate>Sun, 22 May 2022 00:00:00 +0000</pubDate>
-      <author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
+      <pubDate>Sun, 22 May 2022 00:00:00 +0000</pubDate><author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
       <guid>https://binick.blog/2022/05/22/micro-frontends-and-blazor-server-the-beginning-of-the-journey/</guid>
       <description>Not all donuts come out with a hole, but that doesn&amp;#39;t mean there isn&amp;#39;t good in them. I stumbled upon one of these in an attempt to implement a micro frontends architecture with Blazor Server.
 </description>
     </item>
-    
     <item>
       <title>Monthly recap 0</title>
       <link>https://binick.blog/2022/04/29/monthly-recap-0/</link>
-      <pubDate>Fri, 29 Apr 2022 00:00:00 +0000</pubDate>
-      <author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
+      <pubDate>Fri, 29 Apr 2022 00:00:00 +0000</pubDate><author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
       <guid>https://binick.blog/2022/04/29/monthly-recap-0/</guid>
-      <description>I&amp;rsquo;m not a writer, I&amp;rsquo;ve never been one, and I&amp;rsquo;ve known this since my school essays. Every time I passed the column and a half it was a challenge.
-Publishing articles on a regular basis takes up a lot of my time, and not just strictly for writing. So I took inspiration from Troy Hunt and thought that creating a monthly summary to update you on my current status and possible future directions might be a good investment of time.</description>
+      <description>&lt;p&gt;I&amp;rsquo;m not a writer, I&amp;rsquo;ve never been one, and I&amp;rsquo;ve known this since my school essays. Every time I passed the column and a half it was a challenge.&lt;/p&gt;
+&lt;p&gt;Publishing articles on a regular basis takes up a lot of my time, and not just strictly for writing. So I took inspiration from &lt;a href=&#34;https://www.troyhunt.com/tag/weekly-update/&#34;&gt;Troy Hunt&lt;/a&gt; and thought that creating a monthly summary to update you on my current status and possible future directions might be a good investment of time.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>A new side project</title>
       <link>https://binick.blog/2022/03/29/a-new-side-project/</link>
-      <pubDate>Tue, 29 Mar 2022 00:00:00 +0000</pubDate>
-      <author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
+      <pubDate>Tue, 29 Mar 2022 00:00:00 +0000</pubDate><author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
       <guid>https://binick.blog/2022/03/29/a-new-side-project/</guid>
       <description>Usually when a large company approaches the cloud one of the main concerns is cost management.</description>
     </item>
-    
     <item>
       <title>That time I tasted a frog</title>
       <link>https://binick.blog/2022/02/18/that-time-i-tasted-a-frog/</link>
-      <pubDate>Fri, 18 Feb 2022 00:00:00 +0000</pubDate>
-      <author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
+      <pubDate>Fri, 18 Feb 2022 00:00:00 +0000</pubDate><author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
       <guid>https://binick.blog/2022/02/18/that-time-i-tasted-a-frog/</guid>
       <description>Clearing my mind of needless thoughts such as a to-do list turned out to be a very good thing for me. Finding the right way to achieve it wasn&amp;#39;t so easy, however.</description>
     </item>
-    
     <item>
       <title>Develop integrated solutions with Active Directory B2C and Azure Event Grid.</title>
       <link>https://binick.blog/2022/01/08/develop-integrated-solutions-with-active-directory-b2c-and-azure-event-grid./</link>
-      <pubDate>Sat, 08 Jan 2022 00:00:00 +0000</pubDate>
-      <author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
+      <pubDate>Sat, 08 Jan 2022 00:00:00 +0000</pubDate><author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
       <guid>https://binick.blog/2022/01/08/develop-integrated-solutions-with-active-directory-b2c-and-azure-event-grid./</guid>
       <description>Let&amp;#39;s see how you can integrate a user&amp;#39;s registration.</description>
     </item>
-    
     <item>
       <title>How to include code coverage in Azure DevOps pipeline?</title>
       <link>https://binick.blog/2021/01/02/how-to-include-code-coverage-in-azure-devops-pipeline/</link>
-      <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate>
-      <author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
+      <pubDate>Sat, 02 Jan 2021 00:00:00 +0000</pubDate><author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
       <guid>https://binick.blog/2021/01/02/how-to-include-code-coverage-in-azure-devops-pipeline/</guid>
       <description>Managing multiple reports in Azure DevOps can get complicated, let&amp;#39;s see how MSBuild can help us.</description>
     </item>
-    
     <item>
       <title>SQL Server, EF Core, JSON</title>
       <link>https://binick.blog/2020/10/22/sql-server-ef-core-json/</link>
-      <pubDate>Thu, 22 Oct 2020 00:00:00 +0000</pubDate>
-      <author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
+      <pubDate>Thu, 22 Oct 2020 00:00:00 +0000</pubDate><author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
       <guid>https://binick.blog/2020/10/22/sql-server-ef-core-json/</guid>
       <description>Sometimes we are forced to work with JSON, it will have happened to you too! In this post, I want to show you how to work with that using EF Core.</description>
     </item>
-    
+    <item>
+      <title>About me</title>
+      <link>https://binick.blog/about-me/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
+      <guid>https://binick.blog/about-me/</guid>
+      <description>About me</description>
+    </item>
+    <item>
+      <title>MsBullet</title>
+      <link>https://binick.blog/projects/msbullet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
+      <guid>https://binick.blog/projects/msbullet/</guid>
+      <description>&lt;figure&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;./icon.png&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;a href=&#34;./msbullet&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://img.shields.io/badge/Docs-MsBullet-green&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.nuget.org/packages/MsBullet.Sdk&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://img.shields.io/nuget/v/msbullet.sdk&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;MsBullet SDK is a set of MSBuild files that provide common build features of MSBuild SDK distributed through NuGet package.&lt;/p&gt;
+&lt;p&gt;The pillars on which MsBullet SDK is based are:&lt;/p&gt;
+&lt;h3 id=&#34;control-and-ownership&#34;&gt;Control and ownership&lt;/h3&gt;
+&lt;p&gt;The developer teams are owners of their repos and they should be feel free to use whatever tools they want.&lt;/p&gt;
+&lt;h3 id=&#34;reusability-of-functionality&#34;&gt;Reusability of functionality&lt;/h3&gt;
+&lt;p&gt;Business value is the main goal.
+The functionality one team has developed can contribute to another&amp;rsquo;s success.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

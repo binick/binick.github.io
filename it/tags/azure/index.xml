@@ -1,60 +1,51 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>azure on binick blog</title>
+    <title>Azure on binick blog</title>
     <link>https://binick.blog/it/tags/azure/</link>
-    <description>Recent content in azure on binick blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Azure on binick blog</description>
+    <generator>Hugo -- 0.151.0</generator>
     <language>it</language>
     <managingEditor>nicola.biancolini@gmail.com (Nicola Biancolini)</managingEditor>
     <webMaster>nicola.biancolini@gmail.com (Nicola Biancolini)</webMaster>
-    <copyright>Il codice sorgente di questo sito è disponibile [qui](https://github.com/binick/binick.github.io), licenziato sotto GPLv3.</copyright>
-    <lastBuildDate>Thu, 14 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://binick.blog/it/tags/azure/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Il codice sorgente di questo sito è disponibile qui, licenziato sotto GPLv3.</copyright>
+    <lastBuildDate>Tue, 07 Jun 2022 22:15:03 +0200</lastBuildDate>
+    <atom:link href="https://binick.blog/it/tags/azure/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Migrare un database SQL Server on-prem in Azure senza downtime</title>
       <link>https://binick.blog/it/2022/04/14/migrare-un-database-sql-server-on-prem-in-azure-senza-downtime/</link>
-      <pubDate>Thu, 14 Apr 2022 00:00:00 +0000</pubDate>
-      <author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
+      <pubDate>Thu, 14 Apr 2022 00:00:00 +0000</pubDate><author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
       <guid>https://binick.blog/it/2022/04/14/migrare-un-database-sql-server-on-prem-in-azure-senza-downtime/</guid>
       <description>Il lift-and-shift è la strategia che consente la migrazione su Cloud più rapida, meno laboriosa e (almeno inizialmente) meno costosa rispetto ad altri processi.&lt;br&gt;
 In questo articolo vedremo come è possibile migrare un database SQL Server senza generare interruzioni sui servizi già in opera.</description>
     </item>
-    
     <item>
       <title>Un nuovo side project</title>
       <link>https://binick.blog/it/2022/03/29/un-nuovo-side-project/</link>
-      <pubDate>Tue, 29 Mar 2022 00:00:00 +0000</pubDate>
-      <author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
+      <pubDate>Tue, 29 Mar 2022 00:00:00 +0000</pubDate><author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
       <guid>https://binick.blog/it/2022/03/29/un-nuovo-side-project/</guid>
       <description>Di solito quando una grande azienda si avvicina al cloud uno dei principali motivi di preoccupazione è la gestione dei costi.</description>
     </item>
-    
     <item>
       <title>Connettersi ad Azure SQL in modo sicuro con le identità gestite</title>
       <link>https://binick.blog/it/2022/03/15/connettersi-ad-azure-sql-in-modo-sicuro-con-le-identit%C3%A0-gestite/</link>
-      <pubDate>Tue, 15 Mar 2022 00:00:00 +0000</pubDate>
-      <author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
+      <pubDate>Tue, 15 Mar 2022 00:00:00 +0000</pubDate><author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
       <guid>https://binick.blog/it/2022/03/15/connettersi-ad-azure-sql-in-modo-sicuro-con-le-identit%C3%A0-gestite/</guid>
       <description>In quanto sviluppatori, siamo abituati a maneggiare chiavi, stringhe di connessione, certificati, nomi utente e password quotidianamente. Forse, proprio per la frequenza con la quale maneggiamo queste informazioni a volte può capitare di abbassare la guardia e non dare loro il trattamento che meriterebbero, esponendoci inconsapevolmente a rischi non banali.</description>
     </item>
-    
     <item>
       <title>Sviluppare soluzioni integrate con Active Directory B2C ed Azure Event Grid.</title>
       <link>https://binick.blog/it/2022/01/08/sviluppare-soluzioni-integrate-con-active-directory-b2c-ed-azure-event-grid./</link>
-      <pubDate>Sat, 08 Jan 2022 00:00:00 +0000</pubDate>
-      <author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
+      <pubDate>Sat, 08 Jan 2022 00:00:00 +0000</pubDate><author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
       <guid>https://binick.blog/it/2022/01/08/sviluppare-soluzioni-integrate-con-active-directory-b2c-ed-azure-event-grid./</guid>
       <description>Vediamo come è possibile integrare la registrazione di un utente.</description>
     </item>
-    
     <item>
       <title>Arricchire token JWT emessi da Azure Active Directory B2C</title>
       <link>https://binick.blog/it/2021/12/27/arricchire-token-jwt-emessi-da-azure-active-directory-b2c/</link>
-      <pubDate>Mon, 27 Dec 2021 00:00:00 +0000</pubDate>
-      <author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
+      <pubDate>Mon, 27 Dec 2021 00:00:00 +0000</pubDate><author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
       <guid>https://binick.blog/it/2021/12/27/arricchire-token-jwt-emessi-da-azure-active-directory-b2c/</guid>
       <description>Personalizzare un JSON Web Token emesso da Azure Active Directory B2C con informazioni presenti su un sistema esterno è possibile: è sufficiente, infatti, sfruttare le possibilità di personalizzazione offerte dai criteri personalizzati.</description>
     </item>
-    
   </channel>
 </rss>

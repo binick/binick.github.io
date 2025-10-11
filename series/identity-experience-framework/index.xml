@@ -4,20 +4,19 @@
     <title>Identity Experience Framework on binick blog</title>
     <link>https://binick.blog/series/identity-experience-framework/</link>
     <description>Recent content in Identity Experience Framework on binick blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.151.0</generator>
     <language>en</language>
     <managingEditor>nicola.biancolini@gmail.com (Nicola Biancolini)</managingEditor>
     <webMaster>nicola.biancolini@gmail.com (Nicola Biancolini)</webMaster>
-    <copyright>See this site&#39;s source code [here](https://github.com/binick/binick.github.io), licensed under GPLv3.</copyright>
-    <lastBuildDate>Sat, 08 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://binick.blog/series/identity-experience-framework/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3.</copyright>
+    <lastBuildDate>Tue, 07 Jun 2022 22:15:03 +0200</lastBuildDate>
+    <atom:link href="https://binick.blog/series/identity-experience-framework/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Develop integrated solutions with Active Directory B2C and Azure Event Grid.</title>
       <link>https://binick.blog/2022/01/08/develop-integrated-solutions-with-active-directory-b2c-and-azure-event-grid./</link>
-      <pubDate>Sat, 08 Jan 2022 00:00:00 +0000</pubDate>
-      <author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
+      <pubDate>Sat, 08 Jan 2022 00:00:00 +0000</pubDate><author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
       <guid>https://binick.blog/2022/01/08/develop-integrated-solutions-with-active-directory-b2c-and-azure-event-grid./</guid>
       <description>Let&amp;#39;s see how you can integrate a user&amp;#39;s registration.</description>
     </item>
-    
   </channel>
 </rss>

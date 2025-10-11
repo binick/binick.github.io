@@ -1,23 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>selforganization on binick blog</title>
+    <title>Selforganization on binick blog</title>
     <link>https://binick.blog/it/tags/selforganization/</link>
-    <description>Recent content in selforganization on binick blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Selforganization on binick blog</description>
+    <generator>Hugo -- 0.151.0</generator>
     <language>it</language>
     <managingEditor>nicola.biancolini@gmail.com (Nicola Biancolini)</managingEditor>
     <webMaster>nicola.biancolini@gmail.com (Nicola Biancolini)</webMaster>
-    <copyright>Il codice sorgente di questo sito è disponibile [qui](https://github.com/binick/binick.github.io), licenziato sotto GPLv3.</copyright>
-    <lastBuildDate>Fri, 18 Feb 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://binick.blog/it/tags/selforganization/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Il codice sorgente di questo sito è disponibile qui, licenziato sotto GPLv3.</copyright>
+    <lastBuildDate>Tue, 07 Jun 2022 22:15:03 +0200</lastBuildDate>
+    <atom:link href="https://binick.blog/it/tags/selforganization/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Quella volta nella quale ho assaggiato una rana</title>
       <link>https://binick.blog/it/2022/02/18/quella-volta-nella-quale-ho-assaggiato-una-rana/</link>
-      <pubDate>Fri, 18 Feb 2022 00:00:00 +0000</pubDate>
-      <author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
+      <pubDate>Fri, 18 Feb 2022 00:00:00 +0000</pubDate><author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
       <guid>https://binick.blog/it/2022/02/18/quella-volta-nella-quale-ho-assaggiato-una-rana/</guid>
       <description>Liberare la mente da pensieri inutili come ad esempio la lista di cose da fare si è rivelata una per me un&amp;#39;ottima cosa. Trovare la giusta via per ottenerlo non e&amp;#39; stato tuttavia cosi semplice.</description>
     </item>
-    
   </channel>
 </rss>

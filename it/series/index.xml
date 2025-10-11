@@ -4,29 +4,26 @@
     <title>Series on binick blog</title>
     <link>https://binick.blog/it/series/</link>
     <description>Recent content in Series on binick blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.151.0</generator>
     <language>it</language>
     <managingEditor>nicola.biancolini@gmail.com (Nicola Biancolini)</managingEditor>
     <webMaster>nicola.biancolini@gmail.com (Nicola Biancolini)</webMaster>
-    <copyright>Il codice sorgente di questo sito è disponibile [qui](https://github.com/binick/binick.github.io), licenziato sotto GPLv3.</copyright>
-    <lastBuildDate>Fri, 29 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://binick.blog/it/series/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Il codice sorgente di questo sito è disponibile qui, licenziato sotto GPLv3.</copyright>
+    <lastBuildDate>Sat, 11 Oct 2025 14:49:47 +0000</lastBuildDate>
+    <atom:link href="https://binick.blog/it/series/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Monthly Recap</title>
       <link>https://binick.blog/it/series/monthly-recap/</link>
-      <pubDate>Fri, 29 Apr 2022 00:00:00 +0000</pubDate>
-      <author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
+      <pubDate>Fri, 29 Apr 2022 00:00:00 +0000</pubDate><author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
       <guid>https://binick.blog/it/series/monthly-recap/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Identity Experience Framework</title>
       <link>https://binick.blog/it/series/identity-experience-framework/</link>
-      <pubDate>Sat, 08 Jan 2022 00:00:00 +0000</pubDate>
-      <author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
+      <pubDate>Sat, 08 Jan 2022 00:00:00 +0000</pubDate><author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
       <guid>https://binick.blog/it/series/identity-experience-framework/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

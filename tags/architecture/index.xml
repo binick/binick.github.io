@@ -1,24 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>architecture on binick blog</title>
+    <title>Architecture on binick blog</title>
     <link>https://binick.blog/tags/architecture/</link>
-    <description>Recent content in architecture on binick blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Architecture on binick blog</description>
+    <generator>Hugo -- 0.151.0</generator>
     <language>en</language>
     <managingEditor>nicola.biancolini@gmail.com (Nicola Biancolini)</managingEditor>
     <webMaster>nicola.biancolini@gmail.com (Nicola Biancolini)</webMaster>
-    <copyright>See this site&#39;s source code [here](https://github.com/binick/binick.github.io), licensed under GPLv3.</copyright>
-    <lastBuildDate>Sun, 22 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://binick.blog/tags/architecture/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3.</copyright>
+    <lastBuildDate>Sat, 27 May 2023 11:54:17 +0200</lastBuildDate>
+    <atom:link href="https://binick.blog/tags/architecture/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Micro frontends and Blazor Server, the beginning of the journey</title>
       <link>https://binick.blog/2022/05/22/micro-frontends-and-blazor-server-the-beginning-of-the-journey/</link>
-      <pubDate>Sun, 22 May 2022 00:00:00 +0000</pubDate>
-      <author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
+      <pubDate>Sun, 22 May 2022 00:00:00 +0000</pubDate><author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
       <guid>https://binick.blog/2022/05/22/micro-frontends-and-blazor-server-the-beginning-of-the-journey/</guid>
       <description>Not all donuts come out with a hole, but that doesn&amp;#39;t mean there isn&amp;#39;t good in them. I stumbled upon one of these in an attempt to implement a micro frontends architecture with Blazor Server.
 </description>
     </item>
-    
   </channel>
 </rss>

@@ -4,10 +4,30 @@
     <title>Projects on binick blog</title>
     <link>https://binick.blog/projects/</link>
     <description>Recent content in Projects on binick blog</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo -- 0.151.0</generator>
     <language>en</language>
     <managingEditor>nicola.biancolini@gmail.com (Nicola Biancolini)</managingEditor>
     <webMaster>nicola.biancolini@gmail.com (Nicola Biancolini)</webMaster>
-    <copyright>See this site&#39;s source code [here](https://github.com/binick/binick.github.io), licensed under GPLv3.</copyright><atom:link href="https://binick.blog/projects/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3.</copyright>
+    <atom:link href="https://binick.blog/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MsBullet</title>
+      <link>https://binick.blog/projects/msbullet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><author>nicola.biancolini@gmail.com (Nicola Biancolini)</author>
+      <guid>https://binick.blog/projects/msbullet/</guid>
+      <description>&lt;figure&gt;
+    &lt;img loading=&#34;lazy&#34; src=&#34;./icon.png&#34;/&gt; 
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;a href=&#34;../msbullet&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://img.shields.io/badge/Docs-MsBullet-green&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.nuget.org/packages/MsBullet.Sdk&#34;&gt;&lt;img loading=&#34;lazy&#34; src=&#34;https://img.shields.io/nuget/v/msbullet.sdk&#34;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;MsBullet SDK is a set of MSBuild files that provide common build features of MSBuild SDK distributed through NuGet package.&lt;/p&gt;
+&lt;p&gt;The pillars on which MsBullet SDK is based are:&lt;/p&gt;
+&lt;h3 id=&#34;control-and-ownership&#34;&gt;Control and ownership&lt;/h3&gt;
+&lt;p&gt;The developer teams are owners of their repos and they should be feel free to use whatever tools they want.&lt;/p&gt;
+&lt;h3 id=&#34;reusability-of-functionality&#34;&gt;Reusability of functionality&lt;/h3&gt;
+&lt;p&gt;Business value is the main goal.
+The functionality one team has developed can contribute to another&amp;rsquo;s success.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>
