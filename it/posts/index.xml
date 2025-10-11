@@ -9,7 +9,7 @@
     <managingEditor>nicola.biancolini@gmail.com (Nicola Biancolini)</managingEditor>
     <webMaster>nicola.biancolini@gmail.com (Nicola Biancolini)</webMaster>
     <copyright>Il codice sorgente di questo sito è disponibile qui, licenziato sotto GPLv3.</copyright>
-    <lastBuildDate>Sat, 11 Oct 2025 14:49:47 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 11 Oct 2025 17:19:22 +0200</lastBuildDate>
     <atom:link href="https://binick.blog/it/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Come utilizzare uno script SQL con le migrazioni di Entity Framework?</title>
