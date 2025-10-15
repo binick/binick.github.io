@@ -4,6 +4,13 @@
     "features": {
         "ghcr.io/devcontainers/features/hugo:1": {
             "version": "latest"
+        },
+        "ghcr.io/devcontainers/features/node:1": {
+            "version": "lts",
+            "installPnpm": true
+        },
+        "ghcr.io/devcontainers/features/git:1": {
         }
-    }
+    },
+    "postCreateCommand": "sudo apt update && sudo apt install -y jq && pnpm install --save-dev @playwright/test@latest && pnpm exec playwright install --with-deps"
 }

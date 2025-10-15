@@ -6,6 +6,8 @@ const config: PlaywrightTestConfig = {
   use: {
     baseURL: baseURL.href,
     ignoreHTTPSErrors: true,
+    screenshot: 'only-on-failure',
+    trace: 'retain-on-failure'
   },
   projects: [
     {
@@ -13,7 +15,7 @@ const config: PlaywrightTestConfig = {
       use: {
         browserName: 'chromium',
         viewport: { width: 1920, height: 1080 }
-      },
+      }
     },
     {
       name: 'Desktop Safari (1080p)',
@@ -58,6 +60,11 @@ const config: PlaywrightTestConfig = {
       name: 'Mobile Safari',
       use: devices['iPhone 12'],
     }
+  ],
+  reporter: [
+    ['html', { open: 'never', outputFolder: "./../../artifacts/test-results/html" }],
+    ["list"],
+    ["playwright-ctrf-json-reporter", { outputDir: "./artifacts/test-results" }]
   ]
 };
 export default config;

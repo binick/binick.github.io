@@ -3,3 +3,4 @@ artifacts
 .pnpm-store
 test-results
 .vscode
+.pnpm-lock.yaml
