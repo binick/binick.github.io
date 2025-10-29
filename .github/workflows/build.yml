@@ -1,4 +1,7 @@
 name: build
+permissions:
+  contents: read
+  pull-requests: write
 
 on:
   pull_request:
@@ -25,7 +28,7 @@ jobs:
           hugo-version: 'latest'
 
       - name: NPM install
-        run: npm install
+        run: npm install && npm exec playwright install --with-deps
 
       - name: Build site
         run: hugo -e e2e-testing -s ./src --minify
@@ -33,12 +36,35 @@ jobs:
       - name: E2E tests
         run: npm run test
         continue-on-error: true
-        if: false
+      
+      - name: Generate HTML report
+        run: npx github-actions-ctrf artifacts/test-results/ctrf-report.json
+        if: always()
+
+      - name: Merge SARIF files
+        run: |
+          jq -s '
+          {
+            "$schema": .[0]."$schema",
+            "version": .[0].version,
+            "runs": [
+              {
+                "tool": .[0].runs[0].tool,
+                "invocations": [.[].runs[].invocations[]?],
+                "results": [.[].runs[].results[]],
+                "artifacts": ( [.[].runs[].artifacts[]?] | unique_by(.location.uri?) ),
+                "taxonomies": ( [.[].runs[].taxonomies[]?] | unique_by(.name) ),
+                "columnKind": "utf16CodeUnits"
+              }
+            ]
+          }
+          ' $(find artifacts/test-results/a11y -type f -name '*.sarif') > artifacts/test-results/a11y.sarif
+        if: always()
 
       - name: Upload a11y analysis results
         uses: github/codeql-action/upload-sarif@v4
+        if: always()
         with:
-          sarif_file: artifacts/test-results/a11y
-          category: axe-core
+          sarif_file: artifacts/test-results/a11y.sarif
+          category: a11y
           wait-for-processing: false
-        if: false
