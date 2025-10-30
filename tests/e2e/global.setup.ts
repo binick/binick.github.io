@@ -6,7 +6,7 @@ import * as path from 'path';
 
 export const repoRoot: string = path.join(__dirname, '..', '..');
 
-export const outputSiteBuildDir: string = path.join(repoRoot, 'artifacts', 'tmp');
+export const outputSiteBuildDir: string = path.join(repoRoot, 'artifacts', 'tmp', 'test-site');
 
 export const app = new Koa();
 

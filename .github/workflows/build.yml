@@ -41,30 +41,41 @@ jobs:
         run: npx github-actions-ctrf artifacts/test-results/ctrf-report.json
         if: always()
 
-      - name: Merge SARIF files
+      - name: Upload SARIF analysis results
+        if: always()
         run: |
-          jq -s '
-          {
-            "$schema": .[0]."$schema",
-            "version": .[0].version,
-            "runs": [
-              {
-                "tool": .[0].runs[0].tool,
-                "invocations": [.[].runs[].invocations[]?],
-                "results": [.[].runs[].results[]],
-                "artifacts": ( [.[].runs[].artifacts[]?] | unique_by(.location.uri?) ),
-                "taxonomies": ( [.[].runs[].taxonomies[]?] | unique_by(.name) ),
-                "columnKind": "utf16CodeUnits"
-              }
-            ]
-          }
-          ' $(find artifacts/test-results/a11y -type f -name '*.sarif') > artifacts/test-results/a11y.sarif
-        if: always()
-
-      - name: Upload a11y analysis results
-        uses: github/codeql-action/upload-sarif@v4
-        if: always()
-        with:
-          sarif_file: artifacts/test-results/a11y.sarif
-          category: a11y
-          wait-for-processing: false
+          find artifacts/test-results/a11y -type f -name "*.sarif" | while read -r sarif_file; do
+            patched=$(jq '
+                . as $root
+                  | ($root.runs[].results
+                      | map(.locations // [])
+                      | flatten
+                      | map(select(.physicalLocation.artifactLocation.uri? != null))
+                      | first
+                      | .physicalLocation) as $first
+                  | (.runs[].results[].locations[]?.physicalLocation.artifactLocation.uri) |= sub("https?://[^/]+/"; "")
+                  | .runs[].results |= map(
+                      if (.locations == [] or .locations == null)
+                      then .locations = [
+                        {
+                          "physicalLocation": {
+                      "artifactLocation": $first.artifactLocation
+                          }
+                        }
+                      ]
+                      else .
+                      end
+                    )
+            ' "$sarif_file")
+            
+            gh api \
+              --method POST \
+              -H "Accept: application/vnd.github+json" \
+              -H "X-GitHub-Api-Version: 2022-11-28" \
+              /repos/${{ github.repository }}/code-scanning/sarifs \
+              -f commit_sha='${{ github.sha }}' \
+              -f ref='${{ github.ref }}' \
+              -f sarif="$(echo "$patched" | gzip -c | base64 -w0)"
+          done
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

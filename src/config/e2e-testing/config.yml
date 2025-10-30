@@ -4,4 +4,4 @@ buildFuture: false
 buildExpored: false
 buildExpired: false
 
-publishDir: ../artifacts/tmp
+publishDir: ../artifacts/tmp/test-site
