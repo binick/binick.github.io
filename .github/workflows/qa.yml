@@ -1,0 +1,78 @@
+name: build
+permissions:
+  contents: read
+
+on:
+  workflow_dispatch:
+
+  workflow_call:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          ref: gh-pages
+          path: artifacts/tmp/test-site
+
+      - name: Extract test-site commit info
+        id: ghpages-info
+        working-directory: artifacts/tmp/test-site
+        run: |
+          echo "sha=$(git rev-parse HEAD)" >> $GITHUB_OUTPUT
+          echo "ref=refs/heads/gh-pages" >> $GITHUB_OUTPUT
+
+      - name: Setup node.js
+        uses: actions/setup-node@v5
+
+      - name: NPM install
+        run: npm install && npm exec playwright install --with-deps
+
+      - name: E2E tests
+        run: npm run test
+        continue-on-error: true
+
+      - name: Upload SARIF analysis results
+        if: always()
+        run: |
+          find artifacts/test-results/a11y -type f -name "*.sarif" | while read -r sarif_file; do
+            patched=$(jq '
+                . as $root
+                  | ($root.runs[].results
+                      | map(.locations // [])
+                      | flatten
+                      | map(select(.physicalLocation.artifactLocation.uri? != null))
+                      | first
+                      | .physicalLocation) as $first
+                  | (.runs[].results[].locations[]?.physicalLocation.artifactLocation.uri) |= sub("https?://[^/]+/"; "")
+                  | .runs[].results |= map(
+                      if (.locations == [] or .locations == null)
+                      then .locations = [
+                        {
+                          "physicalLocation": {
+                      "artifactLocation": $first.artifactLocation
+                          }
+                        }
+                      ]
+                      else .
+                      end
+                    )
+            ' "$sarif_file")
+            
+            gh api \
+              --method POST \
+              -H "Accept: application/vnd.github+json" \
+              -H "X-GitHub-Api-Version: 2022-11-28" \
+              /repos/${{ github.repository }}/code-scanning/sarifs \
+              -f commit_sha='${{ steps.ghpages-info.outputs.sha }}' \
+              -f ref='${{ steps.ghpages-info.outputs.ref }}' \
+              -f sarif="$(echo "$patched" | gzip -c | base64 -w0)"
+          done
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
