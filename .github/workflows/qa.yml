@@ -1,6 +1,7 @@
-name: build
+name: qa
 permissions:
   contents: read
+  security-events: write
 
 on:
   workflow_dispatch:
@@ -50,7 +51,6 @@ jobs:
                       | map(select(.physicalLocation.artifactLocation.uri? != null))
                       | first
                       | .physicalLocation) as $first
-                  | (.runs[].results[].locations[]?.physicalLocation.artifactLocation.uri) |= sub("https?://[^/]+/"; "")
                   | .runs[].results |= map(
                       if (.locations == [] or .locations == null)
                       then .locations = [
@@ -61,8 +61,8 @@ jobs:
                         }
                       ]
                       else .
-                      end
-                    )
+                      end)
+                  | (.runs[].results[].locations[]?.physicalLocation.artifactLocation.uri) |= sub("https?://[^/]+/"; "")
             ' "$sarif_file")
             
             gh api \
