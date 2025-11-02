@@ -14,10 +14,6 @@
   margin: auto;
 }
 
-.highlight span.lnt a {
-  box-shadow: unset;
-}
-
 .post-content table th,
 .post-content table:not(.highlighttable) td {
   border-bottom: unset;

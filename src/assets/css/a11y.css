@@ -2,3 +2,11 @@
   color: var(--content);
   background: var(--code-bg);
 }
+
+.post-header a {
+  color: var(--content);
+}
+
+.post-content a {
+  color: var(--secondary);
+}

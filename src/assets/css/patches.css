@@ -4,9 +4,5 @@
 }
 
 .highlight span.lnt a {
-  color: var(--secondary);
-}
-
-.dark .highlight span.lnt a {
-  color: unset;
+  box-shadow: unset;
 }
