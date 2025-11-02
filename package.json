@@ -9,6 +9,7 @@
     "@types/koa": "^3.0.1",
     "@types/koa-static": "^4.0.4",
     "@types/node": "^24.9.2",
+    "axe-core": "^4.11.0",
     "axe-sarif-converter": "^3.0.0",
     "github-actions-ctrf": "^0.0.58",
     "koa": "^3.1.1",

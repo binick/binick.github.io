@@ -4,3 +4,31 @@
 {{- $custom := resources.Get "js/quick.search.js" | minify | fingerprint -}}
 <script defer src="{{ $custom.Permalink }}" integrity="{{ $custom.Data.Integrity }}" crossorigin="anonymous"></script>
 {{- end -}}
+{{- if site.Params.Accessibility.ShowViolations -}}
+<script src="https://cdn.jsdelivr.net/npm/axe-core/axe.min.js" integrity="sha256-6eWGPDOodPCbwBrNkjS348hxR59e74gC+lglREZebQE=" crossorigin="anonymous"></script>
+<script>
+    axe
+        .run()
+        .then(results => {
+            results.violations.forEach(v => {
+                const message = `[${v.impact}] ${v.help}: ${v.description}\n(${v.id}: ${v.helpUrl})`;
+                const colors = {
+                    critical: 'rgba(255, 0, 0, 1)',
+                    serious: 'rgba(255, 0, 0, .5)',
+                    moderate: 'rgba(255, 255, 0, 1)',
+                    minor: 'rgba(255, 255, 0, .5)'
+                };
+                v.nodes.forEach(n => {
+                    n.target.forEach(selector => {
+                        const el = document.querySelector(selector);
+                        if (el) {
+                            el.style.outline = `3px solid ${colors[v.impact] || colors.minor}`;
+                            el.style.outlineOffset = '2px';
+                            el.setAttribute('title', message);
+                        }
+                    })
+                })
+            })
+        })
+</script>
+{{- end -}}
