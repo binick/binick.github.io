@@ -3,10 +3,14 @@
   background: var(--code-bg);
 }
 
-.post-header a {
-  color: var(--content);
+body:not(.dark) .post-content p a:not(.lnlinks) {
+  color: var(--secondary);
 }
 
-.post-content a {
-  color: var(--secondary);
+.post-content p a:not(.lnlinks) {
+  color: var(--tetriary);
+}
+
+.post-meta a {
+  color: var(--tetriary);
 }
