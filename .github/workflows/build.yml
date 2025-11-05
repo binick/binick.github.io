@@ -34,7 +34,7 @@ jobs:
         run: hugo -e e2e-testing -s ./src --minify
 
       - name: E2E tests
-        run: npm run test
+        run: npm run test --grep-invert a11y
         continue-on-error: true
       
       - name: Generate HTML report

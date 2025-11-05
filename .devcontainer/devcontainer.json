@@ -9,8 +9,20 @@
             "version": "lts",
             "installPnpm": true
         },
-        "ghcr.io/devcontainers/features/git:1": {
+        "ghcr.io/devcontainers/features/git:1": {}
+    },
+    "forwardPorts": [
+        1313
+    ],
+    "portsAttributes": {
+        "1313": {
+            "label": "Hugo server",
+            "onAutoForward": "openPreview"
         }
+    },
+    "containerEnv": {
+        "HUGO_BIND": "0.0.0.0",
+        "HUGO_POLL_INTERVAL": "700ms"
     },
     "postCreateCommand": "sudo apt update && sudo apt install -y jq && pnpm install --save-dev @playwright/test@latest && pnpm exec playwright install --with-deps"
 }
