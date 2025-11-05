@@ -22,6 +22,14 @@
                     n.target.forEach(selector => {
                         const el = document.querySelector(selector);
                         if (el) {
+                            const helpLink = document.createElement('a');
+                            helpLink.innerHTML = '<i>🔗</i>';
+                            helpLink.setAttribute('href', v.helpUrl);
+                            helpLink.setAttribute('target', '_blank');
+                            helpLink.style.verticalAlign = 'super';
+                            helpLink.style.fontSize = 'smaller';
+                            helpLink.style.boxShadow = 'unset';
+                            el.appendChild(helpLink);
                             el.style.outline = `3px solid ${colors[v.impact] || colors.minor}`;
                             el.style.outlineOffset = '2px';
                             el.setAttribute('title', message);

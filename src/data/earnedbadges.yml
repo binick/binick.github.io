@@ -22,11 +22,4 @@
   issuer:
     name: Microsoft
     url: https://www.microsoft.com/
-- id: 7f3ec753-a30d-4b78-a213-e3197988946e
-  badge:
-    icon: https://images.credly.com/size/150x150/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png
-  name: AWS Certified Cloud Practitioner
-  url: https://www.credly.com/badges/7f3ec753-a30d-4b78-a213-e3197988946e/public_url
-  issuer:
-    name: Amazon Web Services Training and Certification
-    url: https://www.credly.com/org/amazon-web-services
+

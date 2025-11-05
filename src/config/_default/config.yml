@@ -1,4 +1,4 @@
-baseURL: http://localhost
+baseURL: http://127.0.0.1
 title: binick blog
 pagination:
   pagerSize: 10

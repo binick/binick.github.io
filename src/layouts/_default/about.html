@@ -24,18 +24,18 @@
     </section>
     <section class="certifications">
       <h2 id="certifications">{{ i18n "certifications" }}<a hidden="" class="anchor" aria-hidden="true" href="#certifications">#</a></h2>
-      <span class="badges">
+      <ul class="badges">
       {{ range site.Data.earnedbadges }}
-        <div>
-          <a target="_blank" href="{{ .url }}">
-            <img alt="" aria-label="{{ .name }} badge" src="{{ .badge.icon }}">
+        <li>
+          <a target="_blank" href="{{ .url }}" aria-label="{{ .name }} badge">
+            <img alt="" src="{{ .badge.icon }}">
           </a>
           <p>
-            {{ i18n "issued_by" }}<br /><a title="{{ .issuer.name }}" target="_blank" href="{{ .issuer.url }}"><b>{{ .issuer.name }}</b></a>
+            {{ i18n "issued_by" }}<br /><a target="_blank" href="{{ .issuer.url }}"><b>{{ .issuer.name }}</b></a>
           </p>
-        </div>
+        </li>
       {{ end }}
-      </span>
+      </ul>
     </section>
   </div>
 
