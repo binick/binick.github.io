@@ -135,7 +135,7 @@ This requirement finds expressivity through the `ClaimsTransformation` whose [re
 
 In the example the methods [`GetCurrentDateTime`](https://docs.microsoft.com/azure/active-directory-b2c/date-transformations#getcurrentdatetime) and [`GenerateJson`](https://docs.microsoft.com/azure/active-directory-b2c/json-transformations#generatejson) were used
 
-`` xml
+``` xml
 <ClaimsTransformation Id="GetSystemDateTime" TransformationMethod="GetCurrentDateTime">
     <OutputClaims>
         <OutputClaim ClaimTypeReferenceId="systemDateTime" TransformationClaimType="currentDateTime" />
@@ -145,7 +145,7 @@ In the example the methods [`GetCurrentDateTime`](https://docs.microsoft.com/azu
 
 The purpose of `GetSystemDateTime` is to enhance the `systemDateTime` claim.
 
-`` xml
+``` xml
 <ClaimsTransformation Id="GenerateRegistrationEventRequest" TransformationMethod="GenerateJson">
     <InputClaims>
         <InputClaim ClaimTypeReferenceId="objectId" TransformationClaimType="0.data.objectId" />

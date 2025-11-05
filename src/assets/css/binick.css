@@ -14,10 +14,6 @@
   margin: auto;
 }
 
-.highlight span.lnt a {
-  box-shadow: unset;
-}
-
 .post-content table th,
 .post-content table:not(.highlighttable) td {
   border-bottom: unset;
@@ -62,12 +58,13 @@
   height: 160px;
 }
 
-.post-content section.certifications .badges div {
-  max-width: 30%;
-  margin: 0 auto;
+.post-content section.certifications .badges {
+  list-style: none;
+  margin: auto;
+  justify-content: space-between;
 }
 
-.post-content section.certifications .badges div p {
+.post-content section.certifications .badges li p {
   padding-top: 15px;
   text-align: center;
 }
