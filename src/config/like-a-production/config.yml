@@ -5,12 +5,11 @@ buildExpired: false
 
 params:
   env: production
+  privacy:
+    microsoftClarity:
+      disable: true
 
 privacy:
   googleAnalytics:
     disable: true
-
-params: 
-  privacy:
-    microsoftClarity:
-      disable: true
+    

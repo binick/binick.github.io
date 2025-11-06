@@ -22,7 +22,7 @@ referral:
   name: UGIdotNET
   url: https://www.ugidotnet.org/tip/2873/Arricchire-JWT-emessi-da-Active-Directory-B2C-con-criteri-personalizzati
 cover:
-  image: cover.jpg
+  image: /enrich-a-jwt-token-with-ief/cover.jpg
   alt: Serie di foglietti attaccati su di un mezzo busto
   relative: true
   caption: Foto di [Yasin Yusuf](https://unsplash.com/@yasinyusuf?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) su [Unsplash](https://unsplash.com/s/photos/identity?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
