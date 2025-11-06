@@ -16,7 +16,7 @@ tags:
 - deployment
 draft: false
 cover:
-  image: cover.jpg
+  image: /azure/az-mgmt/cover.jpg
   alt: Cassette postali
   relative: true
   caption: Foto di <a href="https://unsplash.com/@mathyaskurmann?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Mathyas Kurmann</a> su <a href="https://unsplash.com/photos/fb7yNPbT0l8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>

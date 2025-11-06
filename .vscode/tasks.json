@@ -2,6 +2,17 @@
     "version": "2.0.0",
     "tasks": [
         {
+            "label": "Serve (like a production)",
+            "type": "shell",
+            "command": "hugo server -e like-a-production -s src/ --poll 700 --bind 0.0.0.0",
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
+            "isBackground": true,
+            "problemMatcher": []
+        },
+        {
             "label": "Serve",
             "type": "shell",
             "command": "hugo server -s src/ -D --poll 700 --bind 0.0.0.0",

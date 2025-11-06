@@ -22,7 +22,7 @@ referral:
   name: UGIdotNET
   url: https://www.ugidotnet.org/articoli/2943/Migrare-un-database-SQL-Server-on-prem-in-Azure-senza-downtime
 cover:
-  image: cover.jpg
+  image: /migrate-sql-server-to-azure/cover.jpg
   alt: Mongolfiere in ascensione in lontananza sopra una savana con zebre e gnu
   relative: true
   caption: Photo by <a href="https://unsplash.com/@sutirtab?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">sutirta budiman</a> on <a href="https://unsplash.com/s/photos/migration?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>

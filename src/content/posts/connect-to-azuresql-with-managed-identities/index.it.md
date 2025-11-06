@@ -20,7 +20,7 @@ referral:
   name: UGIdotNET
   url: https://www.ugidotnet.org/tip/2923/Connettersi-ad-Azure-SQL-Server-con-le-identita-gestite
 cover:
-  image: cover.jpg
+  image: /connect-to-azuresql-with-managed-identities/cover.jpg
   alt: Primo piano su un foglietto di carta gialla vuoto attaccatto ad una rete metallica a maglie larghe
   relative: true
   caption: Photo by [Andrey Metelev](https://unsplash.com/@metelevan?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/fake-classified-ad?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
