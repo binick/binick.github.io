@@ -7,6 +7,6 @@ socialIcons:
   - x
 cover:
   image: me.jpg
-#   alt:
-#   caption:
+resume:
+  url: https://github.com/binick/resume/releases/latest/download/italian.pdf
 ---

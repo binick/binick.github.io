@@ -17,3 +17,7 @@
 - id: content_moved
   translation: |
     Questa pagina è stata spostata all'indirizzo [%s](%s).
+- id: download_resume
+  translation: "Scarica il mio curriculum vitae"
+- id: resume_abbr
+  translation: "CV"
