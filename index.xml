@@ -9,7 +9,7 @@
     <managingEditor>nicola.biancolini@gmail.com (Nicola Biancolini)</managingEditor>
     <webMaster>nicola.biancolini@gmail.com (Nicola Biancolini)</webMaster>
     <copyright>See this site&amp;rsquo;s source code here, licensed under GPLv3.</copyright>
-    <lastBuildDate>Wed, 05 Nov 2025 20:28:37 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 13 Nov 2025 20:04:20 +0100</lastBuildDate>
     <atom:link href="https://binick.blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to use a raw SQL script with Entity Framework migrations?</title>
