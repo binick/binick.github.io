@@ -17,3 +17,7 @@
 - id: content_moved
   translation: |
     This page has moved to [%s](%s).
+- id: download_resume
+  translation: "Download my resume"
+- id: resume_abbr
+  translation: "Resume"

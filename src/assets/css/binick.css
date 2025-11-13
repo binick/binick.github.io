@@ -10,6 +10,17 @@
   justify-content: center;
 }
 
+.post-single.about .post-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post-single.about .post-header svg {
+  margin-right: 10px;
+}
+
 .post-content img {
   margin: auto;
 }
